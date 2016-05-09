@@ -2,21 +2,7 @@
 	padding: 0 1.6rem;
 }
 
-.navbar-default{
-	background-color: #002819;
-}
-
 .navbar-logo{
 	height: auto;
 	width: 40%;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > li > a:hover{
-	color: #01D099;
-}
-
-
-#footerwrap{
-	background-color: #002819;
 }
