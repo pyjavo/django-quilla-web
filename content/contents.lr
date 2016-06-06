@@ -1,0 +1,98 @@
+_model: poster
+---
+title: Django Barranquilla
+---
+body:
+
+#### text-block ####
+text:
+
+<div id="headerwrap">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h3>Comparte conocimientos en comunidad</h3>
+					<h1>Django Barranquilla.</h1>
+					<h5>Somos una comunidad de desarrolladores web, dev-ops, emprendedores y estudiantes. </h5>
+					<h5>Entusiastas en Python y Django ¡Están invitados!</h5>				
+				</div>
+				<div class="col-lg-8 col-lg-offset-2 himg">
+					<img src="/img/vision-por-computadora.jpg" class="img-responsive">
+				</div>
+			</div>
+	</div>
+----
+class: default
+#### text-block ####
+text:
+
+ <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+ 				<div class="col-md-4">
+ 					<i class="fa fa-heart-o"></i>
+ 					<h4>Participa en Comunidad</h4>
+ 					<p>Lo mejor de participar en una comunidad es conocer gente increíble con sueños y proyectos sorprendentes. En cada reunión tenemos charlas amenas donde nos actualizamos sobre los últimos temas en tecnología, emprendimiento y desarrollo web. </p>
+ 					<!-- <p><br/><a href="#" class="btn btn-theme">More Info</a></p> -->
+ 				</div>
+ 				<div class="col-md-4">
+ 					<i class="fa fa-flask"></i>
+ 					<h4>Consigue lo que Buscas</h4>
+ 					<p>Desde que empezamos nos hemos caracterizado por ayudar a nuestros participantes a conseguir oportunidades laborales o aconsejarlos para empezar sus propios emprendimientos. ¿Necesitas desarrolladores web? Este es el lugar indicado para encontrar uno.</p>
+ 					<!-- <p><br/><a href="#" class="btn btn-theme">More Info</a></p> -->
+ 				</div>
+ 				<div class="col-md-4">
+ 					<i class="fa fa-trophy"></i>
+ 					<h4>Creemos Apps</h4>
+ 					<p>Siempre estamos creando aplicaciones, ya sea cada uno por su cuenta o en grupo como comunidad. Si necesitas ayuda, este es el espacio donde podemos colaborarte a resolver tus dudas en aquel proyecto en el que llevas trabajando. Ven y participa!</p>
+ 					<!-- <p><br/><a href="#" class="btn btn-theme">More Info</a></p> -->
+ 				</div>		 				
+	 		</div>
+	 	</div>
+	 </div>
+	 
+----
+class: default
+#### text-block ####
+text:
+
+<div id="twrap">
+	 	<div class="container centered">
+	 		<div class="row">
+	 			<div class="col-lg-8 col-lg-offset-2">
+	 			<i class="fa fa-comment-o"></i>
+	 			<p>Me gusta mucho trabajar con Django, es una herramienta hermosa que me ha permitido en mi vida profesional ser efectivo implementando soluciones web a cualquier escala. Django Barranquilla es un esfuerzo por reunir el talento local de programadores python y crear una comunidad tigre motivada a implementar tecnologías basadas en el poder de Django.</p>
+	 			<h4><br/>Luis Pallares</h4>
+	 			<p>CTO - COMPARAMEJOR.COM</p>
+	 			</div>
+	 		</div>
+	 	</div>
+	 </div>
+	 
+	
+	 
+----
+class: default
+#### text-block ####
+text:
+
+<div id="cwrap">
+		 <div class="container">
+		 	<div class="row centered">
+			 	<h3>NUESTROS PATROCINADORES</h3>
+			 	<div class="col-lg-3 col-md-3 col-sm-3">
+			 		<img src="/img/patrocinadores/areados.png" class="img-responsive">
+			 	</div>
+			 	<div class="col-lg-3 col-md-3 col-sm-3">
+			 		<img src="/img/patrocinadores/comparamejor.png" class="img-responsive">
+			 	</div>
+			 	<div class="col-lg-3 col-md-3 col-sm-3">
+			 		<img src="/img/patrocinadores/caribetic.png" class="img-responsive">
+			 	</div>
+			 	<div class="col-lg-3 col-md-3 col-sm-3">
+			 		<img src="/img/patrocinadores/client04.png" class="img-responsive">
+			 	</div>
+		 	</div>
+		 </div>
+	 </div>
+----
+class: default

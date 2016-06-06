@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="{{ '/ico/favicon.png' | url}}">
+  <title>{% block title %}Django Barranquilla - Comunidad de Desarrollo Web{% endblock %} </title>
+  <link rel="stylesheet" href="{{ '/css/bootstrap.css' | url}}" >
+  <link rel="stylesheet" href="{{ '/css/style.css' | url}}" >
+  <link rel="stylesheet" href="{{ '/css/font-awesome.min.css' | url}}">
+  <link rel="stylesheet" href="{{ '/css/custom.css' | url}}">
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img class="navbar-logo" src="{{ '/img/django_barranquilla_logo.png' | url}}">
+        </a>
+      </div>
+      
+      <div class="navbar-collapse collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li{% if this._path == '/' %} class="active"{% endif %}><a href="{{ '/'|url }}">INICIO</a></li>
+          {% for href, title in [
+            ['/about', 'NOSOTROS'],
+            ['/blog', 'BLOG'],
+            ['/contact', 'CONTACTO']
+          ] %}
+            <li{% if this.is_child_of(href) %} class="active"{% endif
+              %}><a href="{{ href|url }}">{{ title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style="height: 70px"></div>
+  {% block body %}{% endblock %}
+
+  <footer id="footerwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Sobre Nosotros</h4>
+          <div class="hline-w"></div>
+          <p>Django Barranquilla es una comunidad para todos los interesados en desarrollar aplicaciones en Python y/o Django dentro de la ciudad de Barranquilla. </p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Redes sociales</h4>
+          <div class="hline-w"></div>
+          <p>
+            <a href="https://github.com/DjangoQuilla"><i class="fa fa-github"></i></a>
+            <a href="https://www.facebook.com/djangoquilla"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/djangoquilla"><i class="fa fa-twitter"></i></a>
+            <a href="https://django-python-quilla.slack.com/signup"><i class="fa fa-slack"></i></a>
+            <a href="http://www.meetup.com/Django-Barranquilla/"><img src="/img/meetup.png" class="meetup-icon"></a>
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Nuestra Ubicación</h4>
+          <div class="hline-w"></div>
+          <p>
+            Carrera 53 #76-239<br/>
+            Local 405, cc. Habitat<br/>
+            Barranquilla, Colombia.<br/>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="{{ '/js/bootstrap.min.js' | url}}"></script>
+  <script src="{{ '/js/retina-1.1.0.js' | url}}"></script>
+  <script src="{{ '/js/jquery.hoverdir.js' | url}}"></script>
+  <script src="{{ '/js/jquery.hoverex.min.js' | url}}"></script>
+  <script src="{{ '/js/jquery.prettyPhoto.js' | url}}"></script>
+    <script src="{{ '/js/jquery.isotope.min.js' | url}}"></script>
+    <script src="{{ '/js/custom.js' | url}}"></script>
+
+
+    <script>
+// Portfolio
+(function($) {
+  "use strict";
+  var $container = $('.portfolio'),
+    $items = $container.find('.portfolio-item'),
+    portfolioLayout = 'fitRows';
+    
+    if( $container.hasClass('portfolio-centered') ) {
+      portfolioLayout = 'masonry';
+    }
+        
+    $container.isotope({
+      filter: '*',
+      animationEngine: 'best-available',
+      layoutMode: portfolioLayout,
+      animationOptions: {
+      duration: 750,
+      easing: 'linear',
+      queue: false
+    },
+    masonry: {
+    }
+    }, refreshWaypoints());
+    
+    function refreshWaypoints() {
+      setTimeout(function() {
+      }, 1000);   
+    }
+        
+    $('nav.portfolio-filter ul a').on('click', function() {
+        var selector = $(this).attr('data-filter');
+        $container.isotope({ filter: selector }, refreshWaypoints());
+        $('nav.portfolio-filter ul a').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
+    
+    function getColumnNumber() { 
+      var winWidth = $(window).width(), 
+      columnNumber = 1;
+    
+      if (winWidth > 1200) {
+        columnNumber = 5;
+      } else if (winWidth > 950) {
+        columnNumber = 4;
+      } else if (winWidth > 600) {
+        columnNumber = 3;
+      } else if (winWidth > 400) {
+        columnNumber = 2;
+      } else if (winWidth > 250) {
+        columnNumber = 1;
+      }
+        return columnNumber;
+      }       
+      
+      function setColumns() {
+        var winWidth = $(window).width(), 
+        columnNumber = getColumnNumber(), 
+        itemWidth = Math.floor(winWidth / columnNumber);
+        
+        $container.find('.portfolio-item').each(function() { 
+          $(this).css( { 
+          width : itemWidth + 'px' 
+        });
+      });
+    }
+    
+    function setPortfolio() { 
+      setColumns();
+      $container.isotope('reLayout');
+    }
+      
+    $container.imagesLoaded(function () { 
+      setPortfolio();
+    });
+    
+    $(window).on('resize', function () { 
+    setPortfolio();          
+  });
+})(jQuery);
+</script>
+  </body>
+</html>
+
+
+
+ 
