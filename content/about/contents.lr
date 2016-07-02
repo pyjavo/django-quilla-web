@@ -1,0 +1,121 @@
+title: Acerca de
+---
+body:
+
+<div id="blue">
+<div class="container">
+<div class="row">
+<h3>Nosotros.</h3>
+</div>
+</div>
+</div>
+
+<div class="container mtb">
+<div class="row">
+<div class="col-lg-6">
+<img class="img-responsive" src="/img/nosotros.jpg" alt="">
+</div>
+
+<div class="col-lg-6">
+<h4>Más Acerca De Nosotros</h4>
+<p>Somos una comunidad de desarrolladores web, dev-ops, emprendedores y estudiantes. La mayoría de nosotros tenemos nuestros propios empresas mientras que los otros trabajamos en las empresas de estos compañeros. Otro grupo de djangonautas sigue en la universidad o siguen su propio camino abriendose paso en el mundo del emprendimiento o el freelance.</p>
+<p>Creada en el 2015 por Javier Daza, la idea inicial de la comunidad era reunirse para hablar y aprender sobre herramientas y nuevas tecnologías en Python y Django.</p>
+<p>Hoy en día la comunidad es un referente para otras comunidades en la ciudad, sino que también sirve para ayudar a encontrar empleo a los miembros que participan y se destacan activamente en las actividades que realizamos en la comunidad. Esperamos en un futuro lograr un impacto significativo en la ciudad y en el mundo.</p>
+<p><br/><a href="contact.html" class="btn btn-theme">Contáctanos</a></p>
+</div>
+</div>
+</div>
+
+<div class="container mtb">
+<div class="row centered">
+<h3 class="mb">EQUIPO ORGANIZADOR</h3>
+
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="he-wrap tpl6">
+<img src="/img/team/javier-daza.jpg" alt="">
+<div class="he-view">
+<div class="bg a0" data-animate="fadeIn">
+<h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
+<a href="mailto:djangoquilla@gmail.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+<a href="https://twitter.com/xavidaza" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
+</div>
+</div>	
+</div>
+<h4>Javier Daza</h4>
+<h5 class="ctitle">ORGANIZADOR</h5>
+<p>Logística y planificación de charlas.</p>
+<div class="hline"></div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="he-wrap tpl6">
+<img src="/img/team/jose-luis-caro.jpg" alt="">
+<div class="he-view">
+<div class="bg a0" data-animate="fadeIn">
+<h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
+<a href="mailto:jlcaro@gmail.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+<a href="https://twitter.com/jlcaro" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
+</div>
+</div>
+</div>
+<h4>Jose Luis Caro</h4>
+<h5 class="ctitle">CO-ORGANIZADOR</h5>
+<p>Relaciones externas y soporte.</p>
+<div class="hline"></div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="he-wrap tpl6">
+<img src="/img/team/leonardo-orozco.jpg" alt="">
+<div class="he-view">
+<div class="bg a0" data-animate="fadeIn">
+<h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
+<a href="mailto:leonardoorozcop@gmail.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+<a href="https://twitter.com/leon4rdoo_o" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
+</div>
+</div>
+</div>
+<h4>Leonardo Orozco</h4>
+<h5 class="ctitle">CO-ORGANIZADOR</h5>
+<p>Redes sociales y soporte.</p>
+<div class="hline"></div>
+</div>
+</div>
+</div>
+
+
+<div id="twrap">
+<div class="container centered">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2">
+<i class="fa fa-comment-o"></i>
+<p>Me gusta mucho trabajar con Django, es una herramienta hermosa que me ha permitido en mi vida profesional ser efectivo implementando soluciones web a cualquier escala. Django Barranquilla es un esfuerzo por reunir el talento local de programadores python y crear una comunidad tigre motivada a implementar tecnologías basadas en el poder de Django.</p>
+<h4><br/>Luis Pallares</h4>
+<p>CTO - COMPARAMEJOR.COM</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="cwrap">
+<div class="container">
+<div class="row centered">
+<h3>NUESTROS PATROCINADORES</h3>
+<div class="col-lg-3 col-md-3 col-sm-3">
+<img src="/img/patrocinadores/areados.png" class="img-responsive">
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3">
+<img src="/img/patrocinadores/comparamejor.png" class="img-responsive">
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3">
+<img src="/img/patrocinadores/caribetic.png" class="img-responsive">
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3">
+<img src="/img/patrocinadores/client04.png" class="img-responsive">
+</div>
+</div>
+</div>
+</div>
+---
+_template: poster.html
