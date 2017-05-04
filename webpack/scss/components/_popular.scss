@@ -1,0 +1,36 @@
+$popular-posts-link-color: #2f2f2f !default;
+$popular-posts-em-color: #b3b3b3 !default;
+$popular-posts-em-font: 'Lato', sans-serif;
+
+.popular-posts {
+  margin: 0;
+  padding-left: 0;
+
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+    min-height: 70px;
+
+    a,
+    a:hover {
+      color: $popular-posts-link-color;
+      text-decoration: none;
+    }
+
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+
+    em {
+      color: $popular-posts-em-color;
+      font-family: $popular-posts-em-font;
+      font-size: 12px;
+    }
+  }
+
+  p {
+    line-height: normal;
+    margin-bottom: auto;
+  }
+}

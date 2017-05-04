@@ -1,0 +1,39 @@
+{
+  "name": "django-quilla-web",
+  "version": "1.0.0",
+  "description": "Website de la comunidad Django Barranquilla",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DjangoQuilla/django-quilla-web.git"
+  },
+  "keywords": [
+    "Website",
+    "comunidad",
+    "Django",
+    "Barranquilla"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DjangoQuilla/django-quilla-web/issues"
+  },
+  "homepage": "https://github.com/DjangoQuilla/django-quilla-web#readme",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

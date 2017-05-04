@@ -1,0 +1,23 @@
+.dq-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #002819;
+
+  p {
+    color: #bfc9d3;
+  }
+
+  h4 {
+    color: white;
+  }
+
+  i {
+    font-size: 30px;
+    color: #bfc9d3;
+    padding-right: 25px;
+
+    &:hover {
+      color: #01D099
+    }
+  }
+}

@@ -1,2 +1,4 @@
 [project]
 name = django-quilla
+[packages]
+lektor-webpack-support = 0.1
