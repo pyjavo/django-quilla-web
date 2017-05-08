@@ -1,9 +1,7 @@
 title: Hello Website
 ---
-pub_date: 2016-06-05
+pub_date: 2017-05-05
+--
+author: Sergio C. Orozco Torres
 ---
-author: Sergio C. Orozco Torres,,,
----
-body:
-
-This is an example blog post.  Not much here but that's not the point :)
+body: La comunidad se place en anunciar que el nuevo sitio web se encuentra en desarrollo activo para lo cual se está usando lektor como gestor de contenidos 

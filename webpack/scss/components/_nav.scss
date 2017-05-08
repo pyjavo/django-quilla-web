@@ -1,0 +1,50 @@
+
+.navbar-logo {
+  height: 55px;
+  width: 140px;
+}
+
+.meetup-icon {
+  margin-left: 0.2rem;
+  margin-top: -1.4rem;
+}
+
+.navbar {
+  min-height: 70px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+
+.navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  padding: 0 1.6rem;
+}
+
+.navbar-header .navbar-brand {
+  color: white;
+}
+
+.navbar-default {
+  background-color: #002819;
+  border-color: transparent;
+
+  .navbar-nav {
+    > li > a {
+      color: white;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    > li > a:hover {
+      color: #01D099;
+    }
+
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus {
+      color: #01D099;
+      background-color: transparent;
+    }
+  }
+}
