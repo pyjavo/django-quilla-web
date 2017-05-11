@@ -1,6 +1,6 @@
 _model: poster
 ---
-title: Django Barranquilla
+title: Python Barranquilla
 ---
 body:
 
@@ -11,7 +11,7 @@ text:
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<h3>Comparte conocimientos en comunidad</h3>
-					<h1>Django Barranquilla.</h1>
+					<h1>Python Barranquilla.</h1>
 					<h5>Somos una comunidad de desarrolladores web, dev-ops, emprendedores y estudiantes. </h5>
 					<h5>Entusiastas en Python y Django ¡Están invitados!</h5>				
 				</div>
