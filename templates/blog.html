@@ -1,19 +1,23 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
 {% from "macros/pagination.html" import render_pagination %}
-{% block title %}{{ this.title }}{% endblock %}
+{% block title %}Blog{% endblock %}
 
 {% block body %}
 <div id="blue">
     <div class="container">
 		<div class="row">
-			<h3>{{ this.title }}</h3>
+			<h3>Blog</h3>
 		</div>
     </div>
 </div>
-  {% for child in this.pagination.items %}
-    {{ render_blog_post(child, from_index=true) }}
-  {% endfor %}
+<div class="container mtb">
+    <div class="row">
+        {% for child in this.pagination.items %}
+            {{ render_blog_post(child, from_index=true) }}
+        {% endfor %}
 
-  {{ render_pagination(this.pagination) }}
+        {{ render_pagination(this.pagination) }}
+    </div>
+</div>
 {% endblock %}
