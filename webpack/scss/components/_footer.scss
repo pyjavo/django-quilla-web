@@ -1,7 +1,7 @@
 .dq-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #002819;
+  background: $blue-strong;
 
   p {
     color: #bfc9d3;
@@ -17,7 +17,7 @@
     padding-right: 25px;
 
     &:hover {
-      color: #01D099
+      color: $blue-light;
     }
   }
 }

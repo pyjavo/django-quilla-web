@@ -27,7 +27,7 @@
 }
 
 .navbar-default {
-  background-color: #002819;
+  background-color: $blue-strong;
   border-color: transparent;
 
   .navbar-nav {
@@ -38,13 +38,13 @@
     }
 
     > li > a:hover {
-      color: #01D099;
+      color: $blue-light;
     }
 
     > .active > a,
     > .active > a:hover,
     > .active > a:focus {
-      color: #01D099;
+      color: $blue-light;
       background-color: transparent;
     }
   }

@@ -82,7 +82,7 @@
 }
 
 #service i {
-	color: #01D099;
+	color: $blue-light;
 	font-size: 60px;
 	padding: 15px;
 }
@@ -187,7 +187,7 @@
 /* General Tweaks */
 
 #blue {
-	background: #01D099;
+	background: $blue-light;
 	margin-bottom: 60px;
 	padding-bottom: 25px;
 }
@@ -198,7 +198,7 @@
 }
 
 .ctitle {
-	color: #01D099;
+	color: $blue-light;
 	font-weight: 700;
 	margin-bottom: 15px;
 }
