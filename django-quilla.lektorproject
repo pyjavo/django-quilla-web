@@ -2,3 +2,5 @@
 name = django-quilla
 [packages]
 lektor-webpack-support = 0.1
+[servers.ghpages]
+target = ghpages://PyBAQ/django-quilla-web.github.io?cname=pybaq.co
