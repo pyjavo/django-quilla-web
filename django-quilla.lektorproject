@@ -1,6 +1,12 @@
 [project]
 name = django-quilla
+
 [packages]
 lektor-webpack-support = 0.1
+
 [servers.ghpages]
+target = ghpages+https://PyBAQ/django-quilla-web?cname=pybaq.co
+default = yes
+
+[servers.ghpages-https]
 target = ghpages+https://PyBAQ/django-quilla-web?cname=pybaq.co
