@@ -8,10 +8,10 @@ body:
 <div class="container mtb">
 <div class="row">
 <div class="col-lg-8">
-<h4>Just Get In Touch!</h4>
+<h4>Contáctanos!</h4>
 <div class="hline"></div>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-<form role="form">
+<p>¿Quieres realizar un evento o una charla? Déjanos un correo, un mensaje por slack o por una de nuestras redes sociales.</p>
+<!-- <form role="form">
 <div class="form-group">
 <label for="InputName1">Your Name</label>
 <input type="email" class="form-control" id="exampleInputEmail1">
@@ -29,22 +29,22 @@ body:
 <textarea class="form-control" id="message1" rows="3"></textarea>
 </div>
 <button type="submit" class="btn btn-theme">Submit</button>
-</form>
+</form> -->
 </div>
 
 <div class="col-lg-4">
-<h4>Our Address</h4>
+<h4>Nuestros Datos</h4>
 <div class="hline"></div>
-<p>
+<!-- <p>
 Some Ave, 987,<br/>
 23890, New York,<br/>
 United States.<br/>
-</p>
+</p> -->
 <p>
-Email: hello@solidtheme.com<br/>
-Tel: +34 8493-4893
+Email: djangoquilla@gmail.com<br/>
+Cel: +57 300-8766043
 </p>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+<p>Para nosotros sería un placer conocerte.</p>
 </div>
 </div>
 </div>
