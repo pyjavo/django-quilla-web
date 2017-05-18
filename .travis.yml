@@ -8,7 +8,7 @@ cache:
     - $HOME/.cache/pip
     - $HOME/.cache/lektor/builds
 install: "pip install Lektor"
-script: "lektor build"
+script: "lektor build -f webpack"
 deploy:
   provider: script
   script: "lektor deploy ghpages-https"
