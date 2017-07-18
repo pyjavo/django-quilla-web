@@ -6,33 +6,69 @@ author: Javier Daza
 ---
 body: Hola a todos! Soy Javier Daza, organizador de Python Barranquilla y me gustaría contarles como fue mi experiencia como co-organizador del primer evento Django Girls en la ciudad de Barranquilla, Colombia. 
 
-Todo comenzó en el 2016, un año en que muchas personas y entidades empezaron a unir sus esfuerzos para llevar a cabo la primer conferencia de Python en Colombia (PyCon Colombia). Para mi fue un año bastante desafiante y de contradicciones porque, si bien quería participar y apoyar en la primera PyCOn en Colombia, me encontraba a puertas de un viaje que cambiaría la forma como veo al mundo. Fue así que decidí dar un paso atrás en la organización de PyCon y recomendar a un amigo que tomará mi puesto.
+Todo comenzó en el 2016, un año en que muchas personas y entidades empezaron a unir sus esfuerzos para llevar a cabo la <a href="http://www.pycon.co/">primer conferencia de Python en Colombia (PyCon Colombia) </a>. Para mi fue un año bastante desafiante y de contradicciones porque, si bien quería participar y apoyar en la primera PyCOn en Colombia, me encontraba a puertas de un viaje que cambiaría la forma como veo al mundo. Fue así que decidí dar un paso atrás en la organización de PyCon Colombia y recomendar a un amigo para que tomará mi puesto.
 
-Luego de varios meses, regrese a Colombia y me entero que, a pesar de varios contratiempos, el evento fue todo un éxito, y que además de ello conocieron unas personas que estarían apoyando e la organización de eventos para chicas en todo el país. Fue así como me enteré que @ellaquimica, junto a Jhon Jairo Roa y Gonzalo Peña-Castellanos son la directiva de de Django Girls Colombia.
+Luego de varios meses, regresé a Colombia y me entero que, a pesar de varios contratiempos, el evento fue todo un éxito, y que además de ello, conocieron unas personas que estarían apoyando la organización de eventos para chicas en todo el país. Fue así como me enteré que @ellaquimica, junto a Jhon Jairo Roa y Gonzalo Peña-Castellanos eran la directiva de <a href="https://www.facebook.com/djangogirlscolombia">Django Girls Colombia.</a>
 
 Para mi no era la primera vez que me topaba con este nombre. Hace un par de meses atrás había dictado un taller en una reconocida universidad de la ciudad, donde me había valido del tutorial para explicarles a los futuros ingenieros de sistemas, como empezar a programar en Python y Django.
 
-Luego de contactar a @ellaquimica alias Johanna Sanchez, acordamos una reunión con ella y el organizador de la PyCon Colombia. En la reunión, fue como conocimos a Manuel Kauffman, declarado por la PSF como embajador de Python en Latinoamérica gracias al trabajo realizado con el proyecto Argentina en Python. Hasta ese momento me pareció una idea muy loca, atrevida y divertida el pasear por toda Latinoamérica enseñando Python (Yo también quiero hacerlo!!! pensé jejeje). Luego de la reunión, escuchar de la experiencia y habiendo fijando nuestras expectativas y metas, Cesar Herdenez, Johanna Sanchez, Manuel Kauffman y este servidor, empezamos a organizar lo que sería el primer Django Girls Barranquilla.
+Luego de contactar a @ellaquimica alias Johanna Sanchez, acordamos una reunión con ella y el organizador de PyCon Colombia 2017. En la reunión, fue como conocimos a Manuel Kauffman, declarado por la PSF como embajador de Python en Latinoamérica gracias al trabajo realizado con el proyecto <a href="https://argentinaenpython.com/">Argentina en Python</a>. Hasta ese momento me pareció una idea muy loca, atrevida y divertida el pasear por toda Latinoamérica enseñando Python (Yo también quiero hacerlo!!! pensé jejeje). Luego de la reunión, escuchar de su experiencia organizando eventos y habiendo fijando nuestras expectativas y metas, Cesar Herdenez, Johanna Sanchez, Manuel Kauffman y este servidor, empezamos a organizar lo que sería el primer Django Girls Barranquilla.
 
-Una de las primeros obstáculos que nos encontramos fue el lugar. Un lugar que cumpliera con todos los requisitos de la organización fue todo un desafío de encontrar.
-Mesas para ubicar las laptops
-Que no fueran sillas con brazos, porque no promovía un ambiente de discusión
-No fuera un salón de clases
-No fuera un aula magistral
-Se pudiera decorar el lugar con globos, avisos y pancartas de los patrocinadores
-Que fuera GRATIS
+<br />
+<img src="/img/posts/2017/equipo-organizador-django-girls-barranquilla-2017.jpg" alt="equipo organizador Django Girls 2017" height="auto" width="90%">
+<p style="font-size: 10px;">Foto via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/IMG_2419.JPG">Argentina en Python</a></p>
+<br />
 
-Siendo un evento sin ánimo de lucro ni un capital lo suficientemente grande, la palabra GRATIS tomaba una importancia única. Además, dados los demás requisitos, nos tomó aproximadamente 1 mes en encontrar el lugar. Si alguna vez han pensado que los hombres no paren, se equivocan! Confirmar el espacio era fundamental puesto que sin él, no podíamos empezar a contactar patrocinadores ni mucho menos hacer la publicidad del evento. En este momento, fue gracias a las personas de LYD House que pudimos empezar a movernos en la siguiente fase de nuestro plan por conquistar Barranquilla….Mientras todo esto ocurría, también corrimos buscando un diseñador que nos ayudara con las piezas publicitarias, un poster y el branding inicial del evento GRATIS. Giselle Muñoz, donde quiera que estés, muchas gracias por tu ayuda.
+<br />
+<img src="https://argentinaenpython.com/galeria/django-girls-barranquilla/IMG_2419.JPG" alt="reunión de guías" height="auto" width="90%">
+<p style="font-size: 10px;">Foto via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/IMG_2419.JPG">Argentina en Python</a></p>
+<br />
 
-En la segunda fase, el obstáculo más grande fue encontrar empresas interesadas en apoyar Django y que usaran Python como lenguaje de programación. Esta tarea fue aún más grande, pues como saben, en la Costa son pocas las empresas que desarrollan bajo este lenguaje, la mayoría se encuentran en Bogotá o Medellín. Empezamos a contactar con diferentes empresas, a enviar correos, hablar con amigos y luego de prácticamente 4 semanas antes del evento fue que logramos confirmar a todos nuestros patrocinadores. Una empresa en Bogotá, que nos apoyó desde el principio de la gestión, 1 empresa de Chile, Github y 2 empresas de Barranquilla.
+Uno de las primeros desafíos que nos encontramos fue encontrar el lugar, ya que debía cumplir con todos los requisitos de la organización. Tales requisitos eran:
 
-Durante nuestra búsqueda de patrocinadores, a los chicos de Argentina en Python, se les ocurrió la brillante idea de usar una URL para facilitar la promoción del evento en redes sociales y medios. Decidimos usar tallerdeprogramacion.co, un dominio que redirecciona a la página de Argentina en Python, donde por comodidad, llevamos el registro de participantes e información del evento. En paralelo con la página oficial de Django Girls.
+<ul style="margin-left: 1.5em;">
+ <li>Mesas para ubicar las laptops</li>
+ <li>Que no fueran sillas con brazos, porque no promovía un ambiente de discusión</li>
+ <li>No fuera un salón de clases</li>
+ <li>No fuera un aula magistral</li>
+ <li>Se pudiera decorar el lugar con globos, avisos y pancartas de los patrocinadores</li>
+ <li>Que fuera GRATIS</li>
+</ul>
 
-Estando a 2 semanas del evento, uno de los patrocinadores que supuestamente era categoría oro, consignó el dinero como si fuera de categoría bronce, debido a otros compromisos de la empresa. Ello significaba para nosotros un hueco de casi 300,000 pesos en el presupuesto. Un dinero que contábamos y que ahora no teníamos. Debido a ello tuvimos una reunión de emergencia y analizamos los posibles casos para recortar gastos, lo cual significaba: dejar a las chicas sin almuerzos o dejar a los mentores sin sus camisetas. Habiendo tomado una decisión, sucedió lo impensable. Varios miembros de Python Barranquilla se metieron la mano al bolsillo y cada uno nos empezó a dar donaciones de 50,000 a 100,000 pesos. Gracias a estas “pequeñas” donaciones, logramos cubrir la totalidad del evento. Sentí una gran satisfacción al ver que la comunidad estuvo ahí para apoyarme, así como yo he estado para ellos en algunas ocasiones.
+Siendo un evento sin ánimo de lucro, ni contando con un capital lo suficientemente grande, la palabra GRATIS tomaba una importancia única. Además, dados los demás requisitos, nos tomó aproximadamente 1 mes en encontrar el lugar. Si alguna vez han pensado que los hombres no paren, se equivocan! Confirmar el espacio era fundamental puesto que sin él, no podíamos empezar a contactar patrocinadores ni mucho menos hacer la publicidad del evento. En este momento, fue gracias a las personas de <a href="http://lydhouse.com/">LYD House</a> que pudimos empezar a movernos en la siguiente fase de nuestro plan por conquistar Barranquilla….Mientras todo esto ocurría, también corrimos buscando un diseñador que nos ayudara con las piezas publicitarias, un poster y el branding inicial del evento GRATIS. <a href="http://bit.ly/2rNZXNd">Giselle Muñoz</a>, donde quiera que estés, muchas gracias por tu ayuda.
 
-Cómo último desafío, sin ser el menos importante, lo podría resumir en una serie de tareas que si bien son pequeñas cada una, toman un gran esfuerzo y dedicación en ejecutar. Entre ellas están: tratar de coordinar a 75 personas en un solo lugar, darles comida y refrigerios GRATIS, brindar a las chicas un evento de calidad, con buena atención, entrenar a los mentores, coordinar el menú de la comida, conseguir las camisetas de los guías, entre otras. 
+<br />
+<img src="https://argentinaenpython.com/galeria/django-girls-barranquilla/IMG_2431.JPG" alt="reunión de guías" height="auto" width="90%">
+<p style="font-size: 10px;">Foto via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/IMG_2419.JPG">Argentina en Python</a></p>
+<br />
+
+En la segunda fase, el reto más grande fue encontrar empresas interesadas en apoyar Django y que usaran o se vieran interesadas en Python como lenguaje de programación. Esta tarea fue aún más grande, pues como saben, en la Costa Caribe son pocas las empresas que desarrollan bajo este lenguaje y la mayoría se encuentran en Bogotá o Medellín. Empezamos a contactar con diferentes empresas, a enviar correos, hablar con amigos y luego de prácticamente 4 semanas antes del evento fue que logramos confirmar a todos nuestros patrocinadores, entre ellos, una empresa en Bogotá, que nos apoyó desde el principio de la gestión, 1 empresa de Chile, Github y 2 empresas de Barranquilla.
+
+<br />
+<img src="https://argentinaenpython.com/galeria/django-girls-barranquilla/IMG_2424.JPG" alt="reunión de guías" height="auto" width="90%">
+<p style="font-size: 10px;">Foto via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/IMG_2419.JPG">Argentina en Python</a></p>
+<br />
+
+Durante nuestra búsqueda de patrocinadores, a los chicos de Argentina en Python, se les ocurrió la brillante idea de usar una URL para facilitar la promoción del evento en redes sociales y medios. Decidimos usar tallerdeprogramacion.co, un dominio que redirecciona a la página de Argentina en Python, donde por comodidad, llevaríamos el registro de participantes e información del evento. En paralelo con la página oficial de Django Girls.
+
+Estando a 2 semanas del evento, uno de los patrocinadores que supuestamente era categoría oro, consignó el dinero como si fuera de categoría bronce, debido a otros compromisos de la empresa. Ello significaba para nosotros un hueco de casi 300,000 pesos en el presupuesto. Un dinero que contábamos y que ahora no teníamos. Debido a ello tuvimos una reunión de emergencia y analizamos los posibles casos para recortar gastos, lo cual significaba: dejar a las chicas sin almuerzos o dejar a los mentores sin sus camisetas. Habiendo tomado una decisión, sucedió lo impensable. Varios miembros de Python Barranquilla se metieron la mano al bolsillo y cada uno nos empezó a dar donaciones de 50,000 a 100,000 pesos. Gracias a estas “pequeñas” donaciones, logramos cubrir la totalidad del evento. Sentí una gran satisfacción al ver que la comunidad estuvo ahí para apoyarme, así como yo he estado para ellos en varias ocasiones.
+
+<br />
+<img src="https://argentinaenpython.com/galeria/django-girls-barranquilla/IMG_2474.JPG" alt="reunión de guías" height="auto" width="90%">
+<p style="font-size: 10px;">Foto via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/IMG_2419.JPG">Argentina en Python</a></p>
+<br />
+
+Cómo último desafío, sin ser el menos importante, lo podría resumir en una serie de tareas que si bien son pequeñas cada una, toman esfuerzo, tiempo y dedicación en ejecutar. Entre ellas están: tratar de coordinar a 75 personas en un solo lugar, darles comida y refrigerios GRATIS, brindar a las chicas un evento de calidad, con buena atención, entrenar a los mentores, coordinar el menú de la comida, conseguir las camisetas de los guías, entre otras. 
 
 Lo dimos todo por un evento de calidad, y eso fue lo que creo que logramos. Me siento muy a gusto de haber hecho nuevas amistades, inclusive de haber aprendido nuevas cosas de programación en el evento y la satisfacción de que aportamos un grano de arena a nuestra comunidad como embajadores de Django Girls Colombia en Barranquilla y el Caribe.
 
+<br />
+<img src="https://argentinaenpython.com/galeria/django-girls-barranquilla/IMG_2866.JPG" alt="reunión de guías" height="auto" width="90%">
+<p style="font-size: 10px;">Foto via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/IMG_2419.JPG">Argentina en Python</a></p>
+<br />
 
 Esto no termina aquí, esperamos volver a realizar un evento y necesitamos de tu ayuda. Contactanos a <a href="mailto:djangogirlscolombia@gmail.com" target="_top">djangogirlscolombia@gmail.com</a> y hagamos grandes eventos en la ciudad <3 
+
+<br />
+
+<i>Si quieres ver más fotos del evento, visita la <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/">galería de fotos en Argentina en Python.</a></i>
