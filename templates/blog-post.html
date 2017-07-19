@@ -18,7 +18,7 @@
           <h3 class="ctitle">{{ this.title }}</h3>
           <csmall>Escrito: {{ this.pub_date }}.</csmall> | <csmall2>
           por: {% if this.twitter_handle %}
-            <a href="https://twitter.com/{{ post.twitter_handle}}">
+            <a href="https://twitter.com/{{ this.twitter_handle}}" target="_blank">
               {{ this.author or this.twitter_handle }}
             </a>
           {% else %}
