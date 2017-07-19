@@ -13,3 +13,11 @@ Para la ejecución del proyecto se debe ejecutar el comando
 ```bash
 lektor server -f webpack
 ```
+
+## Producción
+
+Construye el proyecto en los artefactos finales
+
+```bash
+lektor build -f webpack
+```
