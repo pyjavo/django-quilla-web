@@ -14,8 +14,14 @@
 <div class="container mtb">
     <div class="row">
         <div class="col-lg-8">
-        {% for child in this.pagination.items %}
-            {{ render_blog_post(child, from_index=true) }}
+        {% for post in this.pagination.items %}
+            <!-- <p><img class="img-responsive" src="assets/img/post01.jpg"></p> -->
+            <a href="{{ post|url }}"><h3 class="ctitle">{{ post.title }}</h3></a>
+            <p><csmall>Posted: {{ post.pub_date }}.</csmall> | <csmall2>By: {{ post.author }}</csmall2></p>
+            {{ post.excerpt }}
+            <p><a href="{{ post|url }}">[Read More]</a></p>
+            <div class="hline"></div>
+            <div class="spacing"></div>
         {% endfor %}
 
         {{ render_pagination(this.pagination) }}
