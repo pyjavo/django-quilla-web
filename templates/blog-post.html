@@ -3,35 +3,34 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 <div id="blue">
-	    <div class="container">
-			<div class="row">
-				
+    <div class="container">
+      <div class="row">
         <h3>Artículo</h3>
-			</div><!-- /row -->
-	    </div> <!-- /container -->
-	</div><!-- /blue -->
-  <div class="container mtb">
-	 	<div class="row">
-      <div class="col-lg-8">
-        <div class="post-meta">
-          {% for image in this.attachments %}
-              <p><img class="img-responsive" src="{{ image|url }}"></p>
-            {% endfor %}
-          <h3 class="ctitle">{{ this.title }}</h3>
-          <csmall>Escrito: {{ this.pub_date }}.</csmall> | <csmall2>
-          por: {% if this.twitter_handle %}
-            <a href="https://twitter.com/{{ this.twitter_handle}}" target="_blank">
-              {{ this.author or this.twitter_handle }}
-            </a>
-          {% else %}
-            {{ this.author }}
-          {% endif %}</csmall2>
-        </div>
-        <div>
-            {{ this.body }}
-            <div class="comments">{{ render_disqus_comments() }}</div>
-        </div>
       </div>
-    </div><!--/row -->
-</div><!--/container -->
+    </div>
+</div>
+<div class="container mtb">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="post-meta">
+        {% for image in this.attachments %}
+            <p><img class="img-responsive" src="{{ image|url }}"></p>
+          {% endfor %}
+        <h3 class="ctitle">{{ this.title }}</h3>
+        <csmall>Escrito: {{ this.pub_date }}.</csmall> | <csmall2>
+        por: {% if this.twitter_handle %}
+          <a href="https://twitter.com/{{ this.twitter_handle}}" target="_blank">
+            {{ this.author or this.twitter_handle }}
+          </a>
+        {% else %}
+          {{ this.author }}
+        {% endif %}</csmall2>
+      </div>
+      <div>
+          {{ this.body }}
+          <div class="comments">{{ render_disqus_comments() }}</div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
