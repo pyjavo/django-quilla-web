@@ -15,7 +15,9 @@
     <div class="row">
         <div class="col-lg-8">
         {% for post in this.pagination.items %}
-            <!-- <p><img class="img-responsive" src="assets/img/post01.jpg"></p> -->
+            {% for image in post.attachments.images %}
+              <p><img class="img-responsive" src="{{ image|url }}"></p>
+            {% endfor %}
             <a href="{{ post|url }}"><h3 class="ctitle">{{ post.title }}</h3></a>
             <p><csmall>Posted: {{ post.pub_date }}.</csmall> | <csmall2>By: {{ post.author }}</csmall2></p>
             {{ post.excerpt }}
