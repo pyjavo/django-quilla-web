@@ -16,7 +16,7 @@ text:
 					<h5>Entusiastas en Python y Django ¡Están invitados!</h5>				
 				</div>
 				<div class="col-lg-8 col-lg-offset-2 himg">
-					<a href="https://argentinaenpython.com/django-girls/2017/07/barranquilla/"><img src="/img/Django-Girls-Barranquilla-flyer.jpeg" class="img-responsive"></a>
+					<a href="/blog/como-fue-organizar-primer-django-girls-barranquilla/"><img src="/blog/como-fue-organizar-primer-django-girls-barranquilla/django-girls-barranquilla-julio-2017.jpeg" class="img-responsive" style="height: 45em;"></a>
 				</div>
 			</div>
 	</div>
