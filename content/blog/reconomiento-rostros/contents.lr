@@ -4,7 +4,7 @@ author: Guzmán D. Darío
 ---
 body:
 
-¡Hola Pythonista! Soy Darío Guzmán, co-organizador de Python Barranquilla y en esta ocasión quiero contarte acerca de la charla realizada por el Ing. Edgar Flórez CEO de la empresa [Ebenezer Technologies](http://ebenezertechs.com/), especializada en el desarrollo de productos que optimizan el funcionamiento y control de establecimientos, vías y productos a través de visión por computadora inteligencia artificial e internet de las cosas.
+¡Hola Pythonista! Soy Darío Guzmán, co-organizador de Python Barranquilla y en esta ocasión quiero contarte acerca de la charla realizada por el Ing. Edgar Flórez CEO de la empresa [Ebenezer Technologies](http://ebenezertechs.com/), especializada en el desarrollo de productos que optimizan el funcionamiento y control de establecimientos, vías y productos a través de visión por computadora, inteligencia artificial e internet de las cosas.
 
 En este artículo tendrás la oportunidad de aprender cuales son los conceptos necesarios para detectar y reconocer rostros con una microcomputadora.
 
@@ -101,8 +101,8 @@ Si quieres profundizar un poco más en el tema, te dejo las fuentes en las que e
 2. [Reconocimiento de rostros con opencv.](http://docs.opencv.org/2.4/modules/contrib/doc/facerec/facerec_tutorial.html#introduction)
 3. [Eigenfaces y eigenvectors.](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Eigenfaces)
 ---
-pub_date: 2017-08-22
+pub_date: 2017-08-29
 ---
-excerpt: ¡Hola Pythonista! Soy Darío Guzmán, co-organizador de Python Barranquilla y en esta ocasión quiero contarte acerca de la charla realizada por el Ing. Edgar Flórez CEO de la empresa [Ebenezer Technologies](http://ebenezertechs.com/), especializada en el desarrollo de productos que optimizan el funcionamiento y control de establecimientos, vías y productos a través de visión por computadora inteligencia artificial e internet de las cosas.
+excerpt: ¡Hola Pythonista! Soy Darío Guzmán, co-organizador de Python Barranquilla y en esta ocasión quiero contarte acerca de la charla realizada por el Ing. Edgar Flórez CEO de la empresa [Ebenezer Technologies](http://ebenezertechs.com/), especializada en el desarrollo de productos que optimizan el funcionamiento y control de establecimientos, vías y productos a través de visión por computadora, inteligencia artificial e internet de las cosas.
 ---
 twitter_handle: GudarJs
