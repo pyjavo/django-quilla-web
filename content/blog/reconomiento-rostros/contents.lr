@@ -106,3 +106,5 @@ pub_date: 2017-08-29
 excerpt: ¡Hola Pythonista! Soy Darío Guzmán, co-organizador de Python Barranquilla y en esta ocasión quiero contarte acerca de la charla realizada por el Ing. Edgar Flórez CEO de la empresa [Ebenezer Technologies](http://ebenezertechs.com/), especializada en el desarrollo de productos que optimizan el funcionamiento y control de establecimientos, vías y productos a través de visión por computadora, inteligencia artificial e internet de las cosas.
 ---
 twitter_handle: GudarJs
+---
+_slug: reconocimiento-de-rostros-en-una-microcomputadora
