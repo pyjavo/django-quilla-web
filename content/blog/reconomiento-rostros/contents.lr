@@ -81,7 +81,7 @@ Los conceptos anteriores son importantes, debido a que el cálculo para comparar
 Esto que te acabo de mencionar quiere decir 2 cosas, la primera es que cada rostro será convertido en un eigenface y la segunda es que no vamos a comparar los rostros en sí mismos, sino sus eigenfaces.
 
 ### Comparando rostros
-Para saber de quien es rostro que detectaste debes restar la distancia entre su eigenface, con cada uno de los eigenfaces extraídos de los rostros en la base de datos.
+Para saber de quien es el rostro que detectaste, debes restar la distancia entre su eigenface con cada uno de los eigenfaces extraídos de los rostros en la base de datos.
 
 La distancia entre los vectores predice la probabilidad de que dos rostros sean de la misma persona.
 
@@ -92,9 +92,11 @@ Para terminar solo debes tomar la etiqueta que pusiste al rostro en el entrenami
 Espero hayas disfrutado leyendo este artículo, si tienes dudas u opiniones sobre el tema, estaré aquí abajo (en los comentarios) para ayudarte.
 No olvides compartir este artículo con tus amigos interesados en la programación.
 
-> Recuerda que puedes descargar el código de la charla desde el [repositorio en github](https://github.com/efflorez/facerecognition) y asi interactues con el.
+> Recuerda que puedes descargar el código de la charla desde el [repositorio en github](https://github.com/efflorez/facerecognition) y así interactúes con el.
 
-## Referencias
+_Agradedemos especialmente a [Koombea](https://www.koombea.com/) en esta oportunidad por ayudarnos con el espacio para la charla._
+
+#### Referencias
 Si quieres profundizar un poco más en el tema, te dejo las fuentes en las que está basado este artículo.
 
 1. [Detección de rostros con opencv.](http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html)
