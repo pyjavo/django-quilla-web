@@ -3,6 +3,17 @@
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}Blog{% endblock %}
 
+{% block seo %}
+    <meta property="og:title" content="Blog" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Blog de la comunidad python Barranquilla, listado de entradas" />
+    {% for image in this.attachments %}
+    <meta property="og:image" content="{{ image|url(external=True) }}}" />
+    {% endfor %}
+    <meta property="og:url" content="{{ '.'|url(external=True) }}" />
+    <meta property="og:site_name" content="{{ '/'|url(external=True) }}" />
+{% endblock %}
+
 {% block body %}
 <div id="blue">
     <div class="container">
