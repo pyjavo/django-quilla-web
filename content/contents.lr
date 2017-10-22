@@ -16,7 +16,9 @@ text:
 					<h5>Entusiastas en Python y Django ¡Están invitados!</h5>				
 				</div>
 				<div class="col-lg-8 col-lg-offset-2 himg">
-					<a href="/blog/como-fue-organizar-primer-django-girls-barranquilla/"><img src="/blog/como-fue-organizar-primer-django-girls-barranquilla/django-girls-barranquilla-julio-2017.jpeg" class="img-responsive" style="height: 45em;"></a>
+					<a href="https://www.meetup.com/pythonbaq/events/243867203/">
+						<img src="https://secure.meetupstatic.com/photos/event/7/d/9/e/600_465032158.jpeg" class="img-responsive" style="width: 70%;height: auto;">
+					</a>
 				</div>
 			</div>
 	</div>
