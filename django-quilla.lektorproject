@@ -1,5 +1,6 @@
 [project]
 name = django-quilla
+url = http://pybaq.co
 
 [packages]
 lektor-webpack-support = 0.1

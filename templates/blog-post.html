@@ -1,6 +1,21 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
 {% block title %}{{ this.title }}{% endblock %}
+{% block seo %}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@pybaq" />
+  <meta name="twitter:creator" content="@{{ this.twitter_handle or pybaq }}" />
+  <meta name="description" content="{{ this.excerpt|striptags }}.">
+  <meta name="author" content="Python Barranquilla">
+  <meta property="og:title" content="{{ this.title }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="{{ this.excerpt|striptags }}" />
+  {% for image in this.attachments %}
+    <meta property="og:image" content="{{ image|url(external=True) }}}" />
+  {% endfor %}
+  <meta property="og:url" content="{{ '.'|url(external=True) }}" />
+  <meta property="og:site_name" content="{{ '/'|url(external=True) }}" />
+{% endblock %}
 {% block body %}
 <div id="blue">
     <div class="container">
