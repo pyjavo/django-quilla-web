@@ -293,6 +293,24 @@ body:
 	    <td>Aprendamos las bases de Python</td>
 	    <td></td>
 	  </tr>
+	  <tr>
+	    <td>43</td>
+	    <td>August 30, 2017</td>
+	    <td>Programadores! Vamos a comer</td>
+	    <td>[Foto](https://secure.meetupstatic.com/photos/event/e/3/e/f/highres_464158351.jpeg)</td>
+	  </tr>
+	  <tr>
+	    <td>44</td>
+	    <td>September 18, 2017</td>
+	    <td>Beneficios tributarios para freelancers, emprendedores y empresas TIC</td>
+	    <td>[Artículo](https://pybaq.co/blog/beneficios-tributarios-para-el-sector-tic/)</td>
+	  </tr>
+	  <tr>
+	    <td>45</td>
+	    <td>October 19, 2017</td>
+	    <td>Traducción automática usando redes neuronales</td>
+	    <td>[GitHub](https://github.com/waybarrios/meetup_translation)</td>
+	  </tr>
 	</table>
 </div>
 </div>
