@@ -82,17 +82,17 @@ body:
 
 
 <div id="cwrap">
-<div class="container">
-<div class="row centered">
-<h3>NUESTROS PATROCINADORES</h3>
-<div class="col-lg-6 col-md-6 col-sm-6">
-<img src="/img/patrocinadores/piensa.png" class="img-responsive">
-</div>
-<div class="col-lg-6 col-md-6 col-sm-6">
-<img src="/img/patrocinadores/a-que-hora-juega.png" class="img-responsive">
-</div>
-</div>
-</div>
+	<div class="container">
+		<div class="row centered">
+			<h3>NUESTROS PATROCINADORES</h3>
+			<div class="col-lg-6 col-md-6 col-sm-6">
+				<img src="/img/patrocinadores/github-pages.png" class="img-responsive">
+			</div>
+			<!-- <div class="col-lg-6 col-md-6 col-sm-6">
+				<img src="/img/patrocinadores/a-que-hora-juega.png" class="img-responsive">
+			</div> -->
+		</div>
+	</div>
 </div>
 ---
 _template: poster.html
