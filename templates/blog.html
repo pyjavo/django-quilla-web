@@ -29,10 +29,14 @@
 </div>
 <div class="container mtb">
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-8 blog_post-posts">
         {% for post in this.pagination.items %}
             {% for image in post.attachments.images %}
-              <p><img class="img-responsive" src="{{ image|url }}"></p>
+            <a href="{{ post|url }}">
+                <figure>
+                    <img class="img-responsive" src="{{ image|url }}">
+                </figure>
+            </a>
             {% endfor %}
             <a href="{{ post|url }}"><h3 class="ctitle">{{ post.title }}</h3></a>
             <p><csmall>Posted: {{ post.pub_date }}.</csmall> | <csmall2>By: {{ post.author }}</csmall2></p>
