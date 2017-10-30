@@ -5,6 +5,7 @@ url = http://pybaq.co
 [packages]
 lektor-webpack-support = 0.1
 lektor-disqus-comments = 0.2
+lektor-markdown-highlighter = 0.2
 
 [servers.ghpages]
 target = ghpages+https://PyBAQ/django-quilla-web?cname=pybaq.co
