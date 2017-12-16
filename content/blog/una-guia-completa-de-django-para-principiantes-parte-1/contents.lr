@@ -1,0 +1,342 @@
+title: Una guía completa de Django para principiantes- Parte 1
+---
+author: Paula Aragón
+---
+body:
+
+# Una guía completa de Django para principiantes- Parte 1  
+
+![img1](https://user-images.githubusercontent.com/16352805/33792124-4d9f1f68-dc66-11e7-8913-20afb5a2a63e.png)
+
+## Introducción
+
+![img2](https://user-images.githubusercontent.com/16352805/33792139-7da3265a-dc66-11e7-84d6-9c8633eea386.png)
+ 
+Hoy estoy comenzando una nueva serie de tutoriales sobre los fundamentos de Django. Es una guía completa para comenzar a aprender Django. El material esta dividido en 7 partes. Vamos a explorar todos los conceptos básicos con mucho detalle, desde la instalación, preparación de entorno de desarrollo, modelos, vistas, plantillas, URLS y más temas avanzados como migraciones, pruebas y despliegues.
+Quería hacer algo diferente. Un tutorial que fuese fácil de seguir, informativo y divertido de leer. Ahí fue cuando surgió esta idea de crear algunas viñetas a los algo del texto para ilustrar algunos conceptos y escenarios. ¡Espero que disfruten la lectura!
+
+Pero antes de comenzar…
+
+Antes cuando trabajaba como profesor substituto en una universidad, yo solía enseñar una introducción a la disciplina de desarrollo web para los nuevos estudiantes del curso de Ciencias de la computación, y siempre comenzaba una clase nueva con esta frase de Confucio:
+ 
+ ![img3](https://user-images.githubusercontent.com/16352805/33792140-7dbee386-dc66-11e7-967e-2813f9f8201d.png)
+ 
+¡Así que manos a la obra! No solo leas los tutoriales. ¡Vamos a hacerlo juntos! Aprenderás mucho más haciendo y practicando.
+
+## ¿Por qué Django? 
+
+Django es un framework web escrito en Python. Un framework web es un software que soporta el desarrollo dinámico de sitios web, aplicaciones y servicios. Provee una serie de herramientas y funcionalidades que resuelven muchos problemas comunes asociados con el desarrollo web, tales como características de seguridad, acceso a bases de datos, sesiones, procesamiento de plantillas, ruteo de URLS, internacionalización, ubicación y mucho más.
+
+Usar un framework web, tal como Django, te permite desarrollar aplicaciones web seguras y confiables de muy rápido de una forma estandarizada, sin tener que reinventar la rueda.
+
+Entonces, ¿qué es tan especial sobre Django? Para empezar, es un framework web de Python, lo que significa que puedes beneficiarte de una gran variedad de librerías de código abierto. El índice de paquetes de Python contiene alrededor de 116K paquetes (hasta Sept 6 de 2017). Si necesitas resolver un problema específico, hay altas probabilidades de que alguien haya implementado una librería para eso.
+Django es uno de los frameworks web escritos en Python más populares. Es definitivamente el más completo, ofreciendo un amplio rango de características para usar de forma rápida, tales como un servidor web autónomo para desarrollo y pruebas, caché, sistemas middleware, ORM, motor de plantillas, procesamiento de formularios e interfaces con las herramientas de pruebas unitarias de Python. Django también viene con “batería incluida”, ofreciendo aplicaciones construidas tales como sistemas de autenticación, una interfaz administrativa con paginas generadas automáticamente para operaciones CRUD, generación de feeds (RSS/Atom) y mapas de sitio. Existe incluso un framework de información geográfica (GIS) construido con Django.
+
+El desarrollo de Django es soportado por Django Software Foundation, y es patrocinado por compañías cono JetBrains e Instagram. Django ha estado en desarrollo activo por más de 12 años, probando que es un framework web maduro, confiable y seguro.
+
+## ¿Quién usa Django?
+
+Es bueno saber quién está allá afuera usando Django, para que tengas una idea de que puedes hacer con él. Entre los más grandes sitios web que utilizan Django tenemos: Instagram, Disqus, Mozilla, Bitbucket, Last.fm, National Geographic.
+
+Para más ejemplo puedes ver la base de datos Django Sites, donde  se ofrece una lista de más de 5K sitios web realizados con Django.
+
+Por cierto, el años pasado, en la conferencia Django Under The Hood 2016, Carl Meyer, un desarrollador del core de Django, y empleado de Instagram, dio una charla sobre Como Instagram usa Django en escala y como soporta su crecimiento, Es una charla de una hora, pero si estas interesado en aprender más, fue una muy entretenida.
+
+## Instalación
+
+![img4](https://user-images.githubusercontent.com/16352805/33792141-7dd81518-dc66-11e7-9de1-69c877a0559e.png)
+
+Lo primero que debemos hacer es instalar algunos programas en nuestra máquina para empezar a jugar con Django. La configuración básica consiste en instalar Python, Virtualenv y Django.
+ 
+Usar entornos virtuales no es obligatorio, pero es muy recomendado. Si apenas estas comenzando, es mejor comenzar con el pie derecho.
+Cuando se desarrollan sitios web o proyectos con Django, es uy común tener que instalar librerías externas para apoyar el desarrollo. Usando entornos virtuales, cada proyecto que desarrolles tiene su ambiente aislado., así que las dependencias no harán conflictos, y te permite mantener en tu ambiente local proyectos que se ejecutan con distintas versiones de Django.
+Es muy fácil de usar, ¡ya lo veras!
+
+## Instalando Python 3.6.2
+
+Lo primero que queremos hacer es instalar la última distribución de Python, la cual es Python 3.6.2 al momento de escribir este tutorial. Si existe una nueva versión descárgala, los siguientes pasos deberían mantenerse más o menos iguales.
+Vamos a usar Python 3 porque las librerías más importantes han sido migradas a este y porque la siguiente versión de Django 2.x no soportará Python 2.
+
+Ve a [www.python.org], haz clic en la página de descarga de Pyhton 3.6.3, baja hasta que veas los archivos de descarga listados abajo:
+
+![img5](https://user-images.githubusercontent.com/16352805/33792142-7df319d0-dc66-11e7-9851-856e68f1b1bf.png)
+
+Escoge el correcto de acuerdo a tu distribución de Windows. Si no estás seguro de cual escoger, lo más probable es que debas descargar la versión Windows x86-64 executable installer.
+
+Ve a tu carpeta de Descargas, haz clic derecho y selecciona Ejecutar como Adminstrador.
+
+![img6](https://user-images.githubusercontent.com/16352805/33792143-7e1d8af8-dc66-11e7-96d2-715b179d9b4d.png)
+
+Asegúrate de que escoger la opción Agregar Python 3.6 al Path y haz clic en la opción Instalar Ahora.
+ 
+![img7](https://user-images.githubusercontent.com/16352805/33792144-7e89e806-dc66-11e7-9e19-ddf2fcfe0d5f.png)
+ 
+Cuando se termina la instalación, deberías ver la siguiente pantalla:
+
+![img8](https://user-images.githubusercontent.com/16352805/33792145-7eaa68ba-dc66-11e7-8d0f-86b071b46ef7.png)
+ 
+Ahora busca por la Ventana de Comandos y ábrelo:
+
+![img9](https://user-images.githubusercontent.com/16352805/33792146-7ec4ad38-dc66-11e7-810d-d4266a77137e.png)
+
+Para probar si todo está bien, escribe el siguiente comando: python –-version
+Como respuesta deberías ver:  
+
+```python
+Python 3.6.3
+```
+![img10](https://user-images.githubusercontent.com/16352805/33792147-7edf3126-dc66-11e7-9315-2633ce0d95cf.png)
+
+Genial, Python está instalado y ejecutándose. Siguiente paso: ¡Entornos Virtuales!
+
+## Instalando Virtualenv
+
+Para el siguiente paso, vamos a usar pip, una herramienta que administra e instala paquetes de Python, para instalar virtualenv.
+
+En la ventana de comandos, ejecuta el siguiente comando: 
+
+```python
+pip install virtualenv
+```
+![img11](https://user-images.githubusercontent.com/16352805/33792148-7ef8c514-dc66-11e7-9030-1857c2f3eb13.png)
+
+Hasta el momento, la instalación que hemos hecho es en todo el sistema. Desde ahora, todo lo que instalemos, incluyendo Django, será instalado en un entorno virtual.
+
+Piénsalo de esta forma: Para cada proyecto Django que inicies, primero crearas un entorno virtual, que es como tener una caja de arena para cada proyecto con la que puedes jugar, instalar y desinstalar paquetes sin dañar nada.
+
+A mí me gusta crear una carpeta llamada Desarrollo en mi computador personal. Luego, la uso para organizar todos mis proyectos y sitios web, pero puedes seguir los siguientes pasos y crear los directorios como te parezca mejor.
+
+Usualmente, empiezo creando una nueva carpeta con el nombre del proyecto dentro de mi carpeta Desarrollo. Siendo este nuestro primer proyecto, no necesitamos un nombre muy elaborado. Por ahora, llamémoslo myproject
+
+```python
+mkdir myproject
+cd myproject
+```
+![img12](https://user-images.githubusercontent.com/16352805/33792149-7f122bee-dc66-11e7-8d87-040a5b488fe9.png)
+
+La carpeta es el directorio de nivel más alto que almacena todos los archivos relacionados con nuestro proyecto Django, incluyendo el entorno virtual.
+
+Así que comencemos por crear nuestro primer entorno virtual e instalar Django
+Dentro de la carpeta myproject: 
+
+```python
+virtualenv venv
+```
+
+![img13](https://user-images.githubusercontent.com/16352805/33792150-7f2e8320-dc66-11e7-9792-401e85b99ea6.png)
+ 
+Nuestro ambiente virtual fue creado, ahora antes de empezar a usarlo debemos activar: venv\Scripts\activate
+Sabrás que funcionó si puedes ver *(venv)* al inicio de la línea de comandos, así:
+
+![img14](https://user-images.githubusercontent.com/16352805/33792151-7f4955d8-dc66-11e7-8e22-2251930df11e.png)
+
+Comencemos a entender que pasó: Creamos una carpeta especial llamada venv, esta contiene una copia de Python. Luego activamos el entorno venv y ejecutamos el comando Python, este usará   
+
+Otra cosa muy importante es que el programa pip ya está instalado también, y cuando lo usemos para instalar un paquete de Python, como Django, este será instalado dentro del entorno 
+
+Por cierto, para desactivar la ejecución de venv, ejecuta el siguiente comando:  
+
+```python
+venv\Scripts\deactivate.bat
+```
+
+Pero mantengámoslo activo para los siguientes pasos.
+
+## Instalando Django 1.11.4
+
+Ahora que tenemos venv activado, ejecuta el siguiente comando para instalar Django: 
+
+```python
+pip install django
+ ```
+
+![img15](https://user-images.githubusercontent.com/16352805/33792152-7f65535a-dc66-11e7-8494-5df88ea8fc83.png)
+ 
+**_¡Estamos listos!**_
+
+![img16](https://user-images.githubusercontent.com/16352805/33792153-7f80353a-dc66-11e7-8437-b86c33147487.png)
+ 
+## Comenzando un nuevo proyecto
+
+Para comenzar un nuevo proyecto Django, ejecuta el siguiente comando: django-admin startproject myproject
+
+La utilidad de la línea de comandos django-admin se instala automáticamente con Django.
+
+Después de que ejecutamos el anterior comando, se genera la siguiente estructura de carpetas base para un proyecto Django.
+Ahora mismo, nuestro directorio myproject se ve así:
+
+```python
+myproject/                  <-- carpeta de más alto nivel
+ |-- myproject/             <-- carpeta del Proyecto django
+ |    |-- myproject/
+ |    |    |-- __init__.py
+ |    |    |-- settings.py
+ |    |    |-- urls.py
+ |    |    |-- wsgi.py
+ |    +-- manage.py
+ +-- venv/                  <-- carpeta del entorno virtual
+```
+
+Nuestra estructura inicial del proyecto está compuesta por 5 archivos:
+
+* **manage.py:** Un atajo para usar la utilidad de línea de comando django-admin. Es usado para ejecutar comandos de administración relacionados con nuestro proyecto. Lo usaremos para ejecutar el desarrollo en servidos, pruebas, migraciones y muchos más.
+* **_init_.py**: Este archivo vacío le dice a Python que esta carpeta es un paquete.
+* **settings.py:** Este archivo contiene la configuración de todo el proyecto. ¡Lo estaremos usando todo el tiempo!
+* **urls.py:** Este archivo es el responsable de mapear las rutas y caminos (paths) en nuestro proyecto. Por ejemplo, si quieres mostrar algo en la URL /about/, tienes que mapearlo aquí primero.
+* **wsgi.py:** Este archivo es simplemente una interfaz de puerta de enlace usada para despliegues. No debes preocuparte por él, déjalo así por ahora.
+
+Django viene con un servidor web simple instalado, lo que es muy conveniente durante el desarrollo porque no debemos instalar nada más para ejecutar el proyecto localmente. Podemos probarlo ejecutando el comando: python manage.py runserver
+ 
+Por ahora, puedes ignorar los errores de migración, llegaremos a eso luego.
+
+Ahora ve a la siguiente URL en un navegador Web: http://127.0.0.1:8000 y deberías ver la siguiente página: 
+ 
+![img16](https://user-images.githubusercontent.com/16352805/33792153-7f80353a-dc66-11e7-8437-b86c33147487.png)
+ 
+Presiona **CTRL + C** para detener el servidor de desarrollo.
+
+## Django Apps
+
+En la filosofía Django tenemos dos conceptos importantes:
+
+* **Aplicación:** es una aplicación web que hace algo. Una aplicación está compuesta usualmente por una serie de modelos (tablas de base de datos), vistas, plantillas y pruebas. 
+* **Proyecto:** es una colección de configuraciones y aplicaciones. Un proyecto puede estar compuesto por una o múltiples aplicaciones.
+Es importante resaltar que no puedes ejecutar una aplicación Django sin un proyecto. Sitios web simples como un blog pueden ser escritos en su totalidad dentro de una sola aplicación, que podría llamarse blog o weblog por ejemplo.
+
+![img17](https://user-images.githubusercontent.com/16352805/33792154-7f9d9774-dc66-11e7-86aa-917f67741d95.png)
+
+Es una forma de organizar el código fuente, ya que al principio no es muy sencillo identificar que es una aplicación y que no lo es. 
+
+¡Pero no te preocupes por eso ahora! Primero pongámonos cómodos con las API de Django y sus fundamentos.
+
+¡Listo! Entonces, para ilustrar vamos a crear un foro web simple o un tablero de discusión. Para crear nuestra primera aplicación, vamos al directorio donde está el archivo manage.py y ejecuta el siguiente comando: django-admin startapp boards
+Nota que esta vez usamos startapp.	
+
+Esto nos da la siguiente estructura de directorios:
+
+```python
+myproject/
+ |-- myproject/
+ |    |-- boards/              <-- nuestra nueva aplicación Django!
+ |    |    |-- migrations/
+ |    |    |    +-- __init__.py
+ |    |    |-- __init__.py
+ |    |    |-- admin.py
+ |    |    |-- apps.py
+ |    |    |-- models.py
+ |    |    |-- tests.py
+ |    |    +-- views.py
+ |    |-- myproject/
+ |    |    |-- __init__.py
+ |    |    |-- settings.py
+ |    |    |-- urls.py
+ |    |    |-- wsgi.py
+ |    +-- manage.py
+ +-- venv/
+```
+
+Exploremos que hace cada archivo:
+
+* **migrations:** aquí Django almacena algunos archivos para mantener el registro de los cambos que creas en el archivo models.py, para manteniéndolos sincronizados.
+* **admin.py:** este es un archivo de configuración para una aplicación compilada de Django llamada Django Admin. 
+* **apps.py:** este es un archivo de configuración de la aplicación en cuestión.
+* **models.py:** aquí es donde definimos las entidades de nuestra aplicación web. Los modelos son traducidos automáticamente por Django a tablas de base de datos.
+* **tests.py:** este archivo es utilizado para escribir pruebas unitarias para la aplicación.
+* **views.py:** este es un archivo donde manejamos el ciclo de solicitudes/respuestas de nuestra aplicación web.
+Ahora que hemos creado nuestra primera aplicación, vamos a configurarla para usarla.
+
+Para hacer eso, abre settings.py e intenta encontrar la variable INSTALLED_APPS
+
+**Settings.py**
+
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+```
+
+Como puedes ver, Django ya viene con 6 aplicaciones integradas. Ellas tienen común que ofrecen funcionalidades que la mayoría de las aplicaciones Web necesitan, como autenticación, sesiones, manejo de archivos estáticos (imágenes, javascripts, css, etc.) entre otras.
+Exploraremos estas aplicaciones a medida que progresemos en esta serie de tutoriales. Pero por ahora, dejémoslas y simplemente agreguemos boards a la lista:
+
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+    'boards',
+]
+```
+
+Usando la analogía de los cuadros y círculos de la viñeta anterior, el circulo amarillo seria nuestra aplicación boards, y django.contrib.admin, django.contrib.auth, etc serían los círculos rojos.
+
+## Hola Mundo
+
+Vamos a escribir nuestra primera vista, las exploraremos en detalle en el próximo tutorial, pero por ahora experimentemos como es crear una nueva página con Django.
+
+Abre el archivo views.py dentro de la aplicación boards, y añade el siguiente código:
+
+**Views.py**
+
+```python
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse('Hello, World!')
+```
+
+Las vistas son funciones Python que reciben un objeto HttpRequest y retornan un objeto HttpResponse, siendo el flujo que debes tener en mente siempre es recibir una solicitud como parámetro y retornar una respuesta como resultado.
+
+Aquí definimos una vista simple llamada home, la que simplemente retorna un mensaje diciendo Hello, World!
+
+Ahora tenemos que decirle a Django cuando servir esta vista, esto se hace dentro del archivo urls.py:
+
+**Urls.py**
+
+```python
+from django.conf.urls import url
+from django.contrib import admin
+
+from boards import views
+
+urlpatterns = [
+    url(r'^$', views.home, name='home'),
+    url(r'^admin/', admin.site.urls),
+]
+```
+
+Si comparas el código de arriba con tu archivo urls.py, notarás que añadí la siguiente línea: url(r'^$', views.home, name='home') e importé el módulos de vistas desde nuestra aplicación boards usando: from boards import views
+
+Como mencionaba, exploraremos esos conceptos en gran detalle más adelante,
+
+Pero por ahora, Django funiciona con expresiones regulares (regex) para identificar la URL solicitada. Para nuestra vista home, estoy usando el regex ^$ , el cual identificará una ruta vacía que es nuestra página principal (esta url: http://127.0.0.1:8000). Si quisiera identificar la URL [http://127.0.0.1:8000/homepage/], mi url seria: url(r'^homepage/$', views.home, name='home')
+
+Veamos que pasa: 
+
+```python
+python manage.py runserver
+ ```
+ 
+![img18](https://user-images.githubusercontent.com/16352805/33792155-7fbba1ec-dc66-11e7-9165-5ed8d1db9127.png)
+  
+¡Eso es! Has creado tu primera vista.
+
+## Conclusiones
+
+Esa fue la primera parte de esta serie de tutoriales, En este aprendimos como instalar la última versión de Python y como configurar el ambiente de desarrollo. También tuvimos una introducción a entornos virtuales y empezamos nuestro primer proyecto Django y ya creamos nuestra aplicación inicial.
+
+El código se encuentra en el siguiente repositorio: https://github.com/sibtc/django-beginners-guide/tree/v0.1-lw
+
+Traducido de https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html
+---
+excerpt: Traducción del articulo https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html
+---
+pub_date: 2017-12-15
