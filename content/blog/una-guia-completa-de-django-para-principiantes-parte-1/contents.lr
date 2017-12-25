@@ -2,15 +2,11 @@ title: Una guía completa de Django para principiantes- Parte 1
 ---
 author: Paula Aragón
 ---
-body:
-
-# Una guía completa de Django para principiantes- Parte 1  
-
-![img1](https://user-images.githubusercontent.com/16352805/33792124-4d9f1f68-dc66-11e7-8913-20afb5a2a63e.png)
+body: 
 
 ## Introducción
 
-![img2](https://user-images.githubusercontent.com/16352805/33792139-7da3265a-dc66-11e7-84d6-9c8633eea386.png)
+![Introducción Django](/img/posts/2017/guia-django-principiantes-1/introduccion-guia-django.png)
  
 Hoy estoy comenzando una nueva serie de tutoriales sobre los fundamentos de Django. Es una guía completa para comenzar a aprender Django. El material esta dividido en 7 partes. Vamos a explorar todos los conceptos básicos con mucho detalle, desde la instalación, preparación de entorno de desarrollo, modelos, vistas, plantillas, URLS y más temas avanzados como migraciones, pruebas y despliegues.
 Quería hacer algo diferente. Un tutorial que fuese fácil de seguir, informativo y divertido de leer. Ahí fue cuando surgió esta idea de crear algunas viñetas a los algo del texto para ilustrar algunos conceptos y escenarios. ¡Espero que disfruten la lectura!
@@ -19,7 +15,7 @@ Pero antes de comenzar…
 
 Antes cuando trabajaba como profesor substituto en una universidad, yo solía enseñar una introducción a la disciplina de desarrollo web para los nuevos estudiantes del curso de Ciencias de la computación, y siempre comenzaba una clase nueva con esta frase de Confucio:
  
- ![img3](https://user-images.githubusercontent.com/16352805/33792140-7dbee386-dc66-11e7-967e-2813f9f8201d.png)
+ ![Entender primero](/img/posts/2017/guia-django-principiantes-1/entender-django.png)
  
 ¡Así que manos a la obra! No solo leas los tutoriales. ¡Vamos a hacerlo juntos! Aprenderás mucho más haciendo y practicando.
 
@@ -44,7 +40,7 @@ Por cierto, el años pasado, en la conferencia Django Under The Hood 2016, Carl 
 
 ## Instalación
 
-![img4](https://user-images.githubusercontent.com/16352805/33792141-7dd81518-dc66-11e7-9de1-69c877a0559e.png)
+![Configuración básica Django](/img/posts/2017/guia-django-principiantes-1/configuracion-basica-django.png)
 
 Lo primero que debemos hacer es instalar algunos programas en nuestra máquina para empezar a jugar con Django. La configuración básica consiste en instalar Python, Virtualenv y Django.
  
@@ -59,25 +55,25 @@ Vamos a usar Python 3 porque las librerías más importantes han sido migradas a
 
 Ve a [www.python.org], haz clic en la página de descarga de Pyhton 3.6.3, baja hasta que veas los archivos de descarga listados abajo:
 
-![img5](https://user-images.githubusercontent.com/16352805/33792142-7df319d0-dc66-11e7-9851-856e68f1b1bf.png)
+![Archivos](/img/posts/2017/guia-django-principiantes-1/files.png)
 
 Escoge el correcto de acuerdo a tu distribución de Windows. Si no estás seguro de cual escoger, lo más probable es que debas descargar la versión Windows x86-64 executable installer.
 
 Ve a tu carpeta de Descargas, haz clic derecho y selecciona Ejecutar como Adminstrador.
 
-![img6](https://user-images.githubusercontent.com/16352805/33792143-7e1d8af8-dc66-11e7-96d2-715b179d9b4d.png)
+![Carpeta descargas](/img/posts/2017/guia-django-principiantes-1/documentos1.png)
 
 Asegúrate de que escoger la opción Agregar Python 3.6 al Path y haz clic en la opción Instalar Ahora.
  
-![img7](https://user-images.githubusercontent.com/16352805/33792144-7e89e806-dc66-11e7-9e19-ddf2fcfe0d5f.png)
+![instalar python](/img/posts/2017/guia-django-principiantes-1/install-python-setup.png)
  
 Cuando se termina la instalación, deberías ver la siguiente pantalla:
 
-![img8](https://user-images.githubusercontent.com/16352805/33792145-7eaa68ba-dc66-11e7-8d0f-86b071b46ef7.png)
+![instalación exitosa python](/img/posts/2017/guia-django-principiantes-1/python-setup-exitoso.png)
  
 Ahora busca por la Ventana de Comandos y ábrelo:
 
-![img9](https://user-images.githubusercontent.com/16352805/33792146-7ec4ad38-dc66-11e7-810d-d4266a77137e.png)
+![Abrir consola](/img/posts/2017/guia-django-principiantes-1/abrir-consola.png)
 
 Para probar si todo está bien, escribe el siguiente comando: python –-version
 Como respuesta deberías ver:  
@@ -85,7 +81,7 @@ Como respuesta deberías ver:
 ```python
 Python 3.6.3
 ```
-![img10](https://user-images.githubusercontent.com/16352805/33792147-7edf3126-dc66-11e7-9315-2633ce0d95cf.png)
+![consola](/img/posts/2017/guia-django-principiantes-1/consola.png)
 
 Genial, Python está instalado y ejecutándose. Siguiente paso: ¡Entornos Virtuales!
 
@@ -98,7 +94,7 @@ En la ventana de comandos, ejecuta el siguiente comando:
 ```python
 pip install virtualenv
 ```
-![img11](https://user-images.githubusercontent.com/16352805/33792148-7ef8c514-dc66-11e7-9030-1857c2f3eb13.png)
+![virtualenv](/img/posts/2017/guia-django-principiantes-1/virtualenv.png)
 
 Hasta el momento, la instalación que hemos hecho es en todo el sistema. Desde ahora, todo lo que instalemos, incluyendo Django, será instalado en un entorno virtual.
 
@@ -112,7 +108,7 @@ Usualmente, empiezo creando una nueva carpeta con el nombre del proyecto dentro 
 mkdir myproject
 cd myproject
 ```
-![img12](https://user-images.githubusercontent.com/16352805/33792149-7f122bee-dc66-11e7-8d87-040a5b488fe9.png)
+![Creando carpetas desde consola](/img/posts/2017/guia-django-principiantes-1/creando-carpetas.png)
 
 La carpeta es el directorio de nivel más alto que almacena todos los archivos relacionados con nuestro proyecto Django, incluyendo el entorno virtual.
 
@@ -123,12 +119,12 @@ Dentro de la carpeta myproject:
 virtualenv venv
 ```
 
-![img13](https://user-images.githubusercontent.com/16352805/33792150-7f2e8320-dc66-11e7-9792-401e85b99ea6.png)
+![Creando virtualenv](/img/posts/2017/guia-django-principiantes-1/creando-virtualenv.png)
  
 Nuestro ambiente virtual fue creado, ahora antes de empezar a usarlo debemos activar: venv\Scripts\activate
 Sabrás que funcionó si puedes ver *(venv)* al inicio de la línea de comandos, así:
 
-![img14](https://user-images.githubusercontent.com/16352805/33792151-7f4955d8-dc66-11e7-8e22-2251930df11e.png)
+![Activar virtualenv](/img/posts/2017/guia-django-principiantes-1/activar-virtualenv.png)
 
 Comencemos a entender que pasó: Creamos una carpeta especial llamada venv, esta contiene una copia de Python. Luego activamos el entorno venv y ejecutamos el comando Python, este usará   
 
@@ -150,11 +146,11 @@ Ahora que tenemos venv activado, ejecuta el siguiente comando para instalar Djan
 pip install django
  ```
 
-![img15](https://user-images.githubusercontent.com/16352805/33792152-7f65535a-dc66-11e7-8494-5df88ea8fc83.png)
+![Instalando django](/img/posts/2017/guia-django-principiantes-1/pip-install-django.png)
  
 **_¡Estamos listos!**_
 
-![img16](https://user-images.githubusercontent.com/16352805/33792153-7f80353a-dc66-11e7-8437-b86c33147487.png)
+![Estamos listos!](/img/posts/2017/guia-django-principiantes-1/estamos-listos.png)
  
 ## Comenzando un nuevo proyecto
 
@@ -325,7 +321,7 @@ Veamos que pasa:
 python manage.py runserver
  ```
  
-![img18](https://user-images.githubusercontent.com/16352805/33792155-7fbba1ec-dc66-11e7-9165-5ed8d1db9127.png)
+![Django Apps](/img/posts/2017/guia-django-principiantes-1/que-son-aplicaciones-django.png)
   
 ¡Eso es! Has creado tu primera vista.
 
