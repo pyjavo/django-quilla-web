@@ -16,7 +16,9 @@ text:
 					<h5>Entusiastas en Python y Django ¡Están invitados!</h5>				
 				</div>
 				<div class="col-lg-8 col-lg-offset-2 himg">
-					[<img src="https://secure.meetupstatic.com/photos/event/7/d/9/e/600_465032158.jpeg" class="img-responsive" style="width: 70%;height: auto;">](https://www.meetup.com/pythonbaq/events/243867203/)
+					<a href="https://pybaq.co/blog/contribuir-blog-python-barranquilla/">
+						<img src="https://pybaq.co/blog/contribuir-blog-python-barranquilla/contribuir-pybaq.png" class="img-responsive" style="height: auto;">
+					</a>
 				</div>
 			</div>
 	</div>
