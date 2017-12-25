@@ -311,6 +311,18 @@ body:
 	    <td>Traducción automática usando redes neuronales</td>
 	    <td>[GitHub](https://github.com/waybarrios/meetup_translation)</td>
 	  </tr>
+	  <tr>
+	    <td>46</td>
+	    <td>November 23, 2017</td>
+	    <td>Herramientas para hacer ciencia con Python</td>
+	    <td>[Fotos](https://www.meetup.com/pythonbaq/photos/28345278/466396879/)</td>
+	  </tr>
+	  <tr>
+	    <td>47</td>
+	    <td>December 19, 2017</td>
+	    <td>Reconocimiento facial con redes neuronales usando TensorFlow y Python</td>
+	    <td></td>
+	  </tr>
 	</table>
 </div>
 </div>
