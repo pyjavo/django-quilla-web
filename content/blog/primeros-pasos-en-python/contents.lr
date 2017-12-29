@@ -1,0 +1,125 @@
+title: Primeros pasos en Python
+---
+author: Andres Perez
+---
+body:
+
+>Algún inicio debe haber en todas las cosas.
+>
+>Anónimo.
+
+## Una definición
+
+Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en una sintaxis que favorezca un código legible. Su popularidad ha crecido constantemente y en la actualidad es uno de los lenguajes de programación más populares en el desarrollo de software.
+
+Se trata de un lenguaje de programación multiparadigma [1], ya que soporta orientación a objetos, programación imperativa y, en menor medida pero ganando acogida desde el año 2015, programación funcional. Es un lenguaje interpretado, usa tipado dinámico y es multiplataforma.
+
+Es administrado por la [Python Software Foundation](https://www.python.org/). Posee una licencia de código abierto, denominada Python Software Foundation License que es compatible con la Licencia pública general de GNU a partir de la versión 2.1.1.[2]
+
+## Un motivo
+
+>![Motivos hay muchos][reasons]
+>
+>es.xkcd.com/strips/python/
+
+Hay muchas razones para elegir python como tu lenguaje de desarrollo. Entre las principales razones para elegir Python está que su principal característica lo convierte en un lenguaje muy productivo:
+
+* Se trata de un lenguaje potente, flexible y con una sintaxis clara y concisa. Además, no requiere dedicar tiempo a su compilación debido a que es interpretado.
+* Es open source; cualquiera puede contribuir a su desarrollo y divulgación. Además, no es necesario pagar ninguna licencia para distribuir software desarrollado con esté lenguaje. Hasta su intérprete se distribuye de forma gratuita para diferentes plataformas.
+* Plataformas de desarrollo electronicas usan como [Arduino](http://www.toptechboy.com/using-python-with-arduino-lessons/) y [Raspberry Pi](https://www.raspberrypi.org/documentation/usage/python/) usan python como lenguaje de interfaz entre el software (prorama) y el hardware (dispositivo).
+
+al escribir este articulo las versiones disponibles son las 2.7.14 y las 3.6.4, se recomienda usar en lo posible la version 3.6.x ya que la version 2.7.x dejara de tener soporte en el 2020 
+
+## Pero entonces ¿que hago?
+
+>![Pasos a seguir][footsteps]
+
+Necesitas seguir 3 pasos para estar listo para aprender python:
+
+1. Instala python
+2. Instala un editor de texto o IDE
+3. Decide tu proyecto.
+
+### Primero, Instala python
+
+Perdona que te desvíe un poco, pero antes de instalar debes saber que hay varias distribuciones de python. Es decir, como es un lenguaje de codigo abierto, grupos con la noción suficiente puede sacar una versión nueva y distinguirla de las demás en alguna manera. Aparte de la versión [*oficial*](https://www.python.org/downloads/), existen distribuciones de python como [*enthought*](https://www.enthought.com/product/enthought-python-distribution/) antes conocido como  canopy, y [*Anaconda*](https://www.anaconda.com/what-is-anaconda/).
+
+A pesar de saber esto, te recomendamos instalar la distribución [*oficial*](https://www.python.org/downloads/) y despues migrar a alguna de las demás será pan comido. Para instalar puedes seguir alguno de estos tutoriales:
+
+* [Djangogirls (español)](https://tutorial.djangogirls.org/es/python_installation/).
+* [Learn Python the Hard Way-The Setup (Inglés)](https://learnpythonthehardway.org/python3/ex0.html)
+* [Dive Into Python 3-Installing Python (Inglés)](http://www.diveintopython3.net/installing-python.html)
+
+### Segundo, Instala un editor ed texto
+
+Necesitar un editor de texto expecialmente creado para editar archivos de código.
+* [SublimeText](https://www.sublimetext.com/)
+* [Atom](https://atom.io/)
+* [VisualStudio Code](https://code.visualstudio.com/)
+* ...
+
+También existen editores especiales llamados IDE (Integrated Development Environment o entorno de desarrollo integrado). Estos abarcan o encierran en una unica aplicación muchos componentes excepcionalmente útiles en el desarrollo de aplicaciones. Por ejemplo, verificaciones como aquellas de estilo estipuladas en [PEP 8](https://www.python.org/dev/peps/pep-0008/),[3] pueden ser verificadas de manera activa en la mayoría de las IDE. Algunos ejemplos:
+
+* [Pycharm](https://www.jetbrains.com/pycharm/) Este le gana a los demás.
+* [Eclipse con PyDev](http://www.pydev.org/)
+* [Eric](https://eric-ide.python-projects.org/)
+
+### Tercero, decide que hacer
+
+Una parte esencial de aprender cualquier lenguaje de programación es saber para qué lo quieres. Usualmente quienes escriben estos articulos &mdash;sobretodo en una comunidad de python&mdash; pasan por alto a los curiosos, aquellos que no tienen ningún motivo en particular para aprender, pero que su corazón los llama a jugar con la idea. A ustedes les escribo, rogando que lo tomen de la mejor manera: ¡Busquen oficio! ¡No es grosería! Sin un objetivo pueden desanimarse, puesto que el corazón no es tan constante como la mente &mdash;lo escribo sin intención de continuar esa discusión filosófico-espiritual.
+
+Los proyectos abajo descritos son un camino *sugerido* de aprendizaje. Si terminas alguno sirvete de compartir con la comunidad lo que has logrado. No hay tarea simple en el aprendizaje. La [lista](https://docs.google.com/document/d/1TyqD2_oDtiQIh_Y55J5RfeA91JJECc97xYIKM112H9I/edit) provista de proyectos está en inglés (como casi todo en el mundo de la programación) y fue tomada de un [post en Reddit](https://www.reddit.com/r/learnprogramming/comments/6j6jdj/beginner_python_projects/?st=jbr1p1a3&sh=6dc1d314) &mdash;están ordenados de menor a mayor complejidad.
+
+* [*99 Bottles of Beer on the Wall Lyrics*](http://www.reddit.com/r/beginnerprojects/comments/19kxre/project_99_bottles_of_beer_on_the_wall_lyrics/)
+* [*Magic 8 Ball*](http://www.reddit.com/r/beginnerprojects/comments/29aqox/project_magic_8_ball/)
+* [*Pythagorean Triples Checker*](http://www.reddit.com/r/beginnerprojects/comments/19jwi6/project_pythagorean_triples_checker/)
+* [*Coin Estimator By Weight*](http://www.reddit.com/r/beginnerprojects/comments/1idqw1/project_coin_estimator_by_weight/)
+* [*Mad Libs Story Maker*](http://www.reddit.com/r/beginnerprojects/comments/1i8vt5/project_mad_libs_story_maker/)
+* [*Change Calculator*](http://www.reddit.com/r/beginnerprojects/comments/19jkn8/project_change_calculator/)
+* [*Mean, Median, and Mode*](http://www.reddit.com/r/beginnerprojects/comments/1eqt8i/function_mean_median_and_mode/)
+* [*Higher Lower Guessing Game*](http://www.reddit.com/r/beginnerprojects/comments/19jj9a/project_higherlower_guessing_game/)
+* [*Multiplication Table*](http://www.reddit.com/r/beginnerprojects/comments/2agwnq/project_multiplication_table/)
+* [*Fibonacci Sequence*](http://www.reddit.com/r/beginnerprojects/comments/19r3qg/functionfibonacci_sequence/)
+* [*Hangman Game*](http://www.reddit.com/r/beginnerprojects/comments/1irw2j/project_hangman_game/)
+* [*Menu Calculator*](http://www.reddit.com/r/beginnerprojects/comments/1bytu5/projectmenu_calculator/)
+* [*Dice Rolling Simulator*](http://www.reddit.com/r/beginnerprojects/comments/1j50e7/project_dice_rolling_simulator/)
+* [*Creating a Dice Simulator*](http://www.reddit.com/r/beginnerprojects/comments/2aaeou/projectcreate_a_dice_simulator/)
+* [*Count and Fix Green Eggs and Ham*](http://www.reddit.com/r/beginnerprojects/comments/1i6sax/challenge_count_and_fix_green_eggs_and_ham/)
+* [*What’s My Number?*](http://www.reddit.com/r/beginnerprojects/comments/1dbena/challenge_whats_my_number/)
+* [*Factors of a Number*](http://www.reddit.com/r/beginnerprojects/comments/1a0d82/function_factors_of_a_number/)
+* [*Countdown Clock*](http://www.reddit.com/r/beginnerprojects/comments/1bvdmq/project_countdown_clock/)
+* [*Turn Based Pokemon Style Game*](http://www.reddit.com/r/beginnerprojects/comments/1aw0iq/project_turn_based_pokemon_style_game/)
+* [*A Variation of 21*](http://www.reddit.com/r/beginnerprojects/comments/19ot36/project_a_variation_of_21/)
+* [*Compare Recent Karma*](http://www.reddit.com/r/beginnerprojects/comments/1i951e/project_compare_recent_karma/)
+* [*Watch for new TIL facts*](http://www.reddit.com/r/beginnerprojects/comments/1iqg6p/project_watch_for_new_til_facts/)
+* [*Random Wikipedia Article*](http://www.reddit.com/r/beginnerprojects/comments/1jg2ru/project_random_wikipedia_article/)
+* [*What’s the Weather?*](http://www.reddit.com/r/beginnerprojects/comments/1dzbu7/project_whats_the_weather/)
+
+## Buscad conocimiento, tanto por estudio como por el hobby
+
+A continuacion se eccontrarás una lista de recursos para el aprendizaje, algunos en Python 2 otros en 3:
+
+* [Tutorial de python por Argentina en python ](http://docs.python.org.ar/tutorial/)
+* [Pythonista.mx](https://pythonista.mx/cursos/py101)
+* [Codecademy's Python](https://www.codecademy.com/learn/learn-python)
+* [https://openlibra.com](https://openlibra.com/es/collection/search/term/python/)
+* [Learn Python Website](https://www.learnpython.org/)
+* [Code Like a Pythonista](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html)
+* [Python Books Website](http://pythonbooks.org/for-programming-beginners/)
+* [Python For Engineers](http://pythonforengineers.com/python-for-scientists-and-engineers/)
+* [Buenas Practicas](http://slides.com/leonardofabioorozcopadilla/buenas-practicas#/)
+
+----
+* [1]: [Segunda Definición](http://dle.rae.es/?id=RpXSRZJ)
+* [2]: [Tomado de Python, Wikipedia](https://es.wikipedia.org/wiki/Python)
+* [3]: Debe &mdash;sí o sí&mdash; revisar la página de PEP 8 si las intenciones de aprender python son serias.
+
+[footsteps]: ../../img/posts/primeros-pasos/footsteps.jpg
+[reasons]: ../../img/posts/primeros-pasos/python.png
+
+---
+excerpt: En todas las cosas de tu visa hay un inicio, ese instante en que algo digno de contar nace en tu memoria. Concédenos el privilegio de ser ese inicio en tu historia de python.
+---
+pub_date: 2017-12-29
+---
+twitter_handle: andresperezcera
