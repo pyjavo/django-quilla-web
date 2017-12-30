@@ -50,7 +50,7 @@ A pesar de saber esto, te recomendamos instalar la distribución [*oficial*](htt
 * [Learn Python the Hard Way-The Setup (Inglés)](https://learnpythonthehardway.org/python3/ex0.html)
 * [Dive Into Python 3-Installing Python (Inglés)](http://www.diveintopython3.net/installing-python.html)
 
-### Segundo, Instala un editor ed texto
+### Segundo, Instala un editor de texto
 
 Necesitar un editor de texto expecialmente creado para editar archivos de código.
 * [SublimeText](https://www.sublimetext.com/)
@@ -107,7 +107,7 @@ A continuacion se eccontrarás una lista de recursos para el aprendizaje, alguno
 * [Code Like a Pythonista](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html)
 * [Python Books Website](http://pythonbooks.org/for-programming-beginners/)
 * [Python For Engineers](http://pythonforengineers.com/python-for-scientists-and-engineers/)
-* [Buenas Practicas](http://slides.com/leonardofabioorozcopadilla/buenas-practicas#/)
+* [Ppts del meetup sobre Buenas Practicas en Python](http://slides.com/leonardofabioorozcopadilla/buenas-practicas#/)
 
 ----
 * [1]: [Segunda Definición](http://dle.rae.es/?id=RpXSRZJ)
@@ -118,7 +118,7 @@ A continuacion se eccontrarás una lista de recursos para el aprendizaje, alguno
 [reasons]: ../../img/posts/primeros-pasos/python.png
 
 ---
-excerpt: En todas las cosas de tu visa hay un inicio, ese instante en que algo digno de contar nace en tu memoria. Concédenos el privilegio de ser ese inicio en tu historia de python.
+excerpt: En todas las cosas de tu vida hay un inicio, ese instante en que algo digno de contar nace en tu memoria. Concédenos el privilegio de ser ese inicio en tu historia de python.
 ---
 pub_date: 2017-12-29
 ---
