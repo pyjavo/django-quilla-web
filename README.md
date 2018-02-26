@@ -1,5 +1,7 @@
 # Página web comunidad python barranquilla
 
+[![Build Status](https://travis-ci.org/PyBAQ/django-quilla-web.svg?branch=master)](https://travis-ci.org/PyBAQ/django-quilla-web)
+
 ## Dependencias del proyecto
 
 - Python 2.7
