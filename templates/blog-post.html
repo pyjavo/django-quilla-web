@@ -11,7 +11,9 @@
   <meta property="og:type" content="article" />
   <meta property="og:description" content="{{ this.excerpt|striptags }}" />
   {% for image in this.attachments %}
-    <meta property="og:image" content="{{ image|url(external=True) }}}" />
+  <meta property="og:image" content="{{ image|url(external=True) }}" />
+  <meta property="og:image:width" content="{{ image.width }}" />
+  <meta property="og:image:height" content="{{ image.height }}" />
   {% endfor %}
   <meta property="og:url" content="{{ '.'|url(external=True) }}" />
   <meta property="og:site_name" content="{{ '/'|url(external=True) }}" />
