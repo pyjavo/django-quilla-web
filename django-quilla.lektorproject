@@ -3,7 +3,7 @@ name = django-quilla
 url = http://pybaq.co
 
 [packages]
-lektor-webpack-support = 0.1
+lektor-webpack-support = 0.4
 lektor-disqus-comments = 0.2
 lektor-markdown-highlighter = 0.2
 
