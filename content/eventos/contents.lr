@@ -328,6 +328,31 @@ body:
 	    <td></td>
 	  </tr>
 	</table>
+
+    <br>
+	<h2>2018</h2>
+	<br>
+
+	<table class="table table-hover table-bordered table-responsive">
+	  <tr>
+	    <th>#</th>
+	    <th>Fecha</th>
+	    <th>Título</th>
+	    <th>Archivos</th>
+	  </tr>
+	  <tr>
+	    <td>48</td>
+	    <td>January 18, 2018</td>
+	    <td>Conectando Flask con VueJS en el desarrollo de una Single-Page Application</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>49</td>
+	    <td>February 26, 2018</td>
+	    <td>Cómo crear una empresa en USA sin morir en el intento + Pasarelas de Pago</td>
+	    <td><a href="https://medium.com/@joseguzmanlopez404/c%C3%B3mo-cobrar-en-internet-265acf3e9b6f">Post Pasarelas</a> / <a href="http://slides.com/rafaelvillarreal/deck-3#/">Slides Empresas</a> / <a href="https://www.meetup.com/pythonbaq/photos/28650493/469001617/#469001617">Fotos</a></td>
+	  </tr>
+	</table>
 </div>
 </div>
 </div>
