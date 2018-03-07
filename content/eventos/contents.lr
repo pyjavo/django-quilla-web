@@ -344,7 +344,7 @@ body:
 	    <td>48</td>
 	    <td>January 18, 2018</td>
 	    <td>Conectando Flask con VueJS en el desarrollo de una Single-Page Application</td>
-	    <td></td>
+	    <td><a href="https://github.com/Scot3004/meetup_vue_back">Código Back-end</a> / <a href="https://github.com/Scot3004/meetup_vue_front">Código Front-end</a></td>
 	  </tr>
 	  <tr>
 	    <td>49</td>
