@@ -21,18 +21,18 @@ body:
 <p>Somos una comunidad de desarrolladores web, dev-ops, emprendedores y estudiantes. La mayoría de nosotros tenemos nuestros propios empresas mientras que los otros trabajamos en las empresas de estos compañeros. Otro grupo de djangonautas sigue en la universidad o siguen su propio camino abriendose paso en el mundo del emprendimiento o el freelance.</p>
 <p>Creada en el 2015 por Javier Daza, la idea inicial de la comunidad era reunirse para hablar y aprender sobre herramientas y nuevas tecnologías en Python y Django.</p>
 <p>Hoy en día la comunidad es un referente para otras comunidades en la ciudad, sino que también sirve para ayudar a encontrar empleo a los miembros que participan y se destacan activamente en las actividades que realizamos en la comunidad. Esperamos en un futuro lograr un impacto significativo en la ciudad y en el mundo.</p>
-<p><br/><a href="contact.html" class="btn btn-theme">Contáctanos</a></p>
+<p><br/><a href="/contact" class="btn btn-theme">Contáctanos</a></p>
 </div>
 </div>
 </div>
 
 <div class="container mtb">
 <div class="row centered">
-<h3 class="mb">EQUIPO ORGANIZADOR</h3>
+<h3 class="mb">ORGANIZADORES</h3>
 
 <div class="col-lg-3 col-md-3 col-sm-3">
 <div class="he-wrap tpl6">
-<img style="width: 100;height: 260px;" src="/img/team/javier-daza.jpg" alt="javier daza">
+<img style="width: 100%;height: 260px;" src="/img/team/javier-daza.jpg" alt="Javier Daza">
 <div class="he-view">
 <div class="bg a0" data-animate="fadeIn">
 <h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
@@ -43,13 +43,13 @@ body:
 </div>
 <h4>Javier Daza</h4>
 <h5 class="ctitle">ORGANIZADOR</h5>
-<p>Logística y planificación de charlas.</p>
+<p>Dirección y comunidad</p>
 <div class="hline"></div>
 </div>
 
 <div class="col-lg-3 col-md-3 col-sm-3">
 <div class="he-wrap tpl6">
-<img style="width: 100;height: 260px;" src="/img/team/cesar-herdenez.jpg" alt="cesar herdenez">
+<img style="width: 100%;height: 260px;" src="/img/team/cesar-herdenez.jpg" alt="Cesar Herdenez">
 <div class="he-view">
 <div class="bg a0" data-animate="fadeIn">
 <h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
@@ -60,12 +60,106 @@ body:
 </div>
 <h4>Cesar Herdenez</h4>
 <h5 class="ctitle">CO-ORGANIZADOR</h5>
-<p>Relaciones externas y soporte.</p>
+<p>Soporte y logística</p>
 <div class="hline"></div>
 </div>
+
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="he-wrap tpl6">
+<img style="width: 100%;height: 260px;" src="/img/team/dario-guzman.jpg" alt="Darío Guzman">
+<div class="he-view">
+<div class="bg a0" data-animate="fadeIn">
+<h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
+<a href="mailto:djangoquilla@gmail.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+<a href="https://twitter.com/gudarJS" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
 </div>
+</div>	
+</div>
+<h4>Darío Guzman</h4>
+<h5 class="ctitle">CO-ORGANIZADOR</h5>
+<p>Repositorios y logística</p>
+<div class="hline"></div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="he-wrap tpl6">
+<img style="width: 100%;height: 260px;" src="/img/team/paula-aragon.jpg" alt="Paula Aragón">
+<div class="he-view">
+<div class="bg a0" data-animate="fadeIn">
+<h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
+<a href="mailto:djangoquilla@gmail.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+<a href="https://twitter.com/pandrearro" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
+</div>
+</div>	
+</div>
+<h4>Paula Aragón</h4>
+<h5 class="ctitle">CO-ORGANIZADORA</h5>
+<p>Gestión proyectos y artículos</p>
+<div class="hline"></div>
+</div>
+</div><!-- fin row centered--> <!-- ORIGINAL -->
 </div>
 
+<div class="container mtb">
+<div class="row centered">
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="he-wrap tpl6">
+<img style="width: 100%;height: 260px;" src="/img/team/sara-galvan.jpg" alt="Sara Galván">
+<div class="he-view">
+<div class="bg a0" data-animate="fadeIn">
+<h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
+<a href="mailto:djangoquilla@gmail.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+<a href="https://github.com/Xaraxx" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-github"></i></a>
+</div>
+</div>	
+</div>
+<h4>Sara Galván</h4>
+<h5 class="ctitle">CO-ORGANIZADORA</h5>
+<p>Relaciones públicas</p>
+<div class="hline"></div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="he-wrap tpl6">
+<img style="width: 100%;height: 260px;" src="/img/team/katherine-lora.jpg" alt="Katherine Lora">
+<div class="he-view">
+<div class="bg a0" data-animate="fadeIn">
+<h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
+<a href="mailto:gerencia@tecneo.co" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+<a href="https://twitter.com/ktylolita" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
+</div>
+</div>
+</div>
+<h4>Katherine Lora</h4>
+<h5 class="ctitle">CO-ORGANIZADORA</h5>
+<p>Marketing digital</p>
+<div class="hline"></div>
+</div>
+</div><!-- end 2nd row centered-->
+</div>
+
+
+<div class="container mtb">
+<div class="row centered">
+<h3 class="mb">COLABORADORES</h3>
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="he-wrap tpl6">
+<img class="colaboradores" style="width: 100%;height: auto;" src="/img/team/javier-fonseca.jpg" alt="Javier Fonseca">
+<div class="he-view">
+<div class="bg a0" data-animate="fadeIn">
+<h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
+<a href="mailto:javier.fonseca@koombea.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+<a href="https://github.com/fonsecajavier" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-github"></i></a>
+</div>
+</div>	
+</div>
+<h4>Javier Fonseca</h4>
+<h5 class="ctitle">Koombea S.A.S</h5>
+<p>Lugar del evento</p>
+<div class="hline"></div>
+</div>
+</div><!-- end colaboradores row --> 
+</div>
 
 <div id="twrap">
 <div class="container centered">

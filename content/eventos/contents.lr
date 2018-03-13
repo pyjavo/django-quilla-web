@@ -20,31 +20,33 @@ body:
 	    <td>1</td>
 	    <td>Mar 31, 2015</td>
 	    <td>1er meetup Django Barranquilla</td>
-	    <td>[Presentación1](http://slides.com/javidazac/bienvenidos-a-django-barranquilla-1) / [Presentación2](https://docs.google.com/presentation/d/1qW4VIlzwQuGIVyTtOFA-qwI1GFGYD4YhyIHwZ7PClGQ/edit)</td>
+	    <td>
+            <a href="http://slides.com/javidazac/bienvenidos-a-django-barranquilla-1">Presentación1</a> / <a href="https://docs.google.com/presentation/d/1qW4VIlzwQuGIVyTtOFA-qwI1GFGYD4YhyIHwZ7PClGQ/edit">Presentación2</a>
+	    </td>
 	  </tr>
 	  <tr>
 	    <td>2</td>
 	    <td>May 4, 2015</td>
 	    <td>2ndo meetup Django Barranquilla</td>
-	    <td>[Presentación](https://drive.google.com/file/d/0B2a5TeZyq4RZOUVGYjFZVkZLYzg/view) / [Galería Fotos](https://www.meetup.com/pythonbaq/photos/26134119/#437661975)</td>
+	    <td><a href="https://drive.google.com/file/d/0B2a5TeZyq4RZOUVGYjFZVkZLYzg/view">Presentación</a> / <a href="https://www.meetup.com/pythonbaq/photos/26134119/#437661975">Galería Fotos</a></td>
 	  </tr>
 	  <tr>
 	    <td>3</td>
 	    <td>May 19, 2015</td>
 	    <td>3er Meetup Django Barranquilla</td>
-	    <td>[Presentación](http://slides.com/javidazac/bienvenidos-a-django-barranquilla#/)</td>
+	    <td><a href="http://slides.com/javidazac/bienvenidos-a-django-barranquilla#/">Presentación</a></td>
 	  </tr>
 	  <tr>
 	    <td>4</td>
 	    <td>Jun 1, 2015</td>
 	    <td>4to Meetup Django Barranquilla</td>
-	    <td>[GitHub](https://github.com/PyBAQ/proyectopaulwalker) / [Galería Fotos](https://www.meetup.com/pythonbaq/photos/26167990/#438233642)</td>
+	    <td><a href="https://github.com/PyBAQ/proyectopaulwalker">GitHub</a> / <a href="https://www.meetup.com/pythonbaq/photos/26167990/#438233642">Galería Fotos</a></td>
 	  </tr>
 	  <tr>
 	    <td>5</td>
 	    <td>Jun 16, 2015</td>
 	    <td>5to Meetup Django Barranquilla</td>
-	    <td>[Poster](https://secure.meetupstatic.com/photos/event/9/9/8/highres_436922456.jpeg)</td>
+	    <td><a href="https://secure.meetupstatic.com/photos/event/9/9/8/highres_436922456.jpeg">Poster</a></td>
 	  </tr>
 	  <tr>
 	    <td>6</td>
@@ -80,49 +82,49 @@ body:
 	    <td>11</td>
 	    <td>Sep 21, 2015</td>
 	    <td>Marketing para ingenieros</td>
-	    <td>[Poster](https://secure.meetupstatic.com/photos/event/b/0/8/6/highres_442065190.jpeg)</td>
+	    <td><a href="https://secure.meetupstatic.com/photos/event/b/0/8/6/highres_442065190.jpeg">Poster</a></td>
 	  </tr>
 	  <tr>
 	    <td>12</td>
 	    <td>Oct 5, 2015</td>
 	    <td>Como usar GeoDjango</td>
-	    <td>[GitHub](https://github.com/ingenieroariel/loco) / [Foto](https://secure.meetupstatic.com/photos/event/5/e/4/e/highres_442764142.jpeg)</td>
+	    <td><a href="https://github.com/ingenieroariel/loco">GitHub</a> / <a href="https://secure.meetupstatic.com/photos/event/5/e/4/e/highres_442764142.jpeg">Foto</a></td>
 	  </tr>
 	  <tr>
 	    <td>13</td>
 	    <td>Oct 19, 2015</td>
 	    <td>Buenas practicas en Python y el uso de métodos mágicos</td>
-	    <td>[Presentación](http://slides.com/leonardofabioorozcopadilla/buenas-practicas#/)</td>
+	    <td><a href="http://slides.com/leonardofabioorozcopadilla/buenas-practicas#/">Presentación</a></td>
 	  </tr>
 	  <tr>
 	    <td>14</td>
 	    <td>Oct 26, 2015</td>
 	    <td>Taller de Co-creación #1 - Temii</td>
-	    <td>[Documento](https://docs.google.com/document/d/1qw0X4cegrbEtWMlGp81Lu2rX6hTYv7NL9_ZtojlCAhw/edit#heading=h.ksbuleho9b2p)</td>
+	    <td><a href="https://docs.google.com/document/d/1qw0X4cegrbEtWMlGp81Lu2rX6hTYv7NL9_ZtojlCAhw/edit#heading=h.ksbuleho9b2p">Documento</a></td>
 	  </tr>
 	  <tr>
 	    <td>15</td>
 	    <td>Nov 3, 2015</td>
 	    <td>Code like a pythonista</td>
-	    <td>[Presentación](https://docs.google.com/presentation/d/1Tt_2Oe5c9jjuVMwv3_8wMo2S2dwX6p-5YXv7y6Pc_68/edit#slide=id.p)</td>
+	    <td><a href="https://docs.google.com/presentation/d/1Tt_2Oe5c9jjuVMwv3_8wMo2S2dwX6p-5YXv7y6Pc_68/edit#slide=id.p">Presentación</a></td>
 	  </tr>
 	  <tr>
 	    <td>16</td>
 	    <td>Nov 17, 2015</td>
 	    <td>Como hacer API Rest en Django y como integrarlo con AngularJS</td>
-	    <td>[GitHub](https://github.com/cristiangrojas/meetup-barranquilla) / [Guía estilos Angular](https://github.com/johnpapa/angular-styleguide)</td>
+	    <td><a href="https://github.com/cristiangrojas/meetup-barranquilla">GitHub</a> / <a href="https://github.com/johnpapa/angular-styleguide">Guía estilos Angular</a></td>
 	  </tr>
 	  <tr>
 	    <td>17</td>
 	    <td>Nov 28, 2015</td>
 	    <td>Taller de Co-creación #2 - Temii</td>
-	    <td>[GitHub](https://github.com/PyBAQ/temii)</td>
+	    <td><a href="https://github.com/PyBAQ/temii">GitHub</a></td>
 	  </tr>
 	  <tr>
 	    <td>18</td>
 	    <td>Dec 14, 2015</td>
 	    <td>Taller de Co-creación #3 - Temii</td>
-	    <td>[Trello](https://trello.com/b/pKAeEDBT/temii)</td>
+	    <td><a href="https://trello.com/b/pKAeEDBT/temii">Trello</a></td>
 	  </tr>
 	</table>
 
@@ -140,13 +142,13 @@ body:
 	    <td>19</td>
 	    <td>Jan 7, 2016</td>
 	    <td>Bienvenida de Año 2016 Django Barranquilla</td>
-	    <td>[Foto](https://secure.meetupstatic.com/photos/event/f/7/d/highres_462963965.jpeg)</td>
+	    <td><a href="https://secure.meetupstatic.com/photos/event/f/7/d/highres_462963965.jpeg">Foto</a></td>
 	  </tr>
 	  <tr>
 	    <td>20</td>
 	    <td>Jan 18, 2016</td>
 	    <td>Taller de Co-creación #4 - Temii</td>
-	    <td>[Foto](https://secure.meetupstatic.com/photos/event/1/9/9/4/highres_462966548.jpeg)</td>
+	    <td><a href="https://secure.meetupstatic.com/photos/event/1/9/9/4/highres_462966548.jpeg">Foto</a></td>
 	  </tr>
 	  <tr>
 	    <td>21</td>
@@ -158,19 +160,19 @@ body:
 	    <td>22</td>
 	    <td>Feb 15, 2016</td>
 	    <td>Cómo usar Django smart selects</td>
-	    <td>[Presentación](https://drive.google.com/file/d/0B4hMNhBB6brgWVVVSldCT0l2bjg/view?usp=sharing)</td>
+	    <td><a href="https://drive.google.com/file/d/0B4hMNhBB6brgWVVVSldCT0l2bjg/view?usp=sharing">Presentación</a></td>
 	  </tr>
 	  <tr>
 	    <td>23</td>
 	    <td>Mar 15, 2016</td>
 	    <td>Introducción a la Visión por Computadora</td>
-	    <td>[GitHub](https://github.com/JorgeMartinezG/django_meetup)</td>
+	    <td><a href="https://github.com/JorgeMartinezG/django_meetup">GitHub</a></td>
 	  </tr>
 	  <tr>
 	    <td>24</td>
 	    <td>Apr 18, 2016</td>
 	    <td>Como desplegar django apps en producción (AWS)</td>
-	    <td>[GitHub](https://github.com/PyBAQ/dq) / [Anotaciones](https://gist.github.com/panchicore/39d6e5395850f4c5e264e4a07ba89aa1)</td>
+	    <td><a href="https://github.com/PyBAQ/dq">GitHub</a> / <a href="https://gist.github.com/panchicore/39d6e5395850f4c5e264e4a07ba89aa1">Anotaciones</a></td>
 	  </tr>
 	  <tr>
 	    <td>25</td>
@@ -182,19 +184,19 @@ body:
 	    <td>26</td>
 	    <td>Jun 13, 2016</td>
 	    <td>Como crear sitios web estáticos con Lektor</td>
-	    <td>[GitHub](https://github.com/PyBAQ/django-quilla-web)</td>
+	    <td><a href="https://github.com/PyBAQ/django-quilla-web">GitHub</a></td>
 	  </tr>
 	  <tr>
 	    <td>27</td>
 	    <td>Jul 5, 2016</td>
 	    <td>Análisis de sentimientos y cómo obtuve datos de un avión</td>
-	    <td>[Análisis de sentiemientos](https://github.com/waybarrios/Django_Meetup) / [GiGi](https://github.com/piensa/gigi)</td>
+	    <td><a href="https://github.com/waybarrios/Django_Meetup">Análisis de sentiemientos</a> / <a href="https://github.com/piensa/gigi">GiGi</a></td>
 	  </tr>
 	  <tr>
 	    <td>28</td>
 	    <td>Aug 8, 2016</td>
 	    <td>Integrando una aplicacion en Django con otros servicios</td>
-	    <td>[Presentación](http://slides.com/leonardofabioorozcopadilla/integrando-aplicaciones#/)</td>
+	    <td><a href="http://slides.com/leonardofabioorozcopadilla/integrando-aplicaciones#/">Presentación</a></td>
 	  </tr>
 	  <tr>
 	    <td>29</td>
@@ -212,7 +214,7 @@ body:
 	    <td>31</td>
 	    <td>Nov 21, 2016</td>
 	    <td>Python desde 0</td>
-	    <td>[Recursos](https://1drv.ms/f/s!AkrCjEwFpMNbarRjm4ADSBm9pEE)</td>
+	    <td><a href="https://1drv.ms/f/s!AkrCjEwFpMNbarRjm4ADSBm9pEE">Recursos</a> / <a href="https://pybaq.co/blog/primeros-pasos-en-python/">Artículo</a></td>
 	  </tr>
 	</table>
 
@@ -231,43 +233,45 @@ body:
 	    <td>32</td>
 	    <td>January 30, 2017</td>
 	    <td>Aprendamos a hacer testing con Mock</td>
-	    <td>[Presentación](https://scot3004.github.io/pymock/#/)</td>
+	    <td><a href="https://scot3004.github.io/pymock/#/">Presentación</a></td>
 	  </tr>
 	  <tr>
 	    <td>33</td>
 	    <td>February 10, 2017</td>
 	    <td>PyCon Colombia 2017</td>
-	    <td>[Reseña](https://medium.com/pycon-colombia-2017/pycon-colombia-2017-pasando-del-sue%C3%B1o-a-la-realidad-cf1f7808447e)</td>
+	    <td><a href="https://medium.com/pycon-colombia-2017/pycon-colombia-2017-pasando-del-sue%C3%B1o-a-la-realidad-cf1f7808447e">Reseña</a></td>
 	  </tr>
 	  <tr>
 	    <td>34</td>
 	    <td>March 14, 2017</td>
 	    <td>Celery y tareas asíncronas</td>
-	    <td>[Presentación](http://slides.com/leonardofabioorozcopadilla/celery#/) / [Foto](https://secure.meetupstatic.com/photos/event/6/0/b/3/highres_459324755.jpeg)</td>
+	    <td><a href="http://slides.com/leonardofabioorozcopadilla/celery#/">Presentación</a> / <a href="https://secure.meetupstatic.com/photos/event/6/0/b/3/highres_459324755.jpeg">Foto</a></td>
 	  </tr>
 	  <tr>
 	    <td>35</td>
 	    <td>April 17, 2017</td>
 	    <td>Pimpeando tu antigua versión de Django</td>
-	    <td>[Presentación](http://slides.com/javidazac/migrando-de-django-1-5-a-1-11#/)</td>
+	    <td><a href="http://slides.com/javidazac/migrando-de-django-1-5-a-1-11#/">Presentación</a></td>
 	  </tr>
 	  <tr>
 	    <td>36</td>
 	    <td>May 4, 2017</td>
 	    <td>Aprende Machine Learning básico jugando con Python y Flappy Bird</td>
-	    <td>[GitHub](https://github.com/waybarrios/meetup_pythonbq_deeplearning/tree/solution) / [Foto](https://secure.meetupstatic.com/photos/event/a/c/b/9/highres_460664217.jpeg)</td>
+	    <td><a href="https://github.com/waybarrios/meetup_pythonbq_deeplearning/tree/solution">GitHub</a> / <a href="https://secure.meetupstatic.com/photos/event/a/c/b/9/highres_460664217.jpeg">Foto</a></td>
 	  </tr>
 	  <tr>
 	    <td>37</td>
 	    <td>June 1, 2017</td>
 	    <td>Cómo crear un teclado virtual con técnicas de Visión por Computadora</td>
-	    <td>[Presentación](https://drive.google.com/file/d/0ByBWRK2LX_-CMkNRMXhSYWMyODA/view) / [GitHub](https://github.com/jorgemartinezg/virtual_keyboard)</td>
+	    <td><a href="https://drive.google.com/file/d/0ByBWRK2LX_-CMkNRMXhSYWMyODA/view">Presentación</a> / <a href="https://github.com/jorgemartinezg/virtual_keyboard">GitHub</a></td>
 	  </tr>
 	  <tr>
 	    <td>38</td>
 	    <td>July 1, 2017</td>
 	    <td>Django Girls Barranquilla</td>
-	    <td>[Web](https://argentinaenpython.com/django-girls/2017/07/barranquilla/) / [Galería Fotos](https://argentinaenpython.com/galeria/django-girls-barranquilla/)</td>
+	    <td>
+            <a href="https://argentinaenpython.com/django-girls/2017/07/barranquilla/">Web</a> / <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/">Galería Fotos</a> / <a href="https://pybaq.co/blog/como-fue-organizar-primer-django-girls-barranquilla/">Artículo</a>
+	    </td>
 	  </tr>
 	  <tr>
 	    <td>39</td>
@@ -279,13 +283,13 @@ body:
 	    <td>40</td>
 	    <td>July 15, 2017</td>
 	    <td>Post-evento Django Girls</td>
-	    <td>[Foto](https://secure.meetupstatic.com/photos/event/8/f/9/7/highres_462876759.jpeg)</td>
+	    <td><a href="https://secure.meetupstatic.com/photos/event/8/f/9/7/highres_462876759.jpeg">Foto</a></td>
 	  </tr>
 	  <tr>
 	    <td>41</td>
 	    <td>July 17, 2017</td>
 	    <td>Construyamos un software de reconocimiento de rostros en una Microcomputadora</td>
-	    <td>[GitHub](https://github.com/efflorez/facerecognition) / [Presentación](https://docs.google.com/presentation/d/1MR92AgvipBkpqThc8PE30TGKpJQNZj22c1-A-9iYr-E/edit#slide=id.g23336596a2_0_55)</td>
+	    <td><a href="https://github.com/efflorez/facerecognition">GitHub</a> / <a href="https://docs.google.com/presentation/d/1MR92AgvipBkpqThc8PE30TGKpJQNZj22c1-A-9iYr-E/edit#slide=id.g23336596a2_0_55">Presentación</a> / <a href="https://pybaq.co/blog/reconocimiento-de-rostros-en-una-microcomputadora/">Artículo</a></td>
 	  </tr>
 	  <tr>
 	    <td>42</td>
@@ -297,19 +301,56 @@ body:
 	    <td>43</td>
 	    <td>August 30, 2017</td>
 	    <td>Programadores! Vamos a comer</td>
-	    <td>[Foto](https://secure.meetupstatic.com/photos/event/e/3/e/f/highres_464158351.jpeg)</td>
+	    <td><a href="https://secure.meetupstatic.com/photos/event/e/3/e/f/highres_464158351.jpeg">Foto</a></td>
 	  </tr>
 	  <tr>
 	    <td>44</td>
 	    <td>September 18, 2017</td>
 	    <td>Beneficios tributarios para freelancers, emprendedores y empresas TIC</td>
-	    <td>[Artículo](https://pybaq.co/blog/beneficios-tributarios-para-el-sector-tic/)</td>
+	    <td><a href="https://pybaq.co/blog/beneficios-tributarios-para-el-sector-tic/">Artículo</a></td>
 	  </tr>
 	  <tr>
 	    <td>45</td>
 	    <td>October 19, 2017</td>
 	    <td>Traducción automática usando redes neuronales</td>
-	    <td>[GitHub](https://github.com/waybarrios/meetup_translation)</td>
+	    <td><a href="https://github.com/waybarrios/meetup_translation">GitHub</a></td>
+	  </tr>
+	  <tr>
+	    <td>46</td>
+	    <td>November 23, 2017</td>
+	    <td>Herramientas para hacer ciencia con Python</td>
+	    <td><a href="https://www.meetup.com/pythonbaq/photos/28345278/466396879/">Fotos</a> / <a href="https://github.com/PyBAQ/Notebooks/blob/master/HerramientasCiencia/HerramientasCiencia.ipynb">GitHub</a></td>
+	  </tr>
+	  <tr>
+	    <td>47</td>
+	    <td>December 19, 2017</td>
+	    <td>Reconocimiento facial con redes neuronales usando TensorFlow y Python</td>
+	    <td></td>
+	  </tr>
+	</table>
+
+    <br>
+	<h2>2018</h2>
+	<br>
+
+	<table class="table table-hover table-bordered table-responsive">
+	  <tr>
+	    <th>#</th>
+	    <th>Fecha</th>
+	    <th>Título</th>
+	    <th>Archivos</th>
+	  </tr>
+	  <tr>
+	    <td>48</td>
+	    <td>January 18, 2018</td>
+	    <td>Conectando Flask con VueJS en el desarrollo de una Single-Page Application</td>
+	    <td><a href="https://github.com/Scot3004/meetup_vue_back">Código Back-end</a> / <a href="https://github.com/Scot3004/meetup_vue_front">Código Front-end</a></td>
+	  </tr>
+	  <tr>
+	    <td>49</td>
+	    <td>February 26, 2018</td>
+	    <td>Cómo crear una empresa en USA sin morir en el intento + Pasarelas de Pago</td>
+	    <td><a href="https://medium.com/@joseguzmanlopez404/c%C3%B3mo-cobrar-en-internet-265acf3e9b6f">Post Pasarelas</a> / <a href="http://slides.com/rafaelvillarreal/deck-3#/">Slides Empresas</a> / <a href="https://www.meetup.com/pythonbaq/photos/28650493/469001617/#469001617">Fotos</a></td>
 	  </tr>
 	</table>
 </div>
