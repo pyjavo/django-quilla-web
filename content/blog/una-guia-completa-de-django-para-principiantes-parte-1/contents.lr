@@ -2,7 +2,7 @@ title: Una guía completa de Django para principiantes- Parte 1
 ---
 author: Paula Aragón
 ---
-body: 
+body:
 
 ## Introducción
 
@@ -187,7 +187,7 @@ Por ahora, puedes ignorar los errores de migración, llegaremos a eso luego.
 
 Ahora ve a la siguiente URL en un navegador Web: http://127.0.0.1:8000 y deberías ver la siguiente página: 
  
-![img16](https://user-images.githubusercontent.com/16352805/33792153-7f80353a-dc66-11e7-8437-b86c33147487.png)
+![img16](/img/posts/2017/guia-django-principiantes-1/django-instalado.png)
  
 Presiona **CTRL + C** para detener el servidor de desarrollo.
 
@@ -199,7 +199,7 @@ En la filosofía Django tenemos dos conceptos importantes:
 * **Proyecto:** es una colección de configuraciones y aplicaciones. Un proyecto puede estar compuesto por una o múltiples aplicaciones.
 Es importante resaltar que no puedes ejecutar una aplicación Django sin un proyecto. Sitios web simples como un blog pueden ser escritos en su totalidad dentro de una sola aplicación, que podría llamarse blog o weblog por ejemplo.
 
-![img17](https://user-images.githubusercontent.com/16352805/33792154-7f9d9774-dc66-11e7-86aa-917f67741d95.png)
+![Django Apps](/img/posts/2017/guia-django-principiantes-1/que-son-aplicaciones-django.png)
 
 Es una forma de organizar el código fuente, ya que al principio no es muy sencillo identificar que es una aplicación y que no lo es. 
 
@@ -321,7 +321,7 @@ Veamos que pasa:
 python manage.py runserver
  ```
  
-![Django Apps](/img/posts/2017/guia-django-principiantes-1/que-son-aplicaciones-django.png)
+![Django Apps](/img/posts/2017/guia-django-principiantes-1/hola-mundo.png)
   
 ¡Eso es! Has creado tu primera vista.
 
