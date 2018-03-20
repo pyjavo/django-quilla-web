@@ -2,7 +2,7 @@
 
 ## Comportamiento esperado
 
-En esta zona colocar como debería funcionar el sitio web.
+En esta zona escribe o adjunta una imagen de como debería funcionar el sitio web.
 
 ## Comportamiento actual
 
