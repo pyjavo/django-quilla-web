@@ -16,9 +16,9 @@ text:
 					<h5>Entusiastas en Python y Django ¡Están invitados!</h5>				
 				</div>
 				<div class="col-lg-8 col-lg-offset-2 himg blog_post-posts">
-					<a href="https://pybaq.co/blog/contribuir-blog-python-barranquilla/">
+					<a href="https://pybaq.co/blog/primeros-pasos-en-python/">
 						<figure>
-							<img src="https://pybaq.co/blog/contribuir-blog-python-barranquilla/contribuir-pybaq.png" class="img-responsive" style="height: auto;">
+							<img src="https://pybaq.co/blog/primeros-pasos-en-python/primeros-pasos.png" class="img-responsive" style="height: auto;">
 						</figure>
 					</a>
 				</div>
@@ -47,7 +47,7 @@ text:
  				<div class="col-md-4">
  					<i class="fa fa-trophy"></i>
  					<h4>Creemos Apps</h4>
- 					<p>Siempre estamos creando aplicaciones, ya sea cada uno por su cuenta o en grupo como comunidad. Si necesitas ayuda, este es el espacio donde podemos colaborarte a resolver tus dudas en aquel proyecto en el que llevas trabajando. Ven y participa!</p>
+ 					<p>Siempre estamos creando aplicaciones, ya sea cada uno por su cuenta o en grupo como comunidad. Si necesitas ayuda, este es el espacio donde podemos colaborarte a resolver tus dudas en aquel proyecto en el que llevas trabajando. ¡Ven y participa!</p>
  					<!-- <p><br/><a href="#" class="btn btn-theme">More Info</a></p> -->
  				</div>		 				
 	 		</div>
