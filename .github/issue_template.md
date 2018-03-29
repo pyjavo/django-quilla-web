@@ -6,11 +6,11 @@ En esta zona escribe o adjunta una imagen de como debería funcionar el sitio we
 
 ## Comportamiento actual
 
-En esta zona escribe o adjunta una imagen de la salida actual que se observa del sitio web
-preferiblemente con capturas de pantalla.
+En esta zona escribe o adjunta una imagen de la salida actual que se observa del sitio web,
+es preferible el uso de capturas de pantalla ademas de una descripción paso a paso de como reproducir el error.
 
 ## Pasos para reproducir el error
 
-1. Pasos para reproducir el error detectado
-2. Por ejemplo en que url aparece el error
-3. Y que botones se presionan para que aparezca
+1. En que url aparece el error.
+2. Definir paso a paso las acciones para reproducir el error.
+3. En este ejemplo se utiliza una lista numerada.
