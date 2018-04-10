@@ -34,7 +34,7 @@ Editar el sitio web de python Barranquilla puede realizarse en un panel gráfico
 git clone https://github.com/PyBAQ/django-quilla-web.git
 ```
 
-Una vez hayas clonado el repositorio e [instalado lektor en tu computador](https://www.getlektor.com/docs/installation/), debes correr el servidor local usando `lektor server`.
+Una vez hayas clonado el repositorio e [instalado lektor en tu computador](https://www.getlektor.com/docs/installation/), debes correr el servidor local usando `lektor server -f webpack`.
 
 ![Clonar repositorio consola](/img/contribuir-pybaq/ejecutar.png)
 
