@@ -74,4 +74,19 @@ tu repositorio (fork).
 git push -f
 ```
 
+Por favor asocia los pull request que hagas a los issues que estas resolviendo, preferiblemente usando la palabra 'fix' por ejemplo:
+
+```bash
+Closes #145
+```
+
+El cual [cierra][2] el issue #145 'Agregar Cierre automático de commits a contributing.md'
+
+Para ver cual es el numero de issue asociado al caso que quieres resolver, lo encuentras debajo del titulo del ticket:
+
+![El número que sale en gris debajo del titulo](./assets/img/issue_title.png)
+
 [1]: https://www.python.org/dev/peps/pep-0008/
+
+[2]:
+https://help.github.com/articles/closing-issues-using-keywords/
