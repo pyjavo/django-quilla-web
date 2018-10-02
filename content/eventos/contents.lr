@@ -358,6 +358,42 @@ body:
 	    <td>Segmentación y caracterización de imágenes de células tomadas por microscopio</td>
 	    <td><a href="https://drive.google.com/file/d/1-OYPDWkpSIkVYVleryihpjjtB5z4fbPc/view?usp=sharing">Slides</a> / <a href="https://www.meetup.com/pythonbaq/photos/28720332/469598936/">Fotos</a></td>
 	  </tr>
+	  <tr>
+	    <td>51</td>
+	    <td>April 19, 2018</td>
+	    <td>Introducción a Django CMS y creación de plugins personalizados.</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>52</td>
+	    <td>May 24, 2018</td>
+	    <td>Zen de Python + Saca el mejor provecho a Redis</td>
+	    <td><a href="https://slides.com/javidazac/zen-de-python/fullscreen">Slides Charla Zen</a> / <a href="https://drive.google.com/file/d/1TATNvBekIoPe8dCsW3O9cyWcj22Rmb_r/view?usp=sharing">Slides Charla Redis</a></td>
+	  </tr>
+	  <tr>
+	    <td>53</td>
+	    <td>June 24, 2018</td>
+	    <td>Carros autónomos + Creación de APIs para tus apps</td>
+	    <td><a href="https://www.instagram.com/p/BlGG5-egLdp/?taken-by=pybaq">Video 1</a> / <a href="https://www.instagram.com/p/BlGHPi_hzEW/?taken-by=pybaq">Video 2</a></td>
+	  </tr>
+	  <tr>
+	    <td>54</td>
+	    <td>July 17, 2018</td>
+	    <td>Emprender con Inteligencia Artficial + Intro Análisis de Datos con Jupyter</td>
+	    <td><a href="https://docs.google.com/presentation/d/1um9BTCwfbLw1Ccm-V-2ZlbhdAXFDwHrtLV-w17nlsR0/edit?usp=sharing">Slides Emprender</a> / <a href="https://github.com/Xaraxx/meetup-python-Quilla">Jupyter</a></td>
+	  </tr>
+	  <tr>
+	    <td>55</td>
+	    <td>August 16, 2018</td>
+	    <td>Integrar GraphQL a Django + Entiende el poder de los datos con Spark</td>
+	    <td><a href="https://www.meetup.com/pythonbaq/photos/29170444/473804369/">Fotos</a></td>
+	  </tr>
+	  <tr>
+	    <td>56</td>
+	    <td>September 17, 2018</td>
+	    <td>Diseña tu proyecto de Machine Learning + Patrones de automatización de pruebas</td>
+	    <td><a href="https://docs.google.com/presentation/d/12DPuf1-uGa-j_xZfAQtJAx9Et_w2i8VjpTzShH6k0jk/edit?usp=sharing">Slides ML</a> / <a href="https://docs.google.com/presentation/d/157LQAGm-UV3xAX7qRnaeHOSa4OBZ6MtnX8zDpWG-488/edit?usp=drivesdk">Slides Selenium</a> / <a href="https://www.meetup.com/pythonbaq/photos/29267016/474690179/">Fotos</a></td>
+	  </tr>
 	</table>
 </div>
 </div>
