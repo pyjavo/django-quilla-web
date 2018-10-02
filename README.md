@@ -43,7 +43,7 @@ Si quieres/debes mantener windows instalado, pero prefieres mantener este proyec
 
 Luego, en la tienda de microsoft encontrarás distintas distribuciones de ubuntu que podrás instalar, ten presente que esto solo te da acceso por linea de comandos. Podrás encontrar mas detalles en el siguiente vínculo: [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
-De allí continua los pasos según el instructuvo para Linux.
+De allí continua los pasos según el instructivo para Linux.
 
 ### Linux
 
@@ -57,7 +57,7 @@ Luego puede instalar lektor usando el siguiente comando:
 
 ### MacOS
 
-En Mac OS si se tiene instalado homebrew se pueden instalar las dependencias de lektor usando el comando:
+En Mac OS si se tiene instalado [homebrew](https://brew.sh/) se pueden instalar las dependencias de lektor usando el comando:
 
     brew install imagemagick
 
@@ -72,13 +72,13 @@ Ahora mismo Lektor **no provee** una forma confiable y sencilla de instalar la h
 
 ## Ejecución del proyecto durante desarrollo
 
-Para la ejecución del proyecto se debe ejecutar el comando
+Para la ejecución del proyecto se debe ejecutar el comando:
 
 ```bash
 lektor server -f webpack
 ```
 
-Si lektor logra ejecutar el proyecto sin errores, publicará la página construida en [http://localhost:5000/](http://localhost:5000/).
+Al ejecutar lektor, verás una lista de procesos que tienen lugar antes de generar la página estática. Si en tu edición cometes algún error, aparecerá escrito en la consola. Si se genera con exito la página, ésta estará disponible en [http://localhost:5000/](http://localhost:5000/).
 
 ## Producción
 
