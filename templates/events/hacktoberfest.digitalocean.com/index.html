@@ -57,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         src="https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js"
         data-apikey="93a50b362367051fe337ab1aad774079">
     </script>
-    <link rel="stylesheet" media="all" href="assets/application-72429c453b9679f83a3806d4127f6636bab3264bce1d8adca473359a2b635686.css" />
+    <link rel="stylesheet" media="all" href="assets/styles.css" />
 
     <meta name="csrf-param" content="authenticity_token" />
 <meta name="csrf-token" content="9l06XAOlui/pJLbFMeY/8DGvBAMbTqt+j1Yu/nAdbTv4CQOpwqgOrSXjocGzWVgxOZdGo90wDYEin8OfYQpZjw==" />
@@ -81,10 +81,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </a>
     <ul class="top-nav--secondary">
       <li>
-        <a href="#schedule">Agenda</a>
+        <a href="#place">Donde</a>
       </li>
       <li>
-        <a href="#where">Donde</a>
+        <a href="#schedule">Agenda</a>
       </li>
       <li>
         <a href="#faq">FAQ</a>
@@ -147,7 +147,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       Apoya el codigo abierto y gana una camiseta de edicion limitada.
     </div>
 
-        <a class="Button Button--primary hero--cta" href="https://hacktoberfest.digitalocean.com/sign_up/register">Empieza a programar</a>
+        <a class="Button Button--primary hero--cta" href="https://goo.gl/forms/puFemBaOd3jXRtrB3">Empieza a programar</a>
 
     <div class="hero--credits">
       <div>
@@ -297,7 +297,66 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </p>
 </section>
 
-<section id="projects" class="projects">
+<section id="description" class="baq description">
+  <div class="container baq--description">
+    <h2 class="baq--headline">Meetup Hacktoberfest BAQ</h2>
+    <p>Nos reuniremos toda una tarde a programar, escuchar charlas, tomar cerveza, comer pizza y hablar de lo que nos gusta.</p>
+    <a class="Button Button--primary hero--cta" href="https://goo.gl/forms/puFemBaOd3jXRtrB3">Apartar Cupo</a>
+  </div>
+</section>
+
+<section id="place" class="place baq">
+  <div class="container two-columms">
+    <div>
+      <h2 class="place--headline">¿Donde y cuando?</h2>
+      <ul>
+        <li><strong>Lugar:</strong> Calle por actualizar. Barranquilla, Colombia.</li>
+        <li><strong>Fecha:</strong> Sábado 20 de octubre de 2018 desde las 12:30 PM hasta las 07:30 PM.</li>
+      </ul>
+    </div>
+    <div id="map"></div>
+  </div>
+</section>
+
+<section id="organizers" class="organizers baq">
+  <div class="container">
+    <h2 class="organizers--headline">Organiza</h2>
+  </div>
+  <div class="organizers--logos">
+    <img src="assets/BAQ_JS.png" alt="Logo BarranquillaJS" />
+    <img src="assets/pioneras.png" alt="Logo Pioneras Dev" />
+    <img src="assets/pybaq.png" alt="Logo PyBAQ" />
+    <img src="assets/fullstack.png" alt="Logo FullStack Labs" />
+    <img src="assets/pybaq.png" alt="Logo Barranquilla Analitica" />
+  </div>
+</section>
+
+<section id="sponsors" class="sponsors baq">
+  <div class="container">
+    <h2 class="sponsors--headline">Patrocina el evento</h2>
+  </div>
+  <div class="sponsors--logos">
+    <img src="assets/fullstack.png" alt="Logo FullStack Labs" style="width: 300px;" />
+    <img src="assets/ideaware.png" alt="Logo Ideaware" style="width: 100px;" />
+  </div>
+</section>
+  
+<section id="schedule" class="schedule baq">
+  <div class="container">
+      <h2 class="schedule--headline">Agenda</h2>
+      <ul class="schedule--details">
+        <li>12:30 - 01:00 <span>Registro</span></li>
+        <li>01:00 - 01:15 <span>Charla 1</span></li>
+        <li>01:15 - 01:30 <span>Charla 2</span></li>
+        <li>01:30 - 01:45 <span>Charla 3</span></li>
+        <li>01:45 - 02:00 <span>Orientación</span></li>
+        <li>02:00 - 06:30 <span>Evento</span></li>
+        <li>06:30 - 07:30 <span>Comida</span></li>
+      </ul>
+  </div>
+</section>
+
+<section id="projects" class="projects" style="margin-top: 0;">
   <h2 class="projects--headline">Proyectos Hacktoberfest</h2>
   <p class="projects--details">
     Puedes contribuir a cualquier proyecto en GitHub. Aqui te proponemos algunos que te pueden interesar:
@@ -596,5 +655,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <script src="https://go.digitalocean.com/js/forms2/js/forms2.min.js"></script>
     <script src="assets/application-0ce2f88c8d89eff88cd35adc56769bef990280738e03856d5c5b31b7b629fac4.js"></script>
+    <script>
+      function initMap() {
+        var myLatLng = {lat: -25.363, lng: 131.044};
+
+        // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 4
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'Hello World!'
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrpUPhpbPzRI4hYC7xE02WKsrxQv0HClI&callback=initMap"
+        async defer></script>
   </body>
 </html>
