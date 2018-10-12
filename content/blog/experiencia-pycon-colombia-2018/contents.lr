@@ -4,54 +4,54 @@ author: Guzmán D. Darío
 ---
 body:
 
-A mediados de septiembre del año pasado, escuche por primera vez sobre una Pycon (Por sus siglas en ingles PYthon CONference, son conferencias que se hacen a nivel nacional con charlas y talleres de Python) esto gracias a Javier Daza quien me comentaba que en el siguiente año se realizaría una en mi país (Colombia), me dije a mismo que debía ir, pero no solo como asistente, yo quería compartir algo con la comunidad de Python.
+A mediados de septiembre del año pasado, escuché por primera vez sobre una Pycon (por sus siglas en inglés PYthon CONference, son una serie de conferencias que se hacen a nivel nacional con charlas y talleres de Python) esto gracias a Javier Daza quien me comentaba que en el siguiente año se realizaría una en mi país (Colombia), en ese momento me dije que debía ir, pero no solo como asistente, yo quería compartir algo con la comunidad de Python.
 
-Hoy quiero que conozcas como fue esta experiencia para que te animes a participar dictando una charla o un taller en la próxima Pycon de tu país, así que sí te interesa espero disfrutes de esta historia.
+Hoy quiero que conozcas cómo fue esta experiencia para que te animes a participar dictando una charla o un taller en la próxima Pycon de tu país, así que sí te interesa espero disfrutes de esta historia.
 
 ## Búsqueda del tema "perfecto"
-Estaba muy emocionado hasta que me pregunte sobre que tema debía hablar, lo primero que pensé fue hacer un taller sobre "Como automatizar las tareas aburridas con Python", la idea realmente me parecía fascinante, sin embargo cada vez que intentaba escribir "el pitch" para enviarlo como propuesta, sentía una frustración enorme ya que no podía empezar a escribir.
+Estaba muy emocionado hasta que me pregunte sobre qué tema debía hablar, lo primero que pensé fue hacer un taller sobre "Cómo automatizar las tareas aburridas con Python", la idea realmente me parecía fascinante, sin embargo cada vez que intentaba escribir "el pitch" para enviarlo como propuesta, sentía una frustración enorme ya que no podía empezar a escribir.
 
-Realmente pensé que no podría enviar mi propuesta a tiempo, sin embargo la inspiración llego la noche anterior al cierre de la convocatoria.
-Resulta que en ese momento me encontraba trabajando en un sistema de reconocimiento de rostros para mi proyecto de grado en la universidad.
+Realmente pensé que no podría enviar mi propuesta a tiempo, sin embargo la inspiración llegó la noche anterior al cierre de la convocatoria.
+En ese momento me encontraba trabajando en un sistema de reconocimiento de rostros para mi proyecto de grado en la universidad.
 
-Así que ya estaba decidido, hablaría sobre [Reconocimiento facial con redes neuronales](https://www.pycon.co/es/ponencias/reconocimiento-facial-con-redes-neuronales/), al día siguiente aproveche mientras almorzaba en la universidad y empece a escribir la propuesta, estaba asombrado que las palabras e ideas volaban por mi cabeza, lo que me permitió terminarla en menos de 1 hora y enviarla antes del cierre de la convocatoria.
+Así que ya estaba decidido, hablaría sobre [Reconocimiento facial con redes neuronales](https://www.pycon.co/es/ponencias/reconocimiento-facial-con-redes-neuronales/), al día siguiente aproveché mientras almorzaba en la universidad y empecé a escribir la propuesta, estaba asombrado que las palabras e ideas volaban por mi cabeza, lo que me permitió terminarla en menos de 1 hora y enviarla antes del cierre de la convocatoria.
 
 ## Angustias y miedos
-Aunque luego empezó el miedo típico de "¿Que pasa si no me eligen?" o "¿Tal vez pude escribir la propuesta mejor? 😕" y es que la respuesta de las charlas aceptadas seria hasta noviembre.
+Aunque luego empezó el miedo típico de "¿Qué pasa si no me eligen?" o "Tal vez pude escribir la propuesta mejor 😕" y es que la respuesta de las charlas aceptadas sería hasta noviembre.
 
-Llego noviembre y me llego un correo diciendo que la mía había entrado a una lista de espera y tendría que esperar hasta diciembre por otra respuesta. 😥
+Llegó noviembre y me llegó un correo diciendo que la mía había entrado a una lista de espera y tendría que esperar hasta diciembre por otra respuesta. 😥
 
-Empece a creer que tal vez mi charla no era tan buena como yo creía, pero al final decidí confiar y esperar la respuesta del grupo de organizadores.
+Empecé a creer que tal vez mi charla no era tan buena como yo creía, pero al final decidí confiar y esperar la respuesta del grupo de organizadores.
 
 ## No todo es negativo :)
 ![Charla en el meetup de Python Barranquilla](/img/posts/2018/experiencia-pycon-colombia-2018/auditorio_koombea.jpg)
 
 Mientras esperaba en el grupo de Python Barranquilla me animaron para hablar en [la charla de cierre de año del 2017](http://meetup.ps/e/DBhBM/trCj9/d), con la intención de que practicara y me sintiera a gusto hablando del tema.
 
-Días antes de esa presentación me llego un correo que lo hizo oficial, ya había sido seleccionado para hablar en la Pycon Colombia 2018, por lo que con muchas mas ganas prepare las diapositivas e incluso estudie tips de lenguaje corporal. 😂
+Días antes de esa presentación me llegó un correo que lo hizo oficial, ya había sido seleccionado para hablar en la Pycon Colombia 2018, por lo que con muchas ms ganas preparé las diapositivas e incluso estudié tips de lenguaje corporal. 😂
 
-En el meetup me fue bastante bien, logre hacer una buena presentación y conseguir feedback de las cosas que estaba haciendo mal.
+En el meetup me fue bastante bien, logré hacer una buena presentación y conseguir feedback de las cosas que estaba haciendo mal.
 
-## Oops se me olvido planear algo...
-Ya en enero recordé que el evento se celebraría a principios de febrero y no tenia donde quedarme, tampoco había comprado los tiquetes del avión y para colmo no tenia dinero ahorrado. 😰
+## Oops! se me olvidó planear algo...
+Ya en enero recordé que el evento se celebraría a principios de febrero y no tenía dónde quedarme, tampoco había comprado los tiquetes de avión y para colmo no tenía dinero ahorrado. 😰
 
-Luego de hacer unos cuantos malabares financieros pude comprar los tiquetes del avión y rentar un airbnb por una semana, lo cual me seria suficiente para conocer la ciudad un poco e ir como guía a un [evento de Django Girls](https://medium.com/@djangogirlscolombia/mi-experiencia-en-pycon-colombia-2018-41d10ecabe99) que se realizaría el jueves antes de la conferencia, que ocurría de viernes a domingo.
+Luego de hacer unos cuantos malabares financieros pude comprar los tiquetes de avión y rentar un airbnb por una semana, lo cual me sería suficiente para conocer la ciudad un poco e ir como guía a un [evento de Django Girls](https://medium.com/@djangogirlscolombia/mi-experiencia-en-pycon-colombia-2018-41d10ecabe99) que se realizaría el jueves antes de la conferencia,  que sería de viernes a domingo.
 
-## Vuelo a medellin
-Había comentado que nunca viaje en avión antes y que le temo "un poco" a las alturas 😅, por suerte me toco en el mismo avión que Javier y las señoras que estaban a mi lado me calmaban diciendo que todo estaba bien.
+## Vuelo a Medellín
+Había comentado que nunca antes había viajado en avión? y que le temo "un poco" a las alturas 😅, por suerte me tocó en el mismo vuelo que Javier y las señoras que estaban a mi lado me calmaban diciendo que todo estaba bien.
 
-Luego de un poco de turbulencia y ya en el aeropuerto de rionegro tomamos un carro que nos llevara a la ciudad para ir al airbnb que reservamos.
+Luego de un poco de turbulencia y ya en el aeropuerto de Rionegro tomamos un carro que nos llevara a la ciudad para ir al airbnb que reservamos.
 
 ![Lugar de mi estadia](/img/posts/2018/experiencia-pycon-colombia-2018/casa_en_medellin.jpg)
 
-Mi primera imprecion de medellin fue **increible** las calles, el cielo, las montañas que se veian al horizonte y la amabilidad de las personas. Aunque no pude conocer muy bien la ciudad debido a que tuve que arreglar unos bugs de proyectos del trabajo (Algunos de proyectos que ni conocia, pero justo salieron cuando estaba remoto 😂).
+Mi primera impresión de Medellín fue **increíble** las calles, el cielo, las montañas que se veían al horizonte y la amabilidad de las personas. Aunque no pude conocer muy bien la ciudad debido a que tuve que arreglar unos bugs de proyectos del trabajo (Algunos de proyectos que ni conocía, pero justo salieron cuando estaba trabajando remoto 😂).
 
-## Al fin llego el día que estaba esperando
+## Al fin llegó el día que estaba esperando
 ![Charla en la universidad de eafit](/img/posts/2018/experiencia-pycon-colombia-2018/auditorio_eafit.jpg)
 
-Mi charla estaba programada para el sábado a las 2:40pm y aunque una parte de mi estaba pasándoselo bien, por otro lado estaba muerto de nervios. Y es que en la conferencia habían aproximadamente 400 asistentes, estarían repartidos en 3 auditorios, pero igual me parecía que era mucha gente.
+Mi charla estaba programada para el sábado a las 2:40 pm y aunque una parte de mi estaba pasándoselo bien, por otro lado estaba muerto de los nervios. Y es que en la conferencia había aproximadamente 400 asistentes,los cuales estarían repartidos en 3 auditorios, pero igual me parecía que era mucha gente.
 
-Cuando terminó la charla anterior a la mía, sabia que debía subirme al frente del auditorio y hacer mi mejor esfuerzo, por lo que aún muriendo de nervios subí, conecté mi computador al proyector y en cuanto me dieron la señal comencé con mi charla.
+Cuando terminó la charla anterior a la mía, sabía que debía subirme a la tarima del auditorio y hacer mi mejor esfuerzo, por lo que aún muriendo de nervios subí, conecté mi computador al proyector y en cuanto me dieron la señal comencé con mi charla.
 
 Soy consciente de que me falta por mejorar como orador, pero aún así, sentí que me fue bien y me gustaría invitarte a ti, (si a ti), a que apliques con una charla o taller a algún evento, ya sea una Pycon o un Meetup de tu ciudad. Estoy seguro de que la comunidad te lo agradecerá mucho 👍.
 
@@ -60,7 +60,7 @@ Si deseas aplicar como ponente a una Pycon te sugeriría:
 1. Planear tu viaje.
 2. Practicar como si no hubiera mañana.
 3. Salir a conocer la ciudad antes del evento.
-4. Dar una charla de la que tus papas se sientan orgullosos 😂.
+4. Dar una charla de la que tus papás se sientan orgullosos 😂.
 
 *Nota: Tampoco olvides pasarla bien y conocer gente increíble.*
 
