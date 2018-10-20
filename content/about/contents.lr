@@ -158,6 +158,23 @@ body:
 <p>Lugar del evento</p>
 <div class="hline"></div>
 </div>
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="he-wrap tpl6">
+<img class="colaboradores" style="width: 100%;height: auto;" src="/img/team/andres-perez.png" alt="Andres Pérez">
+<div class="he-view">
+<div class="bg a0" data-animate="fadeIn">
+<h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
+<a href="mailto:" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+<a href="" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-github"></i></a>
+</div>
+</div>	
+</div>
+<h4>Andres Pérez</h4>
+<h5 class="ctitle"></h5>
+<p>Contribuidor y traductor</p>
+<div class="hline"></div>
+</div>
 </div><!-- end colaboradores row --> 
 </div>
 
