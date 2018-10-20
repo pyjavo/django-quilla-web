@@ -75,18 +75,10 @@ Ahora mismo Lektor **no provee** una forma confiable y sencilla de instalar la h
 Para la ejecución del proyecto se debe ejecutar el comando:
 
 ```bash
-lektor server -f webpack
+lektor server
 ```
 
 Al ejecutar lektor, verás una lista de procesos que tienen lugar antes de generar la página estática. Si en tu edición cometes algún error, aparecerá escrito en la consola. Si se genera con exito la página, ésta estará disponible en [http://localhost:5000/](http://localhost:5000/).
-
-## Producción
-
-Construye el proyecto en los artefactos finales
-
-```bash
-lektor build -f webpack
-```
 
 ## Código de conducta
 
