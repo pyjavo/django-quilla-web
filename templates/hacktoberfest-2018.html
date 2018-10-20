@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <title>Hacktoberfest 2018 - Barranquilla</title>
+    <title>{% block title %}Hacktoberfest 2018 - Barranquilla{% endblock %}</title>
     <link rel="apple-touch-icon" href="https://hacktoberfest.digitalocean.com/apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon.png">
     <meta name="description" content="¡Celebra Hacktoberfest! Nos reuniremos toda una tarde a programar, escuchar charlas, tomar cerveza y comer pizza.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    {% block redes %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@pybaq">
     <meta name="twitter:creator" content="@pybaq">
     <meta name="twitter:title" content="Hacktoberfest 2018 - Barranquilla">
     <meta name="twitter:description" content="¡Celebra Hacktoberfest! Nos reuniremos toda una tarde a programar, escuchar charlas, tomar cerveza y comer pizza.">
     <meta name="twitter:image" content="https://hacktoberfest.digitalocean.com/assets/hacktoberfest-2018-social-card-c8d2e1489f647f2e0a26e6f598adeb760872818905b34cd437afc7ac2857ceab.png">
-
     <meta property="og:title" content="Hacktoberfest 2018 - Barranquilla">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pybaq.co/hacktoberfest2018/">
@@ -23,12 +23,10 @@
     <meta property="og:image:alt" content="Hacktoberfest 2018">
     <meta property="og:description" content="¡Celebra Hacktoberfest! Nos reuniremos toda una tarde a programar, escuchar charlas, tomar cerveza y comer pizza.">
     <meta property="og:site_name" content="DigitalOcean">
-
     <meta itemprop="name" content="Hacktoberfest 2018 - Barranquilla">
     <meta itemprop="description" content="¡Celebra Hacktoberfest! Nos reuniremos toda una tarde a programar, escuchar charlas, tomar cerveza y comer pizza.">
+    {% endblock %}
 
-
-    <script src="https://cdn.ravenjs.com/1.1.2/jquery,native/raven.min.js"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,matchMedia,Element.prototype.placeholder,Array.prototype.includes"></script>
     <script
         src="https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js"
@@ -42,7 +40,7 @@
   <body class="controller--home action--index">
     <header class="header" role="banner">
   <nav class="top-nav">
-    <a href="index.html">
+    <a href="{{ '/hacktoberfest-2018/'|url }}">
       <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" role="img" aria-labelledby="dyn2wm4vin1xgraye3ggy9kf12oaz8a" class="header__logo" width="50px" height="50px"><title id="dyn2wm4vin1xgraye3ggy9kf12oaz8a">Hacktoberfest</title>
       <style type="text/css">
       	.st0{fill:#FFFFFF;}
@@ -58,6 +56,9 @@
         <a href="#schedule">Agenda</a>
       </li>
       <li>
+        <a href="{{ '/hacktoberfest-2018/faq'|url }}">FAQ</a>
+      </li>
+      <li>
         <a class="top-nav--sign-up" href="https://hacktoberfest.digitalocean.com" target="_blank">Hacktoberfest</a>
       </li>
     </ul>
@@ -66,6 +67,7 @@
 
 
     <main>
+      {% block body %}
       <section id="top" class="hero">
   <div class="hero--content">
     <h1 class="hero--headline">
@@ -112,7 +114,7 @@
 
     </div>
     <div class="hero--sub-headline mb-60">
-      Apoya el código abierto y gana una camiseta de edición limitada.
+      20 de octubre de 2018, edificio Smart Office Center.
     </div>
 
         <a class="Button Button--primary hero--cta" href="https://goo.gl/forms/puFemBaOd3jXRtrB3">Aparta tu cupo</a>
@@ -231,7 +233,7 @@
     </span>
     <span class="whatis--detail-item">
       <img alt="" src="{{ '/hacktoberfest2018_assets/icon-how-37d68a79d5ebafd3b615a392905e7a57a71907fd8218893153875107bea57d1f.png'|asseturl }}" />
-      <h3 class="whatis--sub-headline">Como</h3>
+      <h3 class="whatis--sub-headline">¿Cómo?</h3>
       <p>
         Los pull requests (contribuciones) pueden hacerse en <strong>cualquier repositorio/proyecto alojado en GitHub</strong>.
       </p>
@@ -298,7 +300,7 @@
     <img src="{{ '/hacktoberfest2018_assets/pioneras.png'|asseturl }}" alt="Logo Pioneras Dev" />
     <img src="{{ '/hacktoberfest2018_assets/pybaq.png'|asseturl }}" alt="Logo PyBAQ" />
     <img src="{{ '/hacktoberfest2018_assets/fullstack.png'|asseturl }}" alt="Logo FullStack Labs" />
-    <img src="{{ '/hacktoberfest2018_assets/r-analitica.png'|asseturl }}" alt="Logo Barranquilla Analitica R" />
+    <img src="{{ '/hacktoberfest2018_assets/R_Analitica_BAQ.png'|asseturl }}" alt="Logo Barranquilla Analitica R" style="width: 12%; height:auto" />
   </div>
 </section>
 
@@ -308,8 +310,8 @@
   </div>
   <div class="sponsors--logos">
     <img src="{{ '/hacktoberfest2018_assets/fullstack.png'|asseturl }}" alt="Logo FullStack Labs" style="width: 300px;" />
-    <img src="{{ '/hacktoberfest2018_assets/ideaware.png'|asseturl }}" alt="Logo Ideaware" style="width: 100px;" />
-    <img src="{{ '/hacktoberfest2018_assets/finsocial.png'|asseturl }}" alt="Logo Finsocial" style="width: 20%;" />
+    <img src="{{ '/hacktoberfest2018_assets/ideaware-logo.png'|asseturl }}" alt="Logo Ideaware" style="width: 300px;" />
+    <img src="{{ '/hacktoberfest2018_assets/finsocial.png'|asseturl }}" alt="Logo Finsocial" style="width: 300px;" />
   </div>
 </section>
   
@@ -318,12 +320,12 @@
       <h2 class="schedule--headline">Agenda</h2>
       <ul class="schedule--details">
         <li>12:30 - 01:00 <span>Registro</span></li>
-        <li>01:00 - 01:15 <span>Charla - Iniciación al open source</span></li>
-        <li>01:15 - 01:30 <span>Charla - ¿Por qué open source?</span></li>
-        <li>01:30 - 01:45 <span>Charla - ¿Cómo pasé de financiero a científico de datos?</span></li>
-        <li>01:45 - 02:00 <span>Charla - CEO Andrés Max</span></li>
-        <li>02:00 - 02:10 <span>Orientación</span></li>
-        <li>02:10 - 06:30 <span>Evento - ¡Vamos a programar!</span></li>
+        <li>01:00 - 01:30 <span>Charla - Iniciación al open source</span></li>
+        <li>01:30 - 01:45 <span>Charla - ¿Por qué open source?</span></li>
+        <li>01:45 - 02:00 <span>Charla - ¿Cómo pasé de financiero a científico de datos?</span></li>
+        <li>02:00 - 02:15 <span>Charla - CEO Andrés Max</span></li>
+        <li>02:15 - 02:25 <span>Orientación</span></li>
+        <li>02:25 - 06:30 <span>Evento - ¡Vamos a programar!</span></li>
         <li>06:30 - 07:00 <span>Comida</span></li>
       </ul>
   </div>
@@ -443,6 +445,29 @@
           <a class="project--issue" data-analytics="projectLink" href="https://github.com/PyBAQ/temii/issues/127">
             <span class="project--issue-number">
               26
+            </span>
+            <span class="project--issue-title">
+              Sección de ¿cómo se usa?
+            </span>
+          </a>
+        </div>
+      </li>
+      <li class="project">
+        <div class="project--header">
+            <a class="project--name" data-analytics="projectLink" href="https://github.com/BarranquillaAnalitica/hacktoberfest-2018-Vis">
+            Reto Visualización Datos
+            </a>
+            <span class="project--language">
+              R
+            </span>
+        </div>
+        <div class="project--body">
+          <p class="project--description">
+          Evaluaremos la estética de los gráficos, la creatividad, el impacto y la capacidad de transmitir la información deseada contando una historia. ¡Revisa el repo para ver los premios!
+          </p>
+          <a class="project--issue" data-analytics="projectLink" href="https://github.com/BarranquillaAnalitica/hacktoberfest-2018-Vis">
+            <span class="project--issue-number">
+              1
             </span>
             <span class="project--issue-title">
               Sección de ¿cómo se usa?
@@ -645,7 +670,7 @@
     </span>
   </a>
 </section>
-
+    {% endblock body %}
     </main>
 
     <footer class="footer container" role="contentinfo">
@@ -715,7 +740,7 @@
     </a>
   </p>
   <p class="footer__copyright">
-    &copy; 2018 <a href="https://pybaq.co/" target="_blank" style="color:#cccccc;">PyBAQ</a> Todos los derechos reservados. Orgullosamente hecho en Colombia
+    &copy; 2018 <a href="https://pybaq.co/" target="_blank" style="color:#cccccc;">PyBAQ</a>. Hecho en Barranquilla. Inspirado de <a href="https://hacktoberfest.digitalocean.com/" style="color:#cccccc;">Hacktoberfest.</a>
   </p>
 </footer>
     <script>
