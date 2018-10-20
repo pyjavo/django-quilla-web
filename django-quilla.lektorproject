@@ -3,7 +3,6 @@ name = pybaq-web
 url = https://pybaq.co
 
 [packages]
-lektor-webpack-support = 0.4
 lektor-disqus-comments = 0.2
 lektor-markdown-highlighter = 0.2
 
