@@ -65,6 +65,14 @@ Luego puede instalar lektor usando el siguiente comando:
 
     curl -sf https://www.getlektor.com/install.sh | sh
 
+Verificar que las variables de entorno del formato UTF-8 en sus respectivos idiomas esten definidas en el
+archivo ~/.bash_profile de su sistema y en caso de no estar definidas agregarlas.
+
+```bash
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+```
+
 ### La discusión Python3
 
 Ahora mismo Lektor **no provee** una forma confiable y sencilla de instalar la herramienta en Linux usando Python 3. Por esto no usamos esta versión de Python. Sin embargo todos los pasos anteriormente descritos en windows funcionan sin inconvenientes usando cualquier versión de Python 3.6+. Será, sin embargo, tu responsabilidad inspeccionar el código fuente de los plugins de Lektor para segurar su compatibilidad con Python 3. Recuerda que es codigo libre y no se trata de pedir las cosas sino de contribuir a las características que deseas.
