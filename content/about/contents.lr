@@ -32,7 +32,7 @@ body:
 
 <div class="col-lg-3 col-md-3 col-sm-3">
 <div class="he-wrap tpl6">
-<img style="width: 100%;height: 260px;" src="/img/team/javier-daza.jpg" alt="Javier Daza">
+<img style="width: 100%;height: auto;" src="/img/team/javier-daza.jpg" alt="Javier Daza">
 <div class="he-view">
 <div class="bg a0" data-animate="fadeIn">
 <h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
@@ -49,7 +49,7 @@ body:
 
 <div class="col-lg-3 col-md-3 col-sm-3">
 <div class="he-wrap tpl6">
-<img style="width: 100%;height: 260px;" src="/img/team/cesar-herdenez.jpg" alt="Cesar Herdenez">
+<img style="width: 100%;height: auto;" src="/img/team/cesar-herdenez.jpg" alt="Cesar Herdenez">
 <div class="he-view">
 <div class="bg a0" data-animate="fadeIn">
 <h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
@@ -66,7 +66,7 @@ body:
 
 <div class="col-lg-3 col-md-3 col-sm-3">
 <div class="he-wrap tpl6">
-<img style="width: 100%;height: 260px;" src="/img/team/dario-guzman.jpg" alt="Darío Guzman">
+<img style="width: 100%;height: auto;" src="/img/team/dario-guzman.jpg" alt="Darío Guzman">
 <div class="he-view">
 <div class="bg a0" data-animate="fadeIn">
 <h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
@@ -82,7 +82,7 @@ body:
 </div>
 <div class="col-lg-3 col-md-3 col-sm-3">
 <div class="he-wrap tpl6">
-<img style="width: 100%;height: 260px;" src="/img/team/paula-aragon.jpg" alt="Paula Aragón">
+<img style="width: 100%;height: auto;" src="/img/team/paula-aragon.jpg" alt="Paula Aragón">
 <div class="he-view">
 <div class="bg a0" data-animate="fadeIn">
 <h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
@@ -103,7 +103,7 @@ body:
 <div class="row centered">
 <div class="col-lg-3 col-md-3 col-sm-3">
 <div class="he-wrap tpl6">
-<img style="width: 100%;height: 260px;" src="/img/team/sara-galvan.jpg" alt="Sara Galván">
+<img style="width: 100%;height: auto;" src="/img/team/sara-galvan.jpg" alt="Sara Galván">
 <div class="he-view">
 <div class="bg a0" data-animate="fadeIn">
 <h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
@@ -120,7 +120,7 @@ body:
 
 <div class="col-lg-3 col-md-3 col-sm-3">
 <div class="he-wrap tpl6">
-<img style="width: 100%;height: 260px;" src="/img/team/katherine-lora.jpg" alt="Katherine Lora">
+<img style="width: 100%;height: auto;" src="/img/team/katherine-lora.jpg" alt="Katherine Lora">
 <div class="he-view">
 <div class="bg a0" data-animate="fadeIn">
 <h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
