@@ -73,7 +73,7 @@ body:
 <a href="mailto:guzman.d.dario@gmail.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
 <a href="https://twitter.com/gudarJS" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
 </div>
-</div>	
+</div>
 </div>
 <h4>Darío Guzman</h4>
 <h5 class="ctitle">CO-ORGANIZADOR</h5>
@@ -89,7 +89,7 @@ body:
 <a href="mailto:djangoquilla@gmail.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
 <a href="https://twitter.com/pandrearro" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
 </div>
-</div>	
+</div>
 </div>
 <h4>Paula Aragón</h4>
 <h5 class="ctitle">CO-ORGANIZADORA</h5>
@@ -173,6 +173,23 @@ body:
 <h4>Andres Pérez</h4>
 <h5 class="ctitle"></h5>
 <p>Contribuidor y traductor</p>
+<div class="hline"></div>
+</div>
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="he-wrap tpl6">
+<img class="colaboradores" style="width: 100%;height: auto;" src="/img/team/sergio-orozco.jpg" alt="Sergio Orozco">
+<div class="he-view">
+<div class="bg a0" data-animate="fadeIn">
+<h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
+<a href="https://www.secorto.com" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-external-link"></i></a>
+<a href="https://github.com/scot3004" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-github"></i></a>
+</div>
+</div>
+</div>
+<h4>Sergio Orozco</h4>
+<h5 class="ctitle"></h5>
+<p>Contribuidor <br/> Sitio web</p>
 <div class="hline"></div>
 </div>
 </div><!-- end colaboradores row --> 
