@@ -1,4 +1,9 @@
-# Incidente sitio web python Barranquilla
+---
+name: Reporte de error
+about: Genera un reporte de error para ayudarnos a mejorar
+---
+
+# Error en sitio web de python Barranquilla
 
 ## Comportamiento esperado
 
