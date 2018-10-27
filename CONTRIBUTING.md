@@ -45,6 +45,20 @@ estilos puede generar un rechazo de tu PR.
 
 > - Sigue los lineamientos del [PEP8][1]
 
+## Issues
+
+Puedes crear nuevos incidentes (issues) usando el botón "New issue" en la pestaña "Issues" del repositorio
+
+![New Issue](./assets/img/contributing/new_issue.png)
+
+Selecciona una de las plantillas según el tipo de incidente que deseas reportar presionando el respectivo botón "Get started"
+
+![Issue templates](./assets/img/contributing/issue_templates.png)
+
+Reemplaza el contenido de acuerdo a lo que quieres reportar reemplazando el texto por lo que se está solicitando
+
+![Issue templates](./assets/img/contributing/issue_content.png)
+
 ## Pull Requests
 
 Por favor mantén tus pull requests enfocados en un solo tema en específico.
@@ -84,7 +98,7 @@ El cual [cierra][2] el issue #145 'Agregar Cierre automático de commits a contr
 
 Para ver cual es el numero de issue asociado al caso que quieres resolver, lo encuentras debajo del titulo del ticket:
 
-![El número que sale en gris debajo del titulo](./assets/img/issue_title.png)
+![El número que sale en gris debajo del titulo](./assets/img/contributing/issue_title.png)
 
 Si quieres ver que otras palabras pueden cerrar automaticamente un issue (en ingles) ingresa al siguiente enlace: https://help.github.com/articles/closing-issues-using-keywords/ 
 
