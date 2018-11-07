@@ -1,6 +1,7 @@
 [project]
 name = pybaq-web
 url = https://pybaq.co
+locale = es_CO
 
 [packages]
 lektor-disqus-comments = 0.2

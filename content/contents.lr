@@ -26,6 +26,10 @@ text:
 	</div>
 ----
 class: default
+#### events ####
+title: Proximos eventos
+----
+source: next_events
 #### text-block ####
 text:
 

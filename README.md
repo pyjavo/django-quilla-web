@@ -97,3 +97,18 @@ Los invitamos a leer el siguiente [repositorio con el código de conducta](https
 Necesitamos de tu ayuda para terminar este proyecto! **¿Cómo puedes contribuir?** Mira las normas que hemos redactado en el archivo [CONTRIBUTING.md] para organizarnos mejor en el desarrollo. Esperamos tus Pull Requests e Issues. Gracias por tu apoyo.
 
 [CONTRIBUTING.md]: https://github.com/PyBAQ/django-quilla-web/blob/master/CONTRIBUTING.md
+
+## Actualizar eventos
+
+Para actualizar los eventos, [Obtén un API KEY](https://secure.meetup.com/es-ES/meetup_api/key/)
+
+![Getting and API key](./assets/img/contributing/api_key.png)
+
+En un terminal bash ejecuta los siguientes comandos
+
+```bash
+export MEETUP_API_KEY=<API_KEY>
+curl -L "https://api.meetup.com/2/events?key=$MEETUP_API_KEY&group_urlname=pythonbaq" > databags/next_events.json
+```
+
+> por favor actualiza los eventos solo si lo consideras estrictamente necesario, entre los metadatos incluidos incluye la fecha de actualización en un timestamp (propenso a conflictos)

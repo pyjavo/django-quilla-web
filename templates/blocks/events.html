@@ -1,0 +1,37 @@
+<section class="events">
+  <div class="container mtb">
+    
+    <h3 id="events-title" clasS="text-center">{{this.title.upper() }}</h3>
+    {% for element in bag(this.source, 'results') %}
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="media">
+            <div class="media-left">
+              <a href='{{ element.get("event_url") }}'>
+                <img class="media-object" src='{{ element.get("photo_url") }}' alt="" />
+              </a>
+            </div>
+            <div class="media-right">
+              <h3 class="media-heading"><a href='{{ element.get("event_url") }}'>{{ element.get("name") }}</a></h3>
+              <div class=event-details>
+                <div class="venue">
+                  <strong>{{ element.get("venue").get("name") }}</strong>
+                  <span>{{ element.get("venue").get("address_1") }}</span>
+                </div>
+                {% set time_millis = element.get("time") / 1000 - 18000  %} {# 18000 UTC-5 Hora de colombia #}
+                <div class="date">{{ time_millis | datetimeformat("EEEE, d 'de' MMMM 'de' y, h:mm a") }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Estamos planificando nuestro proximo evento, si deseas colaborar envianos tu propuesta
+          a nuestro email <a href="mailto:djangoquilla@gmail.com">djangoquilla@gmail.com</a> o en el teléfono <a href="tel:+573008766043">300-8766043</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
