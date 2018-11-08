@@ -1,0 +1,24 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="media">
+      <div class="media-left">
+        <a href='{{ this.url }}'>
+          <img class="media-object" src='{{ this.image }}' alt="" />
+        </a>
+      </div>
+      <div class="media-right">
+        <h3 class="media-heading"><a href='{{ this.url }}'>{{ this.title }}</a></h3>
+        <div class=event-details>
+          <div class="venue">
+            <strong>{{ this.venue }}</strong>
+            <span>{{ this.address }}</span>
+          </div>
+          <div class="date">{{ this.date | datetimeformat("EEEE, d 'de' MMMM 'de' y, h:mm a") }}</div>
+          <div class="attach">
+              {{ this.attach }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

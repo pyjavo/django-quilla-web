@@ -26,10 +26,15 @@ text:
 	</div>
 ----
 class: default
-#### events ####
-title: Proximos eventos
+#### section-block ####
+title: Próximos Eventos
 ----
+body:
+
+##### meetup-events #####
 source: next_events
+-----
+anexos: 
 #### text-block ####
 text:
 
