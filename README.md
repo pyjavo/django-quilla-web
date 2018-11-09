@@ -109,6 +109,7 @@ En un terminal bash ejecuta los siguientes comandos
 ```bash
 export MEETUP_API_KEY=<API_KEY>
 curl -L "https://api.meetup.com/2/events?key=$MEETUP_API_KEY&group_urlname=pythonbaq" > databags/next_events.json
+curl -L "https://api.meetup.com/2/events?key=$MEETUP_API_KEY&group_urlname=pythonbaq&status=past&desc=true" > databags/past_events.json
 ```
 
 > por favor actualiza los eventos solo si lo consideras estrictamente necesario, entre los metadatos incluidos incluye la fecha de actualización en un timestamp (propenso a conflictos)
