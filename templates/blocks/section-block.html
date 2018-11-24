@@ -1,6 +1,8 @@
-<section>
+<section class="{{this.class}}">
   <div class="container mtb">
-    <h3 id="section-title" class="text-center">{{this.title.upper() }}</h3>
+    {% if this.title %}
+      <h3 class="section-title text-center">{{this.title.upper() }}</h3>
+    {% endif %}
     {{ this.body }}
   </div>
 </section>

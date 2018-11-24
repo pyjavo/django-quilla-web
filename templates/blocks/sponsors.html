@@ -1,0 +1,14 @@
+<div id="cwrap">
+  <div class="container">
+    <div class="row centered">
+      {% if this.title %}
+        <h3 class="section-title text-center">{{this.title.upper() }}</h3>
+      {% endif %}
+      {% for element in bag(this.source, alt) %}
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <img class="centered" src='{{ element.get("image") }}' alt='{{ element.get("name") }}' class="img-responsive">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
