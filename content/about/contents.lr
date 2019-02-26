@@ -119,20 +119,8 @@ body:
 </div>
 
 <div class="col-lg-3 col-md-3 col-sm-3">
-<div class="he-wrap tpl6">
-<img style="width: 100%;height: auto;" src="/img/team/katherine-lora.jpg" alt="Katherine Lora">
-<div class="he-view">
-<div class="bg a0" data-animate="fadeIn">
-<h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
-<a href="mailto:gerencia@tecneo.co" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
-<a href="https://twitter.com/ktylolita" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
-</div>
-</div>
-</div>
-<h4>Katherine Lora</h4>
-<h5 class="ctitle">CO-ORGANIZADORA</h5>
-<p>Marketing digital</p>
-<div class="hline"></div>
+
+
 </div>
 </div><!-- end 2nd row centered-->
 </div>
