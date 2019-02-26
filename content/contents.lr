@@ -92,11 +92,14 @@ text:
 		 <div class="container">
 		 	<div class="row centered">
 			 	<h3>NUESTROS PATROCINADORES</h3>
-			 	<div class="col-lg-6 col-md-6 col-sm-6">
+			 	<div class="col-lg-4 col-md-4 col-sm-4">
 			 		<img src="/img/patrocinadores/github-pages.png" class="img-responsive">
 			 	</div>
-			 	<div class="col-lg-6 col-md-6 col-sm-6">
+			 	<div class="col-lg-4 col-md-4 col-sm-4">
 			 		<img src="/img/patrocinadores/koombea.png" class="img-responsive">
+			 	</div>
+			 	<div class="col-lg-4 col-md-4 col-sm-4">
+			 		<img src="/img/patrocinadores/psf.png" class="img-responsive">
 			 	</div>
 		 	</div>
 		 </div>
