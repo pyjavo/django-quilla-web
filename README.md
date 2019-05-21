@@ -73,6 +73,24 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
 
+### Docker
+
+Si tienes Docker instalado (https://docs.docker.com/install/) puedes hacer uso del Dockerfile en el directorio principal para crear una imagen y posteriormente ejectar un contenedor con todas las dependencias necesarias. Desde el directorio principal del repositorio ejecuta:
+
+```bash
+# Bash o Powershell
+docker build -t pybaq .
+docker run --rm -p 5000:5000 -v ${PWD}:/app --name pybaq-local pybaq
+
+# Windows Command Line
+docker build -t pybaq .
+docker run --rm -p 5000:5000 -v %cd%:/app --name pybaq-local pybaq
+```
+
+Al montar la carpeta con el codigo fuente (`-v ${PWD}:/app` o `-v %cd%:/app`) los cambios que se hagan al codigo se propagaran al contenedor y se veran reflejados immediatamente.
+
+**Nota:** Verifica que el directorio donde tienes el codigo fuente puede ser montado como un Docker volume. En Linux no se requiere configuración extra, pero hay diferentes metodos para [MacOS](https://docs.docker.com/docker-for-mac/#file-sharing) y [Windows](https://blogs.msdn.microsoft.com/wael-kdouh/2017/06/26/enabling-drive-sharing-with-docker-for-windows/) dependiendo del modo de instalación.
+
 ### La discusión Python3
 
 Ahora mismo Lektor **no provee** una forma confiable y sencilla de instalar la herramienta en Linux usando Python 3. Por esto no usamos esta versión de Python. Sin embargo todos los pasos anteriormente descritos en windows funcionan sin inconvenientes usando cualquier versión de Python 3.6+. Será, sin embargo, tu responsabilidad inspeccionar el código fuente de los plugins de Lektor para segurar su compatibilidad con Python 3. Recuerda que es codigo libre y no se trata de pedir las cosas sino de contribuir a las características que deseas.
