@@ -13,6 +13,8 @@ body:
 source: next_events
 -----
 anexos: 
+----
+class: default
 #### section-block ####
 title: Anteriores Eventos
 ----
@@ -30,7 +32,7 @@ attach: <a href="http://slides.com/javidazac/bienvenidos-a-django-barranquilla-1
 ###### event-attach ######
 title: 2ndo meetup Django Barranquilla
 ------
-attach: <a href="https://drive.google.com/file/d/0B2a5TeZyq4RZOUVGYjFZVkZLYzg/view">Presentación</a> / <a href="https://www.meetup.com/pythonbaq/photos/26134119/#437661975">Galería Fotos</a></td>
+attach: <a href="https://drive.google.com/file/d/0B2a5TeZyq4RZOUVGYjFZVkZLYzg/view">Presentación</a> / <a href="https://www.meetup.com/pythonbaq/photos/26134119/#437661975">Galería Fotos</a>
 ###### event-attach ######
 title: 3er Meetup Django Barranquilla
 ------
@@ -54,7 +56,7 @@ attach: Como usar GeoDjango <a href="https://github.com/ingenieroariel/loco">Git
 ###### event-attach ######
 title: 13vo Meetup Django Barranquilla
 ------
-attach: Buenas practicas en Python y el uso de métodos mágicos</td><a href="http://slides.com/leonardofabioorozcopadilla/buenas-practicas#/">Presentación</a>
+attach: Buenas practicas en Python y el uso de métodos mágicos <a href="http://slides.com/leonardofabioorozcopadilla/buenas-practicas#/">Presentación</a>
 ###### event-attach ######
 title: Taller de Co-creación #1
 ------
@@ -66,7 +68,7 @@ attach: Code like a pythonista <a href="https://docs.google.com/presentation/d/1
 ###### event-attach ######
 title: 15vo Meetup Django Barranquilla
 ------
-attach: Como hacer API Rest en Django y como integrarlo con AngularJS <a href="https://github.com/cristiangrojas/meetup-barranquilla">GitHub</a> / <a href="https://github.com/johnpapa/angular-styleguide">Guía estilos Angular</a></td>
+attach: Como hacer API Rest en Django y como integrarlo con AngularJS <a href="https://github.com/cristiangrojas/meetup-barranquilla">GitHub</a> / <a href="https://github.com/johnpapa/angular-styleguide">Guía estilos Angular</a>
 ###### event-attach ######
 title: Taller de Co-creación #2
 ------
@@ -78,11 +80,11 @@ attach: <a href="https://trello.com/b/pKAeEDBT/temii">Trello</a>
 ###### event-attach ######
 title: Bienvenida de Año 2016 Django Barranquilla
 ------
-attach: <a href="https://secure.meetupstatic.com/photos/event/f/7/d/highres_462963965.jpeg">Foto</a></td>
+attach: <a href="https://secure.meetupstatic.com/photos/event/f/7/d/highres_462963965.jpeg">Foto</a>
 ###### event-attach ######
 title: Taller de Co-creación #4
 ------
-attach: <a href="https://secure.meetupstatic.com/photos/event/1/9/9/4/highres_462966548.jpeg">Foto</a></td>
+attach: <a href="https://secure.meetupstatic.com/photos/event/1/9/9/4/highres_462966548.jpeg">Foto</a>
 ###### event-attach ######
 title: Cómo usar Django smart selects
 ------
@@ -202,11 +204,13 @@ attach: <a href="https://docs.google.com/presentation/d/1ehJK1l0gNC81J1fB_p4Z3Ud
 ###### event-attach ######
 title: Seguridad informática en la web + Aprender inglés: ahora es mejor que nunca
 ------
-attach: <a href="https://drive.google.com/open?id=11L8uOcmRJPKujCB6G1Ugw9zb1mhOG6RI">Slides seguridad<a> / <a href="https://drive.google.com/open?id=1zw9ISDz9IoViS56HM8m_kTpTPYq5qRNv">Slides Aprender inglés<a>
+attach: <a href="https://drive.google.com/open?id=11L8uOcmRJPKujCB6G1Ugw9zb1mhOG6RI">Slides seguridad<a> / <a href="https://drive.google.com/open?id=1zw9ISDz9IoViS56HM8m_kTpTPYq5qRNv">Slides Aprender inglés</a>
 ###### event-attach ######
 title: PowerBI y Python: Inteligencia de Negocios + Introducción a servicios de AWS
 ------
 attach: <a href="https://drive.google.com/open?id=18lNOfFPZOPGn0yoLimruIOGEQ61_wFqq">Ppts powerBI</a> / <a href="https://drive.google.com/open?id=1M6TqDKhrBCqv_A8Y5ILjVp2vy5Zh-0CU">Ppts AWS</a>
+----
+class: default
 #### section-block ####
 title: Otros Eventos
 ----
@@ -226,3 +230,5 @@ address:
 url: https://argentinaenpython.com/django-girls/2017/07/barranquilla
 -----
 image: 
+----
+class: default

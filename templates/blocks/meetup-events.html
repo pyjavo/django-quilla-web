@@ -5,7 +5,12 @@
         <div class="media">
           <div class="media-left">
             <a href='{{ element.get("event_url") }}'>
-              <img class="media-object" src='{{ element.get("photo_url") }}' alt="" />
+              <img
+                class="media-object"
+                src='{{ element.get("photo_url")
+                      if element.get("photo_url")
+                      else "/img/event-placeholder.jpg" }}'
+                alt="" />
             </a>
           </div>
           <div class="media-right">
