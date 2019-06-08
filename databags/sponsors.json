@@ -1,0 +1,19 @@
+{
+    "es": [
+        {
+            "name": "Koombea",
+            "image": "https://pybaq.co/img/patrocinadores/koombea.png",
+            "description": "Lugar del evento"
+        },
+        {
+            "name": "Github Pages",
+            "image": "https://pybaq.co/img/patrocinadores/github-pages.png",
+            "description": "Sitio web"
+        },
+        {
+            "name": "Python Software Foundation",
+            "image": "https://pybaq.co/img/patrocinadores/psf.png",
+            "description": "Comidas"
+        }
+    ]
+}

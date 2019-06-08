@@ -13,3 +13,8 @@ default = yes
 
 [servers.ghpages-https]
 target = ghpages+https://PyBAQ/django-quilla-web?cname=pybaq.co
+
+[alternatives.es]
+name = Spanish
+primary = yes
+locale = es_CO
