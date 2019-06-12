@@ -8,11 +8,7 @@
   <title>{% block title %}Python Barranquilla - Comunidad de Desarrollo Web{% endblock %} </title>
   <link rel="stylesheet" href="{{ '/static/gen/styles.css'|asseturl }}">
   <link rel="stylesheet" href="{{ '/css/screen.css'|asseturl }}">
-  <!--<link rel="stylesheet" href="{{
-  '/static/gen/styles.css'|asseturl }}">
-  <!-- Just for debugging purposes. Don't actually copy this line! -->
   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -38,7 +34,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,7 +44,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="{{ '/'|url }}">
-          <img class="navbar-logo" src="{{ '/img/pybaq-logo.png' | url}}">
+          <img class="navbar-logo" src="{{ '/img/pybaq-logo.png' | url}}" alt="Python Barranquilla">
         </a>
       </div>
       <div class="navbar-collapse collapse navbar-right">
@@ -87,7 +83,7 @@
             <a href="http://twitter.com/pybaq"><i class="fa fa-twitter"></i></a>
             <a href="https://django-python-quilla.slack.com/signup"><i class="fa fa-slack"></i></a>
             <a href="https://www.instagram.com/pybaq"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.meetup.com/pythonbaq/"><img src="/img/meetup.png" class="meetup-icon"></a>
+            <a href="https://www.meetup.com/pythonbaq/"><img src="/img/meetup.png" class="meetup-icon" alt="meetup"></a>
           </p>
         </div>
         <div class="col-lg-4">

@@ -3,11 +3,16 @@
     <div class="media">
       <div class="media-left">
         <a href='{{ this.url }}'>
-          <img class="media-object" src='{{ this.image }}' alt="" />
+          <img
+            class="media-object"
+            src='{{ this.image if this.image else "/img/event-placeholder.jpg" }}'
+            alt="" />
         </a>
       </div>
       <div class="media-right">
-        <h3 class="media-heading"><a href='{{ this.url }}'>{{ this.title }}</a></h3>
+        <h3 class="media-heading">
+          <a href='{{ this.url }}'>{{ this.title }}</a>
+        </h3>
         <div class=event-details>
           <div class="venue">
             <strong>{{ this.venue }}</strong>
