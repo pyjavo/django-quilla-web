@@ -49,42 +49,16 @@
 	SITE WRAPS
 ################################################################# */
 
-#headerwrap {
-	background-color: #01D099;
-	min-height: 550px;
-	padding-bottom: 0px;
-	text-align: center;
-	width: 100%;
-}
-
-#headerwrap h3, h5 {
-	color: white;
-	font-weight: 400;
-}
-
-#headerwrap h1 {
-	color: white;
-	margin-bottom: 25px;
-}
-
-#headerwrap .img-responsive {
-	margin: 0 auto;
-}
-
-#headerwrap>.row{
-	margin-right: 0;
-}
-
 /* Services Wrap */
-#service {
+#service, .service{
 	margin-top: 100px;
 	margin-bottom: 80px;
-}
-
-#service i {
-	color: $blue-light;
-	font-size: 60px;
-	padding: 15px;
+	
+	i {
+		color: $blue-light;
+		font-size: 60px;
+		padding: 15px;
+	}
 }
 
 /* Portfolio Wrap */
