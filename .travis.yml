@@ -12,8 +12,6 @@ before_install:
 install:
 - npm install
 - pip install Lektor==3.1
-- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then curl -L "https://api.meetup.com/2/events?key=$MEETUP_API_KEY&group_urlname=pythonbaq" > databags/next_events.json; fi'
-- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then curl -L "https://api.meetup.com/2/events?key=$MEETUP_API_KEY&group_urlname=pythonbaq&status=past&desc=true" > databags/past_events.json; fi'
 
 branches:
   only:
