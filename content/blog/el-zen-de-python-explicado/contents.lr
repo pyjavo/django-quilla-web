@@ -1,0 +1,184 @@
+title: El Zen de Python Explicado
+---
+author: Javier Daza
+---
+body:
+
+Si alguna vez abren la consola de python y escriben `import this` verán que les aparecerán las líneas con el famoso Zen de Python:
+
+1. Beautiful is better than ugly.
+2. Explicit is better than implicit.
+3. Simple is better than complex.
+4. Complex is better than complicated.
+5. Flat is better than nested.
+6. Sparse is better than dense.
+7. Readability counts.
+8. Special cases aren't special enough to break the rules.
+9. Although practicality beats purity.
+10. Errors should never pass silently.
+11. Unless explicitly silenced.
+12. In the face of ambiguity, refuse the temptation to guess.
+13. There should be one-- and preferably only one --obvious way to do it.
+14. Although that way may not be obvious at first unless you're Dutch.
+15. Now is better than never.
+16. Although never is often better than *right* now.
+17. If the implementation is hard to explain, it's a bad idea.
+18. If the implementation is easy to explain, it may be a good idea.
+19. Namespaces are one honking great idea -- let's do more of those!
+
+Tim Peters, un pythonista por mucho tiempo redacto los principios guía de Python en estos 20 aforismos, de los cuales solo 19 han sido escritos. Ahora, como ejercicio práctico trataré de deglosar cada uno de los principios de la filosofía del lenguaje. Acompañenme y sientanse libres de comentar en cualquier momento su punto de vista.
+
+## 1. Bello es mejor que feo.
+En vez de usar && o || como operadores logicos, considera usar and, or. Aunque es subjetivo, el código parece más legible y hermoso de esta manera.
+
+    if (is_valid(a) && b == 0 || s == 'yes') {
+
+vs
+
+    if is_valid(a) and b == 0 or s == 'yes':
+
+## Explícito es mejor que implícito.
+Esto puede referirse a "nombrar explícitamente módulos al invocarlos en funciones".
+
+    import os
+    print os.getcwd()
+
+en vez de 
+
+    from os import *
+    print getcwd()
+
+Deje que su código sea legible por un desconocido que no sabe nada sobre usted o su programa.
+
+## 2. Simple es mejor que complejo.
+
+No escriba código complejo. Tu código debe ser legible. Considera que tu código será utilizado por un asesino psicópata que sabe dónde vives. El código simple puede ser más largo, pero recuerde que debe escribir una vez pero leer / mantener el código siempre.
+
+Según el desarrollador brasileño de software Vitor Freitas, _"Steve Jobs declaró una vez que "simple puede ser más difícil que complejo". Y eso es verdad. Requiere mucho trabajo arduo para que su forma de pensar esté limpia, para llegar a una solución simple. Pero una solución simple siempre es mejor que una solución compleja. Simple se comunica mejor. Simple crea una conexión instantánea. La simplicidad es algo que puedes aplicar a todo en tu vida, no solo a la programación."._
+
+
+## 3. Complejo es mejor que complicado.
+Voy a intentarlo en este. Digamos que mi novia imaginaria me pide que le haga una comida de tres platos para su cumpleaños (: complejo). A continuación, digamos que me pide que la lleve a un restaurante del que disfrutará (: complicado). Piensa en la diferencia principal entre Data Analytics y Data Science: en x tienes las preguntas pero no las respuestas, mientras que en y no tienes las preguntas ni las respuestas.
+
+## 4. Plano es mejor que anidado.
+El anidamiento es muchas veces sinónimo de complejidad extra, de dependencias que a veces incomodan, de tener que mirar con cuidado. Lo plano es más directo, más claro. Y así debe ser tu decisión, directo al grano, sin vueltas.
+
+Lo plano es _"... por lo general, más fácil y más rápido de parsear, y debería preferirse ... donde se necesitan estructuras de datos anidados, se prefiere poco profundo en lugar de profundamente anidado."_
+
+## 5. Disperso es mejor que denso.
+No intentes pegar demasiado código en una línea:
+
+    if i>0: return sqrt(i) 
+    elif i==0: return 0 
+    else: return 1j * sqrt(-i)
+
+versus
+
+    if i > 0:
+        return sqrt(i) 
+    elif i == 0:
+        return 0
+    else: 
+        return 1j * sqrt(-i)
+
+## 6. La legibilidad cuenta.
+Esta es fácil: D. Compare C y Python:
+    #include <stdio.h> 
+    int main(void) 
+    { 
+        printf("Hello, world!\n"); 
+        return(0); 
+    }
+
+vs
+
+    print "Hello world!"
+
+¿Y qué hay de la sangría? El código bien sangrado es más legible. Por lo tanto, en Python es obligatorio.
+
+## 7. Los casos especiales no son tan especiales como para quebrantar las reglas.
+Los idiomas y las bibliotecas deberían aspirar a la coherencia y deberían apoyar el caso general.
+
+## 8. Aunque lo práctico gana a la pureza.
+Con respecto a la Regla 8, siempre puede haber una excepción a la regla.
+
+## 9. Los errores nunca deberían dejarse pasar silenciosamente.
+Nunca permita que los errores, que pueden ocurrir, confundan al lector. Esto se puede resolver fácilmente imprimiendo una cadena cuando ocurre un error.
+
+    try: 
+        import this 
+    except ImportError: 
+        print 'this is not available'
+
+## 10. A menos que hayan sido silenciados explícitamente.
+    try: 
+        v = d[k] 
+    except KeyError: 
+        v = d[k] = default
+
+## 11. Frente a la ambigüedad, rechaza la tentación de adivinar.
+De nuevo, esto vuelve al tema de hacer que tu código sea específico, claro y hermoso. 
+
+Considere
+    if not a and b:
+        do something
+
+¿Qué une más estrechamente 'no' o 'y'? La sintaxis no es ambigua, pero mi memoria no.
+¿Podría ser? (no):
+
+    if not (a and b):
+        do something
+    
+y que tal
+    if b and not a:
+        do something
+
+Tal vez un poco mas feo pero sirve:
+    if (not a) and b:
+        do something
+    
+Esto es subjetivo porque alguien puede argumentar que debe esperar que el lector de su código conozca Python y, por lo tanto, las prioridades para 'not' y 'and', y no es lo suficientemente oscuro como para justificar paréntesis.
+
+## 12. Debería haber una -y preferiblemente sólo una- manera obvia de hacerlo.
+Exactamente lo contrario del lema del lenguaje de programación de Perl. "En otras palabras, piense por qué sería que Python se describe como un lenguaje de programación fácil de aprender. ¿No sería más difícil si tuvieras que aprender múltiples formas de hacer cada cosa? 
+
+El ejemplo más claro es al iterar sobre una lista. En Python solo debes aprender:
+
+    for element in sequence:
+
+## 13. Aunque esa manera puede no ser obvia al principio a menos que usted sea holandés.
+Esta es una referencia al creador de Python, Guido van Rossum. Al ver que Guido creó el lenguaje Python, tendría sentido que aprender o recordar una regla en Python sería más fácil para él de lo que lo haría cualquier otra persona, en promedio.
+
+## 14. Ahora es mejor que nunca.
+No dedique demasiado tiempo a planificar y preoptimizar; obtenga algo que haga el trabajo y mejorelo con el tiempo.
+
+
+## 15. Aunque nunca es a menudo mejor que ya mismo.
+Pero piensa un poco en eso, para que no te desvíes por un camino que luego significa que no hay un camino elegante hacia atrás.
+
+## 16. Si la implementación es difícil de explicar, es una mala idea.
+Si la implementación es complicada, definitivamente no es simple, lo que significa que no está cerca de un borrador final, lo que significa que no es bueno publicarlo como tal.
+
+## 17. Si la implementación es fácil de explicar, puede que sea una buena idea.
+Algunas ideas son simplemente malas, independientemente de si son fáciles de implementar o no.
+
+## 18. Los 'namespaces' son una gran idea ¡Hagamos más de esas cosas!
+Google define un 'namespace' como "un conjunto de símbolos que se utilizan para organizar objetos de varios tipos, de modo que estos objetos pueden ser referidos por su nombre." Esto todavía me confunde, así que veamos lo que tenemos aquí: Conjuntos de símbolos, y varios objetos a los que se hace referencia por nombre. Supongo que en lenguaje general, una palabra se define con otras palabras. Una vez aprendido, solo necesitamos una palabra, ¿o namespace? - para dar sentido a algo, simplificando la vida en el proceso.
+
+Comparte mi artículo si te gusto. Déjame un comentario si crees que hizo falta mencionar algo que pueda mejorar el artículo para los demás.
+
+#### Fuentes:
+- http://www.itsmycodeblog.com/the-zen-of-python/
+- http://thepythondjango.com/meaning-different-aphorism-zen-python/
+- http://pyconar.blogspot.com.co/2011/09/el-zen-de-pycon-plano-es-mejor-que.html
+- https://www.pythoniza.me/el-zen-de-python/
+- https://medium.com/@Pythonidaer/a-brief-analysis-of-the-zen-of-python-2bfd3b76edbf
+- https://www.quora.com/What-do-different-aphorisms-in-The-Zen-of-Python-mean
+- https://es.slideshare.net/doughellmann/an-introduction-to-the-zen-of-python
+- https://legacy.python.org/dev/peps/pep-0020/
+---
+excerpt: En este artículo haré unos breves comentarios sobre cada uno de los principios escritos dentro del Zen de Python
+---
+pub_date: 2020-03-28
+---
+twitter_handle: @javidazac
