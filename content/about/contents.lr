@@ -15,7 +15,7 @@ body:
 left:
 
 ###### image ######
-url: https://pybaq.co/img/nosotros.jpg
+url: /img/meetup-data-science-new-age.jpg
 ------
 alt: Team PyBAQ en la PyCon 2018
 ------
@@ -62,43 +62,15 @@ website_handle: https://javierdaza.co
 ------
 email: djangoquilla@gmail.com
 ------
-github_handle: 
+github_handle: javierdaza
 ------
 twitter_handle: javidazac
-###### member ######
-name: Cesar Herdenez
-------
-photo: /img/team/cesar-herdenez.jpg
-------
-role: Soporte y logística
-------
-website_handle: 
-------
-email: caherdenez@gmail.com
-------
-github_handle: 
-------
-twitter_handle: CesarAu0619
-###### member ######
-name: Darío Guzman
-------
-photo: /img/team/dario-guzman.jpg
-------
-role: Repositorios y logística
-------
-website_handle: 
-------
-email: guzman.d.dario@gmail.com
-------
-github_handle: 
-------
-twitter_handle: gudarJS
 ###### member ######
 name: Paula Aragón
 ------
 photo: /img/team/paula-aragon.jpg
 ------
-role: Gestión proyectos y artículos
+role: Soporte y logística
 ------
 website_handle: 
 ------
@@ -108,17 +80,31 @@ github_handle:
 ------
 twitter_handle: pandrearro
 ###### member ######
-name: Sara Galván
+name: Brayan García
 ------
-photo: /img/team/sara-galvan.jpg
+photo: /img/team/brayan-garcia.jpg
+------
+role: Soporte y logística
+------
+website_handle: 
+------
+email: ingbrayangarcia@gmail.com
+------
+github_handle: 
+------
+twitter_handle:
+###### member ######
+name: Yuliana Martinez
+------
+photo: /img/team/yuliana-martinez.jpg
 ------
 role: Relaciones públicas
 ------
 website_handle: 
 ------
-email: djangoquilla@gmail.com
+email: ycmartinezc@gmail.com
 ------
-github_handle: Xaraxx
+github_handle: ycmartinezc
 ------
 twitter_handle: 
 ----
@@ -173,6 +159,36 @@ email:
 github_handle: scot3004
 ------
 twitter_handle: scot3004
+###### member ######
+name: Sara Galván
+------
+photo: /img/team/sara-galvan.jpg
+------
+role: Soporte y Diseño
+------
+website_handle:
+------
+email: djangoquilla@gmail.com
+------
+github_handle: Xaraxx
+------
+twitter_handle:
+###### member ######
+name: Yudy Herrera
+------
+photo: /img/team/yudy-herrera.jpg
+------
+role: Redes Sociales
+------
+website_handle:
+------
+email: yudyh@uninorte.edu.co
+------
+github_handle: YudyD
+------
+twitter_handle:
+----
+class: default
 ----
 class: default
 #### testimonies ####
