@@ -1,0 +1,21 @@
+{
+    "es": [
+        {
+            "url":  "/",
+            "title": "INICIO"
+        },{
+            "url":  "/nosotros",
+            "title": "NOSOTROS"
+        },{
+            "url":  "/blog",
+            "title": "BLOG",
+            "active_childs": "true"
+        },{
+            "url":  "/eventos",
+            "title": "EVENTOS"
+        },{
+            "url":  "/contacto",
+            "title": "CONTACTO"
+        }
+    ]
+}
