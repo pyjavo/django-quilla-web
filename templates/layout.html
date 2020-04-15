@@ -49,15 +49,10 @@
       </div>
       <div class="navbar-collapse collapse navbar-right">
         <ul class="nav navbar-nav">
-          <li{% if this._path == '/' %} class="active"{% endif %}><a href="{{ '/'|url }}">INICIO</a></li>
-          {% for href, title in [
-            ['/about', 'NOSOTROS'],
-            ['/blog', 'BLOG'],
-            ['/eventos', 'EVENTOS'],
-            ['/contact', 'CONTACTO']
-          ] %}
-            <li{% if this.is_child_of(href) %} class="active"{% endif
-              %}><a href="{{ href|url }}">{{ title }}</a></li>
+          {% for menu_item in bag('menu', this.alt)  %}
+            <li{% if this._path==menu_item.url or menu_item.active_childs and this.is_child_of(menu_item.url) %} class="active"{% endif %}>
+              <a href="{{ menu_item.url | url(alt=this.alt) }}">{{ menu_item.title }}</a>
+            </li>
           {% endfor %}
         </ul>
       </div>
