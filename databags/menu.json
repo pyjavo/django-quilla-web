@@ -4,7 +4,7 @@
             "url":  "/",
             "title": "INICIO"
         },{
-            "url":  "/about",
+            "url":  "/nosotros",
             "title": "NOSOTROS"
         },{
             "url":  "/blog",
@@ -14,7 +14,7 @@
             "url":  "/eventos",
             "title": "EVENTOS"
         },{
-            "url":  "/contact",
+            "url":  "/contacto",
             "title": "CONTACTO"
         }
     ]
