@@ -12,6 +12,10 @@ title:
 body:
 
 ##### two-columns #####
+class_left: col-lg-6 col-md-6 col-sm-6
+-----
+class_right: col-lg-6 col-md-6 col-sm-6
+-----
 left:
 
 ###### image ######
@@ -38,9 +42,9 @@ Hoy en día la comunidad es un referente para otras comunidades en la ciudad,
 sino que también sirve para ayudar a encontrar empleo a los miembros que participan y se destacan activamente en las actividades que realizamos en la comunidad.
 Esperamos en un futuro lograr un impacto significativo en la ciudad y en el mundo.
 
-<a href="/contact" class="btn btn-theme">Contáctanos</a>
+<a href="/contacto" class="btn btn-theme">Contáctanos</a>
 ------
-class: default
+class: text-block
 ----
 class: default
 #### section-block ####
@@ -92,7 +96,7 @@ email: ingbrayangarcia@gmail.com
 ------
 github_handle: 
 ------
-twitter_handle:
+twitter_handle: 
 ###### member ######
 name: Yuliana Martinez
 ------
@@ -166,13 +170,13 @@ photo: /img/team/sara-galvan.jpg
 ------
 role: Soporte y Diseño
 ------
-website_handle:
+website_handle: 
 ------
 email: djangoquilla@gmail.com
 ------
 github_handle: Xaraxx
 ------
-twitter_handle:
+twitter_handle: 
 ###### member ######
 name: Yudy Herrera
 ------
@@ -180,15 +184,13 @@ photo: /img/team/yudy-herrera.jpg
 ------
 role: Redes Sociales
 ------
-website_handle:
+website_handle: 
 ------
 email: yudyh@uninorte.edu.co
 ------
 github_handle: YudyD
 ------
-twitter_handle:
-----
-class: default
+twitter_handle: 
 ----
 class: default
 #### testimonies ####
