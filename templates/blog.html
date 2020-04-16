@@ -31,7 +31,7 @@
 </div>
 <div class="container mtb">
     <div class="row">
-        <div class="col-lg-8 blog_post-posts">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 blog_post-posts">
         {% for post in this.pagination.items %}
             {% for image in post.attachments.images %}
             <a href="{{ post|url }}">
