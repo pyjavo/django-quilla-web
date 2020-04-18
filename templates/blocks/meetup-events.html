@@ -1,25 +1,27 @@
 <div class="meetup-events">
-  {% for element in bag(this.source, 'results') %}
+  {% for element in bag('meetup', this.source) %}
     <div class="panel panel-default">
       <div class="panel-body">
         <div class="media">
           <div class="media-left">
-            <a href='{{ element.get("event_url") }}'>
-              <img
+            <a href='{{ element.get("link") }}'>
+              <img width="200"
                 class="media-object"
-                src='{{ element.get("photo_url")
-                      if element.get("photo_url")
+                src='{{ element.get("featured_photo").get("photo_link")
+                      if element.get("featured_photo")
                       else "/img/event-placeholder.jpg" }}'
                 alt="" />
             </a>
           </div>
           <div class="media-right">
-            <h3 class="media-heading"><a href='{{ element.get("event_url") }}'>{{ element.get("name") }}</a></h3>
+            <h3 class="media-heading"><a href='{{ element.get("link") }}'>{{ element.get("name") }}</a></h3>
             <div class=event-details>
-              <div class="venue">
-                <strong>{{ element.get("venue").get("name") }}</strong>
-                <span>{{ element.get("venue").get("address_1") }}</span>
-              </div>
+              {% if element.get("venue") %}
+                <div class="venue">
+                  <strong>{{ element.get("venue").get("name") }}</strong>
+                  <span>{{ element.get("venue").get("address_1") }}</span>
+                </div>
+              {% endif %}
               {% set time_millis = (element.get("time") + element.get("utc_offset")) / 1000  %}
               <div class="date">{{ time_millis | datetimeformat("EEEE, d 'de' MMMM 'de' y, h:mm a") }}</div>
               <div class="attach">

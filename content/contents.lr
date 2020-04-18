@@ -24,21 +24,10 @@ title: Próximos Eventos
 ----
 body:
 
-##### custom-event #####
-title: 📣 [ONLINE] 👨‍💻👩‍💻The Best of Both worlds: R meets Python 🎂 PyBAQ 5 años 🎉
+##### meetup-events #####
+source: future_events
 -----
-date: 2020-03-31 19:00:00 America/Bogota
------
-attach: 
------
-venue: Online
------
-address: 
------
-url: https://www.meetup.com/es-ES/pythonbaq/events/269517260/
------
-image: https://secure.meetupstatic.com/photos/event/b/1/f/f/600_489825567.jpeg
-
+anexos: 
 ##### three-columns #####
 left:
 

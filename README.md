@@ -118,16 +118,10 @@ Necesitamos de tu ayuda para terminar este proyecto! **¿Cómo puedes contribuir
 
 ## Actualizar eventos
 
-Para actualizar los eventos, [Obtén un API KEY](https://secure.meetup.com/es-ES/meetup_api/key/)
-
-![Getting and API key](./assets/img/contributing/api_key.png)
-
-En un terminal bash ejecuta los siguientes comandos
+En un terminal bash ejecuta el siguientes script python (debes instalar el paquete requests con pip)
 
 ```bash
-export MEETUP_API_KEY=<API_KEY>
-curl -L "https://api.meetup.com/2/events?key=$MEETUP_API_KEY&group_urlname=pythonbaq" > databags/next_events.json
-curl -L "https://api.meetup.com/2/events?key=$MEETUP_API_KEY&group_urlname=pythonbaq&status=past&desc=true" > databags/past_events.json
+python scripts/events.py
 ```
 
 > por favor actualiza los eventos solo si lo consideras estrictamente necesario, entre los metadatos incluidos incluye la fecha de actualización en un timestamp (propenso a conflictos)
