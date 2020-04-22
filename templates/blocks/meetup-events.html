@@ -19,7 +19,9 @@
               {% if element.get("venue") %}
                 <div class="venue">
                   <strong>{{ element.get("venue").get("name") }}</strong>
-                  <span>{{ element.get("venue").get("address_1") }}</span>
+                  {% if element.get("venue").get("address_1") %}
+                    <span>{{ element.get("venue").get("address_1") }}</span>
+                  {% endif %}  
                 </div>
               {% endif %}
               {% set time_millis = (element.get("time") + element.get("utc_offset")) / 1000  %}
