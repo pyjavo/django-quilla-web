@@ -36,12 +36,12 @@
             {% for image in post.attachments.images %}
                 <a href="{{ post|url }}">
                     <figure>
-                        <img class="img-responsive" src="{{ image|url }}">
+                        <img class="img-responsive" src="{{ image|url }}" alt="">
                     </figure>
                 </a>
             {% endfor %}
             <a href="{{ post|url }}"><h3 class="ctitle">{{ post.title }}</h3></a>
-            <p><csmall>Posted: {{ post.pub_date }}.</csmall> | <csmall2>By: {{ post.author }}</csmall2></p>
+            <p><span class="csmall">Posted: {{ post.pub_date }}.</span> | <span class="csmall2">By: {{ post.author }}</span></p>
             {{ post.excerpt }}
             <p><a href="{{ post|url }}">[Read More]</a></p>
             <div class="hline"></div>

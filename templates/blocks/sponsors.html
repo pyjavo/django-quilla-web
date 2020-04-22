@@ -6,7 +6,7 @@
       {% endif %}
       {% for element in bag(this.source, alt) %}
         <div class="col-lg-4 col-md-4 col-sm-4">
-          <img class="centered" src='{{ element.get("image") }}' alt='{{ element.get("name") }}' class="img-responsive">
+          <img class="centered img-responsive" src='{{ element.get("image") }}' alt='{{ element.get("name") }}'>
         </div>
       {% endfor %}
     </div>
