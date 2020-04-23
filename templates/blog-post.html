@@ -31,17 +31,18 @@
     <div class="col-lg-12">
       <div class="post-meta blog_post-post_meta">
         {% for image in this.attachments %}
-            <p><img class="center-block img-responsive" src="{{ image|url }}"></p>
+            <p><img class="center-block img-responsive" src="{{ image|url }}" alt=""></p>
           {% endfor %}
         <h1 class="ctitle">{{ this.title }}</h1>
-        <csmall>Escrito: {{ this.pub_date }}.</csmall> | <csmall2>
+        <span class="csmall">Escrito: {{ this.pub_date }}.</span> | 
+        <span class="csmall2">
         por: {% if this.twitter_handle %}
           <a href="https://twitter.com/{{ this.twitter_handle}}" target="_blank">
             {{ this.author or this.twitter_handle }}
           </a>
         {% else %}
           {{ this.author }}
-        {% endif %}</csmall2>
+        {% endif %}</span>
       </div>
       <div id="body-content" class="blog_post-body">
           {{ this.body }}

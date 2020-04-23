@@ -125,3 +125,19 @@ python scripts/events.py
 ```
 
 > por favor actualiza los eventos solo si lo consideras estrictamente necesario, entre los metadatos incluidos incluye la fecha de actualización en un timestamp (propenso a conflictos)
+
+# Validar html usando w3c validator
+
+Hay un paquete que usa los servicios de w3c para validar [HTML](https://validator.w3.org/) y [CSS](https://jigsaw.w3.org/css-validator/)
+
+puedes instalarlo usando el comando
+```
+pip install -U Online-W3C-Validator
+```
+
+luego para verificar los contenidos 
+```
+lektor build --output-path ./build
+cd build
+w3c_validator $(find . -type f -name \*.html)
+```

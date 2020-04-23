@@ -56,12 +56,12 @@ Aquí viene lo interesante, la computadora no lo sabe, nosotros como programador
 Una vez entrenado el modelo, podremos recorrer la imagen en busca de las características definidas en él.
 
 ### Ejemplo de haar cascade
-[![Video mostrando ejemplo de haar cascade](http://img.youtube.com/vi/hPCTwxF0qf4/0.jpg)](http://www.youtube.com/watch?v=hPCTwxF0qf4)
+[![Video mostrando ejemplo de haar cascade](https://img.youtube.com/vi/hPCTwxF0qf4/0.jpg)](http://www.youtube.com/watch?v=hPCTwxF0qf4)
 
 > ¿Notas como se vuelve un poco más lento cuando se acerca al rostro? eso es porque el algoritmo es muy eficiente y si no detecta ninguna de las características simplemente se mueve a otro lado.
 
 ## ¿Cómo reconocer un rostro?
-![Ejemplo de eigenfaces](http://correspondencias.fotocolectania.org/wp-content/uploads/2016/06/eigfaces-Kember-1024x692.png "Eigenfaces")
+![Ejemplo de eigenfaces](https://correspondencias.fotocolectania.org/wp-content/uploads/2016/06/eigfaces-Kember-1024x692.png "Eigenfaces")
 
 Ahora eres capaz de detectar si en una imagen hay un rostro, ¿Pero y si quisieras ir más allá y saber a quién pertenece?
 
