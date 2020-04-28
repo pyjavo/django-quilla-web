@@ -1,0 +1,32 @@
+{
+  "name": "django-quilla-web",
+  "version": "2.0.0",
+  "description": "Website de la comunidad Python Barranquilla",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PyBAQ/django-quilla-web.git"
+  },
+  "keywords": [
+    "Website",
+    "comunidad",
+    "Django",
+    "Barranquilla"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PyBAQ/django-quilla-web/issues"
+  },
+  "homepage": "https://pybaq.co",
+  "dependencies": {
+    "bootstrap-sass": "^3.4.1",
+    "font-awesome": "^4.7.0",
+    "sass": "^1.26.5"
+  },
+  "scripts": {
+    "clean": "rm -rf assets/static/gen/",
+    "build:css": "sass scss/main.scss assets/static/gen/styles.css --style compressed",
+    "build": "npm run clean && npm run build:css"
+  }
+}
