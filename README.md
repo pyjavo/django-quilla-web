@@ -126,7 +126,7 @@ python scripts/events.py
 
 > por favor actualiza los eventos solo si lo consideras estrictamente necesario, entre los metadatos incluidos incluye la fecha de actualización en un timestamp (propenso a conflictos)
 
-# Validar html usando w3c validator
+## Validar html usando w3c validator
 
 Hay un paquete que usa los servicios de w3c para validar [HTML](https://validator.w3.org/) y [CSS](https://jigsaw.w3.org/css-validator/)
 
@@ -140,4 +140,19 @@ luego para verificar los contenidos
 lektor build --output-path ./build
 cd build
 w3c_validator $(find . -type f -name \*.html)
+```
+
+## Compilar css
+
+El proyecto actualmente usa sass para los estilos en cascada si deseas modificarlos es necesario que tengas instalado nodeJS
+
+para instalar con npm las dependencias ejecuta
+
+```
+npm install
+```
+
+Luego cada vez que actualices un estilo ejecuta
+```
+npm build
 ```

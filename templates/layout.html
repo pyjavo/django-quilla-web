@@ -106,9 +106,9 @@
   {% include 'layouts/js_files.html' %}
 
   <script>
-    window.onload = function() {
+    $(document).ready(function() {
       twemoji.parse(document.body);
-    }
+    });
     // Portfolio
     (function($) {
       "use strict";
@@ -195,7 +195,7 @@
             if (tag.tagName == 'A') { $(tag).attr('target', '_blank'); }
           }
         });
-    })(jQuery);
+    });
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
