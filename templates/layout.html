@@ -1,3 +1,4 @@
+{% from "macros/social.html" import render_social %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -62,6 +63,8 @@
   <div style="height: 70px"></div>
   {% block body %}{% endblock %}
 
+  {{ render_social(this) }}        
+
   <footer class="dq-footer">
     <div class="container">
       <div class="row">
@@ -103,6 +106,7 @@
       </div>
     </div>
   </footer>
+
   {% include 'layouts/js_files.html' %}
 
   <script>
