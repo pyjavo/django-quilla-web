@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
+{% from "macros/social.html" import render_social %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block seo %}
   <meta name="twitter:card" content="summary" />
@@ -51,4 +52,5 @@
     </div>
   </div>
 </div>
+{{ render_social(this) }}
 {% endblock %}

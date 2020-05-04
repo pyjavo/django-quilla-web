@@ -1,0 +1,13 @@
+{% macro render_social(post) %}
+  <div class="share-buttons">
+    {% set post_url = post | url(external=True) %}
+    {% for social_link in bag('social', 'share')  %}
+      <a  href="{{ social_link.base_link.format(post_url, post.title).replace(' ', '%20') }}"
+        class="{{ social_link.class}}"
+        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+        title="{{ social_link.title[post.alt] }}" >
+        <i class="{{ social_link.icon }} share-button"></i>
+      </a>
+    {% endfor %}
+  </div>
+{% endmacro %}
