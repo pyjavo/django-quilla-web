@@ -15,5 +15,22 @@
             "image": "https://pybaq.co/img/patrocinadores/psf.png",
             "description": "Comidas"
         }
+    ],
+    "en": [
+        {
+            "name": "Koombea",
+            "image": "https://pybaq.co/img/patrocinadores/koombea.png",
+            "description": "Venue place"
+        },
+        {
+            "name": "Github Pages",
+            "image": "https://pybaq.co/img/patrocinadores/github-pages.png",
+            "description": "Website"
+        },
+        {
+            "name": "Python Software Foundation",
+            "image": "https://pybaq.co/img/patrocinadores/psf.png",
+            "description": "Food"
+        }
     ]
 }

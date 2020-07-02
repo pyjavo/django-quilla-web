@@ -1,21 +1,48 @@
 {
-    "es": [
-        {
-            "url":  "/",
-            "title": "INICIO"
-        },{
-            "url":  "/nosotros",
-            "title": "NOSOTROS"
-        },{
-            "url":  "/blog",
-            "title": "BLOG",
-            "active_childs": "true"
-        },{
-            "url":  "/eventos",
-            "title": "EVENTOS"
-        },{
-            "url":  "/contacto",
-            "title": "CONTACTO"
-        }
-    ]
+  "es": {
+    "items": [
+      {
+        "url":  "/",
+        "title": "INICIO"
+      },{
+        "url":  "/nosotros",
+        "title": "NOSOTROS"
+      },{
+        "url":  "/blog",
+        "title": "BLOG",
+        "active_childs": "true"
+      },{
+        "url":  "/eventos",
+        "title": "EVENTOS"
+      },{
+        "url":  "/contacto",
+        "title": "CONTACTO"
+      }
+    ],
+    "toggle_nav": "Alternar navegación",
+    "next_lang": "en"
+  },
+  "en": {
+    "items": [
+      {
+        "url":  "/",
+        "title": "HOME"
+      },{
+        "url":  "/nosotros",
+        "title": "ABOUT US"
+      },{
+        "url":  "/blog",
+        "title": "BLOG",
+        "active_childs": "true"
+      },{
+        "url":  "/eventos",
+        "title": "EVENTS"
+      },{
+        "url":  "/contacto",
+        "title": "CONTACT"
+      }
+    ],
+    "toggle_nav": "Toggle navigation",
+    "next_lang": "es"
+  }
 }
