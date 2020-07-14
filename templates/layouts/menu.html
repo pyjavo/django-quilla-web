@@ -19,7 +19,7 @@
           </li>
         {% endfor %}
         <li>
-          <a href="{{ '.'|url(alt=bag('menu', this.alt, 'next_lang')) }}">{{this.alt| upper}}</a>
+          <a href="{{ '.'|url(alt=bag('menu', this.alt, 'next_lang')) }}">{{bag('menu', this.alt, 'next_lang')| upper}}</a>
         </li>
       </ul>
     </div>
