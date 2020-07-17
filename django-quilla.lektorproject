@@ -18,3 +18,8 @@ target = ghpages+https://PyBAQ/django-quilla-web?cname=pybaq.co
 name = Spanish
 primary = yes
 locale = es_CO
+
+[alternatives.en]
+name = English
+locale = en
+url_prefix = /en/
