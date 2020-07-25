@@ -1,0 +1,63 @@
+body:
+
+#### featured-post ####
+description:
+
+### Share knowledge in the community
+# Python Barranquilla.
+
+We are a community of web developers, dev-ops, entrepreneurs and students.
+
+Python and Django enthusiasts are invited!
+----
+link: https://pybaq.co/blog/el-zen-de-python-explicado/
+----
+image: https://pybaq.co/blog/el-zen-de-python-explicado/el-zen-de-python-explicado.png
+----
+alt: Python zen explained
+#### section-block ####
+title: Future events
+----
+body:
+
+##### meetup-events #####
+source: future_events
+-----
+anexos: 
+##### three-columns #####
+left:
+
+###### service ######
+icon: heart-o
+------
+title: Participate in the Community
+------
+body: The best thing about participating in a community is meeting amazing people with amazing dreams and projects. At each meeting we have pleasant talks where we update on the latest topics in technology, entrepreneurship and web development.
+-----
+center:
+
+###### service ######
+icon: flask
+------
+title: Get what you are looking for
+------
+body: Since we started we have characterized ourselves by helping our participants to get job opportunities or advising them to start their own ventures. Do you need web developers? This is the right place to find one.
+-----
+right:
+
+###### service ######
+icon: trophy
+------
+title: Let's Create Apps
+------
+body: We are always creating applications, either individually or as a group as a community. If you need help, this is the place where we can help you solve your doubts in the projects you have been working on. Come and participate!
+----
+class: default
+#### testimonies ####
+source: testimonies
+#### sponsors ####
+title: OUR SPONSORS
+----
+source: sponsors
+---
+title: Python Barranquilla
