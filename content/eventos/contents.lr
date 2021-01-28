@@ -285,6 +285,22 @@ attach: <a href="https://www.youtube.com/watch?v=piSDhPAswHs">Video Youtube</a>
 title: Manejo de archivos grandes con una Django app & DRF
 ------
 attach: <a href="https://drive.google.com/file/d/1HJTkMmzHf0hc6gDeAo2FDdP07qon69ve/view?usp=sharing">Diapositivas</a> / <a href="https://www.youtube.com/watch?v=xFbdytRPK9Q">Video Youtube</a>
+###### event-attach ######
+title: Edición Hacktoberfest: "Únete a traducir la documentación de Python"
+------
+attach: <a href="http://maureira.xyz/python-docs-es/index.html#/">Slides</a> / <a href="https://youtu.be/YmwSdVVF8BM">Video Youtube</a>
+###### event-attach ######
+title: Automatización de Redes con Python
+------
+attach: <a href="https://drive.google.com/file/d/1RuamS46QNQggeiZdVfGk0dbMbvn6bxUn/view?usp=sharing">Diapositivas</a> / <a href="https://drive.google.com/file/d/1roE-5BppgmpcAOOSZaxAve1bCBHQ70R1/view?usp=sharing">Recursos</a> / <a href="https://youtu.be/XUiIGJNdqlo">Video Youtube</a>
+###### event-attach ######
+title: ¿Cómo escalar tu infraestructura?
+------
+attach: <a href="https://youtu.be/jXjchEAOhgA">Video Youtube</a>
+###### event-attach ######
+title: Lightning Talks 2020
+------
+attach: <a href="https://drive.google.com/drive/folders/12k-k47aD2YI5FSVf1rbcOrCLAWU4XQrz?usp=sharing">Diapositivas</a> / <a href="https://youtu.be/8wAWzRrLF8A">Video Youtube</a>
 ----
 class: default
 #### section-block ####
