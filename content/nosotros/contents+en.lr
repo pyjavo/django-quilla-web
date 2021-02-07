@@ -1,11 +1,7 @@
-title: Acerca de
----
-_model: poster
----
 body:
 
 #### heading ####
-title: Nosotros
+title: About us
 #### section-block ####
 title: 
 ----
@@ -21,7 +17,7 @@ left:
 ###### image ######
 url: /img/meetup-data-science-new-age.jpg
 ------
-alt: Team PyBAQ en la PyCon 2018
+alt: PyBAQ Team, PyCon 2018
 ------
 class: img-responsive
 -----
@@ -30,31 +26,33 @@ right:
 ###### text-block ######
 text:
 
-#### Más Acerca De Nosotros
+#### More about us
 
-Somos una comunidad de desarrolladores web, dev-ops, emprendedores y estudiantes.
-La mayoría de nosotros tenemos nuestros propios empresas mientras que los otros trabajamos en las empresas de estos compañeros.
-Otro grupo de djangonautas sigue en la universidad o siguen su propio camino abriendose paso en el mundo del emprendimiento o el freelance.
+We are a community of web developers, devops, endeavors and students.
 
-Creada en el 2015 por Javier Daza, la idea inicial de la comunidad era reunirse para hablar y aprender sobre herramientas y nuevas tecnologías en Python y Django.
+Most of us have our own companies while the others work in the companies of these colleagues.
+Another group of djangonauts is still in college or they follow their own path, making their way into the world of entrepreneurship or freelance. 
 
-Hoy en día la comunidad es un referente para otras comunidades en la ciudad,
-sino que también sirve para ayudar a encontrar empleo a los miembros que participan y se destacan activamente en las actividades que realizamos en la comunidad.
-Esperamos en un futuro lograr un impacto significativo en la ciudad y en el mundo.
+Created in 2015 by Javier Daza, the initial idea of the community was to meet together, speak and learn about tools and new technologies on Python and Django.
+
+Today the community is a benchmark for other communities in the city.
+
+It also serves to help members who actively participate and excel in our community activities find employment.
+We hope in the future to have a significant impact in the city and in the world. 
 ------
-class: default
+class: text-block
 ###### link ######
 url: /contacto
 ------
-alt: es_CO
+alt: en
 ------
 class: btn btn-theme
 ------
-content: Contáctanos
+content: Contact Us
 ----
 class: default
 #### section-block ####
-title: Organizadores
+title: Organizers
 ----
 body:
 
@@ -66,7 +64,7 @@ name: Javier Daza
 ------
 photo: /img/team/javier-daza.jpg
 ------
-role: Dirección y comunidad
+role: Direction and Community
 ------
 website_handle: https://javierdaza.co
 ------
@@ -80,7 +78,7 @@ name: Paula Aragón
 ------
 photo: /img/team/paula-aragon.jpg
 ------
-role: Soporte y logística
+role: Logistics and Support
 ------
 website_handle: 
 ------
@@ -94,7 +92,7 @@ name: Brayan García
 ------
 photo: /img/team/brayan-garcia.jpg
 ------
-role: Soporte y logística
+role: Logistics and Support
 ------
 website_handle: 
 ------
@@ -108,7 +106,7 @@ name: Yuliana Martinez
 ------
 photo: /img/team/yuliana-martinez.jpg
 ------
-role: Relaciones públicas
+role: Public Relationships
 ------
 website_handle: 
 ------
@@ -120,7 +118,7 @@ twitter_handle:
 ----
 class: default
 #### section-block ####
-title: Colaboradores
+title: Collaborators
 ----
 body:
 
@@ -132,7 +130,7 @@ name: Javier Fonseca
 ------
 photo: /img/team/javier-fonseca.jpg
 ------
-role: Lugar del evento
+role: Event venue
 ------
 website_handle: 
 ------
@@ -146,7 +144,7 @@ name: Andres Pérez
 ------
 photo: /img/team/andres-perez.png
 ------
-role: Contribuidor y traductor
+role: Translator and contributor
 ------
 website_handle: 
 ------
@@ -160,7 +158,7 @@ name: Sergio Orozco Torres
 ------
 photo: /img/team/sergio-orozco.jpg
 ------
-role: Contribuidor Sitio web
+role: Web developer
 ------
 website_handle: https://www.secorto.com
 ------
@@ -174,7 +172,7 @@ name: Sara Galván
 ------
 photo: /img/team/sara-galvan.jpg
 ------
-role: Soporte y Diseño
+role: Design and support
 ------
 website_handle: 
 ------
@@ -188,7 +186,7 @@ name: Yudy Herrera
 ------
 photo: /img/team/yudy-herrera.jpg
 ------
-role: Redes Sociales
+role: Social Network
 ------
 website_handle: 
 ------
@@ -202,6 +200,8 @@ class: default
 #### testimonies ####
 source: testimonies
 #### sponsors ####
-title: Nuestros  patrocinadores
+title: Sponsors
 ----
 source: sponsors
+---
+title: About us
