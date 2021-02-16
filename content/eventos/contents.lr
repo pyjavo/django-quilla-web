@@ -296,7 +296,10 @@ attach: <a href="https://drive.google.com/file/d/1RuamS46QNQggeiZdVfGk0dbMbvn6bx
 ###### event-attach ######
 title: ¿Cómo escalar tu infraestructura?
 ------
-attach: <a href="https://youtu.be/jXjchEAOhgA">Video Youtube</a>
+attach:
+
+<a href="https://slides.com/jesusdaviddiaz/deck/fullscreen">Diapositivas</a> /
+<a href="https://youtu.be/jXjchEAOhgA">Video Youtube</a>
 ###### event-attach ######
 title: Lightning Talks 2020
 ------
