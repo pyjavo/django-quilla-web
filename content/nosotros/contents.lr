@@ -154,7 +154,7 @@ name: Sergio Orozco Torres
 ------
 photo: /img/team/sergio-orozco.jpg
 ------
-role: Contribuidor Sitio web
+role: Contribuidor sitio web
 ------
 website_handle: https://www.secorto.com
 ------
@@ -164,17 +164,41 @@ github_handle: scot3004
 ------
 twitter_handle: scot3004
 ###### member ######
+name: Jorge Rueda
+------
+photo: /img/team/jorge-rueda.jpg
+------
+role: Contribuidor sitio web
+------
+website_handle: 
+------
+email: jorgeru045@gmail.com
+------
+github_handle: jorueda
+------
+twitter_handle: 
+----
+class: default
+#### section-block ####
+title: Colaboradores previos
+----
+body:
+
+##### members #####
+body:
+
+###### member ######
 name: Sara Galván
 ------
 photo: /img/team/sara-galvan.jpg
 ------
-role: Soporte y Diseño
+role: Soporte y diseño
 ------
 website_handle: 
 ------
 email: djangoquilla@gmail.com
 ------
-github_handle: Xaraxx
+github_handle: xaraxx
 ------
 twitter_handle: 
 ###### member ######
@@ -182,13 +206,13 @@ name: Yudy Herrera
 ------
 photo: /img/team/yudy-herrera.jpg
 ------
-role: Redes Sociales
+role: Redes sociales
 ------
 website_handle: 
 ------
 email: yudyh@uninorte.edu.co
 ------
-github_handle: YudyD
+github_handle: yudyd
 ------
 twitter_handle: 
 ----
