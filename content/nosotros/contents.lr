@@ -184,37 +184,35 @@ title: Colaboradores previos
 ----
 body:
 
-##### members #####
-body:
+##### three-columns #####
+left:
 
-###### member ######
-name: Sara Galván
+###### text-block ######
+text: César Herdenez
 ------
-photo: /img/team/sara-galvan.jpg
+class: centered
+###### text-block ######
+text: Darío Guzmán
 ------
-role: Soporte y diseño
+class: centered
+-----
+center:
+
+###### text-block ######
+text: Sara Galván
 ------
-website_handle: 
+class: centered
+###### text-block ######
+text: Yudy Herrera
 ------
-email: djangoquilla@gmail.com
+class: centered
+-----
+right:
+
+###### text-block ######
+text: Kathy Lora
 ------
-github_handle: xaraxx
-------
-twitter_handle: 
-###### member ######
-name: Yudy Herrera
-------
-photo: /img/team/yudy-herrera.jpg
-------
-role: Redes sociales
-------
-website_handle: 
-------
-email: yudyh@uninorte.edu.co
-------
-github_handle: yudyd
-------
-twitter_handle: 
+class: centered
 ----
 class: default
 #### testimonies ####
