@@ -168,33 +168,55 @@ github_handle: scot3004
 ------
 twitter_handle: scot3004
 ###### member ######
-name: Sara Galván
+name: Jorge Rueda
 ------
-photo: /img/team/sara-galvan.jpg
+photo: /img/team/jorge-rueda.jpg
 ------
-role: Design and support
-------
-website_handle: 
-------
-email: djangoquilla@gmail.com
-------
-github_handle: Xaraxx
-------
-twitter_handle: 
-###### member ######
-name: Yudy Herrera
-------
-photo: /img/team/yudy-herrera.jpg
-------
-role: Social Network
+role: Web developer
 ------
 website_handle: 
 ------
-email: yudyh@uninorte.edu.co
+email: jorgeru045@gmail.com
 ------
-github_handle: YudyD
+github_handle: jorueda
 ------
 twitter_handle: 
+----
+class: default
+#### section-block ####
+title: Former Collaborators
+----
+body:
+
+##### three-columns #####
+left:
+
+###### text-block ######
+text: César Herdenez
+------
+class: centered
+###### text-block ######
+text: Darío Guzmán
+------
+class: centered
+-----
+center:
+
+###### text-block ######
+text: Sara Galván
+------
+class: centered
+###### text-block ######
+text: Yudy Herrera
+------
+class: centered
+-----
+right:
+
+###### text-block ######
+text: Kathy Lora
+------
+class: centered
 ----
 class: default
 #### testimonies ####
