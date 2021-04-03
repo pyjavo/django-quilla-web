@@ -1,4 +1,4 @@
-FROM python:2.7
+FROM python:slim-buster
 
 LABEL maintainer="Python Barranquilla <info@pybaq.co>"
 
