@@ -8,14 +8,16 @@ body:
 ##### meetup-events #####
 source: future_events
 -----
-anexos: 
------
 empty_message:
 
-We are planning our next event,
-If you want to contribute send us your proposal by 
-email to:  [djangoquilla@gmail.com](mailto:djangoquilla@gmail.com) 
-or by phone to: [300-8766043](tel:+573008766043)
+We are planning our next event
+
+** Post a talk ** for our monthly meetups, [register here](https://forms.gle/tCsALqG2aQ9A1GqD8)
+
+if you want to talk with us, send an email to:  [djangoquilla@gmail.com](mailto:djangoquilla@gmail.com) 
+or call us by phone: [300-8766043](tel:+573008766043)
+-----
+anexos: 
 ----
 class: default
 #### section-block ####
@@ -25,6 +27,8 @@ body:
 
 ##### meetup-events #####
 source: past_events
+-----
+empty_message: 
 -----
 anexos:
 
@@ -311,8 +315,6 @@ attach: <a href="https://drive.google.com/drive/folders/12k-k47aD2YI5FSVf1rbcOrC
 title: Minería de Textos para Monitorear Impacto de Covid-19 en América Latina
 ------
 attach: <a href="https://github.com/jecs89/Charlas_2021">Diapositivas</a>
------
-empty_message: 
 ----
 class: default
 #### section-block ####
