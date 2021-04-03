@@ -25,7 +25,12 @@
                 </div>
               {% endif %}
               {% set time_millis = (element.get("time") + element.get("utc_offset")) / 1000  %}
-              <div class="date">{{ time_millis | datetimeformat("EEEE, d 'de' MMMM 'de' y, h:mm a") }}</div>
+              <div class="date">
+                {% if alt == 'en' %}
+                  {{ time_millis | datetimeformat("EEEE, MMMM d, y, H:mm") }}</div>
+                {% else %}
+                  {{ time_millis | datetimeformat("EEEE, d 'de' MMMM 'de' y, h:mm a") }}</div>
+                {% endif %}
               <div class="attach">
                 {% for blk in this.anexos.blocks %}
                   {% if blk.title == element.get("name") %}
@@ -41,8 +46,7 @@
   {% else %}
     <div class="panel panel-default">
       <div class="panel-body">
-        Estamos planificando nuestro proximo evento, si deseas colaborar envianos tu propuesta
-        a nuestro email <a href="mailto:djangoquilla@gmail.com">djangoquilla@gmail.com</a> o en el teléfono <a href="tel:+573008766043">300-8766043</a>
+        {{ this.empty_message }}
       </div>
     </div>
   {% endfor %}

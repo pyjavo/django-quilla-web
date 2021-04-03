@@ -1,11 +1,7 @@
-_model: poster
----
-title: Eventos
----
 body:
 
 #### section-block ####
-title: Próximos Eventos
+title: Incoming events
 ----
 body:
 
@@ -16,12 +12,14 @@ anexos:
 -----
 empty_message:
 
- Estamos planificando nuestro proximo evento,
-si deseas colaborar envianos tu propuesta  a nuestro email [djangoquilla@gmail.com](mailto:djangoquilla@gmail.com) o en el teléfono [300-8766043](tel:+573008766043)
+We are planning our next event,
+If you want to contribute send us your proposal by 
+email to:  [djangoquilla@gmail.com](mailto:djangoquilla@gmail.com) 
+or by phone to: [300-8766043](tel:+573008766043)
 ----
 class: default
 #### section-block ####
-title: Anteriores Eventos
+title: Past events
 ----
 body:
 
@@ -338,3 +336,5 @@ url: https://argentinaenpython.com/django-girls/2017/07/barranquilla
 image: 
 ----
 class: default
+---
+title: Eventos
