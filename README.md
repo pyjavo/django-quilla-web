@@ -79,11 +79,11 @@ Si tienes Docker instalado (https://docs.docker.com/install/) puedes hacer uso d
 
 ```bash
 # Bash o Powershell
-docker build -t pybaq .
+docker build -t pybaq . # Tener presente el "."
 docker run --rm -p 5000:5000 -v ${PWD}:/app --name pybaq-local pybaq
 
 # Windows Command Line
-docker build -t pybaq .
+docker build -t pybaq . # Tener presente el "."
 docker run --rm -p 5000:5000 -v %cd%:/app --name pybaq-local pybaq
 ```
 
@@ -135,7 +135,7 @@ puedes instalarlo usando el comando
 pip install -U Online-W3C-Validator
 ```
 
-luego para verificar los contenidos 
+luego para verificar los contenidos
 ```
 lektor build --output-path ./build
 cd build
