@@ -86,8 +86,8 @@ Si tienes Docker instalado (https://docs.docker.com/get-docker/) puedes hacer us
 
 ```bash
 # Bash o Powershell
-sudo docker build -t pybaq . # Tener presente el "."
-sudo docker run --rm -p 5000:5000 -v ${PWD}:/app --name pybaq-local pybaq
+docker build -t pybaq . # Tener presente el "."
+docker run --rm -p 5000:5000 -v ${PWD}:/app --name pybaq-local pybaq
 
 # Windows Command Line
 docker build -t pybaq . # Tener presente el "."
