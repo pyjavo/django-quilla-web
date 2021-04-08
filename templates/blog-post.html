@@ -35,9 +35,9 @@
             <p><img class="center-block img-responsive" src="{{ image|url }}" alt=""></p>
           {% endfor %}
         <h1 class="ctitle">{{ this.title }}</h1>
-        <span class="csmall">Escrito: {{ this.pub_date }}.</span> | 
+        <span class="csmall">{{bag('settings', alt, 'posted')}}: {{ this.pub_date }}.</span> | 
         <span class="csmall2">
-        por: {% if this.twitter_handle %}
+          {{bag('settings', alt, 'by')}}: {% if this.twitter_handle %}
           <a href="https://twitter.com/{{ this.twitter_handle}}" target="_blank">
             {{ this.author or this.twitter_handle }}
           </a>

@@ -41,9 +41,10 @@
                 </a>
             {% endfor %}
             <a href="{{ post|url }}"><h3 class="ctitle">{{ post.title }}</h3></a>
-            <p><span class="csmall">Posted: {{ post.pub_date }}.</span> | <span class="csmall2">By: {{ post.author }}</span></p>
+            <p><span class="csmall">{{bag('settings', alt, 'posted')}}: {{ post.pub_date }}.</span> | 
+                <span class="csmall2">{{bag('settings', alt, 'by')}}: {{ post.author }}</span></p>
             {{ post.excerpt }}
-            <p><a href="{{ post|url }}">[Read More]</a></p>
+            <p><a href="{{ post|url }}">[{{bag('settings', alt, 'read_more')}}]</a></p>
             <div class="hline"></div>
             <div class="spacing"></div>
         </div>
