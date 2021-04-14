@@ -315,6 +315,10 @@ attach: <a href="https://drive.google.com/drive/folders/12k-k47aD2YI5FSVf1rbcOrC
 title: Minería de Textos para Monitorear Impacto de Covid-19 en América Latina
 ------
 attach: <a href="https://github.com/jecs89/Charlas_2021">Diapositivas</a>
+###### event-attach ######
+title: Extendiendo la Monitorizacion de Infraestructura TI con Nagios + Python
+------
+attach: <a href="https://drive.google.com/file/d/1_QDtVVC7cZwNQTH5j2mBzYeeXx-vZzlc/view?usp=sharing">Diapositivas</a>
 ----
 class: default
 #### section-block ####
