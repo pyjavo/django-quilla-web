@@ -1,6 +1,6 @@
 # Página Web comunidad Python Barranquilla
 
-[![Build Status](https://travis-ci.org/PyBAQ/django-quilla-web.svg?branch=master)](https://travis-ci.org/PyBAQ/django-quilla-web)
+[![Build Status](https://www.travis-ci.com/PyBAQ/django-quilla-web.svg?branch=master)](https://www.travis-ci.com/PyBAQ/django-quilla-web)
 
 ## Instalación
 
