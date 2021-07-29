@@ -4,15 +4,15 @@ author: Andres Perez
 ---
 body:
 
-Esta es la continuación del articulo [Primeros pasos en Python](https://pybaq.co/blog/primeros-pasos-en-python/). 
+Esta es la continuación del articulo [Primeros pasos en Python][articulo_original]. 
 
 Yo sé que somos muchos los que estamos muy interesados en programar. Pero es posible que también hagamos parte de aquellos a los que nos da una pereza inconcebible tener que ver una tonelada de teoría antes de ir a la practica. Y en ninguna manera condono la apatía a la teoría, pero a veces toca ensuciarse las manos un poco antes de descubrir un nuevo hobby.
 
-Esta serie de artículos van un poco en el espíritu del libro [Dive Into Python 3](https://diveintopython3.net/). Este libro entra en materia sin mucha explicación y espera que los lectores tomen lo que ven como base e investiguen lo necesario para entender. Entonces esta serie de artículos pueden contener cosas que desconozcas, pero espero que estés dispuesto(a/x) a investigar.
+Esta serie de artículos van un poco en el espíritu del libro [Inmersión en Python3][el_libro] (Originalmente [Dive Into Python 3][tha_book] por Mark Pilgrim). Este libro entra en materia sin mucha explicación y espera que los lectores tomen lo que ven como base e investiguen lo necesario para entender. Entonces esta serie de artículos pueden contener cosas que desconozcas, pero espero que estés dispuesto(a/x) a investigar.
 
-### El Problema del Primer Paso
+### El Problema a Resolver
 
-Bien , empecemos declarando el problema a resolver; lo podemos encontrar en este link ([[PROJECT\] 99 Bottles of Beer On the Wall Lyrics : beginnerprojects (reddit.com)](https://www.reddit.com/r/beginnerprojects/comments/19kxre/project_99_bottles_of_beer_on_the_wall_lyrics/)). En español quedaría así:
+Bien , empecemos declarando el problema a resolver; lo podemos encontrar en este [link][el_proyecto]. En español quedaría así:
 
 #### Objetivo
 
@@ -22,14 +22,12 @@ Crea un programa que imprime cada lineal de la canción "99 Bottles of Beer on t
 
 1. Si vas a usar una lista de todos los números, no los escribas manualmente todos. En cambio, usa una función estándar de Python.
 2. Aparte de la frase "take one down", no tienes permitido escribir ningun numero/nombre de numero directo en la letra.
-3. Recuerda, cuando llegues a 1 botella, la palabra "bottles" se vuelve singulas.
+3. Recuerda, cuando llegues a 1 botella, la palabra "bottles" se vuelve singular.
 4. Pon una linea en blanco entre cada verso de la canción.
 
 ### Analisis y Programación
 
-Vamos entonces a ver donde encontramos la letra completa de la canción y la analizamos:
-
-- [99 BOTTLES OF BEER ON THE WALL - Lyrics - International Lyrics Playground](https://lyricsplayground.com/alpha/songs/numbers/99bottlesofbeeronthewall.html)
+Vamos entonces a ver donde encontramos la letra completa de la canción y la analizamos. Una pequeña búsqueda en Google me ha provisto del siguiente enlace donde encontrar la [letra de la canción][la_letra].
 
 En definitiva no la voy a escribir entera aquí porque no tiene sentido desperdiciar ese espacio cuando puedes abrirla en otra pestaña ; ); pero si vamos a escribir 3 estrofas:
 
@@ -46,6 +44,7 @@ Take one down,
 Pass it around,
 Ninety-eight bottles of beer on the wall!
 ```
+
 <iframe src="https://vlipsy.com/embed/gyck95iN" width="640" height="360" frameborder="0"></iframe>
 
 ```
@@ -89,10 +88,11 @@ Con esto tenemos la estructura de lo que queremos lograr, ahora necesitamos cono
 
 Las herramientas serían varias, lo que creo necesitar es lo siguiente:
 
-- Una manera de iterar (recorrer los numeros desde el 100 hasta el 1).
-  La herramienta `for` nos ayuda a recorrer elementos iterables, pero no necesariamente esos son números. Puedes leer mas acerca de `for` en la [documentación oficial de python](https://docs.python.org/3/tutorial/controlflow.html#index-0), incluyo la de [w3schools](https://www.w3schools.com/python/python_for_loops.asp) como opción simplificada.
-- Podemos generar un iterable de numeros usando la herramienta `range`. Nuevamente, la [documentación oficial de `range`](https://docs.python.org/3/tutorial/controlflow.html#index-0) es amplia, pero también [w3schools](https://www.w3schools.com/python/ref_func_range.asp) ofrece una alternativa simple.
-- También necesitamos algún tipo de condicional y la herramienta `if` será la opción escogida. Pues, también está la [documentación oficial de `if`](https://docs.python.org/3/tutorial/controlflow.html#index-0), pero mira la de [w3schools](https://www.w3schools.com/python/python_conditions.asp) como alternativa simple.
+- La herramienta `for` nos ayuda a recorrer elementos iterables, pero no necesariamente esos son números. 
+- Podemos generar un iterable de numeros usando la herramienta `range`.
+- También necesitamos algún tipo de condicional y la herramienta `if` será la opción escogida.
+
+Estas herramientas las encontramos en la [documentación oficial de python][docs_controldeflujo]; están en la sección de herramientas para control de flujo.
 
 Procedamos entonces a construir con estas herramientas el esqueleto de nuestro programa. Ten presente que para esto creo un archivo llamado `tercero.py` en una carpeta llamada `01_primer_paso`.
 
@@ -116,7 +116,7 @@ Lo que va cuando sea una botella 1
 Lo que va cuando son varias botellas 0
 ```
 
-Ahora necesitamos resolver lo del texto, básteme decir que existe algo en python llamado f-string, [lee al respecto aquí](https://realpython.com/python-f-strings/). Creo 2 f-trings; una por cada condición:
+Ahora necesitamos resolver lo del texto, básteme decir que existe algo en python llamado f-string, [lee al respecto aquí][f-strings] y [aqui][mas_fstrings]. Creo 2 f-trings; una por cada condición:
 
 ```python
 for x in range(100,0,-1):
@@ -168,9 +168,9 @@ El articulo oficialmente debería terminar aquí. Pero algunos podrían no queda
 
 En Python tenemos un gestor de librerias llamada pip, con el podemos instalar librerías adicionales de un repositorio central llamado PyPI. Allí encontré algunas librerías que podrían ser utiles para imprimir texto en vez de numeros.
 
-- [inflect · PyPI](https://pypi.org/project/inflect/) (muy complicada).
-- [num2words · PyPI](https://pypi.org/project/num2words/) (me enamoró con el manejo de múltiples idiomas).
-- [Convert Numbers to Words (Python) / Wiki / Home (sourceforge.net)](https://sourceforge.net/p/pynum2word/wiki/Home/) (técnicamente funciona, pero su página no me dice nada de como hacerlo).
+- [inflect · PyPI][package1] (muy complicada).
+- [num2words · PyPI][package2] (me enamoró con el manejo de múltiples idiomas).
+- [pynum2words][package3] (técnicamente funciona, pero su página no me dice nada de como hacerlo).
 
 Tras escoger num2words e instalarlo en mi PC (usando el comando `pip install num2words`), puedo modificar el código de la siguiente manera:
 
@@ -230,11 +230,32 @@ No more bottles of beer on the wall!
 
 Fuera de lo pretensioso de tratar de compararme con Jesucristo (aún si lo consideras una fábula), la idea es que solo tratando de replicar lo que aprendemos podemos interiorizar el tema aprendido. Entonces, evalúa tu conocimiento o entendimiento con las siguientes tareas:
 
-- Traduce la canción a español
-- Automatiza la canción de [Un elefante se balanceaba](https://arbolabc.com/canciones-infantiles/un-elefante-se-balanceaba) hasta 100 elefantes.
-- Crea el "me quiere, no me quiere" de una flor de 18 petalos.
+- Traduce la canción a español. Si no hablas inglés un traductor se encarga de esa parte y tu de editar código.
+- Automatiza la canción ["Un elefante se balanceaba"][elefantito] hasta 100 elefantes.
+- Crea el "me quiere, no me quiere" de una flor de 18 pétalos.
 
-¿Tienes preguntas? Escríbeme en twitter @andresperezcera.
+También puedes consultar algo de teoría:
+
+- ¿Que son las estructuras de control en un lenguaje de programación?
+- ¿Que es un iterable en Python?
+- ¿Que otros tipos de cadenas de texto existen y como se usan?
+
+¿Tienes preguntas? Escríbeme en Twitter. Podemos conectarnos y resolver dudas juntos.
+
+[//]: # "Lista de vinculos del artículo"
+
+[articulo_original]: https://pybaq.co/blog/primeros-pasos-en-python/
+[el_libro]: http://www.jmgaguilera.com/libro/python/traducci%C3%B3n/latex/2016/08/19/inmersion-python.html
+[tha_book]: https://diveintopython3.net/
+[el_proyecto]: https://www.reddit.com/r/beginnerprojects/comments/19kxre/project_99_bottles_of_beer_on_the_wall_lyrics/
+[la_letra]: https://lyricsplayground.com/alpha/songs/numbers/99bottlesofbeeronthewall.html
+[docs_controldeflujo]: https://docs.python.org/es/3/tutorial/controlflow.html#index-0
+[f-strings]: https://docs.python.org/es/3/tutorial/inputoutput.html
+[mas_fstrings]: https://realpython.com/python-f-strings/
+[package1]: https://pypi.org/project/inflect/
+[package2]: https://pypi.org/project/num2words/
+[package3]: https://sourceforge.net/p/pynum2word/wiki/Home/
+[elefantito]: https://arbolabc.com/canciones-infantiles/un-elefante-se-balanceaba
 ---
 excerpt: Esta es una continuación del post "Primeros pasos en Python" y revisamos el primero de los ejercicios listados en el ese post.
 ---
