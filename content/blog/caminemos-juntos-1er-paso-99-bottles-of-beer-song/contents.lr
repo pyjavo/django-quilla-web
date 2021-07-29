@@ -1,4 +1,4 @@
-title: Caminemos Juntos: 1er paso "99 Bottles of Beer song"
+title: Caminemos Juntos: Primer Paso "99 Bottles of Beer song"
 ---
 author: Andres Perez
 ---
@@ -6,24 +6,24 @@ body:
 
 Esta es la continuación del articulo [Primeros pasos en Python](https://pybaq.co/blog/primeros-pasos-en-python/). 
 
+Yo sé que somos muchos los que estamos muy interesados en programar. Pero es posible que también hagamos parte de aquellos a los que nos da una pereza inconcebible tener que ver una tonelada de teoría antes de ir a la practica. Y en ninguna manera condono la apatía a la teoría, pero a veces toca ensuciarse las manos un poco antes de descubrir un nuevo hobby.
 
-
-Yo sé que somos muchos los que estamos muy interesados en programar. Pero es posible que también hagamos parte de aquellos a los que nos da una pereza inconcebible tener que ver una tonelada de teoría antes de ir a la practica. Y en ninguna manera condono la apatía a la teoría, pero a veces toca ensuciarse las manos un poco antes de descubrir un nuevo hobby. Esta serie de artículos van un poco en el espíritu del libro [Dive Into Python 3](https://diveintopython3.net/); entonces puede contener cosas que no conozcas, pero que pretende inspirarte a investigar.
+Esta serie de artículos van un poco en el espíritu del libro [Dive Into Python 3](https://diveintopython3.net/). Este libro entra en materia sin mucha explicación y espera que los lectores tomen lo que ven como base e investiguen lo necesario para entender. Entonces esta serie de artículos pueden contener cosas que desconozcas, pero espero que estés dispuesto(a/x) a investigar.
 
 ### El Problema del Primer Paso
 
 Bien , empecemos declarando el problema a resolver; lo podemos encontrar en este link ([[PROJECT\] 99 Bottles of Beer On the Wall Lyrics : beginnerprojects (reddit.com)](https://www.reddit.com/r/beginnerprojects/comments/19kxre/project_99_bottles_of_beer_on_the_wall_lyrics/)). En español quedaría así:
 
-> #### Objetivo
->
-> Crea un programa que imprime cada linea de la canción "99 Bottles of Beer on the Wall". Esto debería ser un programa sencillo, entonces, para hacerlo un poco mas dificil, aquí siguen algunas reglas a seguir:
->
-> ##### Reglas
->
-> 1. Si vas a usar una lista de todos los números, no los escribas manualmente todos. En cambio, usa una función estándar de Python.
-> 2. Aparte de la frase "take one down", no tienes permitido escribir ningun numero/nombre de numero directo en la letra.
-> 3. Recuerda, cuando llegues a 1 botella, la palabra "bottles" se vuelve singulas.
-> 4. Pon una linea en blanco entre cada verso de la canción.
+#### Objetivo
+
+Crea un programa que imprime cada lineal de la canción "99 Bottles of Beer on the Wall". Esto debería ser un programa sencillo, entonces, para hacerlo un poco mas difícil, aquí siguen algunas reglas a seguir:
+
+##### Reglas
+
+1. Si vas a usar una lista de todos los números, no los escribas manualmente todos. En cambio, usa una función estándar de Python.
+2. Aparte de la frase "take one down", no tienes permitido escribir ningun numero/nombre de numero directo en la letra.
+3. Recuerda, cuando llegues a 1 botella, la palabra "bottles" se vuelve singulas.
+4. Pon una linea en blanco entre cada verso de la canción.
 
 ### Analisis y Programación
 
@@ -33,73 +33,87 @@ Vamos entonces a ver donde encontramos la letra completa de la canción y la ana
 
 En definitiva no la voy a escribir entera aquí porque no tiene sentido desperdiciar ese espacio cuando puedes abrirla en otra pestaña ; ); pero si vamos a escribir 3 estrofas:
 
-> One-hundred bottles of beer on the wall, 
-> One-hundred bottles of beer!
-> Take one down,
-> Pass it around,
-> Ninety-nine bottles of beer on the wall!
->
-> Ninety-nine bottles of beer on the wall,
-> Ninety-nine bottles of beer!
-> Take one down,
-> Pass it around,
-> Ninety-eight bottles of beer on the wall!
->
-> ...
->
-> <iframe src="https://vlipsy.com/embed/gyck95iN" width="640" height="360" frameborder="0"></iframe>
->
-> ...
->
-> One bottle of beer on the wall,
-> One bottle of beer!
-> Take it down,
-> Pass it around,
-> No more bottles of beer on the wall!
+```
+One-hundred bottles of beer on the wall, 
+One-hundred bottles of beer!
+Take one down,
+Pass it around,
+Ninety-nine bottles of beer on the wall!
 
-#### Primero
+Ninety-nine bottles of beer on the wall,
+Ninety-nine bottles of beer!
+Take one down,
+Pass it around,
+Ninety-eight bottles of beer on the wall!
+```
+<iframe src="https://vlipsy.com/embed/gyck95iN" width="640" height="360" frameborder="0"></iframe>
+
+```
+One bottle of beer on the wall,
+One bottle of beer!
+Take it down,
+Pass it around,
+No more bottles of beer on the wall!
+```
+
+#### Primero: Intentar resolver el problema principal
 
 Veamos que se repite y reescribamos la canción, lo que se repite lo pongo entre corchetes "[]" y lo que varía en "{}":
 
-> {Numero de botellas}[ bottles of beer on the wall,]
-> {Numero de botellas}[ bottles of beer!]
-> [Take one down,
-> Pass it around,]
-> {Numero de botellas-1}[ bottles of beer on the wall!]
+```handlebars
+{{Numero de botellas}}[ bottles of beer on the wall,]
+{{Numero de botellas}}[ bottles of beer!]
+[Take one down,
+Pass it around,]
+{{Numero de botellas-1}}[ bottles of beer on the wall!]
+```
 
 Y todo estaría perfecto si no fuera porque la ultima estrofa es diferente, por lo tanto...
 
-#### Segundo
+#### Segundo: Las miles de excepciones
 
 Una excepción nos dañaría el caminado, denoto la condicional con dobles corchetes "{{}}":
 
-> {{Cuando quede una botella}}
->
-> {1}[bottle of beer on the wall,]
-> {1}[bottle of beer!]
-> [Take it down,
-> Pass it around,
-> No more bottles of beer on the wall!]
+```handlebars
+{{Cuando quede una botella}}
+	{{1}}[bottle of beer on the wall,]
+	{{1}}[bottle of beer!]
+	[Take it down,
+	Pass it around,
+	No more bottles of beer on the wall!]
+```
 
 Con esto tenemos la estructura de lo que queremos lograr, ahora necesitamos conocer que herramientas tenemos...
 
-#### Tercero
+#### Tercero: Herramientas disponibles
 
 Las herramientas serían varias, lo que creo necesitar es lo siguiente:
 
 - Una manera de iterar (recorrer los numeros desde el 100 hasta el 1).
-  La herramienta `for` nos ayuda a recorrer elementos iterables, pero no necesariamente esos son números. [Docs](https://www.w3schools.com/python/python_for_loops.asp)
-- Podemos generar un iterable de numeros usando la herramienta `range`.[Docs](https://www.w3schools.com/python/ref_func_range.asp)
-- También necesitamos algún tipo de condicional y la herramienta `if` será la opción escogida. [Docs](https://www.w3schools.com/python/python_conditions.asp)
+  La herramienta `for` nos ayuda a recorrer elementos iterables, pero no necesariamente esos son números. Puedes leer mas acerca de `for` en la [documentación oficial de python](https://docs.python.org/3/tutorial/controlflow.html#index-0), incluyo la de [w3schools](https://www.w3schools.com/python/python_for_loops.asp) como opción simplificada.
+- Podemos generar un iterable de numeros usando la herramienta `range`. Nuevamente, la [documentación oficial de `range`](https://docs.python.org/3/tutorial/controlflow.html#index-0) es amplia, pero también [w3schools](https://www.w3schools.com/python/ref_func_range.asp) ofrece una alternativa simple.
+- También necesitamos algún tipo de condicional y la herramienta `if` será la opción escogida. Pues, también está la [documentación oficial de `if`](https://docs.python.org/3/tutorial/controlflow.html#index-0), pero mira la de [w3schools](https://www.w3schools.com/python/python_conditions.asp) como alternativa simple.
 
-Procedamos entonces a construir con estas herramientas el esqueleto de nuestro programa.
+Procedamos entonces a construir con estas herramientas el esqueleto de nuestro programa. Ten presente que para esto creo un archivo llamado `tercero.py` en una carpeta llamada `01_primer_paso`.
 
 ```python
 for x in range(100,-1,-1):
     if x==1:
-        print('Lo que va cuando sea una botella')
+        print('Lo que va cuando sea una botella '+str(x))
     else:
-        print('Lo que va cuando son varias botellas')
+        print('Lo que va cuando son varias botellas '+str(x))
+```
+> Podrías buscar por tu cuenta que función cumple `str()`.
+
+Veamos que produce esto:
+```bash
+usuario@nombre_pc:~/pybaq_caminemos_juntos/01_primer_paso$ python3 tercero.py
+Lo que va cuando son varias botellas 100
+Lo que va cuando son varias botellas 99
+...
+Lo que va cuando son varias botellas 2
+Lo que va cuando sea una botella 1
+Lo que va cuando son varias botellas 0
 ```
 
 Ahora necesitamos resolver lo del texto, básteme decir que existe algo en python llamado f-string, [lee al respecto aquí](https://realpython.com/python-f-strings/). Creo 2 f-trings; una por cada condición:
@@ -123,14 +137,42 @@ for x in range(100,0,-1):
         )
         print(bottles_sing)
 ```
+El resultado de la ejecución es el siguiente: 
+```bash
+usuario@nombre_pc:~/pybaq_caminemos_juntos/01_primer_paso$ python3 tercero_b.py
+100 bottles of beer on the wall,
+100 bottles of beer!
+Take it down,
+Pass it around,
+No more bottles of beer on the wall!
+99 bottles of beer on the wall!
 
-Aunque todo parece resuelto, puede refinarse para escribir descripciones de numeros. En Python tenemos un gestor de librerias llamada pip, con el podemos instalar librerías adicionales de un repositorio central llamado PyPI. Allí encontré algunas librerías que podrían ser utiles para imprimir texto en vez de numeros.
+99 bottles of beer on the wall,
+99 bottles of beer!
+Take it down,
+Pass it around,
+No more bottles of beer on the wall!
+98 bottles of beer on the wall!
+
+...
+
+1 bottle of beer on the wall,
+1 bottle of beer!
+Take it down,
+Pass it around,
+No more bottles of beer on the wall!
+```
+El articulo oficialmente debería terminar aquí. Pero algunos podrían no quedar satisfechos, por lo que voy a hablar de algo un poco mas complicado, puedes investigar por tu cuenta acerca de PyPI y la herramienta `pip`; pero no te enredes la vida sin necesidad, veremos mas de eso después.
+
+#### Bonus: Exageremos un poco
+
+En Python tenemos un gestor de librerias llamada pip, con el podemos instalar librerías adicionales de un repositorio central llamado PyPI. Allí encontré algunas librerías que podrían ser utiles para imprimir texto en vez de numeros.
 
 - [inflect · PyPI](https://pypi.org/project/inflect/) (muy complicada).
 - [num2words · PyPI](https://pypi.org/project/num2words/) (me enamoró con el manejo de múltiples idiomas).
-- [Convert Numbers to Words (Python) / Wiki / Home (sourceforge.net)](https://sourceforge.net/p/pynum2word/wiki/Home/) (técnicamente funciona, pero no me dice nada de como hacerlo).
+- [Convert Numbers to Words (Python) / Wiki / Home (sourceforge.net)](https://sourceforge.net/p/pynum2word/wiki/Home/) (técnicamente funciona, pero su página no me dice nada de como hacerlo).
 
-Tras escoger num2words e instalarlo en mi PC, puedo modificar el código a lo siguiente:
+Tras escoger num2words e instalarlo en mi PC (usando el comando `pip install num2words`), puedo modificar el código de la siguiente manera:
 
 ```python
 from num2words import num2words
@@ -153,6 +195,31 @@ for x in range(100,0,-1):
         f"{bottle_num_minusone} bottles of beer on the wall!\n"
         )
         print(bottles_sing)
+```
+
+El resultado habla por sí mismo:
+```bash
+usuario@nombre_pc:~/pybaq_caminemos_juntos/01_primer_paso$ python3 bonus.py
+...
+Three bottles of beer on the wall,
+Three bottles of beer!
+Take it down,
+Pass it around,
+No more bottles of beer on the wall!
+Two bottles of beer on the wall!
+
+Two bottles of beer on the wall,
+Two bottles of beer!
+Take it down,
+Pass it around,
+No more bottles of beer on the wall!
+One bottles of beer on the wall!
+
+One bottle of beer on the wall,
+One bottle of beer!
+Take it down,
+Pass it around,
+No more bottles of beer on the wall!
 ```
 
 ### ¿He comprendido algo maestro?
