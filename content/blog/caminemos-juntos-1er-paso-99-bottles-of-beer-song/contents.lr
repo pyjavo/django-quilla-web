@@ -116,7 +116,7 @@ Lo que va cuando sea una botella 1
 Lo que va cuando son varias botellas 0
 ```
 
-Ahora necesitamos resolver lo del texto, básteme decir que existe algo en python llamado f-string, [lee al respecto aquí][f-strings] y [aqui][mas_fstrings]. Creo 2 f-trings; una por cada condición:
+Ahora necesitamos resolver lo del texto, básteme decir que existe algo en python llamado f-string, [lee al respecto aquí][f-strings] y [aqui][mas_fstrings]. Creo 2 f-trings; una por cada condición. En una primera variable bottles_sing (botellas cantan) asigno una f-string multi-linea para los casos plurales, luego a una segunda variable bottle_sings (botella canta) otra f-tring para la condición en singular de una botella:
 
 ```python
 for x in range(100,0,-1):
