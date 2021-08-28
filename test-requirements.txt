@@ -1,0 +1,5 @@
+Online-W3C-Validator==0.3.11
+pytest==6.2.4
+pytest-base-url==1.4.2
+pytest-selenium==2.0.1
+selenium==3.141.0
