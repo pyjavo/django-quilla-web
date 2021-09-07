@@ -30,23 +30,17 @@ o usar [chocolatey](https://chocolatey.org/) y ejecutar
 
 Para instalar Lektor puedes usar el siguiente comando:
 
-```powershell
     @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://getlektor.com/install.ps1'))" && SET PATH=%PATH%;%LocalAppData%\lektor-cli
-```
 
 Pero también puede ser ejecutado directamente en powershell:
 
-```powershell
     iex ((new-object net.webclient).DownloadString('https://getlektor.com/install.ps1'))
-```
 
 ### Windows 10: Windows Subsystem for Linux
 
 Si quieres/debes mantener Windows instalado, pero prefieres mantener este proyecto en Linux, puedes usar el "Windows Subsystem for Linux" (subsistema de Windows para Linux).  La forma rápida de habilitarlo es por powershell en modo de Administrador, ten presente que necesitas reinicar tu PC:
 
-```powershell
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-```
 
 Luego, en la tienda de Microsoft encontrarás distintas distribuciones de Ubuntu que podrás instalar, ten presente que esto solo te da acceso por linea de comandos. Podrás encontrar mas detalles en el siguiente vínculo: [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
@@ -75,37 +69,30 @@ Luego puede instalar Lektor usando el siguiente comando:
 Verificar que las variables de entorno del formato UTF-8 en sus respectivos idiomas esten definidas en el
 archivo ~/.bash_profile de su sistema y en caso de no estar definidas agregarlas.
 
-```bash
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-```
+    export LC_ALL=en_US.UTF-8
+    export LANG=en_US.UTF-8
 
 ### Docker
 
 Si tienes Docker instalado (https://docs.docker.com/get-docker/) puedes hacer uso del Dockerfile en el directorio principal para crear una imagen y posteriormente ejecutar un contenedor con todas las dependencias necesarias. Desde el directorio principal del repositorio ejecuta:
 
-```bash
-# Bash o Powershell
-docker build -t pybaq . # Tener presente el "."
-docker run --rm -p 5000:5000 -v ${PWD}:/app --name pybaq-local pybaq
+    # Bash o Powershell
+    docker build -t pybaq . # Tener presente el "."
+    docker run --rm -p 5000:5000 -v ${PWD}:/app --name pybaq-local pybaq
 
-# Windows Command Line
-docker build -t pybaq . # Tener presente el "."
-docker run --rm -p 5000:5000 -v %cd%:/app --name pybaq-local pybaq
-```
+    # Windows Command Line
+    docker build -t pybaq . # Tener presente el "."
+    docker run --rm -p 5000:5000 -v %cd%:/app --name pybaq-local pybaq
 
 Al montar la carpeta con el código fuente (`-v ${PWD}:/app` o `-v %cd%:/app`) los cambios que se hagan al código se propagaran al contenedor y se veran reflejados immediatamente.
 
 **Nota:** Verifica que el directorio donde tienes el código fuente puede ser montado como un Docker volume. En Linux no se requiere configuración extra, pero hay diferentes métodos para [MacOS](https://docs.docker.com/docker-for-mac/#file-sharing) y [Windows](https://blogs.msdn.microsoft.com/wael-kdouh/2017/06/26/enabling-drive-sharing-with-docker-for-windows/) dependiendo del modo de instalación.
 
-
 ## Ejecución del proyecto durante desarrollo
 
 Para la ejecución del proyecto se debe ejecutar el comando:
 
-```bash
-lektor server
-```
+    lektor server
 
 Al ejecutar Lektor, verás una lista de procesos que tienen lugar antes de generar la página estática. Si en tu edición cometes algún error, aparecerá escrito en la consola. Si se genera con éxito la página, ésta estará disponible en [http://localhost:5000/](http://localhost:5000/).
 
@@ -123,29 +110,11 @@ Necesitamos de tu ayuda para terminar este proyecto! **¿Cómo puedes contribuir
 
 En un terminal bash ejecuta el siguiente script Python (debes instalar el paquete requests con pip)
 
-```bash
-python scripts/events.py
-```
+    python scripts/events.py
 
 Se genera el archivo databags/meetup.json con los eventos actualizados. Recuerda adicionarlo al Pull Request con un commit.
 
 > Por favor actualiza los eventos solo si lo consideras estrictamente necesario, entre los metadatos incluidos incluye la fecha de actualización en un timestamp (propenso a conflictos)
-
-## Validar HTML usando W3C validator
-
-Hay un paquete que usa los servicios de W3C para validar [HTML](https://validator.w3.org/) y [CSS](https://jigsaw.w3.org/css-validator/)
-
-puedes instalarlo usando el comando:
-```
-pip install -U Online-W3C-Validator
-```
-
-luego para verificar los contenidos:
-```
-lektor build --output-path ./build
-cd build
-w3c_validator $(find . -type f -name \*.html)
-```
 
 ## Compilar CSS
 
@@ -153,11 +122,34 @@ El proyecto actualmente usa Sass para los estilos en cascada si deseas modificar
 
 para instalar con npm las dependencias ejecuta:
 
-```
-npm install
-```
+    npm install
 
 Luego cada vez que actualices un estilo ejecuta:
-```
-npm build
-```
+
+    npm build
+
+## Tests
+
+Instala los paquetes de pruebas con el comando
+
+    pip install -r test-requirements.txt
+
+### Validar HTML usando W3C validator
+
+w3c se usa para validar la estructura de los archivos [HTML](https://validator.w3.org/) y [CSS](https://jigsaw.w3.org/css-validator/)
+
+para validar los archivos html primero compila los fuentes en la carpeta build,
+luego ejecuta el validador w3c_validator usando los comandos:
+
+    lektor build --output-path ./build
+    cd build
+    w3c_validator $(find . -type f -name \*.html
+
+### Selenium
+
+Para usar selenium primero [instala el webdriver correspondiente a tu plataforma](https://selenium-python.readthedocs.io/installation.html#drivers)
+
+Una vez instalado todo, puedes ejecutar el comando pytest, especificando el navegador a usar
+por ejemplo para ejecutar con el navegador firefox se ejecuta el comando
+
+    pytest --driver firefox

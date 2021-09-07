@@ -1,2 +1,4 @@
 Flask==1.1.4
 Lektor==3.2.0
+requests==2.26.0
+Werkzeug==0.16.1

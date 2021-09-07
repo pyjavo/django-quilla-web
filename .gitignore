@@ -4,3 +4,5 @@ node_modules
 venv/
 Pipfile
 Pipfile.lock
+*.pyc
+.vscode/
