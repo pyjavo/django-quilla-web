@@ -1,20 +1,16 @@
 <div class="meetup-events">
   {% for element in bag('meetup', this.source) %}
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <div class="media">
-          <div class="media-left">
-            <a href='{{ element.get("link") }}'>
-              <img width="200"
-                class="media-object"
-                src='{{ element.get("featured_photo").get("photo_link")
-                      if element.get("featured_photo")
-                      else "/img/event-placeholder.jpg" }}'
-                alt="" />
-            </a>
-          </div>
-          <div class="media-right">
-            <h3 class="media-heading"><a href='{{ element.get("link") }}'>{{ element.get("name") }}</a></h3>
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src='{{ element.get("featured_photo").get("photo_link")
+                        if element.get("featured_photo")
+                        else "/img/event-placeholder.jpg" }}' 
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3 class="card-title"><a href='{{ element.get("link") }}'>{{ element.get("name") }}</a></h3>
             <div class=event-details>
               {% if element.get("venue") %}
                 <div class="venue">

@@ -1,25 +1,20 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+</div><nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">{{bag('menu', this.alt, 'toggle_nav')}}</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ '/'|url }}">
-        <img class="navbar-logo" src="{{ '/img/pybaq-logo.png' | url}}" alt="Python Barranquilla">
-      </a>
-    </div>
-    <div class="navbar-collapse collapse navbar-right">
-      <ul class="nav navbar-nav">
+    <a class="navbar-brand" href="{{ '/'|url }}">
+      <img src="{{ '/img/pybaq-logo.png' | url}}" alt="Python Barranquilla" width="175" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         {% for menu_item in bag('menu', this.alt, 'items')  %}
-          <li{% if this._path==menu_item.url or menu_item.active_childs and this.is_child_of(menu_item.url) %} class="active"{% endif %}>
-            <a href="{{ menu_item.url | url(alt=this.alt) }}">{{ menu_item.title }}</a>
+          <li class="nav-item">
+            <a class="nav-link  {% if this._path==menu_item.url or menu_item.active_childs and this.is_child_of(menu_item.url) %}active{% endif %}" href="{{ menu_item.url | url(alt=this.alt) }}">{{ menu_item.title }}</a>
           </li>
         {% endfor %}
-        <li>
-          <a href="{{ '.'|url(alt=bag('menu', this.alt, 'next_lang')) }}">{{bag('menu', this.alt, 'next_lang')| upper}}</a>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '.'|url(alt=bag('menu', this.alt, 'next_lang')) }}">{{bag('menu', this.alt, 'next_lang')| upper}}</a>
         </li>
       </ul>
     </div>
