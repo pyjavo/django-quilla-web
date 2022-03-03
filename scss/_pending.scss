@@ -82,31 +82,6 @@
 .portfolio-item p {margin:0px 0 30px;}
 .portfolio-item h3 {margin:-10px 0 10px; font-size:16px; text-transform:uppercase;}
 
-
-.tpl6 h3
-{
-	color:#fff;
-	margin:0;
-	padding:40px 5px 0;
-	font-size:16px;
-	text-transform:uppercase;
-}
-.tpl6 .dmbutton
-{
-	display:inline-block;
-	margin:30px 5px 20px 5px;
-	font-size:13px;
-}
-
-.tpl6 .bg
-{
-	height:100%;
-	width:100%;
-	background-color:$blue-opacity;
-	background-color:$blue-opacity-rgba;
-	text-align:center;
-}
-
 /* Testimonials Wrap */
 #twrap {
 	background: url(/img/t-back.jpg) no-repeat center top;
@@ -191,29 +166,6 @@
 
 .badge-theme {
 	background: #01D099;
-}
-
-/* Contact Page */
-.banner {
-	//TODO: Ruta de imagen
-	background: url(/img/contact.jpg) no-repeat center top;
-	margin-top: -60px;
-	padding-top:0px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 400px;
-	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .share i {

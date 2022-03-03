@@ -1,0 +1,21 @@
+.member-overlay {
+    color:#fff;
+	margin:0;
+	padding:40px 5px 0;
+	font-size:16px;
+	text-transform:uppercase;
+}
+
+.member-overlay-button {
+    display:inline-block;
+	margin:30px 5px 20px 5px;
+	font-size:13px;
+}
+
+.member-overlay-hover {
+    height:100%;
+	width:100%;
+	background-color:$blue-opacity;
+	background-color:$blue-opacity-rgba;
+	text-align:center;
+}

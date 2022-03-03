@@ -1,13 +1,9 @@
 <div class="members">
-  <div class="row">
+  <div class="row d-flex justify-content-center">
     {% for blk in this.body.blocks %}
       <div class="block block-{{ blk._flowblock }} col-sm-4">
         {{ blk }}
       </div>
-    {% if loop.index % 3 == 0 %}
-      </div>
-      <div class="row">
-    {% endif %}
-  {% endfor %}
+    {% endfor %}
   </div>
 </div>

@@ -1,8 +1,7 @@
 {% macro render_pagination(pagination) %}
 
-<nav aria-label="Blog pagination">
-  <ul class="pagination mx-auto" style="width: 250px;">
-    
+<nav aria-label="Blog pagination" class="d-flex justify-content-center">
+  <ul class="pagination">
     {% if pagination.has_prev %}
       <li class="page-item">
         <a class="page-link" href="{{ pagination.prev|url }}" aria-label="Anterior">

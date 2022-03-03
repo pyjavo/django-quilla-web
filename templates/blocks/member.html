@@ -1,24 +1,21 @@
-<div class="member member-{{this.type}} centered hline" style="margin-bottom: 20px">
-  <div class="he-wrap tpl6">
-    <img class="img-responsive center-block member-image" src="{{ this.photo }}" alt="{{this.name}}">
-    <div class="he-view">
-      <div class="bg a0" data-animate="fadeIn">
-        <h3 class="a1" data-animate="fadeInDown">Contáctame:</h3>
-        {% if this.website_handle.url %}
-          <a href="{{ this.website_handle }}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-external-link"></i></a>
-        {% endif %}
-        {% if this.email %}
-          <a href="mailto:{{ this.email }}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
-        {% endif %}
-        {% if this.github_handle %}
-          <a href="https://github.com/{{this.github_handle}}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-github"></i></a>
-        {% endif %}
-        {% if this.twitter_handle %}
-          <a href="https://twitter.com/{{this.twitter_handle}}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
-        {% endif %}
-      </div>
+<div class="card text-center mb-3">
+  <img src="{{ this.photo }}" class="card-img-top" alt="{{this.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{this.name}}</h5>
+    <p class="card-text">{{ this.role }}</p>
+    <div class="" data-animate="fadeIn">
+      {% if this.website_handle.url %}
+        <a href="{{ this.website_handle }}" class="member-button"><i class="fa fa-external-link"></i></a>
+      {% endif %}
+      {% if this.email %}
+        <a href="mailto:{{ this.email }}" class="member-button"><i class="fa fa-envelope"></i></a>
+      {% endif %}
+      {% if this.github_handle %}
+        <a href="https://github.com/{{this.github_handle}}" class="member-button"><i class="fa fa-github"></i></a>
+      {% endif %}
+      {% if this.twitter_handle %}
+        <a href="https://twitter.com/{{this.twitter_handle}}" class="member-button"><i class="fa fa-twitter"></i></a>
+      {% endif %}
     </div>
   </div>
-  <h4>{{ this.name }}</h4>
-  <p>{{ this.role }}</p>
 </div>

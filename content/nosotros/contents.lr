@@ -23,7 +23,7 @@ url: /img/meetup-data-science-new-age.jpg
 ------
 alt: Team PyBAQ en la PyCon 2018
 ------
-class: img-responsive
+class: img-fluid rounded
 -----
 right:
 
@@ -48,7 +48,7 @@ url: /contacto
 ------
 alt: es_CO
 ------
-class: btn btn-theme
+class: btn btn-primary
 ------
 content: Contáctanos
 ----
