@@ -6,3 +6,4 @@ Pipfile
 Pipfile.lock
 *.pyc
 .vscode/
+geckodriver.log
