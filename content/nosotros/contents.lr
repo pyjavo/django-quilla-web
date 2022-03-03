@@ -1,11 +1,9 @@
-title: Acerca de
+title: Nosotros
 ---
-_model: poster
+_model: page
 ---
 body:
 
-#### heading ####
-title: Nosotros
 #### section-block ####
 title: 
 ----

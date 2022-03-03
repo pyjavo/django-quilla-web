@@ -1,24 +1,15 @@
-_model: poster
+_model: page
 ---
 title: Código de conducta
 ---
 body:
 
-#### heading ####
-title: Código de Conducta de Python Barranquilla
 #### section-block ####
 title: 
 ----
 body:
 
-##### two-columns #####
-class_left: col-lg-6 col-md-6 col-sm-6
------
-class_right: col-lg-6 col-md-6 col-sm-6
------
-left:
-
-###### text-block ######
+##### text-block #####
 text:
 
 Como la comunidad técnica en general, el equipo de Python Barranquilla y su comunidad están hechos de una mezcla de profesionales y voluntarios de todas partes del mundo, que trabajan en cada aspecto de la misión - incluso mentorías, enseñanza y conectando personas.
@@ -68,9 +59,7 @@ Trata de entender el por qué. Los desacuerdos, tanto sociales como técnicos, s
 Texto original cortesía del [proyecto Django](https://www.djangoproject.com/conduct/). Para su comodidad y comprensión ha sido traducido al español.
 
 Traducido por [Andres Perez](https://andresperezcera.xyz/).
-------
-class: text-block
 -----
-right: 
+class: text-block
 ----
 class: default

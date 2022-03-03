@@ -1,13 +1,15 @@
 {% extends "layout.html" %}
+{% from 'macros/blocksupport.html' import render_full_width_blocks %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block bodyclass %}page{% endblock %}
+
 {% block body %}
-<div id="blue">
+  <div class="heading-title text-center">
     <div class="container">
-		<div class="row">
-			<h3>{% block title %}{{ this.title }}{% endblock %}</h3>
-		</div>
+      <div class="row">
+        <h3>{{ this.title }}</h3>
+      </div>
     </div>
-</div>
-<div id="body-content">
+  </div>
   {{ this.body }}
-</div>
 {% endblock %}

@@ -1,20 +1,16 @@
-_model: poster
+_model: page
 ---
 title: Política de cookies
 ---
 body:
 
-#### heading ####
-title: Política de cookies
 #### section-block ####
 title: 
 ----
 body:
 
-##### two-columns #####
-left:
 
-###### text-block ######
+##### text-block #####
 text:
 
 ## ¿Qué son las cookies?
@@ -43,9 +39,7 @@ Texto original cortesía del [uniwebsidad.com](https://uniwebsidad.com/sitio/coo
 
 [1]: https://es.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)
 
-------
-class: text-block
 -----
-right: 
+class: text-block
 ----
 class: default
