@@ -1,0 +1,32 @@
+.testimonies {
+	background: url(/img/t-back.jpg) no-repeat center top;
+	margin-top: 0px;
+	padding-top:2rem;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  i {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 25px;
+  }
+
+  p {
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
