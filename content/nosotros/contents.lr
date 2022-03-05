@@ -51,6 +51,8 @@ class: btn btn-primary
 content: Contáctanos
 ----
 class: default
+----
+body_class: 
 #### section-block ####
 title: Organizadores
 ----
@@ -131,6 +133,8 @@ github_handle: scot3004
 twitter_handle: scot3004
 ----
 class: default
+----
+body_class: 
 #### section-block ####
 title: Colaboradores
 ----
@@ -196,43 +200,38 @@ github_handle: jorueda
 ------
 twitter_handle: 
 ----
-class: default
+class: 
+----
+body_class: 
 #### section-block ####
 title: Colaboradores previos
 ----
 body:
 
-##### three-columns #####
-left:
-
-###### text-block ######
+##### text-block #####
 text: César Herdenez
-------
-class: text-center
-###### text-block ######
-text: Darío Guzmán
-------
-class: text-center
 -----
-center:
-
-###### text-block ######
+class: col-sm-4
+##### text-block #####
 text: Sara Galván
-------
-class: text-center
-###### text-block ######
-text: Yudy Herrera
-------
-class: text-center
 -----
-right:
-
-###### text-block ######
+class: col-sm-4
+##### text-block #####
 text: Kathy Lora
-------
-class: text-center
+-----
+class: col-sm-4
+##### text-block #####
+text: Darío Guzmán
+-----
+class: col-sm-4
+##### text-block #####
+text: Yudy Herrera
+-----
+class: col-sm-4
 ----
-class: d-flex justify-content-center
+class: 
+----
+body_class: row text-center d-flex justify-content-center
 #### testimonies ####
 source: testimonies
 #### sponsors ####
