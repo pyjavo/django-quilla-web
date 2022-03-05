@@ -49,6 +49,8 @@ class: btn btn-primary
 content: Contact Us
 ----
 class: default
+----
+body_class: 
 #### section-block ####
 title: Organizers
 ----
@@ -115,6 +117,8 @@ github_handle: ycmartinezc
 twitter_handle: 
 ----
 class: default
+----
+body_class: 
 #### section-block ####
 title: Collaborators
 ----
@@ -181,42 +185,37 @@ github_handle: jorueda
 twitter_handle: 
 ----
 class: default
+----
+body_class: 
 #### section-block ####
 title: Former Collaborators
 ----
 body:
 
-##### three-columns #####
-left:
-
-###### text-block ######
+##### text-block #####
 text: César Herdenez
-------
-class: centered
-###### text-block ######
+-----
+class: col-sm-4
+##### text-block #####
 text: Darío Guzmán
-------
-class: centered
 -----
-center:
-
-###### text-block ######
+class: col-sm-4
+##### text-block #####
 text: Sara Galván
-------
-class: centered
-###### text-block ######
-text: Yudy Herrera
-------
-class: centered
 -----
-right:
-
-###### text-block ######
+class: col-sm-4
+##### text-block #####
+text: Yudy Herrera
+-----
+class: col-sm-4
+##### text-block #####
 text: Kathy Lora
-------
-class: centered
+-----
+class: col-sm-4
 ----
-class: default
+class: 
+----
+body_class: row text-center d-flex justify-content-center
 #### testimonies ####
 source: testimonies
 #### sponsors ####
