@@ -28,6 +28,7 @@
   "scripts": {
     "clean": "rm -rf assets/static/gen/",
     "build:css": "sass scss/main.scss assets/static/gen/styles.css --style compressed",
+    "copy:bootstrap:js": "cp node_modules/bootstrap/dist/js/bootstrap.min.js assets/js/bootstrap.min.js",
     "build": "npm run clean && npm run build:css",
     "watch": "nodemon -e scss -x \"npm run build\""
   }
