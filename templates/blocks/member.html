@@ -1,9 +1,9 @@
 <div class="card text-center mb-3">
   <img src="{{ this.photo }}" class="card-img-top" alt="{{this.name}}">
   <div class="card-body">
-    <h5 class="card-title">{{this.name}}</h5>
+    <h3 class="card-title">{{this.name}}</h3>
     <p class="card-text">{{ this.role }}</p>
-    <div class="" data-animate="fadeIn">
+    <div data-animate="fadeIn">
       {% if this.website_handle.url %}
         <a href="{{ this.website_handle }}" class="member-button"><i class="fa fa-external-link"></i></a>
       {% endif %}
