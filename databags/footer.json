@@ -1,26 +1,30 @@
 {
     "es": {
         "about_us": "Sobre Nosotros",
-        "about_us_description":"Python Barranquilla es una comunidad para todos los interesados en desarrollar aplicaciones en Python dentro de la ciudad de Barranquilla.",
+        "about_us_description":"Python Barranquilla es una comunidad para todos los interesados en desarrollar aplicaciones en Python dentro de la ciudad de Barranquilla (Atlántico).",
         "cookies_policy": "Política de cookies",
+        "cookies_policy_intro": "La recolección de datos del presente sitio web se rige por la",
         "cookies_policy_link": "/cookies",
         "social_networks": "Redes sociales",
         "location_title": "Nuestra Ubicación",
         "location_value": "Barranquilla, Atlántico, Colombia.",
         "code_of_conduct": "Código de conducta",
-        "code_of_conduct_intro": "El siguiente es nuestro",
-        "channels": "Canales"
+        "code_of_conduct_intro": "En nuestra comunidad seguimos este",
+        "channels": "Canales",
+        "guidelines": "Nuestros lineamientos"
     },
     "en": {
         "about_us": "About Us",
-        "about_us_description":"Python Barranquilla is a community for all those interested in developing Python applications within the city of Barranquilla.",
+        "about_us_description":"Python Barranquilla is a community for all those interested in developing Python applications within the city of Barranquilla (Atlántico).",
         "cookies_policy": "Cookies Policy",
+        "cookies_policy_intro": "The data collection of this site is guided by the",
         "cookies_policy_link": "/cookies",
         "social_networks": "Social Networks",
         "location_title": "Our Location",
         "location_value": "Barranquilla, Atlántico, Colombia.",
         "code_of_conduct": "Code of conduct",
         "code_of_conduct_intro": "This is our",
-        "channels": "Channels"
+        "channels": "Channels",
+        "guidelines": "Our guidelines"
     }
 }

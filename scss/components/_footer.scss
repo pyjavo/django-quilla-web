@@ -12,7 +12,14 @@
     line-height: 3rem;
 
     &:hover {
-      color: $blue-light;
+      color: $yellow;
+    }
+  }
+
+  a {
+    color: $white;
+    &:hover {
+      color: $yellow;
     }
   }
 }
