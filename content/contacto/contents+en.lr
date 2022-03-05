@@ -2,53 +2,35 @@ body:
 
 #### banner ####
 image: contact.jpg
+#### text-block ####
+text: 
+----
+class: d-flex justify-content-center text-center
 #### section-block ####
 title: 
 ----
 body:
 
-##### two-columns #####
-class_left: col-lg-8 col-md-8 col-sm-8
------
-class_right: col-lg-4 col-md-4 col-sm-4
------
-left:
-
-###### text-block ######
+##### text-block #####
 text:
 
-#### Contact us!
-<div class="hline"></div>
+# Do you want to collaborate with our community?
 
 Do you want to collaborate with our community? In this you can help us:
 
 (all forms are in spanish)
 
-- ** Post a talk ** for our monthly meetups, [register here](https://forms.gle/tCsALqG2aQ9A1GqD8)
+## [Post a talk](https://forms.gle/tCsALqG2aQ9A1GqD8) for our monthly meetups, 
 
-- Are you interested in actively participating in the community? [sign up] (https://forms.gle/EV821U2Tu2nXx9aE7) to ** volunteer **.
+## Are you interested in actively participating in the community? [sign up to volunteer](https://forms.gle/EV821U2Tu2nXx9aE7).
 
-- If your talent is ** generating content or writing articles **, [share your interest] (https://forms.gle/GikHxB8LKboQ1xYF8)
+## If your talent is ** generating content or writing articles**, [share your interest](https://forms.gle/GikHxB8LKboQ1xYF8)
 
-Do you want to tell us something else? Leave us an email, a message by slack or by one of our social networks.
-------
-class: default
+Do you want to tell us something else? Leave us an email at djangoquilla(at)gmail.com, a message by discord or by one of our social networks. It would be a pleasure for us to meet you.
 -----
-right:
-
-###### text-block ######
-text:
-
-#### Our information
-<div class="hline"></div>
-
-Email: djangoquilla(at)gmail.com
-
-It would be a pleasure for us to meet you.
-------
-class: default
+class: contact-invite
 ----
-class: default
+class: d-flex justify-content-center text-center
 ---
 title: Contact
 ---
