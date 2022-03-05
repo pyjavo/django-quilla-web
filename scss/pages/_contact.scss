@@ -22,10 +22,9 @@
 .contact-invite {
   padding: 3rem 0;
   a {
-    text-decoration: none;
-    color: $blue-light;
+    color: $blue-medium;
     &:hover {
-      color: $yellow;
+      color: $yellow-hover;
     }
   }
 
