@@ -208,31 +208,31 @@ left:
 ###### text-block ######
 text: César Herdenez
 ------
-class: centered
+class: text-center
 ###### text-block ######
 text: Darío Guzmán
 ------
-class: centered
+class: text-center
 -----
 center:
 
 ###### text-block ######
 text: Sara Galván
 ------
-class: centered
+class: text-center
 ###### text-block ######
 text: Yudy Herrera
 ------
-class: centered
+class: text-center
 -----
 right:
 
 ###### text-block ######
 text: Kathy Lora
 ------
-class: centered
+class: text-center
 ----
-class: default
+class: d-flex justify-content-center
 #### testimonies ####
 source: testimonies
 #### sponsors ####
