@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="{{ '/'|url(external=True) }}" />
 {% endblock %}
 {% block body %}
-<div class="heading-title text-center">
+<div class="heading-title">
   <div class="container">
   <div class="row">
     <h1>Blog</h1>
@@ -37,8 +37,8 @@
           </div>
           {% endfor %}
         <h1 class="ctitle">{{ this.title }}</h1>
-        <span class="csmall">{{bag('settings', alt, 'posted')}}: {{ this.pub_date }}.</span> | 
-        <span class="csmall2">
+        <span class="post-date">{{bag('settings', alt, 'posted')}}: {{ this.pub_date }}.</span> | 
+        <span class="post-author">
           {{bag('settings', alt, 'by')}}: {% if this.twitter_handle %}
           <a href="https://twitter.com/{{ this.twitter_handle}}" target="_blank">
             {{ this.author or this.twitter_handle }}

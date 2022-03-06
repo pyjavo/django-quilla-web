@@ -1,5 +1,5 @@
 .blog-post-body {
-  img {
+  img, iframe {
     height: auto;
     max-width: 100%;
   }
@@ -12,6 +12,10 @@
   blockquote p{
     font-style: italic;
     font-size: 2rem;
+  }
+
+  p, ol, ul {
+    font-size: 1.5rem;
   }
 
   figure img {
@@ -27,8 +31,15 @@
 }
 
 .post-meta {
-  h1{
-    color: #384452;
-    margin-top: 4rem;
-  }
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #2B2E31;
+}
+
+.post-date {
+  color: #757575;
+}
+
+.post-excerpt {
+  font-size: 1.2rem;
 }
