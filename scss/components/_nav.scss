@@ -1,0 +1,10 @@
+.navbar-dq {
+  .nav-link {
+    color: $white;
+    font-weight: bold;
+
+    &:hover, &.active {
+      color: $yellow;
+    }
+  }
+}

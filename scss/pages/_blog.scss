@@ -1,6 +1,7 @@
-.blog-post-body {
+.blog-post {
+  max-width: 860px;
+  width: 100%;
   img, iframe {
-    height: auto;
     max-width: 100%;
   }
 

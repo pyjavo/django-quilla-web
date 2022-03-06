@@ -4,9 +4,7 @@ title: Código de conducta
 ---
 body:
 
-#### section-block ####
-title: 
-----
+#### wrapper ####
 body:
 
 ##### text-block #####
@@ -62,4 +60,6 @@ Traducido por [Andres Perez](https://andresperezcera.xyz/).
 -----
 class: text-block
 ----
-class: default
+wrapper_class: d-flex justify-content-center
+----
+body_class: blog-post
