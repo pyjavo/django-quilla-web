@@ -115,6 +115,20 @@ email: ycmartinezc@gmail.com
 github_handle: ycmartinezc
 ------
 twitter_handle: 
+###### member ######
+name: Sergio Orozco
+------
+photo: /img/team/sergio-orozco.jpg
+------
+role: Web developer
+------
+website_handle: https://www.secorto.com
+------
+email: 
+------
+github_handle: scot3004
+------
+twitter_handle: scot3004
 ----
 class: default
 ----
@@ -156,19 +170,19 @@ github_handle:
 ------
 twitter_handle: 
 ###### member ######
-name: Sergio Orozco Torres
+name: Sergio Molinares
 ------
-photo: /img/team/sergio-orozco.jpg
+photo: /img/team/sergio-molinares.jpg
 ------
-role: Web developer
+role: Social networks
 ------
-website_handle: https://www.secorto.com
+website_handle: 
 ------
 email: 
 ------
-github_handle: scot3004
+github_handle: Ardatx
 ------
-twitter_handle: scot3004
+twitter_handle: MolinaresSergio
 ###### member ######
 name: Jorge Rueda
 ------
