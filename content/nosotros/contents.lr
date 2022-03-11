@@ -41,14 +41,21 @@ sino que también sirve para ayudar a encontrar empleo a los miembros que partic
 Esperamos en un futuro lograr un impacto significativo en la ciudad y en el mundo.
 ------
 class: about-intro
-###### link ######
+###### wrapper ######
+body:
+
+####### link #######
 url: /contacto
-------
+-------
 alt: es_CO
-------
+-------
 class: btn btn-primary
-------
+-------
 content: Contáctanos
+------
+wrapper_class: d-flex justify-content-center
+------
+body_class: 
 ----
 class: default
 ----
