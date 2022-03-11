@@ -74,20 +74,6 @@ github_handle: pyjavo
 ------
 twitter_handle: pyjavo
 ###### member ######
-name: Paula Aragón
-------
-photo: /img/team/paula-aragon.jpg
-------
-role: Logistics and Support
-------
-website_handle: 
-------
-email: djangoquilla@gmail.com
-------
-github_handle: 
-------
-twitter_handle: pandrearro
-###### member ######
 name: Brayan García
 ------
 photo: /img/team/brayan-garcia.jpg
@@ -102,19 +88,19 @@ github_handle:
 ------
 twitter_handle: 
 ###### member ######
-name: Yuliana Martinez
+name: Paula Aragón
 ------
-photo: /img/team/yuliana-martinez.jpg
+photo: /img/team/paula-aragon.jpg
 ------
-role: Public Relationships
+role: Logistics and Support
 ------
 website_handle: 
 ------
-email: ycmartinezc@gmail.com
+email: djangoquilla@gmail.com
 ------
-github_handle: ycmartinezc
+github_handle: 
 ------
-twitter_handle: 
+twitter_handle: pandrearro
 ###### member ######
 name: Sergio Orozco
 ------
@@ -129,6 +115,20 @@ email:
 github_handle: scot3004
 ------
 twitter_handle: scot3004
+###### member ######
+name: Yuliana Martinez
+------
+photo: /img/team/yuliana-martinez.jpg
+------
+role: Public Relationships
+------
+website_handle: 
+------
+email: ycmartinezc@gmail.com
+------
+github_handle: ycmartinezc
+------
+twitter_handle: 
 ----
 class: default
 ----
@@ -141,6 +141,20 @@ body:
 ##### members #####
 body:
 
+###### member ######
+name: Andres Pérez
+------
+photo: /img/team/andres-perez.jpg
+------
+role: Translator and contributor
+------
+website_handle: 
+------
+email: djangoquilla@gmail.com
+------
+github_handle: 
+------
+twitter_handle: 
 ###### member ######
 name: Javier Fonseca
 ------
@@ -156,17 +170,17 @@ github_handle: fonsecajavier
 ------
 twitter_handle: 
 ###### member ######
-name: Andres Pérez
+name: Jorge Rueda
 ------
-photo: /img/team/andres-perez.jpg
+photo: /img/team/jorge-rueda.jpg
 ------
-role: Translator and contributor
+role: Web developer
 ------
 website_handle: 
 ------
-email: djangoquilla@gmail.com
+email: jorgeru045@gmail.com
 ------
-github_handle: 
+github_handle: jorueda
 ------
 twitter_handle: 
 ###### member ######
@@ -183,20 +197,6 @@ email:
 github_handle: Ardatx
 ------
 twitter_handle: MolinaresSergio
-###### member ######
-name: Jorge Rueda
-------
-photo: /img/team/jorge-rueda.jpg
-------
-role: Web developer
-------
-website_handle: 
-------
-email: jorgeru045@gmail.com
-------
-github_handle: jorueda
-------
-twitter_handle: 
 ----
 class: default
 ----
