@@ -28,4 +28,6 @@ En esto nos puedes ayudar:
 -----
 class: contact-invite
 ----
-class: d-flex justify-content-center text-center
+class: 
+----
+body_class: 

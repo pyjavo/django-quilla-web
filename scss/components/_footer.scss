@@ -2,7 +2,6 @@
   padding-top: 3rem;
   padding-bottom: 2rem;
   background: $blue-strong;
-  text-align: center;
   color: $white;
 
   i {
@@ -23,5 +22,10 @@
     &:hover {
       color: $yellow;
     }
+  }
+
+  h4 {
+    border-bottom: 1px solid $white;
+    padding-bottom: 0.5rem;
   }
 }
