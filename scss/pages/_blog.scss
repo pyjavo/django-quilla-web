@@ -1,0 +1,55 @@
+.blog-post {
+  max-width: 860px;
+  margin: 0.75rem;
+  width: 100%;
+  img, iframe {
+    max-width: 100%;
+  }
+
+  h2, h3, h4{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  blockquote p{
+    font-style: italic;
+    font-size: 2rem;
+  }
+
+  p, ol, ul {
+    font-size: 1.5rem;
+  }
+
+  ul, ol {
+    margin-left: 1rem;
+  }
+
+  li {
+    padding-left: 1rem;
+  }
+
+  figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+  figure:hover img {
+    opacity: .5;
+    cursor: pointer;
+  }
+}
+
+.post-meta {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #2B2E31;
+}
+
+.post-date {
+  color: #757575;
+}
+
+.post-excerpt {
+  font-size: 1.2rem;
+}

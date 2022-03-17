@@ -1,15 +1,35 @@
 {% macro render_pagination(pagination) %}
-  <div class="pagination">
+
+<nav aria-label="Blog pagination" class="d-flex justify-content-center">
+  <ul class="pagination">
     {% if pagination.has_prev %}
-      <a href="{{ pagination.prev|url }}">&laquo; Anterior</a>
+      <li class="page-item">
+        <a class="page-link" href="{{ pagination.prev|url }}" aria-label="Anterior">
+          <span aria-hidden="true">&laquo; Anterior</span>
+        </a>
+      </li>
     {% else %}
-      <span class="disabled">&laquo; Anterior</span>
+      <li class="page-item disabled">
+        <a class="page-link" href="#" aria-label="Anterior">
+          <span aria-hidden="true">&laquo; Anterior</span>
+        </a>
+      </li>
     {% endif %}
-    | {{ pagination.page }} |
+    <li class="page-item"><a class="page-link" href="#">{{ pagination.page }}</a></li>
+    
     {% if pagination.has_next %}
-      <a href="{{ pagination.next|url }}">Siguiente &raquo;</a>
+      <li class="page-item"></li>
+        <a class="page-link" href="{{ pagination.next|url }}" aria-label="Siguiente">
+          <span aria-hidden="true">Siguiente &raquo;</span>
+        </a>
+      </li>
     {% else %}
-      <span class="disabled">Siguiente &raquo;</span>
+      <li class="page-item disabled">
+        <a class="page-link" href="#" aria-label="Siguiente">
+          <span aria-hidden="true">Siguiente &raquo;</span>
+        </a>
+      </li>
     {% endif %}
-  </div>
+  </ul>
+</nav>
 {% endmacro %}

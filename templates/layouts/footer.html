@@ -3,11 +3,7 @@
     <div class="row">
       <div class="col-lg-4">
         <h4>{{bag('footer', this.alt, 'about_us')}}</h4>
-        <div class="hline-w"></div>
         <p>{{bag('footer', this.alt, 'about_us_description')}}</p>
-        <p>
-          <a href="{{ '/cookies' | url(alt=this.alt) }}" style="color: #FFFFFF">{{bag('footer', this.alt, 'cookies_policy')}}</a>
-        </p>
       </div>
       <div class="col-lg-4">
         <h4>{{bag('footer', this.alt, 'social_networks')}}</h4>
@@ -28,18 +24,15 @@
         </p>
       </div>
       <div class="col-lg-4">
-        <h4>{{bag('footer', this.alt, 'location_title')}}</h4>
-        <div class="hline-w"></div>
+        <h4>{{bag('footer', this.alt, 'guidelines')}}</h4>
         <p>
-          {{bag('footer', this.alt, 'location_value')}}<br/>
+          {{bag('footer', this.alt, 'cookies_policy_intro')}}
+          <a href="{{ '/cookies' | url(alt=this.alt) }}">{{bag('footer', this.alt, 'cookies_policy')}}</a>
+
         </p>
-      </div>
-      <div class="col-lg-4">
-        <h4>{{bag('footer', this.alt, 'code_of_conduct')}}</h4>
-        <div class="hline-w"></div>
         <p>
           {{bag('footer', this.alt, 'code_of_conduct_intro')}}
-          <a href="{{ '/codigo-de-conducta' | url(alt=this.alt) }}" style="color: #FFFFFF"><u>{{bag('footer', this.alt, 'code_of_conduct')}}</u></a>
+          <a href="{{ '/codigo-de-conducta' | url(alt=this.alt) }}">{{bag('footer', this.alt, 'code_of_conduct')}}</a>
         </p>
       </div>
     </div>

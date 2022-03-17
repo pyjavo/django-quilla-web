@@ -1,7 +1,5 @@
 body:
 
-#### heading ####
-title: About us
 #### section-block ####
 title: 
 ----
@@ -19,14 +17,14 @@ url: /img/meetup-data-science-new-age.jpg
 ------
 alt: PyBAQ Team, PyCon 2018
 ------
-class: img-responsive
+class: img-fluid
 -----
 right:
 
 ###### text-block ######
 text:
 
-#### More about us
+## More about us
 
 We are a community of web developers, devops, entrepreneurs and students.
 
@@ -40,17 +38,19 @@ Today the community is an example for other communities in the city.
 It also serves to help members who actively participate and excel in our community activities find employment.
 We hope in the future to have a significant impact in the city and in the world. 
 ------
-class: text-block
+class: about-intro
 ###### link ######
 url: /contacto
 ------
 alt: en
 ------
-class: btn btn-theme
+class: btn btn-primary
 ------
 content: Contact Us
 ----
 class: default
+----
+body_class: 
 #### section-block ####
 title: Organizers
 ----
@@ -74,6 +74,20 @@ github_handle: pyjavo
 ------
 twitter_handle: pyjavo
 ###### member ######
+name: Brayan García
+------
+photo: /img/team/brayan-garcia.jpg
+------
+role: Logistics and Support
+------
+website_handle: 
+------
+email: ingbrayangarcia@gmail.com
+------
+github_handle: 
+------
+twitter_handle: 
+###### member ######
 name: Paula Aragón
 ------
 photo: /img/team/paula-aragon.jpg
@@ -88,19 +102,19 @@ github_handle:
 ------
 twitter_handle: pandrearro
 ###### member ######
-name: Brayan García
+name: Sergio Orozco
 ------
-photo: /img/team/brayan-garcia.jpg
+photo: /img/team/sergio-orozco.jpg
 ------
-role: Logistics and Support
+role: Web developer
 ------
-website_handle: 
+website_handle: https://www.secorto.com
 ------
-email: ingbrayangarcia@gmail.com
+email: 
 ------
-github_handle: 
+github_handle: scot3004
 ------
-twitter_handle: 
+twitter_handle: scot3004
 ###### member ######
 name: Yuliana Martinez
 ------
@@ -117,6 +131,8 @@ github_handle: ycmartinezc
 twitter_handle: 
 ----
 class: default
+----
+body_class: 
 #### section-block ####
 title: Collaborators
 ----
@@ -125,20 +141,6 @@ body:
 ##### members #####
 body:
 
-###### member ######
-name: Javier Fonseca
-------
-photo: /img/team/javier-fonseca.jpg
-------
-role: Event venue
-------
-website_handle: 
-------
-email: javier.fonseca@koombea.com
-------
-github_handle: fonsecajavier
-------
-twitter_handle: 
 ###### member ######
 name: Andres Pérez
 ------
@@ -154,19 +156,19 @@ github_handle:
 ------
 twitter_handle: 
 ###### member ######
-name: Sergio Orozco Torres
+name: Javier Fonseca
 ------
-photo: /img/team/sergio-orozco.jpg
+photo: /img/team/javier-fonseca.jpg
 ------
-role: Web developer
+role: Event venue
 ------
-website_handle: https://www.secorto.com
+website_handle: 
 ------
-email: 
+email: javier.fonseca@koombea.com
 ------
-github_handle: scot3004
+github_handle: fonsecajavier
 ------
-twitter_handle: scot3004
+twitter_handle: 
 ###### member ######
 name: Jorge Rueda
 ------
@@ -181,44 +183,53 @@ email: jorgeru045@gmail.com
 github_handle: jorueda
 ------
 twitter_handle: 
+###### member ######
+name: Sergio Molinares
+------
+photo: /img/team/sergio-molinares.jpg
+------
+role: Social networks
+------
+website_handle: 
+------
+email: 
+------
+github_handle: Ardatx
+------
+twitter_handle: MolinaresSergio
 ----
 class: default
+----
+body_class: 
 #### section-block ####
 title: Former Collaborators
 ----
 body:
 
-##### three-columns #####
-left:
-
-###### text-block ######
+##### text-block #####
 text: César Herdenez
-------
-class: centered
-###### text-block ######
+-----
+class: col-sm-4
+##### text-block #####
 text: Darío Guzmán
-------
-class: centered
 -----
-center:
-
-###### text-block ######
-text: Sara Galván
-------
-class: centered
-###### text-block ######
-text: Yudy Herrera
-------
-class: centered
------
-right:
-
-###### text-block ######
+class: col-sm-4
+##### text-block #####
 text: Kathy Lora
-------
-class: centered
+-----
+class: col-sm-4
+##### text-block #####
+text: Sara Galván
+-----
+class: col-sm-4
+##### text-block #####
+text: Yudy Herrera
+-----
+class: col-sm-4
 ----
-class: default
+class: 
+----
+body_class: row
 #### testimonies ####
 source: testimonies
 #### sponsors ####

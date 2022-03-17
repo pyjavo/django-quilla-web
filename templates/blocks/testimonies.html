@@ -1,8 +1,8 @@
-<div id="twrap">
-  <div class="container centered">
-    <div class="row">
+<div class="testimonies">
+  <div class="container ">
+    <div class="row d-flex justify-content-center">
       {% for element in bag(this.source, alt) %}
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-lg-8">
           <i class="fa fa-comment-o"></i>
           <p>{{ element.get("body") }}</p>
           <h4>{{ element.get("author") }}</h4>

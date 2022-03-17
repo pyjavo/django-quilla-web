@@ -11,43 +11,23 @@ title:
 ----
 body:
 
-##### two-columns #####
-class_left: col-lg-8 col-md-8 col-sm-8
------
-class_right: col-lg-4 col-md-4 col-sm-4
------
-left:
-
-###### text-block ######
+##### text-block #####
 text:
 
-#### Contáctanos!
-<div class="hline"></div>
+# ¿Deseas colaborar con nuestra comunidad?
 
-¿Deseas colaborar con nuestra comunidad? En esto nos puedes ayudar: 
+En esto nos puedes ayudar:
 
-- **Postula una charla** para nuestros meetups mensuales, [registrate aquí](https://forms.gle/tCsALqG2aQ9A1GqD8)
+### [Postula una charla](https://forms.gle/tCsALqG2aQ9A1GqD8) para nuestros meetups mensuales.
 
-- ¿Te interesa participar activamente en la comunidad? [apúntate](https://forms.gle/EV821U2Tu2nXx9aE7) a **ser voluntario**. 
+### ¿Te interesa participar activamente en la comunidad? [apúntate a ser voluntario](https://forms.gle/EV821U2Tu2nXx9aE7). 
 
-- Si tu talento es **generar contenido o escribir artículos**, [compártenos tu interés](https://forms.gle/GikHxB8LKboQ1xYF8)
+### Si tu talento es **generar contenido o escribir artículos**, [compártenos tu interés](https://forms.gle/GikHxB8LKboQ1xYF8).
 
-¿Quieres contarnos algo más? Déjanos un correo, un mensaje por slack o por una de nuestras redes sociales.
-------
-class: default
+¿Quieres contarnos algo más? Déjanos un correo a djangoquilla(arroba)gmail.com, o bien un mensaje por discord o por cualquiera de nuestras redes sociales. Para nosotros sería un placer conocerte.
 -----
-right:
-
-###### text-block ######
-text:
-
-#### Nuestros Datos
-<div class="hline"></div>
-
-Correo: djangoquilla(arroba)gmail.com
-
-Para nosotros sería un placer conocerte.
-------
-class: default
+class: contact-invite
 ----
-class: default
+class: 
+----
+body_class: 

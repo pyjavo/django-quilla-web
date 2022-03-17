@@ -1,17 +1,17 @@
-<div class="panel panel-default">
-  <div class="panel-body">
-    <div class="media">
-      <div class="media-left">
-        <a href='{{ this.url }}'>
-          <img
-            class="media-object"
-            src='{{ this.image if this.image else "/img/event-placeholder.jpg" }}'
-            alt="" />
-        </a>
-      </div>
-      <div class="media-right">
-        <h3 class="media-heading">
-          <a href='{{ this.url }}'>{{ this.title }}</a>
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-3">
+      <a href='{{ this.url }}'>
+        <img
+          class="media-object"
+          src='{{ this.image if this.image else "/img/event-placeholder.jpg" }}'
+          alt="" />
+      </a>
+    </div>
+    <div class="col-md-9">
+      <div class="card-body">
+        <h3 class="card-title">
+          <a href='{{ this.url }}' class="text-decoration-none">{{ this.title }}</a>
         </h3>
         <div class=event-details>
           <div class="venue">

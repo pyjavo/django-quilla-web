@@ -1,0 +1,46 @@
+body { 
+  background: #ffffff; 
+  color: #384452;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+p { 
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a { 
+  text-decoration: none; 
+  -webkit-transition: background-color .4s linear, color .4s linear;
+  -moz-transition: background-color .4s linear, color .4s linear;
+  -o-transition: background-color .4s linear, color .4s linear;
+  -ms-transition: background-color .4s linear, color .4s linear;
+  transition: background-color .4s linear, color .4s linear;
+
+  color: $blue-medium;
+  &:hover {
+    color: $yellow-hover;
+  }
+}
+
+::-moz-selection  {
+  color: #fff;
+  text-shadow:none;
+  background:#2B2E31;
+}
+::selection {
+  color: #fff;
+  text-shadow:none;
+  background:#2B2E31;
+} 

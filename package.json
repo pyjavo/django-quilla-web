@@ -20,13 +20,16 @@
   },
   "homepage": "https://pybaq.co",
   "dependencies": {
-    "bootstrap-sass": "^3.4.1",
+    "bootstrap": "^5.1.3",
     "font-awesome": "^4.7.0",
+    "nodemon": "^2.0.15",
     "sass": "^1.26.5"
   },
   "scripts": {
     "clean": "rm -rf assets/static/gen/",
     "build:css": "sass scss/main.scss assets/static/gen/styles.css --style compressed",
-    "build": "npm run clean && npm run build:css"
+    "copy:bootstrap:js": "cp node_modules/bootstrap/dist/js/bootstrap.min.js node_modules/bootstrap/dist/js/bootstrap.min.js.map assets/js/",
+    "build": "npm run clean && npm run build:css",
+    "watch": "nodemon -e scss -x \"npm run build\""
   }
 }

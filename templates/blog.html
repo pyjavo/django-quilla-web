@@ -22,31 +22,31 @@
 {% endblock %}
 
 {% block body %}
-<div id="blue">
+<div class="heading-title">
     <div class="container">
 		<div class="row">
-			<h3>Blog</h3>
+			<h1>Blog</h1>
 		</div>
     </div>
 </div>
-<div class="container mtb">
+<div class="container">
     <div class="row blog_post-posts">
         {% for post in this.pagination.items %}
         <div class="col-md-6 blog_post-post">
-            {% for image in post.attachments.images %}
-                <a href="{{ post|url }}">
-                    <figure>
-                        <img class="img-responsive" src="{{ image|url }}" alt="">
-                    </figure>
-                </a>
-            {% endfor %}
-            <a href="{{ post|url }}"><h3 class="ctitle">{{ post.title }}</h3></a>
-            <p><span class="csmall">{{bag('settings', alt, 'posted')}}: {{ post.pub_date }}.</span> | 
-                <span class="csmall2">{{bag('settings', alt, 'by')}}: {{ post.author }}</span></p>
-            {{ post.excerpt }}
-            <p><a href="{{ post|url }}">[{{bag('settings', alt, 'read_more')}}]</a></p>
-            <div class="hline"></div>
-            <div class="spacing"></div>
+            <div class="card mb-5">
+                {% for image in post.attachments.images %}
+                    <a href="{{ post|url }}" class="text-decoration-none">
+                        <img src="{{ image|url }}" class="card-img-top" alt="">
+                    </a>
+                {% endfor %}
+                <div class="card-body">
+                    <h3 class="card-title"><a href="{{ post|url }}" class="text-decoration-none">{{ post.title }}</a></h3>
+                    <div class="card-text post-meta"><span class="post-date">{{bag('settings', alt, 'posted')}}: {{ post.pub_date }}.</span> | 
+                        <span>{{bag('settings', alt, 'by')}}: {{ post.author }}</span></div>
+                    <div class="post-excerpt">{{ post.excerpt }}</div>
+                    <p><a href="{{ post|url }}" class="btn btn-primary">{{bag('settings', this.alt, 'read_more')}}</a></p>
+                </div>
+            </div>
         </div>
         {% endfor %}
     </div>
