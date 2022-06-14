@@ -67,13 +67,19 @@ Pass it around,]
 {{Numero de botellas-1}}[ bottles of beer on the wall!]
 ```
 
-Y todo estaría perfecto si no fuera porque la ultima estrofa es diferente, por lo tanto...
+Y todo estaría perfecto si no fuera porque las últimas dos estrofas son diferentes, por lo tanto...
 
 #### Segundo: Las miles de excepciones
 
-Una excepción nos dañaría el caminado, denoto la condicional con dobles corchetes "{{}}":
+Dos excepciones nos dañarían el caminado, denoto las condicionales con dobles corchetes "{{}}":
 
 ```handlebars
+{{Cuande queden dos botellas}}
+    {{2}}[bottles of beer on the wall,]
+    {{2}}[bottles of beer!]
+    [Take it down,
+    Pass it around,
+    1 bottle of beer on the wall!]
 {{Cuando quede una botella}}
 	{{1}}[bottle of beer on the wall,]
 	{{1}}[bottle of beer!]
@@ -100,6 +106,8 @@ Procedamos entonces a construir con estas herramientas el esqueleto de nuestro p
 for x in range(100,-1,-1):
     if x==1:
         print('Lo que va cuando sea una botella '+str(x))
+    elif x==2:
+        print('Lo que va cuando sean dos botellas' +str(x))
     else:
         print('Lo que va cuando son varias botellas '+str(x))
 ```
@@ -128,6 +136,14 @@ for x in range(100,0,-1):
         f"Take it down,\nPass it around,\nNo more bottles of beer on the wall!\n"
         )
         print(bottle_sings)
+    elif x==2:
+        bottles_sing=(
+        f"{bottle_num} bottles of beer on the wall,\n"
+        f"{bottle_num} bottles of beer! \n"
+        f"Take it down,\nPass it around,\nNo more bottles of beer on the wall!\n"
+        f"{bottle_num-1} bottle of beer on the wall!\n"
+        )
+        print(bottles_sing)
     else:
         bottles_sing=(
         f"{bottle_num} bottles of beer on the wall,\n"
@@ -155,6 +171,13 @@ No more bottles of beer on the wall!
 98 bottles of beer on the wall!
 
 ...
+
+2 bottles of beer on the wall,
+2 bottles of beer!
+Take it down,
+Pass it around,
+No more bottles of beer on the wall!
+1 bottle of beer on the wall!
 
 1 bottle of beer on the wall,
 1 bottle of beer!
@@ -187,6 +210,14 @@ for x in range(100,0,-1):
         f"Take it down,\nPass it around,\nNo more bottles of beer on the wall!\n"
         )
         print(bottle_sings)
+    elif x==2:
+        two_bottles_sing=(
+        f"{bottle_num} bottles of beer on the wall,\n"
+        f"{bottle_num} bottles of beer! \n"
+        f"Take it down,\nPass it around,\nNo more bottles of beer on the wall!\n"
+        f"{bottle_num_minusone} bottle of beer on the wall!\n"
+        )
+        print(two_bottles_sing)
     else:
         bottles_sing=(
         f"{bottle_num} bottles of beer on the wall,\n"
@@ -213,7 +244,7 @@ Two bottles of beer!
 Take it down,
 Pass it around,
 No more bottles of beer on the wall!
-One bottles of beer on the wall!
+One bottle of beer on the wall!
 
 One bottle of beer on the wall,
 One bottle of beer!
