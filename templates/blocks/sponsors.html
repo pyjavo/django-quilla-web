@@ -5,8 +5,10 @@
         <h3 class="section-title text-center">{{this.title.upper() }}</h3>
       {% endif %}
       {% for element in bag(this.source, alt) %}
-        <div class="col-lg-4 col-md-4 col-sm-4 text-center">
-          <img class="img-fluid" src='{{ element.get("image") }}' alt='{{ element.get("name") }}'>
+        <div class="col-lg-3 col-md-3 col-sm-3 text-center p-3">
+          <a href='{{ element.get("url") }}' target="_blank">
+            <img class="img-fluid" src='{{ element.get("image") }}' alt='{{ element.get("name") }}'>
+          </a>          
         </div>
       {% endfor %}
     </div>

@@ -3,34 +3,52 @@
         {
             "name": "Koombea",
             "image": "https://pybaq.co/img/patrocinadores/koombea.png",
-            "description": "Lugar del evento"
-        },
-        {
-            "name": "Github Pages",
-            "image": "https://pybaq.co/img/patrocinadores/github-pages.png",
-            "description": "Sitio web"
+            "url": "https://www.koombea.com/",
+            "description": ""
         },
         {
             "name": "Python Software Foundation",
             "image": "https://pybaq.co/img/patrocinadores/psf.png",
-            "description": "Comidas"
+            "url": "https://www.python.org/psf/",
+            "description": ""
+        },
+        {
+            "name": "Python Colombia",
+            "image": "/img/patrocinadores/PythonColombiaLogo.png",
+            "url": "https://www.python.org.co/",
+            "description": ""
+        },
+        {
+            "name": "Empanada Fund",
+            "image": "/img/patrocinadores/EmpanadaFundLogo.png",
+            "url": "https://www.notion.so/The-Empanada-Fund-857632d4c05740ecb8a2c1e8f8f0b116",
+            "description": ""
         }
     ],
     "en": [
         {
             "name": "Koombea",
             "image": "https://pybaq.co/img/patrocinadores/koombea.png",
-            "description": "Venue place"
-        },
-        {
-            "name": "Github Pages",
-            "image": "https://pybaq.co/img/patrocinadores/github-pages.png",
-            "description": "Website"
+            "url": "https://www.koombea.com/",
+            "description": ""
         },
         {
             "name": "Python Software Foundation",
             "image": "https://pybaq.co/img/patrocinadores/psf.png",
-            "description": "Food"
+            "url": "https://www.python.org/psf/",
+            "description": ""
+        },
+        {
+            "name": "Python Colombia",
+            "image": "/img/patrocinadores/PythonColombiaLogo.png",
+            "url": "https://www.python.org.co/",
+            "description": ""
+        },
+        {
+            "name": "Empanada Fund",
+            "image": "/img/patrocinadores/EmpanadaFundLogo.png",
+            "url": "https://www.notion.so/The-Empanada-Fund-857632d4c05740ecb8a2c1e8f8f0b116",
+            "description": ""
         }
     ]
 }
