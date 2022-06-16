@@ -5,7 +5,7 @@
         <h3 class="section-title text-center">{{this.title.upper() }}</h3>
       {% endif %}
       {% for element in bag(this.source, alt) %}
-        <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+        <div class="col-lg-3 col-md-3 col-sm-3 text-center p-3">
           <a href='{{ element.get("url") }}' target="_blank">
             <img class="img-fluid" src='{{ element.get("image") }}' alt='{{ element.get("name") }}'>
           </a>          
