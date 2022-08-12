@@ -126,7 +126,7 @@ para instalar con npm las dependencias ejecuta:
 
 Luego cada vez que actualices un estilo ejecuta:
 
-    npm build
+    npm run build
 
 ## Tests
 
