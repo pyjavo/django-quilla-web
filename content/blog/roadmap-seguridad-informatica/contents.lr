@@ -4,7 +4,109 @@ author: Sergio Molinares
 ---
 body: 
 
-Este artículo nace con la necesidad de ayudar a otras personas a iniciarse en el mundo de la seguridad informática y no colgar los guantes en el intento, ya que para muchos esto puede ser frustrante a la hora de comenzar y saber de una manera u otra por donde empezar, obtener buenos resultados y avanzar de una manera cómoda.
+### Recorrer la ruta  sin morir en el intento
+Este artículo nace con la necesidad de ayudar a otras personas a iniciarse en el mundo de la seguridad informatica y no colgar los guantes en el intento, ya que para muchos esto puede ser frustrante a la hora de comenzar y saber de una manera u otra por donde empezar, obtener buenos resultados y avanzar de una manera comoda. Estos son algunos consejos rapidos de carretera:
+
+
+#### ¿Qué es la seguridad informática?
+La seguridad informática, también llamada ciberseguridad, se refiere a la protección de la información y, especialmente, al procesamiento que se hace de la misma, con el objetivo de evitar la manipulación de datos y procesos por personas no autorizadas.
+
+#### Inicios de la seguridad informática
+Los orígenes de la ciberseguridad se remontan a inicios de 1970, donde tuvo auge la informática moderna. 
+
+Con la aparición del internet y el aumento masivo de la interconectividad, muchos usuarios empezaron a descubrir vulnerabilidades en programas y páginas web, con las cuales podían tener acceso a información privilegiada o ejecutar comandos no permitidos para usuarios convencionales. 
+Estas prácticas comenzaron a denominarse “hackeos” y a los usuarios que las realizan se les denominó “hackers”.
+
+### ¿Por donde comienzo?
+
+¡Ahora sí subamonos a el automovil! y transitemos junto esta ruta.
+
+Una pregunta que cuesta hacerse al intentar iniciar en "infosec" (information security) y que termina muchas veces bajando nuestras expectativas y nuestras ganas de aprender es ¿cómo se come la seguridad? ¿qué habilidades debo aprender primero? Sin hacer que esto sea frustrante, podemos comenzar por:
+
+- Servidores
+- Redes
+- Programación
+- Linux
+- Bases de datos
+
+## Primera Curva de la Ruta: GNU/LINUX  CUALQUIER SABOR
+
+*Es importante grabarse estó como hackers ningún sistema operativo es nuestro enemigo, ningún sistema es mejor que otro todo es relativo pero sencillamente linux lleva la delantera.*
+
+Tengamos en cuenta que  tener un buen manejo de la terminal es de suma importancia ya que está nos ayudara en nuestras labores en el area de la seguridad, ya sea automatizando procesos y tareas, creando archivos de registro de una auditoria para su posterior analisis, corriendo una herramienta etc..
+
+Manejo básico de la terminal de Linux y una introducción breve a la ciberseguridad:
+
+- [Comandos Linux](https://blog.desdelinux.net/mas-de-400-comandos-para-gnulinux-que-deberias-conocer/) tambien es importante empaparse con los conceptos basicos de cyberseguridad, sus metodologias y sus practicas
+- [Controles y Seguridad Informatica- Colombia](http://oferta.senasofiaplus.edu.co/sofia-oferta/detalle-oferta.html?fm=0&fc=XvhTOnNfsMA)
+- [IT Fundamentals for Cybersecurity](https://www.coursera.org/specializations/it-fundamentals-cybersecurity)
+
+## Segunda Curva de la Ruta: Fundamentos en redes
+Es de gran importancia aprender el protocolo tcp/ip debido a que es el  encargado de mantener la comunicacion a traves de computadores siendo está comunicación la que sostiene la internet, y gran aliado en nuestro dia a dia.
+
+
+*Aprender networking es esencial ya que es una de las columnas vertebrales de la internet y un buen hacker debe conocer como se comunican las redes.*
+
+**Protocolo TCP IP**
+
+TCP/IP son las siglas de Transmission Control Protocol/Internet Protocol (Protocolo de control de transmisión/Protocolo de Internet). TCP/IP es un conjunto de reglas estandarizadas que permiten a los equipos comunicarse en una red como Internet una manera facil de comprender el funcionamiento de las redes seria el siguiente libro un clasico en la enseñanza de este protocolo :
+- [Taller de TCP/IP](https://www.lawebdelprogramador.com/pdf/6063-Taller-de-TCP-IP.html)
+
+Cabe destacar que a la hora de practicar como funciona una red es importante contar con un buen simulador de redes. Existe uno muy bueno creado por la empresa [Cisco](https://es.wikipedia.org/wiki/Cisco_Systems), líder en el área de redes a nivel mundial. El simulador con el cual podemos practicar de manera grafica y sencilla como un computador intercambia información con otro se llama **Cisco Packet Tracer**.
+
+Cisco Packet Tracer es una aplicación a través de la cual se puede realizar una gran variedad de funciones relacionadas con las redes, como diseñar y construir una red desde cero, trabajar sobre proyectos preconstruidos (incluye una gran variedad de ejemplos interesantes), probar nuevos diseños y topologías de red.
+- [Aprende Packet Tracer](https://www.netacad.com/es/courses/packet-tracer)
+
+
+## Tercera Curva de la Ruta: Programación
+
+***in code we trust***
+
+En el mundo de la seguridad es importante tener un buen aprendizaje y comprensión en el area de la  programación, saber la base del funcionamientos de sitios web y como se estructuran y construyen programas, aplicaciones...
+
+
+### Lenguajes de programación en Seguridad Informatica
+
+- **Python:** Se caracteriza por la limpieza y versatilidad a la hora de escribir codigo. Además por el numero de librerias y recursos disponibles. Al ser un lenguaje de scripting permite ejecutar multiples tareas ademas de no consumir tiempo y recursos compilando. Aporta sencillez para crear sockets y de un excelente manejo a la hora de crear [exploits](https://es.wikipedia.org/wiki/Exploit). Cursos recomendados:
+
+	- [Clases personalizadas con Javier Daza](https://javierdaza.co/cursos/introducci%C3%B3n-a-python/)
+	- [Curso en youtube de Python con Código Facilito](https://www.youtube.com/watch?v=G2FCfQj-9ig&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS)
+
+- **Ruby:** Es el lenguaje predilecto para la explotación de fallos, usado por la famosa herramienta [Metasploit](https://www.metasploit.com/) la cual permite ejecutar exploit propios de la herramienta, como tambien los escritos por terceros. Curso recomendado:
+	- [Curso de Ruby Certificado](https://edutin.com/curso-de-ruby-4355)
+
+- **Go:** Es un lenguaje bastante usado por su rápidez, tipado, concurrencia y compilado. Permite la portabilidad y compilación del código a varias arquitecturas. Este proceso es llamado compilación cruzada, la cual es muy demandada y utilizada para crear herramientas de seguridad, altamente utilizadas en [bug  bounty](https://kippeo.com/bug-bounty-todos-necesitan-un-hacker/), según el libro [Go for Python Programer](https://golang-for-python-programmers.readthedocs.io/en/latest/intro.html). GO es como si Python  y C tuviesen un hijo, y esté  hijo heredó el buen aspecto de python y la habilidad atlética de C. Guía recomendada:
+
+	- [10 Buenos cursos de GO](https://ichi.pro/es/los-10-mejores-cursos-en-linea-para-aprender-golang-go-en-2020-lo-mejor-de-lote-270040202801482)
+
+### Aprende el funcionamiento básico de la Web:
+Aprender el funcionamiento de las tecnologías web y como ésta se estructura es realemte útil a la hora de auditar los [sitios y las aplicaciones web.](https://www.scriptcaseblog.net/es/development-es/aplicaciones-web-webapp-vs-websites-entienda-la-diferencia/)
+
+-  [Introducción a las tecnologias web](https://www.ingeniovirtual.com/fundamentos-de-desarrollo-web/)
+
+## Cuarta Curva de la Ruta: Bases de datos
+
+Es importante un buen manejo y uso de bases de datos, ya que éstas son grandes almacenes que guardan datos como: 
+- Configuraciones de sitios
+- Lista de usuarios
+- Números de identificación
+- Números de tarjetas de crédito
+- Condiciones medicas
+
+O cualquier información que sea útil para la logica del negocio que implementa la base de datos. Por lo tanto, es un recurso de utilidad para una correcta auditoria de un sistema.
+
+- [Curso de código facilito sobre base de datos](https://codigofacilito.com/cursos/bases_datos)
+
+
+## Ascenso en la vía. Es hora de hackear.
+Llegamos al momento de poner en práctica lo que vas aprediendo. Por eso te presento una serie de recursos, teórico practicos dónde podrás poner a prueba los conocimeintos adquiridos, así como ir aprendiendo nuevas habilidades ya que estas plataformas permiten hackear máquinas en un entorno contralado e intencionalmente vulnerable para que quien practica el hacking desde un punto de vista más real. Te recomiendo las siguientes plataformas donde aprender metodologías y entrenamientos en ciberseguridad:
+
+- [Owasp](https://owasp.org/)
+- [Web security academy](https://portswigger.net/web-security)
+- [Try Hack me](https://tryhackme.com/)
+- [Hack the box](https://www.hackthebox.com/)
+
+Es importante tratar de comprender en general lo que se aprende y no que lo utilicemos como una receta de cocina. La idea es que esto pueda ilustrarte a mejorar la ruta o cambiarla definitivamente. Debemos cosechar una mentalidad de analista y no solo ser monos que teclean. 
 
 _Edición: Javier Daza_
 ---
