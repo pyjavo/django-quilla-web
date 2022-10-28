@@ -88,9 +88,9 @@ github_handle:
 ------
 twitter_handle: 
 ###### member ######
-name: Paula Aragón
+name: Fernando Llinás
 ------
-photo: /img/team/paula-aragon.jpg
+photo: /img/team/fernando-llinas.jpeg
 ------
 role: Logistics and Support
 ------
@@ -100,7 +100,7 @@ email: djangoquilla@gmail.com
 ------
 github_handle: 
 ------
-twitter_handle: pandrearro
+twitter_handle:
 ###### member ######
 name: Sergio Orozco
 ------
@@ -224,6 +224,10 @@ text: Sara Galván
 class: col-sm-4
 ##### text-block #####
 text: Yudy Herrera
+-----
+class: col-sm-4
+##### text-block #####
+text: Paula Aragón
 -----
 class: col-sm-4
 ----
