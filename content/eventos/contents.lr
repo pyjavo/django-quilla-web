@@ -358,6 +358,42 @@ attach: <a href="https://www.youtube.com/watch?v=qQEBoAVkvmk">Video Youtube</a>
 title: Uso empresarial de Python
 ------
 attach: <a href="https://drive.google.com/file/d/1elenlrR_oytRtdWc78URE1Y9os21MdlG/view?usp=sharing">Diapositivas</a> / <a href="https://www.youtube.com/watch?v=Ld52Wz_K8XQ">Video Youtube</a>
+###### event-attach ######
+title: Detección de Cáncer Pulmonar usando Procesamiento de Imágenes
+------
+attach: <a href="https://youtu.be/fAG3_nMPpjU">Video Youtube</a>
+###### event-attach ######
+title: Cross Modal: Conectando el mundo de NLP con el de Computer Vision
+------
+attach: <a href="https://youtu.be/hLOxurqMOkQ">Video Youtube</a>
+###### event-attach ######
+title: Conversatorio de junior a senior: Conmemorando 7 años de comunidad
+------
+attach: <a href="https://youtu.be/M5-witzXkDk">Video Youtube</a>
+###### event-attach ######
+title: SymPy como herramienta de aprendizaje en matemáticas y programación
+------
+attach: <a href="https://youtu.be/L7PsaOu0bSQ">Video Youtube</a> / <a href="https://docs.google.com/presentation/d/1-651PmUg0vtHeAPZdi5ieuokoVrLJ5x0/edit?usp=sharing&ouid=102956723374392876682&rtpof=true&sd=true">Diapositivas</a> / <a href="https://colab.research.google.com/drive/1iIknZcj1TEfKTEKGHvdTJCBBmNrsoIw6?usp=sharing">Google Colab</a>
+###### event-attach ######
+title: Principios SOLID en Python
+------
+attach: <a href="https://youtu.be/ZjQyjDWyLCc">Video Youtube</a> / <a href="https://github.com/emimartin26/solid_python/tree/master/practices">Github</a>
+###### event-attach ######
+title: Automatización de UI en Python aplicando el patrón Screenplay
+------
+attach: <a href="https://youtu.be/s_h5uAZB8yU">Video Youtube</a> / <a href="https://github.com/Scot3004/web2021/blob/master/content/blog/2022-08-14-screenpy.mdx">Github</a>
+###### event-attach ######
+title: Fomentando la programación desde la infancia
+------
+attach: <a href="https://youtu.be/RIx-Wf1dZ6U">Video Youtube</a>
+###### event-attach ######
+title: Consiguiendo trabajo como programador a los 45 años
+------
+attach: <a href="https://youtu.be/kOSqcrgTlhI">Video Youtube</a> / <a href="https://drive.google.com/file/d/1vTU5p44bn4mrOBzt5q6araKo0Rx0wm5O/view?usp=sharing">Diapositivas</a>
+###### event-attach ######
+title: Introducción al Pentesting
+------
+attach: <a href="https://youtu.be/pDu87a3lr78">Video Youtube</a> / <a href="https://drive.google.com/file/d/1sgH0tlUf-eJJWp4isNgLiT7mZPfkUEQW/view?usp=sharing">Diapositivas</a>
 ----
 class: default
 #### section-block ####
