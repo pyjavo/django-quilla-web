@@ -40,7 +40,7 @@
       <span class="post-date">{{bag('settings', alt, 'posted')}}: {{ this.pub_date }}.</span> | 
       <span class="post-author">
         {{bag('settings', alt, 'by')}}: {% if this.twitter_handle %}
-        <a href="https://twitter.com/{{ this.twitter_handle}}" target="_blank">
+        <a href="https://twitter.com/{{ this.twitter_handle}}" target="_blank" rel="noopener">
           {{ this.author or this.twitter_handle }}
         </a>
       {% else %}
