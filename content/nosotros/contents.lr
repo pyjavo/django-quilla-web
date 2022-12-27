@@ -83,31 +83,17 @@ github_handle: pyjavo
 ------
 twitter_handle: pyjavo
 ###### member ######
-name: Brayan García
+name: Yuliana Martinez
 ------
-photo: /img/team/brayan-garcia.jpg
+photo: /img/team/yuliana-martinez.jpg
 ------
-role: Soporte y logística
-------
-website_handle: 
-------
-email: ingbrayangarcia@gmail.com
-------
-github_handle: 
-------
-twitter_handle: 
-###### member ######
-name: Fernando Llinás
-------
-photo: /img/team/fernando-llinas.jpeg
-------
-role: Soporte y logística
+role: Relaciones públicas
 ------
 website_handle: 
 ------
-email: djangoquilla@gmail.com
+email: ycmartinezc@gmail.com
 ------
-github_handle: 
+github_handle: ycmartinezc
 ------
 twitter_handle:
 ###### member ######
@@ -125,19 +111,19 @@ github_handle: scot3004
 ------
 twitter_handle: scot3004
 ###### member ######
-name: Yuliana Martinez
+name: Fernando Llinás
 ------
-photo: /img/team/yuliana-martinez.jpg
+photo: /img/team/fernando-llinas.jpeg
 ------
-role: Relaciones públicas
+role: Soporte y logística
 ------
 website_handle: 
 ------
-email: ycmartinezc@gmail.com
+email: djangoquilla@gmail.com
 ------
-github_handle: ycmartinezc
+github_handle: 
 ------
-twitter_handle: 
+twitter_handle:
 ----
 class: default
 ----
@@ -206,6 +192,20 @@ email:
 github_handle: Ardatx
 ------
 twitter_handle: MolinaresSergio
+###### member ######
+name: Brayan García
+------
+photo: /img/team/brayan-garcia.jpg
+------
+role: Contribuidor de código
+------
+website_handle:
+------
+email: ingbrayangarcia@gmail.com
+------
+github_handle:
+------
+twitter_handle:
 ----
 class: 
 ----
