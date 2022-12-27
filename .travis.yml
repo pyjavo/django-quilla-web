@@ -1,7 +1,12 @@
 language: python
 python: 3.9
+dist: xenial
+
+os:
+  - linux
+
 node_js:
-- '6'
+  - "6"
 
 before_install:
 - export TZ=America/Bogota
@@ -22,7 +27,7 @@ script: "lektor build"
 deploy:
   provider: script
   skip_cleanup: true
-  script: "lektor deploy ghpages-https"
+  script: "lektor deploy ghpages"
   github_token: $GITHUB_TOKEN
   on:
     branch: master
