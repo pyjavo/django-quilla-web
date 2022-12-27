@@ -2,6 +2,9 @@ language: python
 python: 3.9
 dist: xenial
 
+os:
+  - linux
+
 node_js:
   - "6"
 
