@@ -29,9 +29,9 @@ deploy:
   skip_cleanup: true
   script: "lektor deploy ghpages"
   github_token: $GITHUB_TOKEN
+  edge: true
   on:
     branch: master
-  edge: true
 
 cache:
   directories:
