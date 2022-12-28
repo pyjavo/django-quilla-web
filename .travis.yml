@@ -26,9 +26,8 @@ script: "lektor build"
 
 deploy:
   provider: script
-  skip_cleanup: true
   script: "lektor deploy ghpages"
-  deploy_key: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN
   edge: true
   on:
     branch: master
