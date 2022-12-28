@@ -27,8 +27,6 @@ script: "lektor build"
 deploy:
   provider: script
   script: "lektor deploy ghpages"
-  token: $GITHUB_TOKEN
-  edge: true
   on:
     branch: master
 
