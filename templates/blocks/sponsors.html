@@ -6,7 +6,7 @@
       {% endif %}
       {% for element in bag(this.source, alt) %}
         <div class="col-lg-3 col-md-3 col-sm-3 text-center p-3">
-          <a href='{{ element.get("url") }}' target="_blank">
+          <a href='{{ element.get("url") }}' target="_blank" rel="noopener">
             <img class="img-fluid" src='{{ element.get("image") }}' alt='{{ element.get("name") }}'>
           </a>          
         </div>
