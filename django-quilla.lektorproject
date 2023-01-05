@@ -8,11 +8,11 @@ lektor-disqus-comments = 0.2
 lektor-markdown-highlighter = 0.3.2
 
 [servers.ghpages]
-target = ghpages+https://PyBAQ/django-quilla-web?cname=pybaq.co
+target = ghpages://PyBAQ/website?cname=pybaq.co
 default = yes
 
 [servers.ghpages-https]
-target = ghpages+https://PyBAQ/django-quilla-web?cname=pybaq.co
+target = ghpages+https://PyBAQ/website?cname=pybaq.co
 
 [alternatives.es]
 name = Spanish
