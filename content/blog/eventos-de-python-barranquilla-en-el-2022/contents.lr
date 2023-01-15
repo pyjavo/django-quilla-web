@@ -18,35 +18,57 @@ El aspecto interesante de este mes es que uno de los participantes de la Liga Py
 La primera charla la empezamos con pie derecho, pues tuvimos como invitado a Josimar Chiré desde Perú con una charla muy interesante sobre procesamiento digital de imágenes.
 A Josimar ya lo habíamos tenido como ponente de manera presencial en el 2019 con la charla *Inteligencia Artificial y sus Aplicaciones* cuando visitó Barranquilla por motivos de sus estudios de postgrado. Fue muy agradable contar con su proactividad, ya que él mismo nos contactó y nos propuso dar una charla. 
 
-Pueden encontrar las diapositivas de su charla de 2019 en [google](https://drive.google.com/file/d/1Mk99-prLjBfmpF9CDpnw_xIhftfv3k4a/view?usp=sharing).
+Pueden encontrar las diapositivas de su charla de 2019 en nuestro [Google Drive](https://drive.google.com/file/d/1Mk99-prLjBfmpF9CDpnw_xIhftfv3k4a/view?usp=sharing).
 
 ## 3. Cross Modal: Conectando el mundo de NLP con el de Computer Vision
 
-Wayner es otro viejo conocido de la casa. Él nos ha estado acompañando y compartiendo su conocimiento desde 2016. Su primera charla fue sobre "Análisis de sentiemientos". [Acá pueden encontrar su Jupyter Notebook](https://github.com/waybarrios/Django_Meetup/blob/master/Presentation_Meetup_Django_BAQ.ipynb)
+Wayner es otro viejo conocido de la casa. Él nos ha estado acompañando y compartiendo su conocimiento desde 2016. Su primera charla fue sobre "Análisis de sentiemientos". [Acá pueden encontrar su Jupyter Notebook](https://github.com/waybarrios/Django_Meetup/blob/master/Presentation_Meetup_Django_BAQ.ipynb).
 
 ## 4. Conversatorio de junior a senior: Conmemorando 7 años de comunidad
+
+![](/img/posts/2022/conversatorio_2022-04-28-python-barranquilla.png)
+
 En esta evento conmemorativo, trajimos a varios pythonistas que nos estuvieron acompañando en los primeros eventos del 2015. Fue una charla amena, llena de mucha nostalgia y experiencias en la industria de la tecnología.
+
 Por cierto, cumplimos el 31 de marzo, así que se aceptan regalos :P (en forma de charlas, patrocinios, donaciones, pocillos y lo que les nazca jeje)
 
-## 5. SymPy como herramienta de aprendizaje en matemáticas y programación
-Para mayo no teníamos ni idea de quien iba a dar la charla (como siempre jajaja), así que preguntamos en el grupo de telegram de Python Colombia y así fue como conocimos a Alfonso Jiménez. Me parece que fue su primera charla con la comunidad, así que estaba muy emocionado.
-Puedes encontrar su [Google Colab notebook aquí](https://colab.research.google.com/drive/1iIknZcj1TEfKTEKGHvdTJCBBmNrsoIw6?usp=sharing)
-## 5**. Django Girls Colombia virtual
-Aunque no fue un evento que colocamos en nuestra agenda, un par de personas del equipo PyBAQ participamos como organizadores y mentores de las asistentes al taller. 
-https://twitter.com/DjangoGirlsCo/status/1528810756812283904
+Algo adicional que hicimos en abril fue por fin entregar la última camiseta que teniamos en stock de nuestra colección exclusiva "temporada primavera-verano 2019" 👘 (la vendimos en 2019 pero no la habíamos podido entregar jajaja)
 
-Fue bonito volver a un Django Girls así sea de manera virtual.
+![](/img/posts/2022/entrega_ultima_camiseta-min.jpeg)
+
+
+## 5. SymPy como herramienta de aprendizaje en matemáticas y programación
+Para mayo no teníamos ni idea de quien iba a dar la charla (como siempre jajaja), así que preguntamos en el grupo de [Telegram de Python Colombia](https://t.me/pythoncolombia) y así fue como conocimos a Alfonso Jiménez. Me parece que fue su primera charla con la comunidad, así que estaba muy emocionado.
+
+Puedes encontrar su [Google Colab notebook aquí](https://colab.research.google.com/drive/1iIknZcj1TEfKTEKGHvdTJCBBmNrsoIw6?usp=sharing).
+
+
+## 5**. Django Girls Colombia (virtual)
+
+![](/img/posts/2022/django-girls-colombia-2022.jpeg)
+
+Aunque no fue un evento que colocamos en nuestra agenda, un par de personas del equipo PyBAQ participamos como organizadores y mentores de las asistentes al taller. 
+
+Fue bonito volver a un Django Girls, así sea de manera virtual.
 
 ## 6. Principios SOLID en Python
-Directamente desde Argentina, contamos con la participación de Emiliano Martin, technical leader en Mercado Libre. Sin duda, una de las charlas más vistas en el año. Emiliano supo transmitir la teoría y la práctica de una forma magistral. Es una de mis charlas recomendadas de 2022.
+
+![](/img/posts/2022/yuliana-equipo-python-barranquilla.jpeg)
+
+Directamente desde Argentina, contamos con la participación de Emiliano Martin, technical leader en Mercado Libre. Sin duda, una de las charlas más vistas en el año. Emiliano supo transmitir la teoría y la práctica de una forma magistral. Es mis charla #1 recomendada del 2022.
+
+Entre otras cosas, esta fue la primera vez que Yuliana se encargo de un streaming en Youtube. Todo marchó viento en popa, excepto al final cuando ella tuvo problemas para finalizar la transmisión. Si ven el final del video, verán que los últimos 2 minutos parecen una sesión de co-working en vivo 🤣🤣.
 
 ## 7. Automatización de UI en Python aplicando el patrón Screenplay
-Scot, como le decimos de cariño a Sergio del equipo de PyBAQ se postuló a hacer una charla de lo que más tiene experiencia, Quality Assurance (QA para las amistades).
-Cuando alguien del team PyBAQ da una charla hay dos posibles razones:
+Scot, como le decimos de cariño a Sergio O. del equipo de PyBAQ se postuló a hacer una charla de lo que más tiene experiencia, Quality Assurance (QA para las amistades).
+
+Solo para que sepan, cuando alguien del team PyBAQ da una charla, es porque hay dos posibles razones:
 1. No encontramos a nadie y fue nuestro tributo del mes (LOL).
 2. Verdaramente quería compartir este conocimiento con la comunidad.
 
-¿Cuál crees que fueron las razones de Scot? Déjanoslo saber en los comentarios :P
+*¿Cuál crees que fueron las razones de Scot?* Déjanoslo saber en los comentarios :P
+
+![](/img/posts/2022/tribute_hunger_games.gif)
 
 ## 8. Fomentando la programación desde la infancia
 Esta fue una de las charlas que más contaba con ansias organizar. En esta ocasión contamos con la participación de dos padres de familia: Johann Echavarría, un compañero de la comunidad [Colombia dev](https://twitter.com/colombia_dev) y de Jairo Coronado, el papá de un niño al que le doy clases personalizadas de Python. Pueden encontrar mis cursos en [https://javierdaza.co/cursos/](https://javierdaza.co/cursos/).
@@ -59,23 +81,30 @@ Cuando tuvimos la charla de preparación con Jorge y le preguntamos a Fernando c
 "Acabo de hablar con Jorge Rueda y quedé sencillamente ilusionado. La charla de Jorge puede ser de la historias más impactantes que haya oído en años. Y vamos a tener el orgullo y el placer de compartirla. ¡Qué maravilla!"
 
 ## 10. Introducción al Pentesting
+
+![](/img/posts/2022/hacking-etico-team-pybaq.jpeg)
+
 Atx, como le decimos de cariño a Sergio (si, otro Sergio. Ya ves por qué los apodos), es un apasionado por la ciberseguridad y el hacking (¡viva el red team!) que nos viene acompañando desde el 2019. 
-En esta, su segunda charla con la comunidad, nos demuestra además de sus conocimientos técnicos, sus habilidades blandas para mantener a un público apasionado por su charla ¡Por más de 1 hora! Si vez el video completo, quédate hasta el final porque las preguntas del público son de las mejores cosas que verás en esta presenctación (también hay una sesión de preguntas en el medio)
+
+En esta, su segunda charla con la comunidad, nos demuestra además de sus conocimientos técnicos, sus habilidades blandas para mantener a un público apasionado por su charla ¡Por más de 1 hora! Si ves el video completo, quédate hasta el final porque las preguntas del público son de las mejores cosas que verás en esta presenctación (también hay una sesión de preguntas en el medio)
 
 ## 11. Crea tus propias videollamadas con Python y WebRTC
-En esta charla vuelve otro viejo conocido de la casa, Darío, que fue co-organizador de la comunidad en 2018, ponente en PyCon 2019 y mentor de múltiples de los talleres Django Girls que hicimos en la ciudad y en los alrededores (también organizamos uno en Cartagena en el 2017).
+En esta charla vuelve otro viejo conocido de la casa, Darío Guzman, co-organizador de la comunidad en 2018, ponente en PyCon Colombia 2019 y mentor de múltiples de los talleres Django Girls que hicimos en Barranquilla y en sus alrededores (también organizamos uno en Cartagena en el 2017).
 
 De esta charla puedes encontrar también un balance de teoría y código que valen la pena ver con detalle. ¡Una charla imperdible del 2022!
 
 ## 12. De psicólogo a programador ¿cambio o complemento de carrera?
 Esta charla es la cereza del pudín, y mi charla recomendada #3 de 2022. Directamente desde Perú, el compatriota Julían Casadiego nos comparte su experiencia de vida como psicólogo que aprende a programar.
-Su charla es una de esas joyas que rara vez encontrarás en internet. 
+
+*Su charla es una de esas joyas que rara vez encontrarás en internet.* 
 
 ## 12+1. Altos y bajos en el equipo de co-organizadores
 
+![](/img/posts/2022/reunion_team_pybaq.jpg)
+
 Este fue un año de altos y bajos dentro del equipo. El año lo empezamos con alegría al recibir a Fernando como colaborador, pero, por otro lado, continuamos trayendo un elefante blanco que veníamos cargando de 2021. A mediados de 2021 Paula y Brayan habían pedido un tiempo fuera como co-organizadores para dedicarse a asuntos personales, por lo que, como ustedes imaginarán que ocurre en todo equipo de voluntarios, menos manos colaboradoras se traduce en más trabajo para los que quedamos a cargo de la comunidad. Por suerte logramos balancear cargas (es decir, dejar de hacer cosas y reuniones internas jajaja). 
 
-Para octubre o noviembre ambos pidieron la baja. Paula dejó el equipo y Brayan paso a ser colaborador (un rol que exige menos responsabilidades). Como siempre, ver partir a alguien del equipo organizador es un momento un poco triste (a pesar de que ya lo veíamos venir). Paula y Brayan nos acompañaron creo que por 3 años más o menos en múltiples eventos oficiales de la comunidad Python Colombia tanto en Barranquilla como en Medellín, así como también de reuniones internas y una que otra salida casual. Muchísimas gracias por todo lo que hicieron <3
+Para octubre o noviembre ambos pidieron la baja. Paula dejó el equipo y Brayan paso a ser colaborador (un rol que exige menos responsabilidades). Como siempre, ver partir a alguien del equipo organizador es un momento un poco triste (a pesar de que ya lo veíamos venir). Paula y Brayan nos acompañaron creo que por 3 años más o menos en múltiples eventos oficiales de la comunidad Python Colombia tanto en Barranquilla como en Medellín, así como también de reuniones internas y una que otra salida casual. Muchísimas gracias por todo lo que hicieron ♥️.
 
 En últimas, lo que ocurrió de forma orgánica, es que el grupo de WA de co-organizadores se fue aglutinando con los ponentes de septiembre, octubre y noviembre, por lo que les preguntamos si querían ayudarnos ¡y dijeron que sí! Ya veremos como se nos dan las cosas con este nuevo equipo.
 
