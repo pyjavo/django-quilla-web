@@ -2,7 +2,9 @@ name: Jorge Rueda
 ---
 photo: /img/team/jorge-rueda.jpg
 ---
-role: Web developer
+role: colaborador
+---
+work: Web developer
 ---
 website_handle:
 ---
@@ -11,5 +13,3 @@ email: jorgeru045@gmail.com
 github_handle: jorueda
 ---
 twitter_handle:
----
-type: colaborador

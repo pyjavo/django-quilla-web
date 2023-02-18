@@ -2,7 +2,9 @@ name: Sergio Molinares
 ---
 photo: /img/team/sergio-molinares.jpg
 ---
-role: Social networks
+role: colaborador
+---
+work: Social networks
 ---
 website_handle:
 ---
@@ -11,5 +13,3 @@ email:
 github_handle: Ardatx
 ---
 twitter_handle: MolinaresSergio
----
-type: colaborador

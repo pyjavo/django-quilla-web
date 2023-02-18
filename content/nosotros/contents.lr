@@ -5,7 +5,7 @@ _model: nosotros
 body:
 
 #### section-block ####
-title: 
+title:
 ----
 body:
 
@@ -53,35 +53,35 @@ class: btn btn-primary
 -------
 content: Contáctanos
 ------
-wrapper_class: 
+wrapper_class:
 ------
-body_class: 
+body_class:
 ----
 class: default
 ----
-body_class: 
+body_class:
 #### section-block ####
 title: Organizadores
 ----
 body:
 
 ##### members #####
-type: organizador
+role: organizador
 ----
 class: default
 ----
-body_class: 
+body_class:
 #### section-block ####
 title: Colaboradores
 ----
 body:
 
 ##### members #####
-type: colaborador
+role: colaborador
 ----
-class: 
+class:
 ----
-body_class: 
+body_class:
 #### section-block ####
 title: Colaboradores previos
 ----
@@ -112,7 +112,7 @@ text: Paula Aragón
 -----
 class: col-sm-4
 ----
-class: 
+class:
 ----
 body_class: row
 #### testimonies ####

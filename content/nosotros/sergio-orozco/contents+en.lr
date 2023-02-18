@@ -2,7 +2,9 @@ name: Sergio Orozco
 ---
 photo: /img/team/sergio-orozco.jpg
 ---
-role: Web developer
+role: organizador
+---
+work: Web developer
 ---
 website_handle: https://www.secorto.com
 ---
@@ -11,5 +13,3 @@ email:
 github_handle: scot3004
 ---
 twitter_handle: scot3004
----
-type: organizador

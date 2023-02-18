@@ -2,7 +2,9 @@ name: Andres Pérez
 ---
 photo: /img/team/andres-perez.jpg
 ---
-role: Translator and contributor
+role: colaborador
+---
+work: Translator and contributor
 ---
 website_handle:
 ---
@@ -11,5 +13,3 @@ email: djangoquilla@gmail.com
 github_handle:
 ---
 twitter_handle:
----
-type: colaborador

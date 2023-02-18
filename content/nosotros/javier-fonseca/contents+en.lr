@@ -2,7 +2,9 @@ name: Javier Fonseca
 ---
 photo: /img/team/javier-fonseca.jpg
 ---
-role: Event venue
+role: colaborador
+---
+work: Event venue
 ---
 website_handle:
 ---
@@ -11,5 +13,3 @@ email: javier.fonseca@koombea.com
 github_handle: fonsecajavier
 ---
 twitter_handle:
----
-type: colaborador

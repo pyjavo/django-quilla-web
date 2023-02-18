@@ -1,7 +1,7 @@
 {% from "macros/miembros.html" import render_miembro %}
 
 <div class="members row d-flex justify-content-center">
-  {% for member in site.query('/nosotros').filter(F.type == this.type) %}
+  {% for member in site.query('/nosotros', alt).filter(F.role == this.role) %}
     <div class="member col-sm-4">
       {{render_miembro(member)}}
     </div>

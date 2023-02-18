@@ -1,7 +1,7 @@
 body:
 
 #### section-block ####
-title: 
+title:
 ----
 body:
 
@@ -36,7 +36,7 @@ Created in 2015 by Javier Daza, the initial idea of the community was to meet up
 Today the community is an example for other communities in the city.
 
 It also serves to help members who actively participate and excel in our community activities find employment.
-We hope in the future to have a significant impact in the city and in the world. 
+We hope in the future to have a significant impact in the city and in the world.
 ------
 class: about-intro
 ###### link ######
@@ -50,29 +50,29 @@ content: Contact Us
 ----
 class: default
 ----
-body_class: 
+body_class:
 #### section-block ####
 title: Organizers
 ----
 body:
 
 ##### members #####
-type: organizador
+role: organizador
 ----
 class: default
 ----
-body_class: 
+body_class:
 #### section-block ####
 title: Collaborators
 ----
 body:
 
 ##### members #####
-type: colaborador
+role: colaborador
 ----
 class: default
 ----
-body_class: 
+body_class:
 #### section-block ####
 title: Former Collaborators
 ----
@@ -103,7 +103,7 @@ text: Paula Aragón
 -----
 class: col-sm-4
 ----
-class: 
+class:
 ----
 body_class: row
 #### testimonies ####

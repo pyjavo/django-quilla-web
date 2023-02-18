@@ -2,7 +2,9 @@ name: Fernando Llinás
 ---
 photo: /img/team/fernando-llinas.jpeg
 ---
-role: Logistics and Support
+role: organizador
+---
+work: Logistics and Support
 ---
 website_handle:
 ---
@@ -11,5 +13,3 @@ email: djangoquilla@gmail.com
 github_handle:
 ---
 twitter_handle:
----
-type: organizador

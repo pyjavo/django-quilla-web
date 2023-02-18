@@ -2,7 +2,9 @@ name: Brayan García
 ---
 photo: /img/team/brayan-garcia.jpg
 ---
-role: Contribuidor de código
+role: colaborador
+---
+work: Contribuidor de código
 ---
 website_handle:
 ---
@@ -11,5 +13,3 @@ email: ingbrayangarcia@gmail.com
 github_handle:
 ---
 twitter_handle:
----
-type: colaborador

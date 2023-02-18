@@ -3,7 +3,7 @@
     <img src="{{ miembro.photo }}" class="card-img-top" alt="{{miembro.name}}">
     <div class="card-body">
       <h3 class="card-title"><a href="{{ miembro|url }}">{{ miembro.name }}</a></h3>
-      <p class="card-text">{{ miembro.role }}</p>
+      <p class="card-text">{{ miembro.work }}</p>
       <div data-animate="fadeIn">
         {% if miembro.website_handle.url %}
           <a href="{{ miembro.website_handle }}" class="member-button"><i class="fa fa-external-link"></i></a>
@@ -22,12 +22,3 @@
   </div>
 {% endmacro %}
 
-{% macro render_miembros_list(miembros) %}
-  <div class="members row d-flex justify-content-center">
-    {% for member in site.query('/nosotros').filter(F.type == "colaborador") %}
-      <div class="member col-sm-4">
-        {{render_miembro(member)}}
-      </div>
-    {% endfor %}
-  </div>
-{% endmacro %}

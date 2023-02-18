@@ -2,14 +2,15 @@ name: Andres Pérez
 ---
 photo: /img/team/andres-perez.jpg
 ---
-role: Contribuidor y traductor
+role: colaborador
 ---
-website_handle: 
+work: Contribuidor y traductor
+---
+website_handle:
 ---
 email: djangoquilla@gmail.com
 ---
-github_handle: 
+github_handle:
 ---
-twitter_handle: 
----
-type: colaborador
+twitter_handle:
+
