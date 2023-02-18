@@ -1,0 +1,9 @@
+{% from "macros/miembros.html" import render_miembro %}
+
+<div class="inactive-members row">
+  {% for member in site.query('/nosotros', alt).filter(F.role == this.role) %}
+    <div class="inactive-member col-sm-4">
+      <p><a href="{{ member|url }}">{{ member.name }}</a></p>
+    </div>
+  {% endfor %}
+</div>

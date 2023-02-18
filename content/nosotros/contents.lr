@@ -5,7 +5,7 @@ _model: nosotros
 body:
 
 #### section-block ####
-title:
+title: 
 ----
 body:
 
@@ -53,13 +53,13 @@ class: btn btn-primary
 -------
 content: Contáctanos
 ------
-wrapper_class:
+wrapper_class: 
 ------
-body_class:
+body_class: 
 ----
 class: default
 ----
-body_class:
+body_class: 
 #### section-block ####
 title: Organizadores
 ----
@@ -70,7 +70,7 @@ role: organizador
 ----
 class: default
 ----
-body_class:
+body_class: 
 #### section-block ####
 title: Colaboradores
 ----
@@ -79,40 +79,18 @@ body:
 ##### members #####
 role: colaborador
 ----
-class:
+class: 
 ----
-body_class:
+body_class: 
 #### section-block ####
 title: Colaboradores previos
 ----
 body:
 
-##### text-block #####
-text: César Herdenez
------
-class: col-sm-4
-##### text-block #####
-text: Darío Guzmán
------
-class: col-sm-4
-##### text-block #####
-text: Kathy Lora
------
-class: col-sm-4
-##### text-block #####
-text: Sara Galván
------
-class: col-sm-4
-##### text-block #####
-text: Yudy Herrera
------
-class: col-sm-4
-##### text-block #####
-text: Paula Aragón
------
-class: col-sm-4
+##### inactive-members #####
+role: contribuidor
 ----
-class:
+class: 
 ----
 body_class: row
 #### testimonies ####
