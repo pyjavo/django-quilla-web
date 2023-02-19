@@ -1,26 +1,57 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<div class="card text-center mb-3">
-  <img src="{{ this.photo }}" class="card-img-top" alt="{{this.name}}">
-  <div class="card-body">
-    <h2 class="card-text">{{ this.name }}</h2>
-    <h3 class="card-title">{{this.role}}</h3>
-    <p class="card-text">{{ this.work }}</p>
-    <div data-animate="fadeIn">
-      {% if this.website_handle.url %}
-        <a href="{{ this.website_handle }}" class="member-button"><i class="fa fa-external-link"></i></a>
-      {% endif %}
-      {% if this.email %}
-        <a href="mailto:{{ this.email }}" class="member-button"><i class="fa fa-envelope"></i></a>
-      {% endif %}
-      {% if this.github_handle %}
-        <a href="https://github.com/{{this.github_handle}}" class="member-button"><i class="fa fa-github"></i></a>
-      {% endif %}
-      {% if this.twitter_handle %}
-        <a href="https://twitter.com/{{this.twitter_handle}}" class="member-button"><i class="fa fa-twitter"></i></a>
-      {% endif %}
+<div class="heading-title">
+  <div class="container">
+  <div class="row">
+    <h1>Nosotros</h1>
+  </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
+  <div class="nosotros-member">
+    <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img class="img-fluid rounded-start" src="{{ this.photo }}" alt="{{ this.name }}">
+      </div>
+      <div class="col-md-8 justify-content-center">
+          <div class="card-body">
+            <h2 class="card-text">{{ this.name }}</h2>
+            <h3 class="card-title">{{this.role}}</h3>
+            <p class="card-text">{{ this.work }}</p>
+            <div data-animate="fadeIn">
+              {% if this.website_handle.url %}
+                <a href="{{ this.website_handle }}" class="member-button"><i class="fa fa-external-link"></i></a>
+              {% endif %}
+              {% if this.email %}
+                <a href="mailto:{{ this.email }}" class="member-button"><i class="fa fa-envelope"></i></a>
+              {% endif %}
+              {% if this.github_handle %}
+                <a href="https://github.com/{{this.github_handle}}" class="member-button"><i class="fa fa-github"></i></a>
+              {% endif %}
+              {% if this.twitter_handle %}
+                <a href="https://twitter.com/{{this.twitter_handle}}" class="member-button"><i class="fa fa-twitter"></i></a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    {% set userPosts = site.query('/blog', alt).filter(F.twitter_handle == this.twitter_handle) %}
+    {% if userPosts %}
+      <h2>Blog posts</h2>
+      <div class="plog-posts-user row">
+        {% for post in userPosts  %}
+          <div class="post col-sm-4">
+            <p><a href="{{ post|url }}">{{ post.title }}</a></p>
+          </div>
+
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 </div>
 {% endblock %}
