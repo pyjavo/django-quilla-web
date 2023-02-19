@@ -47,14 +47,14 @@
 
     {% if this.contributions %}
       <div class="contributions-user">
-        <h2>Contribuciones</h2>
+        <h2>{{bag('nosotros', alt, 'contribuciones')}}</h2>
         {{this.contributions}}
       </div>
     {% endif %}
 
     {% set userPosts = site.query('/blog', alt).filter(F.twitter_handle == this.twitter_handle) %}
     {% if userPosts %}
-      <h2>Blog posts</h2>
+      <h2>{{bag('nosotros', alt, 'post_usuario')}}</h2>
       <div class="plog-posts-user row">
         {% for post in userPosts  %}
           <div class="post col-sm-6">

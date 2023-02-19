@@ -5,7 +5,9 @@
     "contribuidor": "Contribuidor",
     "start_activity_placeholder": "Hace algún tiempo",
     "end_activity_placeholder": "Actualidad",
-    "nosotros": "Nosotros"
+    "nosotros": "Nosotros",
+    "contribuciones": "Contribuciones",
+    "post_usuario": "Blog posts"
   },
   "en":{
     "organizador": "Organizer",
@@ -13,6 +15,8 @@
     "contribuidor": "Contributor",
     "start_activity_placeholder": "Some time ago",
     "end_activity_placeholder": "Present",
-    "nosotros": "About us"
+    "nosotros": "About us",
+    "contribuciones": "Contributions",
+    "post_usuario": "Blog posts"
   }
 }
