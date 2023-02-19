@@ -4,13 +4,15 @@
     "colaborador": "Colaborador",
     "contribuidor": "Contribuidor",
     "start_activity_placeholder": "Hace algún tiempo",
-    "end_activity_placeholder": "Actualidad"
+    "end_activity_placeholder": "Actualidad",
+    "nosotros": "Nosotros"
   },
   "en":{
     "organizador": "Organizer",
     "colaborador": "Collaborator",
     "contribuidor": "Contributor",
     "start_activity_placeholder": "Some time ago",
-    "end_activity_placeholder": "Present"
+    "end_activity_placeholder": "Present",
+    "nosotros": "About us"
   }
 }
