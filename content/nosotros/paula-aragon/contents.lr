@@ -6,10 +6,18 @@ role: contribuidor
 ---
 work: Soporte y logística
 ---
-website_handle:
+website_handle: 
 ---
-email:
+email: 
 ---
-github_handle:
+github_handle: 
 ---
 twitter_handle: pandrearro
+---
+contributions:
+
+ Co-organizar Django Girls 2019 y 2020.
+---
+end_activity: 2022-08-28
+---
+start_activity: 2018-03-06
