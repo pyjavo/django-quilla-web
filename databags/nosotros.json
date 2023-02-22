@@ -1,0 +1,22 @@
+{
+  "es": {
+    "organizador": "Organizador",
+    "colaborador": "Colaborador",
+    "contribuidor": "Contribuidor",
+    "start_activity_placeholder": "Hace algún tiempo",
+    "end_activity_placeholder": "Actualidad",
+    "nosotros": "Nosotros",
+    "contribuciones": "Contribuciones",
+    "post_usuario": "Blog posts"
+  },
+  "en":{
+    "organizador": "Organizer",
+    "colaborador": "Collaborator",
+    "contribuidor": "Contributor",
+    "start_activity_placeholder": "Some time ago",
+    "end_activity_placeholder": "Present",
+    "nosotros": "About us",
+    "contribuciones": "Contributions",
+    "post_usuario": "Blog posts"
+  }
+}

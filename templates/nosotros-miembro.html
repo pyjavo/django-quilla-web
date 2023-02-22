@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="heading-title">
+  <div class="container">
+    <div class="row">
+      <h1>{{bag('nosotros', alt, 'nosotros')}}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
+  <div class="nosotros-member">
+    <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img class="img-fluid rounded-start" src="{{ this.photo }}" alt="{{ this.name }}" style="max-height: 300px;">
+      </div>
+      <div class="col-md-8 justify-content-center">
+          <div class="card-body">
+            <h2 class="card-text">{{ this.name }}</h2>
+            <h3 class="card-title">{{ bag('nosotros', this.alt, this.role)}}</h3>
+            <p class="card-text">{{ this.work }}</p>
+            <p class="card-text">
+              {{ bag('nosotros', this.alt, 'start_activity_placeholder') if not this.start_activity else this.start_activity.strftime('%Y-%m') }}
+              -
+              {{ bag('nosotros', this.alt, 'end_activity_placeholder') if not this.end_activity else this.end_activity.strftime('%Y-%m') }}
+            </p>
+            <div data-animate="fadeIn">
+              {% if this.website_handle.url %}
+                <a href="{{ this.website_handle }}" class="member-button"><i class="fa fa-external-link"></i></a>
+              {% endif %}
+              {% if this.email %}
+                <a href="mailto:{{ this.email }}" class="member-button"><i class="fa fa-envelope"></i></a>
+              {% endif %}
+              {% if this.github_handle %}
+                <a href="https://github.com/{{this.github_handle}}" class="member-button"><i class="fa fa-github"></i></a>
+              {% endif %}
+              {% if this.twitter_handle %}
+                <a href="https://twitter.com/{{this.twitter_handle}}" class="member-button"><i class="fa fa-twitter"></i></a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% if this.contributions %}
+      <div class="contributions-user">
+        <h2>{{bag('nosotros', alt, 'contribuciones')}}</h2>
+        {{this.contributions}}
+      </div>
+    {% endif %}
+
+    {% set userPosts = site.query('/blog', alt).filter(F.twitter_handle == this.twitter_handle) %}
+    {% if userPosts %}
+      <h2>{{bag('nosotros', alt, 'post_usuario')}}</h2>
+      <div class="plog-posts-user row">
+        {% for post in userPosts  %}
+          <div class="post col-sm-6">
+            <p><a href="{{ post|url }}">{{ post.title }}</a></p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

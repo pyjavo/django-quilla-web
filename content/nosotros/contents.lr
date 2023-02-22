@@ -1,6 +1,6 @@
 title: Nosotros
 ---
-_model: page
+_model: nosotros
 ---
 body:
 
@@ -66,64 +66,7 @@ title: Organizadores
 body:
 
 ##### members #####
-body:
-
-###### member ######
-name: Javier Daza
-------
-photo: /img/team/javier-daza.jpg
-------
-role: Dirección y comunidad
-------
-website_handle: https://javierdaza.co
-------
-email: djangoquilla@gmail.com
-------
-github_handle: pyjavo
-------
-twitter_handle: pyjavo
-###### member ######
-name: Yuliana Martinez
-------
-photo: /img/team/yuliana-martinez.jpg
-------
-role: Relaciones públicas
-------
-website_handle: 
-------
-email: ycmartinezc@gmail.com
-------
-github_handle: ycmartinezc
-------
-twitter_handle:
-###### member ######
-name: Sergio Orozco
-------
-photo: /img/team/sergio-orozco.jpg
-------
-role: Contribuidor sitio web
-------
-website_handle: https://www.secorto.com
-------
-email: 
-------
-github_handle: scot3004
-------
-twitter_handle: scot3004
-###### member ######
-name: Fernando Llinás
-------
-photo: /img/team/fernando-llinas.jpeg
-------
-role: Soporte y logística
-------
-website_handle: 
-------
-email: djangoquilla@gmail.com
-------
-github_handle: 
-------
-twitter_handle:
+role: organizador
 ----
 class: default
 ----
@@ -134,78 +77,7 @@ title: Colaboradores
 body:
 
 ##### members #####
-body:
-
-###### member ######
-name: Andres Pérez
-------
-photo: /img/team/andres-perez.jpg
-------
-role: Contribuidor y traductor
-------
-website_handle: 
-------
-email: djangoquilla@gmail.com
-------
-github_handle: 
-------
-twitter_handle: 
-###### member ######
-name: Javier Fonseca
-------
-photo: /img/team/javier-fonseca.jpg
-------
-role: Lugar del evento
-------
-website_handle: 
-------
-email: javier.fonseca@koombea.com
-------
-github_handle: fonsecajavier
-------
-twitter_handle: 
-###### member ######
-name: Jorge Rueda
-------
-photo: /img/team/jorge-rueda.jpg
-------
-role: Contribuidor sitio web
-------
-website_handle: 
-------
-email: jorgeru045@gmail.com
-------
-github_handle: jorueda
-------
-twitter_handle: 
-###### member ######
-name: Sergio Molinares
-------
-photo: /img/team/sergio-molinares.jpg
-------
-role: Redes sociales
-------
-website_handle: 
-------
-email: 
-------
-github_handle: Ardatx
-------
-twitter_handle: MolinaresSergio
-###### member ######
-name: Brayan García
-------
-photo: /img/team/brayan-garcia.jpg
-------
-role: Contribuidor de código
-------
-website_handle:
-------
-email: ingbrayangarcia@gmail.com
-------
-github_handle:
-------
-twitter_handle:
+role: colaborador
 ----
 class: 
 ----
@@ -215,30 +87,8 @@ title: Colaboradores previos
 ----
 body:
 
-##### text-block #####
-text: César Herdenez
------
-class: col-sm-4
-##### text-block #####
-text: Darío Guzmán
------
-class: col-sm-4
-##### text-block #####
-text: Kathy Lora
------
-class: col-sm-4
-##### text-block #####
-text: Sara Galván
------
-class: col-sm-4
-##### text-block #####
-text: Yudy Herrera
------
-class: col-sm-4
-##### text-block #####
-text: Paula Aragón
------
-class: col-sm-4
+##### inactive-members #####
+role: contribuidor
 ----
 class: 
 ----

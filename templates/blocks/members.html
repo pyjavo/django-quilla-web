@@ -1,9 +1,9 @@
-<div class="members">
-  <div class="row d-flex justify-content-center">
-    {% for blk in this.body.blocks %}
-      <div class="block block-{{ blk._flowblock }} col-sm-4">
-        {{ blk }}
-      </div>
-    {% endfor %}
-  </div>
+{% from "macros/miembros.html" import render_miembro %}
+
+<div class="members row d-flex justify-content-center">
+  {% for member in site.query('/nosotros', alt).filter(F.role == this.role).order_by('start_activity') %}
+    <div class="member col-sm-4">
+      {{render_miembro(member)}}
+    </div>
+  {% endfor %}
 </div>

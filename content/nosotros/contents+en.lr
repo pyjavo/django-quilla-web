@@ -36,7 +36,7 @@ Created in 2015 by Javier Daza, the initial idea of the community was to meet up
 Today the community is an example for other communities in the city.
 
 It also serves to help members who actively participate and excel in our community activities find employment.
-We hope in the future to have a significant impact in the city and in the world. 
+We hope in the future to have a significant impact in the city and in the world.
 ------
 class: about-intro
 ###### link ######
@@ -57,64 +57,7 @@ title: Organizers
 body:
 
 ##### members #####
-body:
-
-###### member ######
-name: Javier Daza
-------
-photo: /img/team/javier-daza.jpg
-------
-role: Direction and Community
-------
-website_handle: https://javierdaza.co
-------
-email: djangoquilla@gmail.com
-------
-github_handle: pyjavo
-------
-twitter_handle: pyjavo
-###### member ######
-name: Yuliana Martinez
-------
-photo: /img/team/yuliana-martinez.jpg
-------
-role: Public Relationships
-------
-website_handle: 
-------
-email: ycmartinezc@gmail.com
-------
-github_handle: ycmartinezc
-------
-twitter_handle:
-###### member ######
-name: Sergio Orozco
-------
-photo: /img/team/sergio-orozco.jpg
-------
-role: Web developer
-------
-website_handle: https://www.secorto.com
-------
-email: 
-------
-github_handle: scot3004
-------
-twitter_handle: scot3004
-###### member ######
-name: Fernando Llinás
-------
-photo: /img/team/fernando-llinas.jpeg
-------
-role: Logistics and Support
-------
-website_handle: 
-------
-email: djangoquilla@gmail.com
-------
-github_handle: 
-------
-twitter_handle:
+role: organizador
 ----
 class: default
 ----
@@ -125,78 +68,7 @@ title: Collaborators
 body:
 
 ##### members #####
-body:
-
-###### member ######
-name: Andres Pérez
-------
-photo: /img/team/andres-perez.jpg
-------
-role: Translator and contributor
-------
-website_handle: 
-------
-email: djangoquilla@gmail.com
-------
-github_handle: 
-------
-twitter_handle: 
-###### member ######
-name: Javier Fonseca
-------
-photo: /img/team/javier-fonseca.jpg
-------
-role: Event venue
-------
-website_handle: 
-------
-email: javier.fonseca@koombea.com
-------
-github_handle: fonsecajavier
-------
-twitter_handle: 
-###### member ######
-name: Jorge Rueda
-------
-photo: /img/team/jorge-rueda.jpg
-------
-role: Web developer
-------
-website_handle: 
-------
-email: jorgeru045@gmail.com
-------
-github_handle: jorueda
-------
-twitter_handle: 
-###### member ######
-name: Sergio Molinares
-------
-photo: /img/team/sergio-molinares.jpg
-------
-role: Social networks
-------
-website_handle: 
-------
-email: 
-------
-github_handle: Ardatx
-------
-twitter_handle: MolinaresSergio
-###### member ######
-name: Brayan García
-------
-photo: /img/team/brayan-garcia.jpg
-------
-role: Code contributor
-------
-website_handle:
-------
-email: ingbrayangarcia@gmail.com
-------
-github_handle:
-------
-twitter_handle:
+role: colaborador
 ----
 class: default
 ----
@@ -206,30 +78,8 @@ title: Former Collaborators
 ----
 body:
 
-##### text-block #####
-text: César Herdenez
------
-class: col-sm-4
-##### text-block #####
-text: Darío Guzmán
------
-class: col-sm-4
-##### text-block #####
-text: Kathy Lora
------
-class: col-sm-4
-##### text-block #####
-text: Sara Galván
------
-class: col-sm-4
-##### text-block #####
-text: Yudy Herrera
------
-class: col-sm-4
-##### text-block #####
-text: Paula Aragón
------
-class: col-sm-4
+##### inactive-members #####
+role: contribuidor
 ----
 class: 
 ----

@@ -23,7 +23,7 @@
 <div class="heading-title">
   <div class="container">
   <div class="row">
-    <h1>Blog</h1>
+    <h1>{{bag('blog', alt, 'blog')}}</h1>
   </div>
   </div>
 </div>
@@ -35,9 +35,9 @@
 <div class="d-flex justify-content-center">
   <div class="blog-post">
     <div class="post-meta blog_post-post_meta">
-      
+
       <h1 class="ctitle">{{ this.title }}</h1>
-      <span class="post-date">{{bag('settings', alt, 'posted')}}: {{ this.pub_date }}.</span> | 
+      <span class="post-date">{{bag('settings', alt, 'posted')}}: {{ this.pub_date }}.</span> |
       <span class="post-author">
         {{bag('settings', alt, 'by')}}: {% if this.twitter_handle %}
         <a href="https://twitter.com/{{ this.twitter_handle}}" target="_blank" rel="noopener">
