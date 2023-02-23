@@ -1,10 +1,10 @@
 title: Caminemos Juntos: Primer Paso "99 Bottles of Beer song"
 ---
-author: Andres Perez
+author: andres-perez
 ---
 body:
 
-Esta es la continuación del articulo [Primeros pasos en Python][articulo_original]. 
+Esta es la continuación del articulo [Primeros pasos en Python][articulo_original].
 
 Yo sé que somos muchos los que estamos muy interesados en programar. Pero es posible que también hagamos parte de aquellos a los que nos da una pereza inconcebible tener que ver una tonelada de teoría antes de ir a la practica. Y en ninguna manera condono la apatía a la teoría, pero a veces toca ensuciarse las manos un poco antes de descubrir un nuevo hobby.
 
@@ -32,7 +32,7 @@ Vamos entonces a ver donde encontramos la letra completa de la canción y la ana
 En definitiva no la voy a escribir entera aquí porque no tiene sentido desperdiciar ese espacio cuando puedes abrirla en otra pestaña ; ); pero si vamos a escribir 3 estrofas:
 
 ```
-One-hundred bottles of beer on the wall, 
+One-hundred bottles of beer on the wall,
 One-hundred bottles of beer!
 Take one down,
 Pass it around,
@@ -94,7 +94,7 @@ Con esto tenemos la estructura de lo que queremos lograr, ahora necesitamos cono
 
 Las herramientas serían varias, lo que creo necesitar es lo siguiente:
 
-- La herramienta `for` nos ayuda a recorrer elementos iterables, pero no necesariamente esos son números. 
+- La herramienta `for` nos ayuda a recorrer elementos iterables, pero no necesariamente esos son números.
 - Podemos generar un iterable de numeros usando la herramienta `range`.
 - También necesitamos algún tipo de condicional y la herramienta `if` será la opción escogida.
 
@@ -153,7 +153,7 @@ for x in range(100,0,-1):
         )
         print(bottles_sing)
 ```
-El resultado de la ejecución es el siguiente: 
+El resultado de la ejecución es el siguiente:
 ```bash
 usuario@nombre_pc:~/pybaq_caminemos_juntos/01_primer_paso$ python3 tercero_b.py
 100 bottles of beer on the wall,
@@ -291,5 +291,3 @@ También puedes consultar algo de teoría:
 excerpt: Esta es una continuación del post "Primeros pasos en Python" y revisamos el primero de los ejercicios listados en el ese post.
 ---
 pub_date: 2021-07-25
----
-twitter_handle: andresperezcera

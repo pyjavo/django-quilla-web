@@ -1,6 +1,6 @@
 title: Cómo contribuir en el blog de Python Barranquilla
 ---
-author: Sergio C. Orozco Torres
+author: sergio-orozco
 ---
 excerpt:
 
@@ -11,11 +11,9 @@ En el siguiente artículo hablaré sobre como contribuir en el blog de Python Ba
 ---
 pub_date: 2017-11-06
 ---
-twitter_handle: scot3004
----
 body:
 
-En el siguiente artículo hablaré sobre como contribuir en el blog de Python Barranquilla. Para colaborar en el blog de la comunidad es necesario que tengas conocimientos previos en [Git](https://www.codeschool.com/courses/try-git), GitHub, [Markdown](https://guides.github.com/features/mastering-markdown/) y virtualenvs( esto ya es opcional). 
+En el siguiente artículo hablaré sobre como contribuir en el blog de Python Barranquilla. Para colaborar en el blog de la comunidad es necesario que tengas conocimientos previos en [Git](https://www.codeschool.com/courses/try-git), GitHub, [Markdown](https://guides.github.com/features/mastering-markdown/) y virtualenvs( esto ya es opcional).
 
 El contenido de este artículo se encuentra dividido en 2 secciones importantes:
 

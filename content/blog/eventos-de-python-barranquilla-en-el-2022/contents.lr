@@ -1,6 +1,6 @@
 title: Eventos de Python Barranquilla en el 2022
 ---
-author: Javier Daza
+author: javier-daza
 ---
 body:
 
@@ -18,7 +18,7 @@ El aspecto interesante de este mes fue que uno de los participantes de la Liga P
 
 ## 2. Detección de Cáncer Pulmonar usando Procesamiento de Imágenes
 La primera charla del año la empezamos con pie derecho, pues tuvimos como invitado a Josimar Chiré desde Perú con una charla muy interesante sobre procesamiento digital de imágenes.
-A Josimar ya lo habíamos tenido como ponente de manera presencial en el 2019 con la charla *Inteligencia Artificial y sus Aplicaciones* cuando visitó Barranquilla por motivos de sus estudios de postgrado. Fue muy agradable contar con su proactividad, ya que él mismo nos contactó y nos propuso dar una charla. 
+A Josimar ya lo habíamos tenido como ponente de manera presencial en el 2019 con la charla *Inteligencia Artificial y sus Aplicaciones* cuando visitó Barranquilla por motivos de sus estudios de postgrado. Fue muy agradable contar con su proactividad, ya que él mismo nos contactó y nos propuso dar una charla.
 
 Pueden encontrar las diapositivas de su charla de 2019 en nuestro [Google Drive](https://drive.google.com/file/d/1Mk99-prLjBfmpF9CDpnw_xIhftfv3k4a/view?usp=sharing).
 
@@ -121,7 +121,7 @@ De esta charla puedes encontrar también un balance de teoría y código que val
 ## 12. De psicólogo a programador ¿cambio o complemento de carrera?
 Para diciembre tuvimos la cereza del pudín, mi charla recomendada #3 de 2022. Directamente desde Perú, el compatriota Julían Casadiego nos comparte su experiencia de vida de como un psicólogo aprende a programar con Python.
 
-*Su charla es una de esas joyas que rara vez encontrarás en internet.* 
+*Su charla es una de esas joyas que rara vez encontrarás en internet.*
 
 🔊🔊🔊 *Puedes encontrar su charla en este enlace https://youtu.be/Dzi89oXcRUg.* 📢📢📢
 
@@ -162,5 +162,3 @@ Nos vemos en el 2023 con más eventos, aprendizaje y programación.
 excerpt: Además de encontrar un resumen de los eventos virtuales que realizamos en el 2022, también podras conocer varios comentarios y anécdotas vistas desde el punto de vista de un organizador de la comunidad. Espero que les guste lo que les escribí :)
 ---
 pub_date: 2023-01-14
----
-twitter_handle: pyjavo

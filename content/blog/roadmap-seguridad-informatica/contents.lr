@@ -1,8 +1,8 @@
 title: Roadmap de la seguridad informática
 ---
-author: Sergio Molinares
+author: sergio-molinares
 ---
-body: 
+body:
 
 ### Recorrer la ruta  sin morir en el intento
 Este artículo nace con la necesidad de ayudar a otras personas a iniciarse en el mundo de la seguridad informatica y no colgar los guantes en el intento, ya que para muchos esto puede ser frustrante a la hora de comenzar y saber de una manera u otra por donde empezar, obtener buenos resultados y avanzar de una manera comoda. Estos son algunos consejos rapidos de carretera:
@@ -12,9 +12,9 @@ Este artículo nace con la necesidad de ayudar a otras personas a iniciarse en e
 La seguridad informática, también llamada ciberseguridad, se refiere a la protección de la información y, especialmente, al procesamiento que se hace de la misma, con el objetivo de evitar la manipulación de datos y procesos por personas no autorizadas.
 
 #### Inicios de la seguridad informática
-Los orígenes de la ciberseguridad se remontan a inicios de 1970, donde tuvo auge la informática moderna. 
+Los orígenes de la ciberseguridad se remontan a inicios de 1970, donde tuvo auge la informática moderna.
 
-Con la aparición del internet y el aumento masivo de la interconectividad, muchos usuarios empezaron a descubrir vulnerabilidades en programas y páginas web, con las cuales podían tener acceso a información privilegiada o ejecutar comandos no permitidos para usuarios convencionales. 
+Con la aparición del internet y el aumento masivo de la interconectividad, muchos usuarios empezaron a descubrir vulnerabilidades en programas y páginas web, con las cuales podían tener acceso a información privilegiada o ejecutar comandos no permitidos para usuarios convencionales.
 Estas prácticas comenzaron a denominarse “hackeos” y a los usuarios que las realizan se les denominó “hackers”.
 
 ### ¿Por donde comienzo?
@@ -86,7 +86,7 @@ Aprender el funcionamiento de las tecnologías web y como ésta se estructura es
 
 ## Cuarta Curva de la Ruta: Bases de datos
 
-Es importante un buen manejo y uso de bases de datos, ya que éstas son grandes almacenes que guardan datos como: 
+Es importante un buen manejo y uso de bases de datos, ya que éstas son grandes almacenes que guardan datos como:
 - Configuraciones de sitios
 - Lista de usuarios
 - Números de identificación
@@ -106,14 +106,12 @@ Llegamos al momento de poner en práctica lo que vas aprediendo. Por eso te pres
 - [Try Hack me](https://tryhackme.com/)
 - [Hack the box](https://www.hackthebox.com/)
 
-Es importante tratar de comprender en general lo que se aprende y no que lo utilicemos como una receta de cocina. La idea es que esto pueda ilustrarte a mejorar la ruta o cambiarla definitivamente. Debemos cosechar una mentalidad de analista y no solo ser monos que teclean. 
+Es importante tratar de comprender en general lo que se aprende y no que lo utilicemos como una receta de cocina. La idea es que esto pueda ilustrarte a mejorar la ruta o cambiarla definitivamente. Debemos cosechar una mentalidad de analista y no solo ser monos que teclean.
 
 _Edición: Javier Daza_
 ---
 excerpt: El artículo tiene como finalidad dar una ruta de aprendizaje en el área de la seguridad de la información para no frustrarse o bajar los brazos. Que sea motivador para las personas que les gustaría iniciarse en este amplio pero hermoso campo de la seguridad.
 ---
 pub_date: 2022-10-07
----
-twitter_handle: MolinaresSergio
 ---
 _slug: roadmap-de-seguridad-informatica

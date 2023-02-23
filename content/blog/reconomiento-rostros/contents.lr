@@ -1,6 +1,6 @@
 title: Reconocimiento de rostros en una microcomputadora
 ---
-author: Guzmán D. Darío
+author: dario-guzman
 ---
 body:
 
@@ -73,7 +73,7 @@ ok, pero ¿Cómo comparo dos rostros?
 Calma, ya podrás comparar dos rostros una vez entiendas que son los eigenfaces y los eigenvectors.
 
 ### Eigenvectors y Eigenfaces
-Los eigenvectors son vectores en los que se guardan las características de un rostro.  
+Los eigenvectors son vectores en los que se guardan las características de un rostro.
 Los eigenfaces por su parte son el conjunto de eigenvectors que hacen referencia al mismo rostro
 
 Los conceptos anteriores son importantes, debido a que el cálculo para comparar rostro detectado con los de nuestra base de datos sigue siendo muy costoso para nuestra microcomputadora, por esto lo que haremos será extraer sus eigenvectors y luego agruparlos en eigenfaces.
@@ -106,7 +106,5 @@ Si quieres profundizar un poco más en el tema, te dejo las fuentes en las que e
 pub_date: 2017-08-29
 ---
 excerpt: ¡Hola Pythonista! Soy Darío Guzmán, co-organizador de Python Barranquilla y en esta ocasión quiero contarte acerca de la charla realizada por el Ing. Edgar Flórez CEO de la empresa [Ebenezer Technologies](http://ebenezertechs.com/), especializada en el desarrollo de productos que optimizan el funcionamiento y control de establecimientos, vías y productos a través de visión por computadora, inteligencia artificial e internet de las cosas.
----
-twitter_handle: GudarJs
 ---
 _slug: reconocimiento-de-rostros-en-una-microcomputadora

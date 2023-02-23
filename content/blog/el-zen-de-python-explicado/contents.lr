@@ -1,6 +1,6 @@
 title: El Zen de Python Explicado
 ---
-author: Javier Daza
+author: javier-daza
 ---
 body:
 
@@ -43,7 +43,7 @@ Esto puede referirse a "nombrar explícitamente módulos al invocarlos en funcio
     import os
     print os.getcwd()
 
-en vez de 
+en vez de
 
     from os import *
     print getcwd()
@@ -68,26 +68,26 @@ Lo plano es _"... por lo general, más fácil y más rápido de parsear, y deber
 ## 5. Disperso es mejor que denso.
 No intentes pegar demasiado código en una línea:
 
-    if i>0: return sqrt(i) 
-    elif i==0: return 0 
+    if i>0: return sqrt(i)
+    elif i==0: return 0
     else: return 1j * sqrt(-i)
 
 versus
 
     if i > 0:
-        return sqrt(i) 
+        return sqrt(i)
     elif i == 0:
         return 0
-    else: 
+    else:
         return 1j * sqrt(-i)
 
 ## 6. La legibilidad cuenta.
 Esta es fácil: D. Compare C y Python:
-    #include <stdio.h> 
-    int main(void) 
-    { 
-        printf("Hello, world!\n"); 
-        return(0); 
+    #include <stdio.h>
+    int main(void)
+    {
+        printf("Hello, world!\n");
+        return(0);
     }
 
 vs
@@ -105,19 +105,19 @@ Con respecto a la Regla 8, siempre puede haber una excepción a la regla.
 ## 9. Los errores nunca deberían dejarse pasar silenciosamente.
 Nunca permita que los errores, que pueden ocurrir, confundan al lector. Esto se puede resolver fácilmente imprimiendo una cadena cuando ocurre un error.
 
-    try: 
-        import this 
-    except ImportError: 
+    try:
+        import this
+    except ImportError:
         print 'this is not available'
 
 ## 10. A menos que hayan sido silenciados explícitamente.
-    try: 
-        v = d[k] 
-    except KeyError: 
+    try:
+        v = d[k]
+    except KeyError:
         v = d[k] = default
 
 ## 11. Frente a la ambigüedad, rechaza la tentación de adivinar.
-De nuevo, esto vuelve al tema de hacer que tu código sea específico, claro y hermoso. 
+De nuevo, esto vuelve al tema de hacer que tu código sea específico, claro y hermoso.
 
 Considere
     if not a and b:
@@ -128,7 +128,7 @@ Considere
 
     if not (a and b):
         do something
-    
+
 y que tal
     if b and not a:
         do something
@@ -136,11 +136,11 @@ y que tal
 Tal vez un poco mas feo pero sirve:
     if (not a) and b:
         do something
-    
+
 Esto es subjetivo porque alguien puede argumentar que debe esperar que el lector de su código conozca Python y, por lo tanto, las prioridades para 'not' y 'and', y no es lo suficientemente oscuro como para justificar paréntesis.
 
 ## 12. Debería haber una -y preferiblemente sólo una- manera obvia de hacerlo.
-Exactamente lo contrario del lema del lenguaje de programación de Perl. "En otras palabras, piense por qué sería que Python se describe como un lenguaje de programación fácil de aprender. ¿No sería más difícil si tuvieras que aprender múltiples formas de hacer cada cosa? 
+Exactamente lo contrario del lema del lenguaje de programación de Perl. "En otras palabras, piense por qué sería que Python se describe como un lenguaje de programación fácil de aprender. ¿No sería más difícil si tuvieras que aprender múltiples formas de hacer cada cosa?
 
 El ejemplo más claro es al iterar sobre una lista. En Python solo debes aprender:
 
@@ -180,5 +180,3 @@ Comparte mi artículo si te gusto. Déjame un comentario si crees que hizo falta
 excerpt: En este artículo haré unos breves comentarios sobre cada uno de los principios escritos dentro del Zen de Python
 ---
 pub_date: 2020-03-28
----
-twitter_handle: @pyjavo

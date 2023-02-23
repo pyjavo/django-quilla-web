@@ -3,12 +3,14 @@
     "title": "Python Barranquilla - Comunidad de Desarrollo Web",
     "read_more": "Leer más",
     "posted": "Escrito",
-    "by": "Por"
+    "by": "Por",
+    "anonymous": "Anónimo"
   },
   "en": {
     "title": "Python Barranquilla - Web Development Community",
     "read_more": "Read more",
     "posted": "Posted",
-    "by": "By"
+    "by": "By",
+    "anonymous": "Anonymous"
   }
 }

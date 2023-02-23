@@ -1,6 +1,6 @@
 title: Primeros pasos en Python
 ---
-author: Andres Perez
+author: andres-perez
 ---
 body:
 
@@ -28,7 +28,7 @@ Hay muchas razones para elegir python como tu lenguaje de desarrollo. Entre las 
 * Es open source; cualquiera puede contribuir a su desarrollo y divulgación. Además, no es necesario pagar ninguna licencia para distribuir software desarrollado con esté lenguaje. Hasta su intérprete se distribuye de forma gratuita para diferentes plataformas.
 * Plataformas de desarrollo electronicas usan como [Arduino](http://www.toptechboy.com/using-python-with-arduino-lessons/) y [Raspberry Pi](https://www.raspberrypi.org/documentation/usage/python/) usan python como lenguaje de interfaz entre el software (prorama) y el hardware (dispositivo).
 
-al escribir este articulo las versiones disponibles son las 2.7.14 y las 3.6.4, se recomienda usar en lo posible la version 3.6.x ya que la version 2.7.x dejara de tener soporte en el 2020 
+al escribir este articulo las versiones disponibles son las 2.7.14 y las 3.6.4, se recomienda usar en lo posible la version 3.6.x ya que la version 2.7.x dejara de tener soporte en el 2020
 
 ## Pero entonces ¿que hago?
 
@@ -120,5 +120,3 @@ A continuacion se eccontrarás una lista de recursos para el aprendizaje, alguno
 excerpt: En todas las cosas de tu vida hay un inicio, ese instante en que algo digno de contar nace en tu memoria. Concédenos el privilegio de ser ese inicio en tu historia de python.
 ---
 pub_date: 2017-12-29
----
-twitter_handle: andresperezcera

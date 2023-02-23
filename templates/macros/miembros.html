@@ -1,6 +1,8 @@
 {% macro render_miembro(miembro) %}
   <div class="card text-center mb-3">
-    <img src="{{ miembro.photo }}" class="card-img-top" alt="{{miembro.name}}">
+    <a href="{{ miembro|url }}">
+      <img src="{{ miembro.photo }}" class="card-img-top" alt="{{miembro.name}}">
+    </a>
     <div class="card-body">
       <h3 class="card-title"><a href="{{ miembro|url }}">{{ miembro.name }}</a></h3>
       <p class="card-text">{{ miembro.work }}</p>

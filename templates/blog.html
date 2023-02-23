@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/blog.html" import render_blog_post, render_author %}
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}Blog{% endblock %}
 
@@ -41,8 +41,10 @@
                 {% endfor %}
                 <div class="card-body">
                     <h3 class="card-title"><a href="{{ post|url }}" class="text-decoration-none">{{ post.title }}</a></h3>
-                    <div class="card-text post-meta"><span class="post-date">{{bag('settings', alt, 'posted')}}: {{ post.pub_date }}.</span> | 
-                        <span>{{bag('settings', alt, 'by')}}: {{ post.author }}</span></div>
+                    <div class="card-text post-meta"><span class="post-date">{{bag('settings', alt, 'posted')}}: {{ post.pub_date }}.</span> |
+                        <span>
+                          {{render_author(post, alt)}}
+                        </span></div>
                     <div class="post-excerpt">{{ post.excerpt }}</div>
                     <p><a href="{{ post|url }}" class="btn btn-primary">{{bag('settings', this.alt, 'read_more')}}</a></p>
                 </div>
@@ -50,6 +52,6 @@
         </div>
         {% endfor %}
     </div>
-    {{ render_pagination(this.pagination) }}        
+    {{ render_pagination(this.pagination) }}
 </div>
 {% endblock %}

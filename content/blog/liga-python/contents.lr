@@ -18,16 +18,16 @@ Los participantes competirán por estar en las semifinales, y solo 4 de ellos cl
 
 ## Criterios de selección
 -   Relevancia
--   Innovación 
+-   Innovación
 -   Experiencia
 -   Coherencia
-   
+
 ## Clasificación
 Solo los clasificados podrán llegar a las semifinales
 
 -   De las semifinales solo avanzarán a La FINAL los dos mejores de cada grupo:
-    -   Al finalizar el evento, se realizará una encuesta con los participantes para elegir a los 4 mejores. 
-    -   Los 4 Pythonistas luego deberán luchar por obtener el mayor número de likes en las publicaciones que se harán en el perfil de Instagram de PyBAQ. Los dos mejores ganarán su lugar en la gran final.  
+    -   Al finalizar el evento, se realizará una encuesta con los participantes para elegir a los 4 mejores.
+    -   Los 4 Pythonistas luego deberán luchar por obtener el mayor número de likes en las publicaciones que se harán en el perfil de Instagram de PyBAQ. Los dos mejores ganarán su lugar en la gran final.
     -   El tercer y cuarto puesto recibirán un premio por su participación.
 -   En la final, los 4 mejores Pythonistas tendrán la posibilidad de dar una versión extendida de su charla y lucharán por ser los ganadores de la liga python con votos de un jurado compuesto por:
     -   Un representante de la comunidad Python Barranquilla
@@ -37,8 +37,8 @@ Solo los clasificados podrán llegar a las semifinales
 # Premios
 
 ![](/img/liga-python/trofeo.png)
-  
-En total hay 8 puestos en el podio (4 en semifinales y 4 en la gran final). Los premiados en cada etapa podrán escoger su premio de las diferentes opciones disponibles que se encuentran en la siguiente lista:  
+
+En total hay 8 puestos en el podio (4 en semifinales y 4 en la gran final). Los premiados en cada etapa podrán escoger su premio de las diferentes opciones disponibles que se encuentran en la siguiente lista:
 
 1.  Curso online Python Intermedio-Avanzado
 2.  Curso online Machine learning
@@ -49,13 +49,13 @@ En total hay 8 puestos en el podio (4 en semifinales y 4 en la gran final). Los 
 7.  Créditos en plataformas de dominios e infraestructura para proyectos personales (Heroku, Digital ocean, Circle CI, Travis, AWS, etc.)
 8.  Tarjeta regalo de Amazon
 9.  Membresías a plataformas de estudio (Udemy, Coursera, etc.)
-     
+
 
 Además de alguno de los premios anteriores, obtendrán:
 
 -   Reconocimiento en las redes sociales de PyBAQ
 -   Imagen de la medalla para publicar en sus propias redes.
-    
+
 # Premios por Fases
 
 Se repartirán los siguientes premios en las fases semifinales y finales recordando que deben ser canjeados por uno o varios premios disponibles de la lista:
@@ -78,13 +78,13 @@ Haremos una publicación por cada fase con la información de los ganadores:
 
 -   Fotos/videos ganadores.
 -   Podio con fotos de cuentas de instagram, arrobas y medallas de oro, plata y bronce.
-    
+
 # Cronograma
 
 ## Semifinales Grupo 1
 
 ![](/img/liga-python/cronograma-grupo1.png)
-  
+
 
 -   12 de julio, Lanzamiento de políticas – Inicio de recepción de propuestas fase Cuartos de Final a través de formulario web.
 -   1 de agosto hasta las 23:59, Cierre de recepción de propuestas de charlas.
@@ -93,14 +93,14 @@ Haremos una publicación por cada fase con la información de los ganadores:
 -   26 de agosto hasta las 23:59, Cierre de recepción de presentaciones Grupo 1.
 -   28 de agosto, Día de la Semifinal del Grupo 1.
 -   4 de septiembre, Publicación de ganadores y entrega de premios de la Semifinal del Grupo 1.
-    
+
 ## Semifinales Grupo 2
 
 ![](/img/liga-python/cronograma-grupo2.png)
 
 -   6 de septiembre, Lanzamiento de políticas – Inicio de recepción de propuestas fase Cuartos de Final a través de formulario web.
 -   25 de septiembre hasta las 23:59, Cierre de recepción de postulaciones de charlas.
--   27 de septiembre al 3 de octubre, Evaluación de propuestas mediante una rúbrica definida por el equipo PyBAQ. 
+-   27 de septiembre al 3 de octubre, Evaluación de propuestas mediante una rúbrica definida por el equipo PyBAQ.
 -   11 de octubre, Publicación de seleccionados Grupo 2.
 -   21 de octubre hasta las 23:59, Cierre de recepción de presentaciones Grupo 2.
 -   23 de octubre, Día de la Semifinal del Grupo 2.
@@ -133,8 +133,6 @@ Haremos una publicación por cada fase con la información de los ganadores:
 
 
 ---
-author: Javier Daza
+author: javier-daza
 ---
 pub_date: 2021-07-12
----
-twitter_handle: @pyjavo
