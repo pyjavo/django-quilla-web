@@ -30,3 +30,12 @@
 {% endif %}
 </div>
 {% endmacro %}
+
+{% macro render_author(post, alt) %}
+  {% if post.author %}
+    {% set author = site.get('nosotros/' + post.author, alt) %}
+    <a href="{{ author|url }}">{{ author.name }}</a>
+  {% else %}
+    {{bag('settings', alt, 'anonymous')}}
+  {% endif %}
+{% endmacro %}

@@ -1,6 +1,6 @@
 title: Una guía completa de Django para principiantes - Parte 2
 ---
-author: Paula Aragón
+author: paula-aragon
 ---
 body:
 
@@ -943,7 +943,5 @@ _Traducido de https://simpleisbetterthancomplex.com/series/2017/09/11/a-complete
 
 ---
 pub_date: 2020-07-14
----
-twitter_handle: pandrearro
 ---
 excerpt: Traducción del articulo https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-2.html

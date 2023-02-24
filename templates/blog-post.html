@@ -1,11 +1,14 @@
 {% extends "layout.html" %}
-{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/blog.html" import render_blog_post, render_author %}
 {% from "macros/social.html" import render_social %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block seo %}
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@pybaq" />
-  <meta name="twitter:creator" content="@{{ this.twitter_handle or pybaq }}" />
+  {% if this.author %}
+    {% set author = site.get('nosotros/' + this.author, alt) %}
+    <meta name="twitter:creator" content="@{{ author.twitter_handle }}" />
+  {% endif %}
   <meta name="description" content="{{ this.excerpt|striptags }}.">
   <meta name="author" content="Python Barranquilla">
   <meta property="og:title" content="{{ this.title }}" />
@@ -39,13 +42,8 @@
       <h1 class="ctitle">{{ this.title }}</h1>
       <span class="post-date">{{bag('settings', alt, 'posted')}}: {{ this.pub_date }}.</span> |
       <span class="post-author">
-        {{bag('settings', alt, 'by')}}: {% if this.twitter_handle %}
-        <a href="https://twitter.com/{{ this.twitter_handle}}" target="_blank" rel="noopener">
-          {{ this.author or this.twitter_handle }}
-        </a>
-      {% else %}
-        {{ this.author }}
-      {% endif %}</span>
+        {{render_author(this, alt)}}
+      </span>
     </div>
     <div id="body-content" class="blog-post-body">
         {{ this.body }}
