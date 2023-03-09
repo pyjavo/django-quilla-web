@@ -402,6 +402,10 @@ attach: <a href="https://youtu.be/XtJncjNegvQ">Video Youtube</a> / <a href="http
 title: De psicólogo a programador ¿cambio o complemento de carrera?
 ------
 attach: <a href="https://youtu.be/Dzi89oXcRUg">Video Youtube</a> / <a href="https://drive.google.com/file/d/1d6CbU_B0RvFyjJzwPQ9jkmmUC0X0vBs5/view?usp=share_link">Diapositivas</a>
+###### event-attach ######
+title: DeepDream: Visualizando que aprende una red neuronal convolucional
+------
+attach: <a href="https://www.youtube.com/live/t3B0ENK7Ktk">Video Youtube</a> / <a href="https://github.com/PyBAQ/Notebooks/blob/master/DeepDream/DeepDream.ipynb">Notebook</a> / <a href="https://drive.google.com/file/d/1P2o3Ma_Vmkc1dGhQnmYA0-hrjw4zbEd1/view?usp=share_link">Diapositivas</a>
 ----
 class: default
 #### section-block ####
