@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="shortcut icon" href="{{ '/ico/favicon.png' | url}}">
   <link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
   <title>{% block title %}{{bag('settings', this.alt, 'title')}}{% endblock %} </title>
   {% include 'layouts/css_files.html' %}
-  
+
   {% block seo %}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@pybaq" />
@@ -38,4 +39,3 @@
   {% include 'layouts/js_files.html' %}
 </body>
 </html>
- 
