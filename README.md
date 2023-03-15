@@ -143,13 +143,15 @@ luego ejecuta el validador w3c_validator usando los comandos:
 
     lektor build --output-path ./build
     cd build
-    w3c_validator $(find . -type f -name \*.html
+    w3c_validator $(find . -type f -name \*.html)
 
 ### Selenium
 
-Para usar selenium primero [instala el webdriver correspondiente a tu plataforma](https://selenium-python.readthedocs.io/installation.html#drivers)
+Para usar selenium se requiere tener ejecutandose un webdriver [instala el webdriver correspondiente a tu plataforma](https://selenium-python.readthedocs.io/installation.html#drivers)
 
-Una vez instalado todo, puedes ejecutar el comando pytest, especificando el navegador a usar
-por ejemplo para ejecutar con el navegador firefox se ejecuta el comando
+Nosotros tenemos un docker-compose que ya nos instala el webdriver
 
-    pytest --driver firefox
+para ejecutar los test ejecuta los siguientes comandos
+
+    docker-compose up
+    pytest
