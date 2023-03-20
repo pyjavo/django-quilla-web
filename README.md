@@ -149,9 +149,9 @@ luego ejecuta el validador w3c_validator usando los comandos:
 
 Para usar selenium se requiere tener ejecutandose un webdriver [instala el webdriver correspondiente a tu plataforma](https://selenium-python.readthedocs.io/installation.html#drivers)
 
-Nosotros tenemos un docker-compose que ya nos instala el webdriver
+Usando [docker compose](https://docs.docker.com/compose/install/) nos podemos ahorrar algo del tiempo de configuración de los distintos servicios
 
 para ejecutar los test ejecuta los siguientes comandos
 
-    docker-compose up
+    docker compose up
     pytest
