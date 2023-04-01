@@ -1,30 +1,26 @@
+"""Test de homepage usando screenpy con el patron screenplay"""
 from typing import Generator
-from screenpy import Actor, then, when
-from screenpy_selenium.abilities import BrowseTheWeb
-from screenpy.actions import See
-from screenpy_selenium.actions import Open
-from screenpy.pacing import act, scene
-from screenpy_selenium.questions import TheText, BrowserTitle
-from screenpy.resolutions import ReadsExactly
-from ..ui.homepage import MAIN_HEADING, URL
-
 import pytest
+from screenpy import Actor, then, when
+from screenpy.actions import See
+from screenpy.pacing import act, scene
+from screenpy.resolutions import ReadsExactly
+from screenpy_selenium.abilities import BrowseTheWeb
+from screenpy_selenium.actions import Open
+from screenpy_selenium.questions import TheText, BrowserTitle
+from ..ui.homepage import MAIN_HEADING
 
 @pytest.fixture(scope="function", name="yuli")
-def fixture_actor() -> Generator:
-    """Create the Actor for our example tests!"""
-    the_actor = Actor.named("Yuli").who_can(BrowseTheWeb.using_firefox())
+def fixture_actor(driver) -> Generator:
+    """Creamos el actor que vamos a usar en nuestros tests!"""
+    the_actor = Actor.named("Yuli").who_can(BrowseTheWeb.using(driver))
     yield the_actor
     the_actor.exit_stage_left()
 
 @act("Homepage")
-@scene("See the title of pybaq page")
-def test_homepage_title(yuli: Actor) -> None:
-    when(yuli).was_able_to(Open.their_browser_on(URL))
+@scene("Puede ver Python barranquilla")
+def test_homepage_title(yuli: Actor, base_url) -> None:
+    """Verificamos que en homepage se pueda ver python barranquilla"""
+    when(yuli).was_able_to(Open.their_browser_on(base_url))
     then(yuli).should(See.the(BrowserTitle(), ReadsExactly("Python Barranquilla")))
-
-@act("Homepage")
-@scene("See the heading of pybaq page")
-def test_homepage_h1(yuli: Actor) -> None:
-    when(yuli).was_able_to(Open.their_browser_on(URL))
     then(yuli).should(See.the(TheText.of_the(MAIN_HEADING), ReadsExactly("Python Barranquilla.")))
