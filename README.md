@@ -147,7 +147,7 @@ luego ejecuta el validador w3c_validator usando los comandos:
 
 ### Selenium
 
-Para usar selenium se requiere tener ejecutandose un webdriver [instala el webdriver correspondiente a tu plataforma](https://selenium-python.readthedocs.io/installation.html#drivers)
+Para usar selenium se requiere tener ejecutándose un webdriver [instala el webdriver correspondiente a tu plataforma](https://selenium-python.readthedocs.io/installation.html#drivers)
 
 Usando [docker compose](https://docs.docker.com/compose/install/) nos podemos ahorrar algo del tiempo de configuración de los distintos servicios
 
@@ -155,3 +155,8 @@ para ejecutar los test ejecuta los siguientes comandos
 
     docker compose up
     pytest
+
+Por defecto los test corren en chrome, si deseas escoger el navegador que quieres ejecutar, crea una variable de entorno llamada BROWSER con el navegador que deseas usar, en estos momentos soportamos firefox y chrome.
+La forma mas fácil de hacer esto es creando un archivo  `.env` con el siguiente contenido
+
+    BROWSER=firefox
