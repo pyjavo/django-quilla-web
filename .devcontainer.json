@@ -1,0 +1,14 @@
+{
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.10",
+  "hostRequirements": { "cpus": 2 },
+  "waitFor": "onCreateCommand",
+  "onCreateCommand": "pipx install lektor",
+  "postStartCommand": "lektor server",
+  "portsAttributes": {
+      "5000": {
+      "label": "Lektor Server",
+      "onAutoForward": "openPreview"
+      }
+  },
+  "forwardPorts": [5000]
+}
