@@ -3,7 +3,7 @@
   "hostRequirements": { "cpus": 2 },
   "waitFor": "onCreateCommand",
   "onCreateCommand": "pipx install lektor",
-  "postStartCommand": "lektor server",
+  "postAttachCommand": "lektor server",
   "portsAttributes": {
       "5000": {
       "label": "Lektor Server",
