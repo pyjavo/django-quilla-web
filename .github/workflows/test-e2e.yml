@@ -1,0 +1,41 @@
+name: Probar página
+
+on:
+  workflow_dispatch:
+    inputs:
+      browser:
+        description: 'Browser to run tests'
+        required: true
+        default: chrome
+        type: choice
+        options:
+        - firefox
+        - chrome
+
+env:
+  BROWSER: ${{ github.event.inputs.browser }}
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    services:
+      selenium:
+        image: selenium/standalone-${{ github.event.inputs.browser }}
+        options: --shm-size=2gb
+        ports:
+          - 4444:4444
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - run: pip install -r requirements.txt -r test-requirements.txt
+      - run: pytest
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: screenshots
+          path: screenshots/
