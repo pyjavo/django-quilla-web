@@ -3,8 +3,8 @@ Configuración de test automatizados
 """
 
 import os
-import pytest
 from typing import Generator
+import pytest
 from selenium.webdriver import Remote
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
