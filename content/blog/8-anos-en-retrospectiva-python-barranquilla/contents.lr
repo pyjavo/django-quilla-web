@@ -1,0 +1,163 @@
+title: 8 años en retrospectiva: Python Barranquilla
+---
+author: javier-daza
+---
+body:
+
+
+Hace años he querido hacer un artículo conmemorativo de todos estos años en que la comunidad ha funcionado en Barranquilla. Esta es mi intención de resumir los eventos más importantes en estos 8 años, lo cual viene a ser una una tarea para nada fácil, teniendo en cuenta todas las anécdotas y aventuras que hemos vivido.
+
+
+## 2014: El inicio
+
+A pesar de que la comunidad empezó en 2015, su historia empieza a crease un año antes cuando empecé a asistir a eventos de tecnología en Barranquilla. Mi primer evento fue [Ignite BAQ](https://www.meetup.com/es/ignite-barranquilla/) creado por la compañia Ideaware (quien diría que en un futuro nos patrocinarían un evento Django Girls y el primer evento HacktoberFest Barranquilla). 
+
+Como comenté en el minuto 3:42 de mi charla en PyCon Colombia 2019 ["Creando comunidades de tecnología exitosas"](https://youtu.be/M9ER27Do7Gw?t=221), fue ahí donde conocí a las primeras personas que hoy en día son los primeros miembros de la comunidad de Python Barranquilla. Muchas gracias muchachos por el apoyo.
+
+
+
+## 2015: ¡Somos Django Barranquilla!
+
+El primer nombre que tuvimos fue Django Barranquilla, pues el marco de trabajo Django era el hilo conductor que nos unía y marcaba el propósito para reunirnos. Gracias a ese primer acercamiento con djangonautas en 2014, con la ayuda de [Jose Luis](https://pybaq.co/nosotros/jose-caro/) logramos conectar con el coworking [AreaDos](https://www.instagram.com/areados/?hl=es), administrado por Koombea (empresa que hasta el día de hoy nos patrocina con el lugar de eventos). 
+
+En esa este año múltiples meetups verían la luz gracias a este espacio de trabajo, como lo fue [Ruby BAQ](https://www.meetup.com/quillarb/). Gracias a mi asistencia a uno de sus meetups, fue que logré ganar la motivación para organizar el primer meetup de Django (y obviamente Python)
+
+
+A destacar en este año:
+- Logramos los primeros 10 asistentes regulares. Esto fue bueno porque logramos adquirir frecuencia.
+- Hicimos 18 eventos en el año. 
+- En algunos meses hicimos 2 eventos al mes.
+- No teníamos patrocinadores, así que hacíamos la famosa "vaca" para recoger el dinero de las pizzas (este año nos decidimos por las pizzas de Domino's por su filosofía de pizza en 30 minutos)
+
+## 2016: ¿qué tal si se llaman Python Barranquilla?
+
+
+Iniciamos el 2016 con todas las expectativas del mundo. Del 2015 aprendimos que aumentar la frecuencia a dos eventos por mes no nos traería más público, así que este fue el primer año que empezamos apenas a pensar en la necesidad de hacer publicidad en redes sociales.
+
+Este fue el año que empecé a contactarme con otros líderes de comunidades del país como Jhon Roa (chief organizer PyCon Colombia) y Gonzalo Peña (Python Bucaramanga). Fue en este año que empecé a colaborar con Jhon Roa y su equipo de voluntarios para crear el primer evento estilo PyCon (por las iniciales en inglés de **PY**thon **CON**ference).
+
+Este año tuvimos dos eventos que marcaron a la comunidad. El primero fue [mi primer viaje a Japón](https://kizunaclub.com/blog/2017/08/16/cosas-que-me-llamaron-la-atencion-en-japon-parte-1/index.html) y el segundo fue el fin de AreaDos como espacio de trabajo. De aquí me surgirían todas las dudas del mundo ¿quién organizaría la comunidad durante mi viaje? ¿Cómo conseguiríamos ponentes? (todavía me hago esta pregunta jaja) ¿Cómo conseguiríamos un nuevo lugar de eventos? Ambos obstaculos los tendría que sortear la comunidad por ella misma, sin mi presencia como líder organizador 😱
+
+Este año también coincidió con mi primer trabajo con Python en la empresa [Piensa Labs](https://piensa.co/). Sin saberlo, esto tuvo gran repercusión en la comunidad de Python:
+
+1. Piensa Labs se convertiría en nuestro nuevo lugar de eventos.
+2. La empresa pasó a convertirse en uno de los mayores patrocinadores de [la primer PyCon Colombia](https://2017.pycon.co/).
+
+Por el lado de la organización, los compañeros de comunidad [César](https://pybaq.co/nosotros/cesar-herdenez/) y [Leonardo](https://pybaq.co/nosotros/leonardo-orozco/) se encargarón de mantener la comunidad activa, dando ellos mismos charlas y conectando con universidades (Universidad de la Costa, CUC y Universidad Santo Tomas).
+
+
+A destacar:
+- El fin de AreaDos como espacio de trabajo. Era un gran lugar, es una lástima.
+- Hicimos 12+1 eventos este año (el de lektor se repitió 1 vez por lluvia)
+- La comunidad continuó a pesar de que estuve fuera de la ciudad por 6 meses ¡ya tenía vida propia!
+- Tuvimos los primeros acercamiento con la red de Python Colombia y con universidades. Fueron ellos quienes nos propusieron cambiarnos de nombre.
+- Este año surge la tradición de celebrar cada año nuevo en el primer mes del año.
+- Se realiza el [primer commit](https://github.com/pyjavo/django-quilla-web/commit/f339e502ee07acf96f19977ff3417eb0e80f7b1c) para la landing page de [djangoquilla.com](https://github.com/pyjavo/django-quilla-web/commit/d5419922b539a386e7bd9b33b07ea28c2567c6aa)
+
+
+## 2017: Ché, ¿y si hacemos un Django Girls Barranquilla?
+
+Este año a mi regreso a Colombia, me entero que Koombea tiene un edificio propio que incluye un teatrino. ¡Es espectacular! Esto marco el reinicio de nuestra colaboración con la empresa para hacer los eventos. 
+
+Hasta este punto, todo el mundo pensaba que yo era empleado de Koombea jajaja. Algunas personas supongo que todavía lo piensan (el mes pasado me preguntaron jeje).
+
+Este año marcó un antes y después para toda la red de Python Colombia. Fue la primera PyCon Colombia y ello trajo un impulso sin precedentes en la red de comunidades. Para nosotros significo tener contacto presencial  con ponentes de talla internacional tanto en la ciudad donde fue el evento como en la misma Barranquilla. 
+
+Gracias al trabajo de Manuel Kaufmann (más conocido como @humitos) y Johanna Sanchez (@ellaquimica) con Argentina en Python, fue que nos adentramos en el mundo de Django Girls. Manuel nos contacto inicialmente porque venía adelantando el proyecto de hacer múltiples eventos en Latinoamérica, como embajador de la PSF (quienes lo financiaron). Tres meses de arduo trabajo y entrenamiento, fue que pudimos hacer el primer evento de [Django Girls Barranquilla 2017](https://argentinaenpython.com/django-girls/2017/07/barranquilla/). Contamos también con la visita de mentores y mentoras de toda Colombia y con nuestro primer ponente argentino. Pueden leer más sobre el evento en mis memorias sobre el [primer Django Girls Barranquilla](https://pybaq.co/blog/como-fue-organizar-primer-django-girls-barranquilla/). Fue tal el impulso, que ese mismo año en octubre decidimos hacer el [primer Django Girls Cartagena](https://argentinaenpython.com/django-girls/2017/10/cartagena/), y de esta forma, entrenar un equipo de organizadoras Django Girls en La Heróica.
+
+Gracias a los eventos Django Girls, la comunidad local creció de manera significativa. Todo esto debido a nuestra exposición en diferentes medios (salimos en radio y periódicos de la ciudad) y el contacto con universidades y corporaciones educativas.
+
+
+A destacar:
+- Asistencia a la primera PyCon Colombia
+- Primer Django Girls Barranquilla y primer Django Girls Cartagena.
+- Creación de la página web con lektor https://pybaq.co/blog/first-post/
+- Tuvimos nuestra primera charla de Machine Learning de la mano de Wayner. Parecía que Wayner nos hablaba en chino en ese evento jeje. Poco se hablaba de ese tema.
+- Hicimos evento en corporaciones educativas como CEIPA y CUES.
+- Hicimos 16 eventos al año (sin incluir el de Cartagena).
+
+
+## 2018: Primer Hacktoberfest Barranquilla
+
+Este fue el año de méterle más diseño a las imágenes de los eventos. Gracias a todo el impulso que tuvimos en 2017, nos tocó re pensar la forma como se promocionaban los eventos (hasta antes de Django Girls recuerdo que solo usábamos el voz a voz).
+
+Este año empezamos a experimentar el hacer 2 charlas por evento con el formato de la PyCon Colombia. De esta forma, también ayudaríamos a entrenar a personas como ponentes. Todo esto rindió sus frutos porque este año contamos con la participación de varios de nuestros miembros como ponentes y talleristas de PyCon Colombia 2018.
+
+Algo a notar es que 2 charlas al mes significaba el doble de esfuerzo en motivar y encontrar personas dispuestas en compartir conocimiento. Este ha sido y será el mayor reto que tenemos mes a mes.
+
+Este año hicimos un nuevo [Django Girls Barranquilla 2018](https://argentinaenpython.com/django-girls/2018/07/barranquilla/) por nuestra propia cuenta en las instalaciones de Koombea. Hasta este punto, todavía dependiamos la ayuda de Argentina en Python para promocionar el evento en su página web.
+
+Uno de los momentos más chéveres y retadores del año fue trabajar con las comunidades tecnológicas barranquilleras de la época para celebrar Hacktoberfest, una iniciativa de Github y otras compañias internacionales para promocionar la contribución al código abierto. En octubre 20 de 2018 hicimos nuestro crossover épico (al mejor estilo power eangers) con las comunidades BaqJS, Pioneras dev, Fullstack Labs y Barranquilla Analítica para traer una tarde amena llena de charlas, código, pizzas y por supuesto, cerveza. La página del evento todavía se encuentra arriba, en https://pybaq.co/hacktoberfest-2018/.
+
+A destacar:
+- Primer celebración de hacktoberfest en Barranquilla 
+- Empezamos a hacer imagenes para promocionar los eventos
+- Realizamos 12+1 eventos al año.
+- Se empieza a crear el PyBAQ team por sugerencias de Manuel. Ingresan a la comunidad y al equipo varias Django Girls que participaron en el 2017.
+- Este año las charlas estuvieron muy inclinadas a temas de ciencias de datos e inteligencia artificial.
+
+## 2019: nos patrocina la Python Software Foundation
+
+Este año tiene gran relevancia para nosotros, porque oficialmente estuvimos patrocinados por la PSF (siglas de Python Software Foundation). Si quieren saber más del tema les dejo esta charla de Manuel Kaufmann sobre ¿qué es la Python Software Foundation?
+https://www.youtube.com/watch?v=HdZmoIN89sk
+
+Este año ya se volvió costumbre para nosotros y no podía faltar nuevament un evento [Django Girls Barranquilla 2019](https://www.python.org.co/eventos/2019/07/taller-programacion-mujeres-barranquilla/). Gracias a esfuerzos anteriores, nuestro equipo organizador ya estaba formado por chicas hasta este punto.
+
+
+A destacar del 2019:
+- Empezamos eventos virtuales
+- Patrocinio de la PSF para meriendas
+- Lightning Talks
+- Realizamos 14 eventos al año
+
+## 2020
+
+A destacar del 2020:
+- Eventos virtuales
+- 13 eventos al año
+- Empezamos a estandarizar el diseño de las imagenes promocionales
+
+- https://pybaq.co/hacktoberfest-2020/
+
+## 2021
+
+A destacar del 2021:
+- Eventos virtuales
+- Iniciativa empanada dev: Liga Python 2021
+- 13 eventos al año
+
+## 2022
+
+A destacar del 2022:
+- 12 eventos al año
+- Este año se hicieron muchas cositas interesantes que quedaron plasmadas en:
+https://pybaq.co/blog/eventos-de-python-barranquilla-en-el-2022/
+
+- Los momentos más importantes en este año fueron:
+  - Mantener los eventos virtuales
+  - Coordinar el equipo para la logística de los eventos
+  - Hacer primera reunión presencial del equipo desde el 2019
+
+- Ajustamos el diseño de las imágenes de promoción a la paleta de colores de la marca de Python Barranquilla.
+
+
+## 2023
+
+A destacar del 2023:
+- De vuelta a la presencialidad
+- Empezamos a transmitir los eventos en vivo. Compramos cámara y micrófonos.
+- Llevamos 2 eventos
+
+
+
+
+**** ponentes internacionales
+**** aliados
+**** visitas a universidades
+**** experiencias chistosas
+**** Fotos de pizza para la PSF
+
+---
+excerpt: Resumen de los 8 años que han sido organizar eventos de Python Barranquilla. Experiencias de como ha sido hacer crecer la comunidad a lo largo de estos años
+---
+pub_date: 2023-05-08
