@@ -1,0 +1,207 @@
+title: 8 años en retrospectiva: Python Barranquilla
+---
+author: javier-daza
+---
+body:
+
+
+Hace años he querido hacer un artículo conmemorativo de todos estos años en que la comunidad ha funcionado en Barranquilla. Esta es mi intención de resumir los eventos más importantes en estos 8 años, lo cual viene a ser una tarea para nada fácil, teniendo en cuenta todas las anécdotas y aventuras que hemos vivido.
+
+
+## 2014: El inicio
+
+![Ignite BAQ](/img/posts/2023/eight-years-retrospective/ignite_BAQ.png)
+
+A pesar de que la comunidad empezó en 2015, su historia empieza a crearse un año antes, cuando empecé a asistir a eventos de tecnología en Barranquilla. Mi primer evento fue [Ignite BAQ](https://www.meetup.com/es/ignite-barranquilla/) creado por la compañía Ideaware (quien diría que en un futuro nos patrocinarían un evento Django Girls y el primer evento HacktoberFest Barranquilla).
+
+Como comenté en el minuto 3:42 de mi charla en PyCon Colombia 2019 ["Creando comunidades de tecnología exitosas"](https://youtu.be/M9ER27Do7Gw?t=221), fue ahí donde conocí a las primeras personas que hoy en día son los primeros miembros de la comunidad de Python Barranquilla. Muchas gracias muchachos por el apoyo.
+
+
+
+## 2015: ¡Somos Django Barranquilla!
+
+
+![Primeros asistentes](/img/posts/2023/eight-years-retrospective/primer_python_barranquilla.jpeg)
+
+
+El primer nombre que tuvimos fue Django Barranquilla, pues el marco de trabajo Django era el hilo conductor que nos unía y marcaba el propósito para reunirnos. Gracias a ese primer acercamiento con djangonautas en 2014, con la ayuda de [Jose Luis](https://pybaq.co/nosotros/jose-caro/) logramos conectar con el coworking [AreaDos](https://www.instagram.com/areados/?hl=es), administrado por Koombea (empresa que hasta el día de hoy nos patrocina con el lugar de eventos). 
+
+En esa este año múltiples comunidades verían la luz gracias a este espacio de trabajo, como lo fue [Ruby BAQ](https://www.meetup.com/quillarb/). Gracias a mi asistencia a uno de sus reuniones, fue que logré ganar la motivación para organizar el primer meetup de Django (y obviamente Python)
+
+
+A destacar en este año:
+- Logramos los primeros 10 asistentes regulares. Esto fue bueno porque logramos adquirir frecuencia.
+- Hicimos 18 eventos en el año. 
+- En algunos meses hicimos 2 eventos al mes.
+- No teníamos patrocinadores, así que hacíamos la famosa "vaca" para recoger el dinero de las pizzas (este año nos decidimos por las pizzas de Domino's por su filosofía de pizza en 30 minutos)
+
+## 2016: ¿Y si se llaman Python Barranquilla?
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bty6nzJnh0k/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Bty6nzJnh0k/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Bty6nzJnh0k/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida por Python Barranquilla (@pybaq)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+
+
+Iniciamos el 2016 con todas las expectativas del mundo. Del 2015 aprendimos que aumentar la frecuencia a dos eventos por mes no nos traería más público, así que este fue el primer año que empezamos apenas a pensar en la necesidad de hacer publicidad en redes sociales.
+
+Este fue el año que empecé a contactarme con otros líderes de comunidades del país como Jhon Roa (chief organizer PyCon Colombia) y Gonzalo Peña (Python Bucaramanga). Fue en este año que empecé a colaborar con Jhon Roa y su equipo de voluntarios para crear el primer evento estilo PyCon (por las iniciales en inglés de **PY**thon **CON**ference).
+
+Este año tuvimos dos eventos que marcaron a la comunidad. El primero fue [mi primer viaje a Japón](https://kizunaclub.com/blog/2017/08/16/cosas-que-me-llamaron-la-atencion-en-japon-parte-1/index.html) y el segundo fue el fin de AreaDos como espacio de trabajo. De aquí me surgirían todas las dudas del mundo, ¿quién organizaría la comunidad durante mi viaje? ¿Cómo conseguiríamos ponentes? (todavía me hago esta pregunta jajaja) ¿Cómo conseguiríamos un nuevo lugar de eventos? Ambos obstáculos los tendría que sortear la comunidad por ella misma, sin mi presencia como líder organizador 😱
+
+Este año también coincidió con mi primer trabajo con Python en la empresa [Piensa Labs](https://piensa.co/). Sin saberlo, esto tuvo gran repercusión en la comunidad de Python:
+
+1. Piensa Labs se convertiría en nuestro nuevo lugar de eventos.
+2. La empresa pasó a convertirse en uno de los mayores patrocinadores de [la primera PyCon Colombia](https://2017.pycon.co/).
+
+Por el lado de la organización, los compañeros de comunidad [César](https://pybaq.co/nosotros/cesar-herdenez/) y [Leonardo](https://pybaq.co/nosotros/leonardo-orozco/) se encargaron de mantener la comunidad activa, dando ellos mismos charlas y conectando con universidades (Universidad de la Costa, CUC y Universidad Santo Tomás).
+
+
+A destacar:
+- El fin de AreaDos como espacio de trabajo. Era un gran lugar, es una lástima.
+- Hicimos 12+1 eventos este año (el de Lektor se repitió 1 vez por lluvia)
+- La comunidad continuó a pesar de que estuve fuera de la ciudad por 6 meses, ¡ya tenía vida propia!
+- Tuvimos los primeros acercamientos con la red de Python Colombia y con universidades. Fueron ellos quienes nos propusieron cambiarnos de nombre.
+- Este año surge la tradición de celebrar cada año nuevo en el primer mes del año.
+- Se realiza el [primer commit](https://github.com/pyjavo/django-quilla-web/commit/f339e502ee07acf96f19977ff3417eb0e80f7b1c) para la landing page de [djangoquilla.com](https://github.com/pyjavo/django-quilla-web/commit/d5419922b539a386e7bd9b33b07ea28c2567c6aa)
+
+
+## 2017: Ché, ¿querés hacer un Django Girls Barranquilla?
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Cr97YfwOE4Q/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Cr97YfwOE4Q/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Cr97YfwOE4Q/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida por Python Barranquilla (@pybaq)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+
+Este año, a mi regreso a Colombia, me entero de que Koombea tiene un edificio propio que incluye un teatrino. Lo fui a visitar y ¡es espectacular! Este evento marcó el reinicio de nuestra colaboración con la empresa para hacer los eventos.
+
+Hasta este punto, todo el mundo pensaba que yo era empleado de Koombea jajaja. Algunas personas supongo que todavía lo piensan (el mes pasado me preguntaron jejeje).
+
+Este año marcó un antes y después para toda la red de Python Colombia. Fue la primera PyCon Colombia y ello trajo un impulso sin precedentes en la red de comunidades. Para nosotros significo tener contacto presencial  con ponentes de talla internacional tanto en la ciudad donde fue el evento como en la misma Barranquilla. 
+
+Gracias al trabajo de Manuel Kaufmann (más conocido como @humitos) y Johanna Sanchez (@ellaquimica) con Argentina en Python, fue que nos adentramos en el mundo de Django Girls. Manuel nos contactó inicialmente porque venía adelantando el proyecto de hacer múltiples eventos en Latinoamérica, como embajador de la PSF (quienes lo financiaron). Tres meses de arduo trabajo y entrenamiento, fue que pudimos hacer el primer evento de [Django Girls Barranquilla 2017](https://argentinaenpython.com/django-girls/2017/07/barranquilla/). Contamos también con la visita de mentores y mentoras de toda Colombia y con nuestro primer ponente argentino. Pueden leer más sobre el evento en mis memorias sobre el [primer Django Girls Barranquilla](https://pybaq.co/blog/como-fue-organizar-primer-django-girls-barranquilla/). Fue tal el impulso, que ese mismo año en octubre decidimos hacer el [primer Django Girls Cartagena](https://argentinaenpython.com/django-girls/2017/10/cartagena/), y de esta forma, entrenar un equipo de organizadoras Django Girls en La Heroica.
+
+Gracias a los eventos Django Girls, la comunidad local creció de manera significativa. Todo esto debido a nuestra exposición en diferentes medios (salimos en radio y periódicos de la ciudad) y el contacto con universidades y corporaciones educativas.
+
+
+A destacar:
+- Asistencia a la primera PyCon Colombia
+- Primer Django Girls Barranquilla y primer Django Girls Cartagena.
+- Creación de la página web con Lektor https://pybaq.co/blog/first-post/
+- Tuvimos nuestra primera charla de Machine Learning de la mano de Wayner. Parecía que Wayner nos hablaba en chino en ese evento jeje. Poco se hablaba de ese tema.
+- Hicimos evento en corporaciones educativas como CEIPA y CUES.
+- Hicimos 16 eventos al año (sin incluir el de Cartagena).
+- Revive el evento de Django Girls Barranquilla 2017 con [las fotos del evento](https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/)
+- Revive el evento de Django Girls Cartagena 2017 con [las fotos del evento](https://argentinaenpython.com/galeria/django-girls-cartagena/)
+
+
+## 2018: Primer Hacktoberfest Barranquilla
+
+![Django Girls Barranquilla 2018](/img/posts/2023/eight-years-retrospective/collage_django_girls_2018-min.jpeg)
+
+Este fue el año de meterle más diseño a las imágenes de los eventos. Gracias a todo el impulso que tuvimos en 2017, nos tocó repensar la forma como se promocionaban los eventos (hasta antes de Django Girls recuerdo que solo usábamos el voz a voz).
+
+Este año empezamos a experimentar el hacer 2 charlas por evento con el formato de la PyCon Colombia. De esta forma, también ayudaríamos a entrenar a personas como ponentes. Todo esto rindió sus frutos porque este año contamos con la participación de varios de nuestros miembros como ponentes y talleristas de PyCon Colombia 2018.
+
+Algo a notar es que 2 charlas al mes significaba el doble de esfuerzo en motivar y encontrar personas dispuestas en compartir conocimiento. Este ha sido y será el mayor reto que tenemos mes a mes.
+
+Este año hicimos un nuevo [Django Girls Barranquilla 2018](https://argentinaenpython.com/django-girls/2018/07/barranquilla/) por nuestra propia cuenta en las instalaciones de Koombea. Hasta este punto, todavía dependíamos de la ayuda de Argentina en Python para promocionar el evento en su página web.
+
+Uno de los momentos más chéveres y retadores del año fue trabajar con las comunidades tecnológicas barranquilleras de la época para celebrar Hacktoberfest, una iniciativa de Github y otras compañías internacionales para promocionar la contribución al código abierto. En octubre 20 de 2018 hicimos nuestro crossover épico (al mejor estilo power rangers) con las comunidades BaqJS, Pioneras dev, Fullstack Labs y Barranquilla Analítica para traer una tarde amena llena de charlas, código, pizzas y por supuesto, cerveza. La página del evento todavía se encuentra arriba, en https://pybaq.co/hacktoberfest-2018/.
+
+A destacar:
+- Primera celebración de [Hacktoberfest en Barranquilla](https://pybaq.co/hacktoberfest-2018/)
+- Empezamos a hacer imágenes para promocionar los eventos
+- Realizamos 12+1 eventos al año.
+- Se empieza a crear el PyBAQ team por sugerencias de Manuel. Ingresan a la comunidad y al equipo varias Django Girls que participaron en el 2017.
+- Este año las charlas estuvieron muy inclinadas a temas de ciencias de datos e inteligencia artificial.
+- Tuvimos la primera charla sobre seguridad informática.
+- Revive el evento de Django Girls Barranquilla 2017 con [las fotos del evento](https://argentinaenpython.com/galeria/django-girls-barranquilla/2018/)
+
+
+## 2019: Nos patrocina la Python Software Foundation
+
+![Thank you PSF](/img/posts/2023/eight-years-retrospective/collage_thank_you_psf.png)
+
+Este año tiene gran relevancia para nosotros, porque oficialmente estuvimos patrocinados por la PSF (siglas de Python Software Foundation). Si quieren saber más del tema les dejo esta charla de Manuel Kaufmann sobre [¿qué es la Python Software Foundation?](https://www.youtube.com/watch?v=HdZmoIN89sk)
+
+
+A partir de este momento dejamos de recolectar dinero entre los asistentes de manera oficial y por fin dar pizzas gratis (el fin de años de vergüenza jajaja)
+
+Este año ya se volvió costumbre para nosotros y no podía faltar nuevamente un evento [Django Girls Barranquilla 2019](https://www.python.org.co/eventos/2019/07/taller-programacion-mujeres-barranquilla/). Gracias a esfuerzos anteriores, nuestro equipo organizador ya estaba formado por chicas hasta este punto.
+
+Para este año, la comunidad de Python Colombia (y nosotros) ya tenía su propia página web, por lo que la promoción en línea la hicimos con el apoyo de ellos. La información del evento para 2019 se encontraba en https://www.python.org.co/eventos/2019/07/taller-programacion-mujeres-barranquilla/
+
+Este año, hicimos nuestros primeros eventos online con la ayuda de la comunidad Colombia AI. Ellos se encargaron de la transmisión a YouTube y nosotros de la logística en el lugar del evento.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gZDpvRoEONY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Este año tuvimos a nuestro primer ponente de Perú, Josimar Chiré, quien se convertiría desde ese momento en un ponente frecuente en la comunidad. Su charla también la transmitimos en línea junto con Colombia AI. También pueden encontrar el [video de la charla en YouTube](https://www.youtube.com/watch?v=3ZZMTzM1-28).
+
+
+
+A destacar del 2019:
+- Primeros eventos híbridos (presenciales y transmitidos a YouTube) junto con la comunidad Colombia AI.
+- Patrocinio de la PSF para meriendas de las reuniones.
+- Realizamos 14 eventos al año
+- Este año volví a viajar varios meses por fuera, por lo que el team PyBAQ estuvo a cargo de varios eventos durante el año.
+
+## 2020: Nos volvemos "youtubers"
+
+Este año tuvimos grandes cambios en la realización de los eventos debido a la situación de emergencia mundial por la pandemia. Inicialmente, contamos con la ayuda de Koombea nuevamente para realizar los eventos vía Zoom los primeros 8 meses del año. Luego de esto, la comunidad de Python Colombia nos colaboró el acceso a una cuenta paga de Streamyard para transmitir los eventos a YouTube en el canal de [Python Colombia](https://www.youtube.com/@PythonColombia)
+
+Además de todo el tema de la virtualidad, quisimos experimentar con un nuevo formato de presentación, así que para finalizar el año hicimos las charlas relámpago (*lightning talks* en inglés) donde la metodología consiste en presentar 20 diapositivas en 20 segundos. Puedes ver todas las reglas en [Lightning Talks 2020: Python Barranquilla](https://pybaq.co/blog/lightning-talks-2020/)
+
+A destacar del 2020:
+- Empezamos a hacer virtuales y grabarlos en YouTube.
+- Realizamos los usuales 12+1 eventos al año.
+- Hicimos el evento de las charlas relámpago.
+- Empezamos a estandarizar el diseño de las imágenes promocionales, gracias a Paula
+- El Hacktoberfest este año lo hicimos virtual https://pybaq.co/hacktoberfest-2020/
+
+## 2021: La Liga Python
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/CmNjh5tol43/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/CmNjh5tol43/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/CmNjh5tol43/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida por Python Barranquilla (@pybaq)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+
+Este año la gran experiencia fue el haber ganado un patrocinio de la iniciativa [Empanada Fund](https://buritica.notion.site/The-Empanada-Fund-857632d4c05740ecb8a2c1e8f8f0b116), la cual nos patrocinó el torneo de la Liga Python 2021. La [primera versión de la Liga Python](https://pybaq.co/blog/liga-python-habilidades-blandas-y-experiencias/) fracasó rotundamente, lo cual nos llevó a iterar una [Liga Python versión 2.0](https://pybaq.co/blog/liga-python/) que nos llevó a tener hasta un ponente de Argentina.
+
+Para la Liga quisimos ambientar el escenario como una mundial de futbol, con clasificatorios, dos semifinales y una [final de la Liga Python](https://www.youtube.com/watch?v=YibzuncI8AI). Fue una experiencia muy bonita, y además, gracias a la iniciativa Empanada Fund, tuvimos la oportunidad de conocer a proyectos de todas partes de Latinoamérica.
+
+
+A destacar del 2021:
+- Grabamos más eventos virtuales en el canal de YouTube
+- Iniciativa Empanada Fund: Liga Python 2021
+- Realizamos los usuales 12+1 eventos al año
+
+## 2022: Falta de representación femenina
+
+
+![Django Girls Barranquilla](/img/posts/2023/eight-years-retrospective/representacion_femenina.jpg)
+
+
+
+La virtualidad y la falta de eventos Django Girls hizo que la participación femenina en la comunidad se redujera drásticamente. Este año en particular fue el primer año que hice un artículo resumen de todas las python-aventuras que tuvimos, por lo que no entraré en muchos detalles acá. 
+
+Sí quieren saber más sobre nuestro 2022, favor leer https://pybaq.co/blog/eventos-de-python-barranquilla-en-el-2022/
+
+
+Puntos a destacar este año fueron:
+- Mantener los eventos virtuales.
+- Coordinar el equipo para la logística de los eventos.
+- Hacer primera reunión presencial del equipo desde el 2019.
+- Ajustamos el diseño de las imágenes de promoción a la paleta de colores de la marca de Python Barranquilla.
+- Se planea volver a la presencialidad.
+- Realizamos 12 eventos en el año.
+
+
+## 2023: De vuelta a la presencialidad
+
+![Bienvenida año 2023](/img/posts/2023/eight-years-retrospective/bienvenida_pybaq_2023.jpeg)
+
+¡Volvemos a la presencialidad! (Revisa acá las [fotos de la Bienvenida del 2023](https://www.meetup.com/pythonbaq/photos/33163372/)) Y volvemos con toda, pues compramos micrófonos inalámbricos y una cámara Logitech para hacer los eventos híbridos, así como hacíamos en 2019 con Colombia AI, solo que ahora, nosotros también seríamos responsables de la transmisión a YouTube. De este año, todavía hay mucha tela por cortar.
+
+Si has leído hasta aquí, te agradezco enormemente tu interés. Agradezco a todas las personas, empresas, entidades sin ánimo de lucro, corporaciones educativas y universidades que nos apoyaron para hacer de esta iniciativa una realidad.
+
+*Gracias infinitas a mi equipo y a la comunidad. Sin ustedes, estos 8 años de aventuras fueron posibles.*
+
+
+Cuéntanos en los comentarios otras anécdotas o experiencias que haya podido dejar pasar.
+
+---
+excerpt: Un brevísimo resumen de los 8 años que han significado organizar eventos de Python Barranquilla. Iré contando año por año los puntos más importantes a destacar.
+---
+pub_date: 2023-05-08
