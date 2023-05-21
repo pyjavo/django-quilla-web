@@ -63,3 +63,7 @@ class: text-block
 wrapper_class: d-flex justify-content-center
 ----
 body_class: blog-post
+---
+seo_description: Código de conducta de todos los miembros de la comunidad Python Barranquilla
+---
+show_title: yes

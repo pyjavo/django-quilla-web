@@ -61,6 +61,8 @@ title: Let's Create Apps
 body: We are always creating applications, either individually or as a group as a community. If you need help, this is the place where we can help you solve your doubts in the projects you have been working on. Come and participate!
 ----
 class: default
+----
+body_class: 
 #### testimonies ####
 source: testimonies
 #### sponsors ####
@@ -69,3 +71,5 @@ title: OUR SPONSORS
 source: sponsors
 ---
 title: Python Barranquilla
+---
+seo_description: Python Barranquilla is a community for everyone interested in developing Python applications within the city of Barranquilla.

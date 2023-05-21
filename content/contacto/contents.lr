@@ -1,4 +1,4 @@
-_model: poster
+_model: page
 ---
 title: Contacto
 ---
@@ -20,7 +20,7 @@ En esto nos puedes ayudar:
 
 ### [Postula una charla](https://forms.gle/tCsALqG2aQ9A1GqD8) para nuestros meetups mensuales.
 
-### ¿Te interesa participar activamente en la comunidad? [apúntate a ser voluntario](https://forms.gle/EV821U2Tu2nXx9aE7). 
+### ¿Te interesa participar activamente en la comunidad? [apúntate a ser voluntario](https://forms.gle/EV821U2Tu2nXx9aE7).
 
 ¿Quieres contarnos algo más? Déjanos un correo a djangoquilla(arroba)gmail.com, o bien un mensaje por discord o por cualquiera de nuestras redes sociales. Para nosotros sería un placer conocerte.
 -----
@@ -29,3 +29,5 @@ class: contact-invite
 class: 
 ----
 body_class: 
+---
+seo_description: ¿Deseas colaborar con nuestra comunidad? aca encuentras toda la información de contacto de Python Barranquilla

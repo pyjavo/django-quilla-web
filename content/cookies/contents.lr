@@ -41,3 +41,5 @@ class:
 wrapper_class: d-flex justify-content-center
 ----
 body_class: blog-post
+---
+seo_description: Politica de cookies de la comunidad Python Barranquilla
