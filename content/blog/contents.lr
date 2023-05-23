@@ -1,1 +1,7 @@
 _model: blog
+---
+show_title: yes
+---
+seo_description: Blog de la comunidad python Barranquilla, listado de entradas
+---
+title: Blog

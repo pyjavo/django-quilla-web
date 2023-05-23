@@ -7,7 +7,8 @@
     "end_activity_placeholder": "Actualidad",
     "nosotros": "Nosotros",
     "contribuciones": "Contribuciones",
-    "post_usuario": "Blog posts"
+    "post_usuario": "Blog posts",
+    "member_description": "{name} {role} de Python Barranquilla"
   },
   "en":{
     "organizador": "Organizer",
@@ -17,6 +18,7 @@
     "end_activity_placeholder": "Present",
     "nosotros": "About us",
     "contribuciones": "Contributions",
-    "post_usuario": "Blog posts"
+    "post_usuario": "Blog posts",
+    "member_description": "{name}, Python Barranquilla {role}"
   }
 }

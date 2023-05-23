@@ -54,10 +54,11 @@ We are a community of professionals, and we conduct ourselves professionally. Be
 Disagreements, both social and technical, happen all the time and Python is no exception. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of Python Barranquilla comes from its varied community, people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
 
 Original text from [Django project](https://www.djangoproject.com/conduct/). 
-
 -----
 class: text-block
 ----
 wrapper_class: d-flex justify-content-center
 ----
 body_class: blog-post
+---
+seo_description: Code of conduct for members of the Python barranquilla community

@@ -23,6 +23,8 @@ o puedes contactarnos a nuestro email [djangoquilla@gmail.com](mailto:djangoquil
 anexos: 
 ----
 class: default
+----
+body_class: 
 #### section-block ####
 title: Anteriores Eventos
 ----
@@ -408,6 +410,8 @@ title: DeepDream: Visualizando que aprende una red neuronal convolucional
 attach: <a href="https://www.youtube.com/live/t3B0ENK7Ktk">Video Youtube</a> / <a href="https://github.com/PyBAQ/Notebooks/blob/master/DeepDream/DeepDream.ipynb">Notebook</a> / <a href="https://drive.google.com/file/d/1P2o3Ma_Vmkc1dGhQnmYA0-hrjw4zbEd1/view?usp=share_link">Diapositivas</a>
 ----
 class: default
+----
+body_class: 
 #### section-block ####
 title: Otros Eventos
 ----
@@ -429,3 +433,7 @@ url: https://argentinaenpython.com/django-girls/2017/07/barranquilla
 image: 
 ----
 class: default
+----
+body_class: 
+---
+seo_description: Eventos de la comunidad Python Barranquilla

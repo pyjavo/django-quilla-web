@@ -429,3 +429,5 @@ class: default
 body_class: 
 ---
 title: Events
+---
+seo_description: Eventos de la comunidad Python Barranquilla

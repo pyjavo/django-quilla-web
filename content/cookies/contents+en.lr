@@ -1,0 +1,43 @@
+body:
+
+#### wrapper ####
+body:
+
+##### text-block #####
+text:
+
+## What are cookies?
+Read the [Wikipedia article about cookies][1].
+
+## Why are cookies important?
+This website uses its own and third-party cookies for its proper functioning.
+
+## What types of cookies does this website use?
+### Technical cookies
+They allow the use and navigation of the website. We do not use any such cookie.
+
+### Personalization cookies
+They allow you to modify the behavior or some characteristics of the website. We do not use any cookies of this type, but to show/hide the notice about the Cookies Policy, we store a configuration option in your browser.
+
+### Analysis cookies
+They allow us to anonymously analyze the users who visit us and their behavior. We do not use any such cookie, but this website uses a service called Google Analytics that does use this type of cookie. Read the [Google Analytics privacy policy](https://marketingplatform.google.com/about/?hl=es).
+
+### Advertising Cookies
+They allow displaying the most effective advertising possible for each user. We do not use any such cookies, but this website uses a service called Google Adsense which does use such cookies. Read the [Google Adsense privacy policy](https://policies.google.com/technologies/ads?hl=es) and you can also [adjust your advertising preferences](https://adssettings.google.com/ authenticated).
+
+## How to adjust your cookie settings?
+Read the [Google article on how to manage cookies](https://policies.google.com/technologies/managing?hl=es) in your browser.
+
+Text taken and translated from [uniwebsidad.com](https://uniwebsidad.com/sitio/cookies).
+
+[1]: https://es.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)
+-----
+class:
+----
+wrapper_class: d-flex justify-content-center
+----
+body_class: blog-post
+---
+seo_description: Cookies policy of the Python Barranquilla community
+---
+title: Cookies policy
