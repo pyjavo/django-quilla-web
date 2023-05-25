@@ -1,0 +1,75 @@
+body:
+
+Hello everyone! I am Javier Daza, organizer of Python Barranquilla and I would like to tell you about my experience as co-organizer of the first Django Girls event in the city of Barranquilla, Colombia.
+
+It all started in 2016, a year in which many people and entities began to join their efforts to carry out the first Python conference in Colombia <a href="https://www.pycon.co/" target="_blank" rel="noopener">. For me it was a very challenging year and one of contradictions because, although I wanted to participate and support the first PyCon in Colombia, I was at the gates of a trip that would change the way I see the world. It was so that I decided to take a step back in the organization of PyCon Colombia and recommend a friend to take my position.
+
+<img src="/img/posts/2017/live_your_dream.jpg" alt="Live Your Dream, significado LYD">
+<p style="font-size: 10px;">Foto via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/IMG_2521.JPG" target="_blank" rel="noopener">Argentina en Python</a></p>
+
+After several months, I returned to Colombia and found out that, despite various setbacks, the event was a complete success, and that in addition to that, they met some people who would be supporting the organization of events for girls throughout the country. That's how I found out that @ellaquimica, along with Jhon Jairo Roa and Gonzalo Peña-Castellanos, were the directors of <a href="https://www.python.org.co/django-girls/" target="_blank" rel="noopener">Django Girls Colombia.</a>
+
+<img src="https://cdn-images-1.medium.com/max/1600/1*XKW7cBw5Rm0R_o14mlBrdw.png" alt="PyCon Colombia 2017">
+<p style="font-size: 10px;">Foto via <a href="https://medium.com/pycon-colombia-2017/pycon-colombia-2017-pasando-del-sue%C3%B1o-a-la-realidad-cf1f7808447e" target="_blank" rel="noopener">PyCon Colombia</a></p>
+
+For me it was not the first time that I came across this name. A couple of months ago I had given a workshop at a renowned university in the city, where I had used the tutorial to explain to future systems engineers how to start programming in Python and Django.
+
+
+After contacting <a href="https://twitter.com/ellaquimica" target="_blank" rel="noopener">@ellaquimica</a> aka Johanna Sanchez LOL, we arranged a meeting with her and the organizer of PyCon Colombia 2017. It was at the meeting that we met Manuel Kauffman, declared by the PSF as an ambassador of Python in Latin America thanks to the work done with <a href="https://argentinaenpython.com/" target="_blank" rel="noopener">Argentina en Python</a>. Until that moment it seemed like a very crazy, daring and fun idea to walk all over Latin America teaching Python (I want to do it too!!! I thought hehehe). After the meeting, hearing about their experience organizing events and having set our expectations and goals, <a href="https://twitter.com/CesarAu0619" target="_blank" rel="noopener">Cesar Herdenez</a>, <a href="https://twitter.com/ellaquimica" target="_blank" rel="noopener">Johanna Sanchez</a>, <a href="https://twitter.com/reydelhumo" target="_blank" rel="noopener">Manuel Kauffman</a> and this humble server, we began to organize what would be the first Django Girls Barranquilla.
+
+<img src="/img/posts/2017/equipo-organizador-django-girls-barranquilla-2017.jpg" alt="equipo organizador Django Girls 2017">
+<p style="font-size: 10px;">Foto via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/" target="_blank" rel="noopener">Argentina en Python</a></p>
+
+<br>
+
+<img src="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/IMG_2421.JPG" alt="reunión de guías">
+<p style="font-size: 10px;">Foto via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/IMG_2421.JPG" target="_blank" rel="noopener">Argentina en Python</a></p>
+
+One of the first challenges we encountered was finding the place, since it had to meet all the organization's requirements. Such requirements were:
+
+<ul style="margin-left: 1.5em;">
+ <li>Had tables to locate the laptops</li>
+ <li>Chairs with no arms, because it did not promote an atmosphere of discussion</li>
+ <li>Not a classroom</li>
+ <li>Not a place for master classes (like an auditorium hall)</li>
+ <li>The place could be decorated with balloons, notices and banners of the sponsors</li>
+ <li>A FREE place</li>
+</ul>
+
+Being a non-profit event, nor having a large enough capital, the word FREE took on a unique importance. Also, given the other requirements, it took us about 1 month to find the place. If you have ever thought that men do not stop, you are wrong! Confirming the space was essential since without it, we could not start contacting sponsors, let alone advertise the event. At this moment, it was thanks to the people at <a href="http://lydhouse.com/" target="_blank" rel="noopener">LYD House</a> that we were able to start moving on the next phase of our plan to conquer Barranquilla….While all this was happening, we also ran around looking for a designer to help us with the advertising pieces, a poster and the initial branding of the event for FREE. <a href="http://bit.ly/2rNZXNd" target="_blank" rel="noopener">Giselle Muñoz</a>, wherever you are, thank you very much for your help.
+
+<img src="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/IMG_2431.JPG" alt="Lugar del evento">
+<p style="font-size: 10px;">Picture via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/IMG_2431.JPG" target="_blank" rel="noopener">Argentina en Python</a></p>
+
+In the second phase, the biggest challenge was finding companies interested in supporting Django and using or interested in Python as a programming language. This task was even bigger, because as you know, on the Caribbean Coast there are few companies that develop under this language and most are located in Bogotá or Medellín. We started contacting different companies, sending emails, talking to friends and after almost 4 weeks before the event we were able to confirm all our sponsors, including a company in Bogotá, which supported us from the beginning of the management, 1 company from Chile, Github and 2 companies from Barranquilla.
+
+<img src="https://argentinaenpython.com/django-girls/2017/07/barranquilla/sponsors.png" alt="patrocinadores">
+<p style="font-size: 10px;">Our dear sponsors 🙂. Picture via <a href="https://argentinaenpython.com/django-girls/2017/07/barranquilla/" target="_blank" rel="noopener">Argentina en Python</a></p>
+
+During our search for sponsors, the guys from Argentina in Python came up with the brilliant idea of using a URL to facilitate the promotion of the event on social networks and media. We decided to use tallerdeprogramacion.co, a domain that redirects to the Argentina page in Python, where for convenience, we would keep the registration of participants and event information. In parallel with the official page of Django Girls.
+
+Being 2 weeks from the event, one of the sponsors who was supposedly in the gold category, allocated the money as if it were in the bronze category, due to other company commitments. This meant for us a gap of almost 600,000 pesos in the budget. A money that we counted and that now we did not have. Because of this we had an emergency meeting and we analyzed the possible cases to cut expenses, which meant: leaving the girls without lunches or leaving the mentors without their shirts. Having made a decision, the unthinkable happened. Several members of Python Barranquilla reached into their pockets and each one began to give us donations of 50,000 to 100,000 pesos. Thanks to these "small" donations, we managed to cover the entire event. I felt great satisfaction seeing that the community was there to support me, just as I have been there for them on several occasions.
+
+<img src="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/IMG_2827.JPG" alt="evento">
+<p style="font-size: 10px;">Picture via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/IMG_2827.JPG" target="_blank" rel="noopener">Argentina en Python</a></p>
+
+On the other hand, we had unexpected gifts. One of our applicants was the coordinator of specialization programs aimed at the ICT sector of the Universidad del Norte, who very kindly and on her own initiative, donated the sandwiches and tropical juices for the snacks.
+
+<img src="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/IMG_2468.JPG" alt="refrigerios">
+<p style="font-size: 10px;">Picture via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/IMG_2468.JPG" target="_blank" rel="noopener">Argentina en Python</a></p>
+
+As the last challenge, without being the least important, I could summarize it in a series of tasks that, although each one is small, take effort, time and dedication to execute. Among them are: trying to coordinate 75 people in one place, giving them FREE food and snacks (did I say FREE before?), giving the girls a quality event, with good attendance, training the mentors, coordinating the food menu, get the t-shirts of the guides, among others.
+
+We gave everything for a quality event, and that's what I think we achieved. I feel very pleased to have made new friends, including having learned new things about programming at the event and the satisfaction that we contribute a grain of sand to our community as ambassadors of Django Girls Colombia in Barranquilla and the Caribbean.
+
+<img src="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/IMG_2865.JPG" alt="participantes con sus regalos">
+<p style="font-size: 10px;">Picture via <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/IMG_2865.JPG" target="_blank" rel="noopener">Argentina en Python</a></p>
+
+This does not end here, we hope to hold an event again and <strong>we need your help.</strong> Contact us at <a href="mailto:djangogirlscolombia@gmail.com" target="_top">djangogirlscolombia@gmail.com</a> and let's do epic events in the city ❤️
+
+If you want to see more photos of the event, visit the <a href="https://argentinaenpython.com/galeria/django-girls-barranquilla/2017/" target="_blank" rel="noopener">Argentina in Python photo gallery.</a>
+
+---
+excerpt: Hello everyone! I am Javier Daza, organizer of Python Barranquilla and I would like to tell you about my experience as co-organizer of the first Django Girls event in the city of Barranquilla, Colombia.
+---
+title: How was organizing the first Django Girls Barranquilla?
