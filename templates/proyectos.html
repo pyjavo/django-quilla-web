@@ -1,0 +1,23 @@
+{% extends "page.html" %}
+
+{% block main %}
+  <div class="container">
+    {{this.body}}
+    <div class="row blog_post-posts">
+      {% for post in this.children %}
+        <div class="col-md-6 blog_post-post">
+          <div class="card mb-5">
+            {% for image in post.attachments.images %}
+              <a href="{{ post|url }}" class="text-decoration-none">
+                <img src="{{ image|url }}" class="card-img-top" alt="">
+              </a>
+            {% endfor %}
+            <div class="card-body">
+              <h3 class="card-title"><a href="{{ post|url }}" class="text-decoration-none">{{ post.name }}</a></h3>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
