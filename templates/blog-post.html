@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post, render_author %}
 {% from "macros/social.html" import render_social %}
+{% from "macros/title.html" import render_title %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block page_seo %}
   <meta property="og:title" content="{{ this.title }}" />
@@ -13,13 +14,7 @@
   <meta property="og:description" content="{{ this.excerpt|striptags }}" />
 {% endblock %}
 {% block body %}
-<div class="heading-title">
-  <div class="container">
-  <div class="row">
-    <h1>{{bag('blog', alt, 'blog')}}</h1>
-  </div>
-  </div>
-</div>
+{{render_title(this.parent.title)}}
 {% for image in this.attachments %}
   <div class="d-flex justify-content-center">
     <p><img class="center-block img-fluid" src="{{ image|url }}" alt=""></p>
