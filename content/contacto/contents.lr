@@ -31,3 +31,5 @@ class:
 body_class: 
 ---
 seo_description: ¿Deseas colaborar con nuestra comunidad? aca encuentras toda la información de contacto de Python Barranquilla
+---
+show_title: no
