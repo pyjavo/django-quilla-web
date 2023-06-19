@@ -1,15 +1,9 @@
+{% from "macros/title.html" import render_title %}
 {% extends "layout.html" %}
 {% set translated_role = bag('nosotros', this.alt, this.role) %}
 
 {% block body %}
-<div class="heading-title">
-  <div class="container">
-    <div class="row">
-      <h1>{{bag('nosotros', alt, 'nosotros')}}</h1>
-    </div>
-  </div>
-</div>
-
+{{render_title(this.parent.title)}}
 <div class="d-flex justify-content-center">
   <div class="nosotros-miembro">
     <div class="card mb-3">

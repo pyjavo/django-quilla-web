@@ -1,16 +1,11 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post, render_author %}
 {% from "macros/pagination.html" import render_pagination %}
+{% from "macros/title.html" import render_title %}
 {% block title %}Blog{% endblock %}
 
 {% block body %}
-<div class="heading-title">
-  <div class="container">
-    <div class="row">
-      <h1>Blog</h1>
-    </div>
-  </div>
-</div>
+{{render_title(this.title)}}
 <div class="container">
     <div class="row blog_post-posts">
         {% for post in this.pagination.items %}

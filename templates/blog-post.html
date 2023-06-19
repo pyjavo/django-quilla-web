@@ -13,13 +13,6 @@
   <meta property="og:description" content="{{ this.excerpt|striptags }}" />
 {% endblock %}
 {% block body %}
-<div class="heading-title">
-  <div class="container">
-  <div class="row">
-    <h1>{{bag('blog', alt, 'blog')}}</h1>
-  </div>
-  </div>
-</div>
 {% for image in this.attachments %}
   <div class="d-flex justify-content-center">
     <p><img class="center-block img-fluid" src="{{ image|url }}" alt=""></p>
