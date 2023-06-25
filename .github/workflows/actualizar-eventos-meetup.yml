@@ -1,0 +1,64 @@
+name: "Actualizar eventos meetup"
+
+on:
+  schedule:
+    - cron: "0 12 * * 2" # Todos los martes a las 12:00
+  push:
+    paths:
+      - 'databags/meetup.json'
+
+jobs:
+  build:
+    name: Actualizar eventos meetup
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout@v3
+        uses: actions/checkout@v3
+        with:
+          ref: master
+
+      - name: setup-python@v4
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar requirements
+        run: |
+          python -m pip install --upgrade pip setuptools
+          pip install -r requirements.txt
+
+      - name: Ejecutar events.py
+        run: python scripts/events.py
+
+      - name: Rama actual
+        run: git branch
+
+      - name: Git status
+        run: git status
+
+      - name: Verificar cambios en meetup.json
+        id: check_changes
+        # https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---exit-code
+        run: |
+          if git diff --quiet --exit-code -- databags/meetup.json; then
+        # https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-output-parameter
+            echo "HAS_CHANGES=false" >> "$GITHUB_OUTPUT" 
+            echo "No hay cambios en meetup.json"
+          else
+            echo "HAS_CHANGES=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Git crear rama y commit
+        if: steps.check_changes.outputs.HAS_CHANGES == 'true'
+        run: |
+          git config --global user.name "PyBaq Bot"
+          git config --global user.email "contacto@pybaq.co"
+          git checkout -b actualizar-eventos-meetup
+          git add databags/meetup.json
+          git commit -m "Actualizacion eventos meetup"
+
+      - name: Crear pull request
+        if: steps.check_changes.outputs.HAS_CHANGES == 'true'
+        run: gh pr create -B master -H actualizar-eventos-meetup --title 'Actualizar eventos meetup into master' --body 'Created by PyBaq Bot'
+        env:
+          GH_TOKEN: ${{ github.token }}
