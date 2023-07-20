@@ -1,0 +1,14 @@
+name: Katsu
+---
+description: Programa para rifar camisetas, libros o cualquier elemento que se desee regalar durante un evento.
+---
+general_objective: Rifar artículos entre los asistentes a un evento de manera programática
+---
+motivation: Poder usar python para hacer algo divertido, por ejemplo rifando cosas en los eventos
+---
+specific_objective:
+
+- Permitir la entrada masiva del registro de asistentes a una charla
+- Escoger entre los asistentes de una charla quien se gana un premio particular
+---
+excerpt: Programa para rifar camisetas, libros o cualquier elemento que se desee regalar durante un evento.

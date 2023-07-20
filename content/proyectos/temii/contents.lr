@@ -1,0 +1,27 @@
+name: Temii
+---
+description:
+
+Temii es una aplicación en desarrollo que inició como parte de una serie de talleres, este grupo aún era Django Barranquilla en ese entonces. Por el tiempo invertido en su desarrollo y el propósito que sirve, es una aplicación para programadores de nivel intermedio y alto.
+
+---
+general_objective:
+
+Apoyar al equipo PyBAQ en la organización y promoción de las futuras charlas
+
+---
+github_handle: PyBAQ/temii
+---
+motivation: Generar un proyecto opensource en la comunidad que nos permita colaborar y facilite los objetivos de la comunidad
+---
+specific_objective:
+
+- Permitir el registro de usuarios que quieran proponer sus charlas
+- Permitir el registro de nuevas charlas que reemplace el formulario de google donde se agrega la información del ponente el cual puede tener múltiples charlas
+- Integrar con las API de redes sociales para permitir la publicación y promoción de próximas charlas
+- Llevar el histórico de los eventos que se han impartido
+
+---
+website_handle: https://temii.pybaq.co/
+---
+excerpt: Temii es una aplicación en desarrollo enfocada en apoyar al equipo PyBAQ en la organización y promoción de las futuras charlas
