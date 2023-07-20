@@ -4,13 +4,15 @@
     "read_more": "Leer más",
     "posted": "Escrito",
     "by": "Por",
-    "anonymous": "Anónimo"
+    "anonymous": "Anónimo",
+    "github": "GitHub"
   },
   "en": {
     "title": "Python Barranquilla - Web Development Community",
     "read_more": "Read more",
     "posted": "Posted",
     "by": "By",
-    "anonymous": "Anonymous"
+    "anonymous": "Anonymous",
+    "github": "GitHub"
   }
 }
