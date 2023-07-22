@@ -1,17 +1,21 @@
 {% from "macros/title.html" import render_title %}
 {% extends "layout.html" %}
 {% block body %}
-  {{render_title(this.parent.title)}}
+  {% for image in this.attachments %}
+    <div class="d-flex justify-content-center">
+      <p><img class="center-block img-fluid" src="{{ image|url }}" alt=""></p>
+    </div>
+  {% endfor %}
   <div class="container">
-    <h2>{{this.name}}</h2>
+    <h1>{{this.name}}</h1>
     <p>{{this.description}}</p>
     <p><a href="{{this.website_handle}}">{{this.website_handle}}</a></p>
     <p><a href="https://github.com/{{this.github_handle}}">{{this.github_handle}}</a></p>
-    <h3>Motivación</h3>
+    <h2>Motivación</h2>
     <p>{{this.motivation}}</p>
-    <h3>Objetivo general</h3>
+    <h2>Objetivo general</h2>
     <p>{{this.general_objective}}</p>
-    <h3>Objetivos específicos</h3>
+    <h2>Objetivos específicos</h2>
     <p>{{this.specific_objective}}</p>
   </div>
 {% endblock %}
