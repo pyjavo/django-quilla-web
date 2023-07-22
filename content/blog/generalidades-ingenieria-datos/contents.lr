@@ -82,7 +82,7 @@ Incluyo algunas librerias relevantes en el tema de ingenieria de datos:
 * [Apache Superset](https://superset.apache.org/)
 * [Plotly Python Graphing Library](https://plotly.com/python/)
 
-Un agradecimiento especial a Javier Daza, Marcelo Herrera, Adam Carruthers con sus comentarios acerca del artículo y sobre todo a Jorge Aguilar por el contexto inicial brindado en referencia a su próxima [charla](https://www.meetup.com/pythonbaq/events/294769421/) en PyBAQ.
+Un agradecimiento especial a [Javier Daza](/nosotros/javier-daza/), Marcelo Herrera, Adam Carruthers con sus comentarios acerca del artículo y sobre todo a Jorge Aguilar por el contexto inicial brindado en referencia a su próxima [Modelado de una DataWarehouse con DBT](https://www.meetup.com/pythonbaq/events/294769421/) en PyBAQ.
 
 [^a]: [Data science - Wikipedia](https://en.wikipedia.org/wiki/Data_science#cite_note-:7-20), [50YearsDataScience.pdf (mit.edu)](http://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf)
 [^b]: [Reliability (statistics) - Wikipedia](https://en.wikipedia.org/wiki/Reliability_(statistics))
