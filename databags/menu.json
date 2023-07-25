@@ -6,7 +6,8 @@
         "title": "INICIO"
       },{
         "url":  "/nosotros",
-        "title": "NOSOTROS"
+        "title": "NOSOTROS",
+        "active_childs": "true"
       },{
         "url":  "/blog",
         "title": "BLOG",
@@ -14,6 +15,10 @@
       },{
         "url":  "/eventos",
         "title": "EVENTOS"
+      },{
+        "url":  "/proyectos",
+        "title": "PROYECTOS",
+        "active_childs": "true"
       },{
         "url":  "/contacto",
         "title": "CONTACTO"
@@ -29,7 +34,8 @@
         "title": "HOME"
       },{
         "url":  "/nosotros",
-        "title": "ABOUT US"
+        "title": "ABOUT US",
+        "active_childs": "true"
       },{
         "url":  "/blog",
         "title": "BLOG",
@@ -37,6 +43,10 @@
       },{
         "url":  "/eventos",
         "title": "EVENTS"
+      },{
+        "url":  "/proyectos",
+        "title": "PROJECTS",
+        "active_childs": "true"
       },{
         "url":  "/contacto",
         "title": "CONTACT"
