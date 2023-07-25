@@ -1,0 +1,28 @@
+name: Página web
+---
+description:
+
+El sitio web de Python Barranquilla es el lugar donde se comparte conocimiento con la comunidad a través de los artículos, se comparte las presentaciones de los eventos anteriores
+y se muestra donde estamos ubicados y quien conforma al equipo organizador.
+
+También es una excelente herramienta generadora de oportunidades de familiarización con las plantillas de Jinja y el entorno general del desarrollo web. Este es un buen proyecto para aprender a usar git, familiarizarse con el flujo de trabajo de github y con markdown. Este es un proyecto en el que interactúan desarrolladores principiantes, intermedios y avanzados.
+
+---
+general_objective: Tener Lugar donde se comparte información relevante para la comunidad
+---
+github_handle: PyBAQ/website
+---
+motivation: Ser un ejemplo en la comunidad python mostrando la relevancia y presencia de desarrolladores python en Barranquilla y sus alrededores
+---
+specific_objective:
+
+- Mostrar los eventos que hacemos mensualmente en PyBaq
+- Compartimos lo aprendido a traves de articulos para la comunidad cada cuatrimestre
+- Se muestra donde estamos ubicados
+- Se muestra un pequeño portafolio de quienes colaboramos en PyBaq
+- Usar la página como entorno de aprendizaje de tecnologías web en torno a python (lektor)
+
+---
+website_handle: https://pybaq.co/
+---
+excerpt: El sitio web de Python Barranquilla es el lugar donde se comparte conocimiento con la comunidad a través de los artículos, se comparte las presentaciones de los eventos anteriores
