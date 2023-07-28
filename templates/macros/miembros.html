@@ -37,3 +37,14 @@
     {% endif %}
   {% endfor %}
 {% endmacro %}
+
+{% macro render_user_projects(user_projects, title) %}
+  {% if user_projects %}
+    <h3>{{title}}</h3>
+    <div class="user-projects row">
+      {% for project in user_projects  %}
+        <p><a href="{{ project|url }}">{{ project.name }}</a></p>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endmacro %}
