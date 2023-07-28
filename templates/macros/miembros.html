@@ -24,3 +24,16 @@
   </div>
 {% endmacro %}
 
+{% macro render_miembro_small(member) %}
+  <p><a href="{{ member|url }}">{{ member.name }}</a></p>
+{% endmacro %}
+
+{% macro render_project_members(members, project_members) %}
+  {% for member in members %}
+    {% if member._id in project_members %}
+      <div class="project-member col-sm-4">
+        {{render_miembro_small(member)}}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
