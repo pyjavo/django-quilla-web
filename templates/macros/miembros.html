@@ -43,7 +43,9 @@
     <h3>{{title}}</h3>
     <div class="user-projects row">
       {% for project in user_projects  %}
-        <p><a href="{{ project|url }}">{{ project.name }}</a></p>
+        <div class="post col-sm-6">
+          <p><a href="{{ project|url }}">{{ project.name }}</a></p>
+        </div>
       {% endfor %}
     </div>
   {% endif %}
