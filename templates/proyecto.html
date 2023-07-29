@@ -1,4 +1,4 @@
-{% from "macros/title.html" import render_title %}
+{% from "macros/miembros.html" import render_miembro_small, render_project_members %}
 {% extends "layout.html" %}
 {% block body %}
   {% for image in this.attachments %}
@@ -17,5 +17,17 @@
     <p>{{this.general_objective}}</p>
     <h2>Objetivos específicos</h2>
     <p>{{this.specific_objective}}</p>
+    {% if this.maintainers %}
+      <h2>Organizadores</h2>
+      <div class="organizadores-proyecto">
+        {{render_project_members(site.query('/nosotros', alt), this.maintainers)}}
+      </div>
+    {% endif %}
+    {% if this.collaborators %}
+      <h2>Colaboradores</h2>
+      <div class="colaboradores-proyecto">
+        {{render_project_members(site.query('/nosotros', alt), this.collaborators)}}
+      </div>
+    {% endif %}
   </div>
 {% endblock %}

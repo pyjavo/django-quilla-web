@@ -24,3 +24,29 @@
   </div>
 {% endmacro %}
 
+{% macro render_miembro_small(member) %}
+  <p><a href="{{ member|url }}">{{ member.name }}</a></p>
+{% endmacro %}
+
+{% macro render_project_members(members, project_members) %}
+  {% for member in members %}
+    {% if member._id in project_members %}
+      <div class="project-member col-sm-4">
+        {{render_miembro_small(member)}}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+{% macro render_user_projects(user_projects, title) %}
+  {% if user_projects %}
+    <h3>{{title}}</h3>
+    <div class="user-projects row">
+      {% for project in user_projects  %}
+        <div class="post col-sm-6">
+          <p><a href="{{ project|url }}">{{ project.name }}</a></p>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endmacro %}

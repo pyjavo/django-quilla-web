@@ -1,4 +1,5 @@
 {% from "macros/title.html" import render_title %}
+{% from "macros/miembros.html" import render_user_projects %}
 {% extends "layout.html" %}
 {% set translated_role = bag('nosotros', this.alt, this.role) %}
 
@@ -40,24 +41,32 @@
       </div>
     </div>
 
-    {% if this.contributions %}
-      <div class="contributions-user">
-        <h2>{{bag('nosotros', alt, 'contribuciones')}}</h2>
-        {{this.contributions}}
-      </div>
-    {% endif %}
+    <div class="contributions-user">
+      <h2>{{bag('nosotros', alt, 'contribuciones')}}</h2>
+      <div class="contributions-input">{{this.contributions}}</div>
 
-    {% set userPosts = site.query('/blog', alt).filter(F.author == this._id) %}
-    {% if userPosts %}
-      <h2>{{bag('nosotros', alt, 'post_usuario')}}</h2>
-      <div class="plog-posts-user row">
-        {% for post in userPosts  %}
-          <div class="post col-sm-6">
-            <p><a href="{{ post|url }}">{{ post.title }}</a></p>
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
+      {% set userPosts = site.query('/blog', alt).filter(F.author == this._id) %}
+      {% if userPosts %}
+        <h3>{{bag('nosotros', alt, 'post_usuario')}}</h3>
+        <div class="plog-posts-user row">
+          {% for post in userPosts  %}
+            <div class="post col-sm-6">
+              <p><a href="{{ post|url }}">{{ post.title }}</a></p>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {{render_user_projects(
+        site.query('/proyectos', alt).filter(F.maintainers.contains(this._id)),
+        bag('nosotros', alt, 'projects_organizer')
+      )}}
+
+      {{render_user_projects(
+        site.query('/proyectos', alt).filter(F.collaborators.contains(this._id)),
+        bag('nosotros', alt, 'projects_collaborator')
+      )}}
+    </div>
   </div>
 </div>
 {% endblock %}

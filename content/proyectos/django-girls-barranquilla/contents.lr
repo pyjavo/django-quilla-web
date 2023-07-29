@@ -24,3 +24,5 @@ specific_objective:
 website_handle: https://djangogirls.org/es/barranquilla/
 ---
 excerpt: Es un taller que se realiza cada año con el fin de promover el empoderamiento de las mujeres en el área de la tecnología y la programación web.
+---
+maintainers: yuliana-martinez, javier-daza
