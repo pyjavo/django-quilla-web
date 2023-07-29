@@ -105,3 +105,5 @@ Un agradecimiento especial a [Javier Daza](/nosotros/javier-daza/), Marcelo Herr
 excerpt: El mundo de la ciencia de datos es enorme e imposible de aprender en su totalidad, pero todo empieza por nociones. Espero que este artículo te funcione como una breve referencia a todos esos conceptos base. Si funciona como una vista general y básica de la ciencia de datos, ha cumplido su cometido. Pronto tendremos la charla [Modelado de una DataWarehouse con DBT](https://www.meetup.com/pythonbaq/events/294769421/) en PyBAQ que tratará un tema muy específico de este mundo.
 ---
 pub_date: 2023-07-21
+---
+render_tdc: yes
