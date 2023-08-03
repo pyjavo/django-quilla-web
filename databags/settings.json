@@ -5,7 +5,8 @@
     "posted": "Escrito",
     "by": "Por",
     "anonymous": "Anónimo",
-    "github": "GitHub"
+    "github": "GitHub",
+    "toc": "Tabla de Contenido"
   },
   "en": {
     "title": "Python Barranquilla - Web Development Community",
@@ -13,6 +14,7 @@
     "posted": "Posted",
     "by": "By",
     "anonymous": "Anonymous",
-    "github": "GitHub"
+    "github": "GitHub",
+    "toc": "Table of Content"
   }
 }
