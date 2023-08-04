@@ -3,9 +3,13 @@ name: "Actualizar eventos meetup"
 on:
   schedule:
     - cron: "0 12 * * 2" # Todos los martes a las 12:00
-  push:
-    paths:
-      - 'databags/meetup.json'
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch Name'
+        required: true
+        default: 'actualizar-eventos-meetup'
+        type: string
 
 jobs:
   build:
@@ -53,7 +57,7 @@ jobs:
         run: |
           git config --global user.name "PyBaq Bot"
           git config --global user.email "contacto@pybaq.co"
-          git checkout -b actualizar-eventos-meetup
+          git checkout -b {{ github.event.inputs.branch }}
           git add databags/meetup.json
           git commit -m "Actualizacion eventos meetup"
 
