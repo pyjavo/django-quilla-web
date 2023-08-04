@@ -40,12 +40,10 @@ jobs:
       - name: Git status
         run: git status
 
-      - name: Verificar cambios en meetup.json
+      - name: Verificar cambios en archivo json
         id: check_changes
-        # https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---exit-code
         run: |
           if git diff --quiet --exit-code -- databags/meetup.json; then
-        # https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-output-parameter
             echo "HAS_CHANGES=false" >> "$GITHUB_OUTPUT" 
             echo "No hay cambios en meetup.json"
           else
