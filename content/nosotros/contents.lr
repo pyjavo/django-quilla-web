@@ -5,7 +5,7 @@ _model: nosotros
 body:
 
 #### section-block ####
-title: 
+title:
 ----
 body:
 
@@ -53,35 +53,25 @@ class: btn btn-primary
 -------
 content: Contáctanos
 ------
-wrapper_class: 
+wrapper_class:
 ------
-body_class: 
+body_class:
 ----
 class: default
 ----
-body_class: 
-#### section-block ####
+body_class:
+#### members ####
 title: Organizadores
 ----
-body:
-
-##### members #####
 role: organizador
-----
-class: default
-----
-body_class: 
-#### section-block ####
+#### members ####
 title: Colaboradores
 ----
-body:
-
-##### members #####
 role: colaborador
+#### members ####
+title: Nuevos Contribuidores
 ----
-class: 
-----
-body_class: 
+role: nuevo_contribuidor
 #### section-block ####
 title: Colaboradores previos
 ----
@@ -90,7 +80,7 @@ body:
 ##### inactive-members #####
 role: contribuidor
 ----
-class: 
+class:
 ----
 body_class: row
 #### testimonies ####
