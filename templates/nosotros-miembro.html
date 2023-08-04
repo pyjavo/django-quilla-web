@@ -1,7 +1,7 @@
 {% from "macros/title.html" import render_title %}
 {% from "macros/miembros.html" import render_user_projects %}
 {% extends "layout.html" %}
-{% set translated_role = bag('nosotros', this.alt, this.role) %}
+{% set translated_role = bag('roles', this.alt, this.role) %}
 
 {% block body %}
 {{render_title(this.parent.title)}}
