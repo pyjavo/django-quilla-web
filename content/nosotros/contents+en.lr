@@ -1,7 +1,7 @@
 body:
 
 #### section-block ####
-title: 
+title:
 ----
 body:
 
@@ -50,29 +50,19 @@ content: Contact Us
 ----
 class: default
 ----
-body_class: 
-#### section-block ####
+body_class:
+#### members ####
 title: Organizers
 ----
-body:
-
-##### members #####
 role: organizador
-----
-class: default
-----
-body_class: 
-#### section-block ####
+#### members ####
 title: Collaborators
 ----
-body:
-
-##### members #####
 role: colaborador
+#### members ####
+title: New Contributors
 ----
-class: default
-----
-body_class: 
+role: nuevo_contribuidor
 #### section-block ####
 title: Former Collaborators
 ----
@@ -81,7 +71,7 @@ body:
 ##### inactive-members #####
 role: contribuidor
 ----
-class: 
+class:
 ----
 body_class: row
 #### testimonies ####

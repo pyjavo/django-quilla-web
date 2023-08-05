@@ -1,0 +1,15 @@
+{
+  "es": {
+    "organizador": "Organizador",
+    "colaborador": "Colaborador",
+    "contribuidor": "Contribuidor",
+    "nuevo_contribuidor": "Nuevo contribuidor"
+
+  },
+  "en":{
+    "organizador": "Organizer",
+    "colaborador": "Collaborator",
+    "contribuidor": "Contributor",
+    "nuevo_contribuidor": "New contributor"
+  }
+}
