@@ -63,4 +63,4 @@ jobs:
         if: steps.check_changes.outputs.HAS_CHANGES == 'true'
         run: gh pr create -B master -H actualizar-eventos-meetup --title 'Actualizar eventos meetup into master' --body 'Created by PyBaq Bot'
         env:
-          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
