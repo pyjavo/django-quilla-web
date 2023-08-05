@@ -156,7 +156,7 @@ para ejecutar los test ejecuta los siguientes comandos
     docker compose up
     pytest
 
-Por defecto los test corren en chrome, si deseas escoger el navegador que quieres ejecutar, crea una variable de entorno llamada BROWSER con el navegador que deseas usar, en estos momentos soportamos firefox y chrome.
+Por defecto los test corren en chrome, si deseas escoger el navegador que quieres ejecutar, crea una variable de entorno llamada `TEST_BROWSER` con el navegador que deseas usar, en estos momentos soportamos firefox y chrome.
 La forma mas fácil de hacer esto es creando un archivo  `.env` con el siguiente contenido
 
-    BROWSER=firefox
+    TEST_BROWSER=firefox

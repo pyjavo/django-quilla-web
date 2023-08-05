@@ -19,7 +19,8 @@ def fixture_driver() -> Generator:
         "chrome": ChromeOptions(),
         "firefox": FirefoxOptions()
     }
-    browser = os.getenv("BROWSER", "chrome")
+    browser = os.getenv("TEST_BROWSER", "chrome")
+    command_executor = os.getenv("TEST_COMMAND_EXECUTOR", "http://127.0.0.1:4444/wd/hub")
     options = posible_options[browser]
-    driver = Remote(command_executor="http://127.0.0.1:4444/wd/hub", options=options)
+    driver = Remote(command_executor=command_executor, options=options)
     yield driver

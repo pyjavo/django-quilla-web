@@ -1,0 +1,9 @@
+{
+  "name": "Selenium Tests",
+  "dockerComposeFile": [
+      "../../compose.yaml" // the docker compose file that we want to run
+  ],
+  "service": "webapp",
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/app/"
+}
