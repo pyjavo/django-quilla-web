@@ -58,9 +58,8 @@ jobs:
           git checkout -b actualizar-eventos-meetup
           git add databags/meetup.json
           git commit -m "Actualizacion eventos meetup"
+          git push -u origin actualizar-eventos-meetup
 
-      - name: Check Git status again
-        run: git status
 
       - name: Crear pull request
         if: steps.check_changes.outputs.HAS_CHANGES == 'true'
