@@ -5,5 +5,12 @@
   ],
   "service": "webapp",
   "shutdownAction": "stopCompose",
-  "workspaceFolder": "/app/"
+  "workspaceFolder": "/app/",
+  "portsAttributes": {
+    "5000": {
+      "label": "Lektor Server",
+      "onAutoForward": "openPreview"
+    }
+  },
+"forwardPorts": [4444, 5000, 7900]
 }
