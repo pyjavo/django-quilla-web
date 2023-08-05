@@ -55,7 +55,7 @@ jobs:
         run: |
           git config --global user.name "PyBaq Bot"
           git config --global user.email "contacto@pybaq.co"
-          git checkout -b {{ github.event.inputs.branch }}
+          git checkout -b actualizar-eventos-meetup
           git add databags/meetup.json
           git commit -m "Actualizacion eventos meetup"
 
