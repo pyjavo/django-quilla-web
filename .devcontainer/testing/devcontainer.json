@@ -6,11 +6,7 @@
   "service": "webapp",
   "shutdownAction": "stopCompose",
   "workspaceFolder": "/app/",
-  "portsAttributes": {
-    "5000": {
-      "label": "Lektor Server",
-      "onAutoForward": "openPreview"
-    }
-  },
-"forwardPorts": [4444, 5000, 7900]
+  "forwardPorts": [4444, 5000, 7900],
+  "onCreateCommand": "pip install -r test-requirements.txt",
+  "postAttachCommand": "pytest"
 }
