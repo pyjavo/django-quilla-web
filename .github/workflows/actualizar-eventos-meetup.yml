@@ -58,6 +58,12 @@ jobs:
           git checkout -b actualizar-eventos-meetup
           git add databags/meetup.json
           git commit -m "Actualizacion eventos meetup"
-          gh pr create -B master -H actualizar-eventos-meetup --title 'Actualizar eventos meetup into master' --body 'Created by PyBaq Bot'
+
+      - name: Check Git status again
+        run: git status
+
+      - name: Crear pull request
+        if: steps.check_changes.outputs.HAS_CHANGES == 'true'
+        run: gh pr create -B master -H actualizar-eventos-meetup --title 'Actualizar eventos meetup into master' --body 'Created by PyBaq Bot'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
