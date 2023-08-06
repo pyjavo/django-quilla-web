@@ -2,8 +2,11 @@
   "image": "mcr.microsoft.com/vscode/devcontainers/universal",
   "hostRequirements": { "cpus": 2 },
   "waitFor": "onCreateCommand",
-  "onCreateCommand": "pipx install lektor",
-  "postAttachCommand": "lektor server",
+  "onCreateCommand": "pipx install lektor && npm install",
+  "postAttachCommand": {
+    "server": "lektor server",
+    "css": "npm run watch"
+  },
   "portsAttributes": {
       "5000": {
       "label": "Lektor Server",
