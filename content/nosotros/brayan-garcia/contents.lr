@@ -10,10 +10,15 @@ website_handle:
 ---
 email: ingbrayangarcia@gmail.com
 ---
-github_handle: 
+github_handle: bgarcia92
 ---
 twitter_handle: 
 ---
 start_activity: 2020-03-28
 ---
 end_activity: 2023-08-07
+---
+contributions:
+
+- Ayudar a construir un script que genere la lista de asistentes para las reuniones.
+- Trabajar en el desarrollo de la Liga Python v1.0 y v2.0

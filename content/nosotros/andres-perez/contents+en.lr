@@ -6,10 +6,15 @@ role: colaborador
 ---
 work: Translator and contributor
 ---
-website_handle:
+website_handle: 
 ---
 email: djangoquilla@gmail.com
 ---
-github_handle:
+github_handle: andresperezcera
 ---
-twitter_handle:
+twitter_handle: 
+---
+contributions:
+
+- The official copywriter of the community. He has helped us draft the code of conduct and the projects section
+- Since 2023 he co-organizes the Django study group that uses "Tango with Django 4" as a guidebook
