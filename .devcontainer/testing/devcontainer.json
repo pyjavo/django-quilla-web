@@ -12,5 +12,22 @@
   "postAttachCommand": "python -m pytest",
   "remoteEnv": {
     "TEST_COMMAND_EXECUTOR": "http://browser:4444/wd/hub"
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "settings": {
+        "python.testing.pytestArgs": [
+          "tests"
+        ],
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestEnabled": true
+      },
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
   }
 }
