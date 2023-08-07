@@ -9,7 +9,7 @@
   "workspaceFolder": "/workspace/",
   "forwardPorts": [4444, 5000, 7900],
   "onCreateCommand": "pip install -r test-requirements.txt",
-  "postAttachCommand": "pytest",
+  "postAttachCommand": "python -m pytest",
   "remoteEnv": {
     "TEST_COMMAND_EXECUTOR": "http://browser:4444/wd/hub"
   }
