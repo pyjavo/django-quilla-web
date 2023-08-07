@@ -2,7 +2,7 @@ name: Brayan García
 ---
 photo: /img/team/brayan-garcia.jpg
 ---
-role: colaborador
+role: contribuidor
 ---
 work: Contribuidor de código
 ---
@@ -15,3 +15,5 @@ github_handle:
 twitter_handle: 
 ---
 start_activity: 2020-03-28
+---
+end_activity: 2023-08-07
