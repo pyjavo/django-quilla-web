@@ -2,14 +2,19 @@ name: Fernando Llinás
 ---
 photo: /img/team/fernando-llinas.jpeg
 ---
-role: organizador
+role: colaborador
 ---
 work: Logistics and Support
 ---
-website_handle:
+website_handle: 
 ---
 email: djangoquilla@gmail.com
 ---
-github_handle:
+github_handle: 
 ---
-twitter_handle:
+twitter_handle: 
+---
+contributions:
+
+* Hosted several online events in 2022
+* It is contributing to the establishment of the Python Barranquilla brand

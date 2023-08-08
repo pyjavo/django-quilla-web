@@ -10,8 +10,13 @@ website_handle:
 ---
 email: djangoquilla@gmail.com
 ---
-github_handle: 
+github_handle: andresperezcera
 ---
 twitter_handle: 
 ---
 start_activity: 2018-08-20
+---
+contributions:
+
+- El copywriter oficial de la comunidad. Nos ha ayudado a redactar el código de conducta y la sección de proyectos
+- Desde el 2023 co-organiza el grupo de estudio de Django que usa "Tango with Django 4" como libro guía

@@ -6,10 +6,12 @@ role: colaborador
 ---
 work: Web developer
 ---
-website_handle:
+website_handle: 
 ---
 email: jorgeru045@gmail.com
 ---
 github_handle: jorueda
 ---
-twitter_handle:
+twitter_handle: 
+---
+contributions: * He has contributed to the improvement of the Python Barranquilla website
