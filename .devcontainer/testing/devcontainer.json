@@ -1,0 +1,33 @@
+{
+  "name": "Selenium Tests",
+  "dockerComposeFile": [
+      "../../compose.yaml",
+      "docker-compose.extend.yml"
+  ],
+  "service": "testing",
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/workspace/",
+  "forwardPorts": [4444, 5000, 7900],
+  "onCreateCommand": "pip install -r test-requirements.txt",
+  "postAttachCommand": "python -m pytest",
+  "remoteEnv": {
+    "TEST_COMMAND_EXECUTOR": "http://browser:4444/wd/hub"
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "settings": {
+        "python.testing.pytestArgs": [
+          "tests"
+        ],
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestEnabled": true
+      },
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}
