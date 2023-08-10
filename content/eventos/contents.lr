@@ -422,6 +422,11 @@ attach: <a href="https://drive.google.com/drive/folders/1HnLoaYxpS_6ek_rtaXx4q8v
 title: Del LLM al ChatBot: Cómo funcionan, su entrenamiento y produccion sin usar GPU
 ------
 attach: <a href="https://docs.google.com/presentation/d/15a3RMm9d_1h9BuQAJUxYHSbzAUPyJxQ8OBwUfYT7ldE/edit?usp=sharing">Diapositivas</a> / <a href="https://www.youtube.com/watch?v=5AeNWW25YiM">Video Youtube</a>
+
+###### event-attach ######
+title: Modelado de Data Warehouses con DBT
+------
+attach: <a href="https://docs.google.com/presentation/d/15f8xRC-ArOWBwZzl_7crgqMF1V9c2lte/edit?usp=sharing&ouid=102956723374392876682&rtpof=true&sd=true">Diapositivas</a> / <a href="https://www.youtube.com/live/CPxE3aC9xdQ">Video Youtube</a>
 ----
 class: default
 ----
