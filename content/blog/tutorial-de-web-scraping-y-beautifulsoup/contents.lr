@@ -18,7 +18,7 @@ En este tutorial, aprenderemos a raspar varias páginas web con Python usando [B
 
 Para seguir este artículo necesitas tener:
 - Una comprensión básica de HTML.
-- Una buena comprensión de los conceptos básicos de Python
+- Una buena comprensión de los conceptos básicos de Python.
 - Una idea aproximada de qué es el web scraping.
 
 
@@ -35,6 +35,26 @@ Escribir un script de scraping puede llevar mucho tiempo, especialmente si quere
 
 ## Determinando qué páginas vamos a scrapear
 
+Una vez que hemos establecido nuestro objetivo, debemos identificar un conjunto eficiente de páginas para scrapear.
+
+Queremos encontrar una combinación de páginas que requiera un número relativamente pequeño de solicitudes. Una solicitud (*request* en inglés) es lo que sucede cada vez que accedemos a una página web. Nosotros 'solicitamos' el contenido de una página del servidor. Cuantas más solicitudes hagamos, más tiempo necesitará ejecutarse nuestro script y mayor será la sobrecarga en el servidor.
+
+Una forma de obtener todos los datos que necesitamos es compilar una lista de nombres de películas y usarla para acceder a la página web de cada película en los sitios web de IMDB y Metacritic.
+
+
+*----- GIF -------*
+
+Como queremos obtener más de 2000 calificaciones tanto de IMDB como de Metacritic, tendremos que realizar al menos 4000 solicitudes. Si hacemos una solicitud por segundo, nuestro script necesitará un poco más de una hora para realizar 4000 solicitudes. Por ello, merece la pena intentar identificar formas más eficientes de obtener nuestros datos.
+
+Si exploramos el sitio web de IMDB, podemos descubrir una forma de reducir a la mitad el número de solicitudes. Las puntuaciones de Metacritic se muestran en la página de películas de IMDB, por lo que podemos eliminar ambas clasificaciones con una sola solicitud:
+
+
+*----- Imagen -------*
+
+Si investigamos más a fondo el sitio de IMDB, podemos descubrir la página que se muestra a continuación. Contiene todos los datos que necesitamos para 50 películas. Dado nuestro objetivo, esto significa que solo tendremos que hacer unas 40 solicitudes, que es 100 veces menos que nuestra primera opción. Exploremos más esta última opción.
+
+
+*----- Imagen -------*
 
 - metapuntuación
 - Búsqueda avanzada en la lupa. Nos lleva a:
@@ -53,36 +73,57 @@ Escribir un script de scraping puede llevar mucho tiempo, especialmente si quere
 
 
 ## Identificando la estructura de la URL
-- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250
-- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=251&ref_=adv_nxt
-- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=501&ref_=adv_nxt
-
-Posibilidad para avanzar a la página previa
-https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=251&ref_=adv_prv
 
 
-Código para leer 
-https://www.imdb.com/search/title/?release_date=2022&count=250
+Nuestro desafío ahora es asegurarnos de que entendemos la lógica de la URL a medida que cambian las páginas que queremos scrapear. Si no podemos entender esta lógica lo suficiente como para poder implementarla en el código, llegaremos a un callejón sin salida.
 
-Instalar requests
+Si accede a la página de búsqueda avanzada de IMDB, puede buscar películas por año:
+
+*----- Imagen -------*
+
+Busquemos por año 2017, clasifiquemos las películas en la primera página por número de votos y luego cambiemos a la página siguiente. Así, llegaremos a esta página web, que tiene esta URL:
+
+*----- Imagen -------*
+
+En la imagen de arriba, puedes ver que la URL tiene varios parámetros después del signo de interrogación:
+
+- `release_date`: muestra solo las películas estrenadas en un año específico.
+- `sort`: Ordena las películas en la página. sort=num_votes,desc se traduce en ordenar por número de votos en orden descendente.
+- `page`: especifica el número de página.
+- `ref_`: Nos lleva a la página siguiente o anterior. La referencia es la página en la que nos encontramos actualmente. `adv_nxt` y `adv_prv` son dos valores posibles. Se traducen para avanzar a la página siguiente y avanzar a la página anterior, respectivamente.
+
+
+Si navega por esas páginas y observa la URL, notará que solo cambian los valores de los parámetros. Esto significa que podemos escribir un script para que coincida con la lógica de los cambios y hacer muchas menos solicitudes para escrapear nuestros datos.
+
+Comencemos a escribir el script solicitando el contenido de esta única página web:
+
+https://www.imdb.com/search/title?release_date=2017&sort=num_votes,desc&page=1
+
+En el primer bloque de código vamos a:
+
+- Instalar `requests`
+
 ```bash
 pip install requests
 ```
+- Importar la función `get()` desde el módulo de `requests`.
+- Asignar la dirección de la página web a una variable llamada `url`.
+- Solicitar al servidor el contenido de la página web utilizando `get()` y almacenar la respuesta del servidor en la variable `respuesta`.
+- Imprima una pequeña parte del contenido de la `respuesta` accediendo a su atributo `.text` (`respuesta` ahora es un objeto `Response`).
 
-crear código
 
 ```python
 from requests import get
 
 url = 'https://www.imdb.com/search/title/?release_date=2022&count=250'
 
-response = get(url)
+respuesta = get(url)
 
-if response.status_code == 200:
-    print(response.text[:500])
+if respuesta.status_code == 200:
+    print(respuesta.text[:500])
 ```
 
-Respuesta
+La respuesta que se obtiene:
 
 ```html
 <!DOCTYPE html>
@@ -107,14 +148,57 @@ Respuesta
   <script>(function(t){ (t.events = t.events || {})["csm_head_pre_title"] = new Date().getTime(); })(IMDbTimer);</script>
    
 ```
+
+```bash
+# comentarios
+# TODO: Borrarlos o incorporarlos en el texto del artículo
+- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250
+- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=251&ref_=adv_nxt
+- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=501&ref_=adv_nxt
+
+Posibilidad para avanzar a la página previa
+https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=251&ref_=adv_prv
+
+
+Código para leer
+https://www.imdb.com/search/title/?release_date=2022&count=250
+```
+
 ## Comprendiendo la estructura HTML de una sola página
 
+Como puede ver en la primera línea de `respuesta.text`, el servidor nos envió un documento HTML. Este documento describe la estructura general de esa página web, junto con su contenido específico (que es lo que hace que esa página en particular sea única).
 
-- Ver response.text y analizar HTML desde el inspector de elementos
+Todas las páginas que queremos escrapear tienen la misma estructura general. Esto implica que también tienen la misma estructura general de HTML. Entonces, para escribir nuestro script, bastará con comprender la estructura HTML de una sola página. Para hacer eso, usaremos **las herramientas de desarrollo del navegador** (Developer Tools en inglés).
 
+Si usa [Chrome](https://developer.chrome.com/devtools), haga clic con el botón derecho en un elemento de la página web que le interese y luego haga clic en *Inspeccionar*. Esto lo llevará directamente a la línea HTML que corresponde a ese elemento:
+
+*----- Imagen -------*
+
+También puede hacer esto con [Firefox](https://developer.mozilla.org/es/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) y [Safari](https://developer.apple.com/safari/tools/) DevTools.
+
+Tenga en cuenta que toda la información de cada película, incluido el póster, está contenida en una etiqueta `div`.
+
+
+*----- Imagen -------*
+
+
+Hay muchas líneas HTML anidadas dentro de cada etiqueta `div`. Puede explorarlos haciendo clic en esas pequeñas flechas grises a la izquierda de las líneas HTML correspondientes a cada `div`. Dentro de estas etiquetas anidadas encontraremos la información que necesitamos, como la calificación de una película.
+
+
+*----- Imagen -------*
+
+Se muestran 50 películas por página, por lo que debe haber un contenedor `div` para cada una. Extraigamos todos estos 50 contenedores mediante el análisis gramatical (*parsing* en inglés)del documento HTML de nuestra solicitud anterior.
 
 ## Usando BeautifulSoup para analizar el contenido HTML
-asda
+
+Para analizar nuestro documento HTML y extraer los contenedores de 50 `div, usaremos un módulo de Python llamado [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/), el módulo de web scraping más común para Python.
+
+En el siguiente bloque de código vamos a:
+
+- Instalar `BeautifulSoup`.
+- Importar el creador de la clase `BeautifulSoup` del paquete `bs4`.
+- *Parsear* `respuesta.text` al crear un objeto `BeautifulSoup` y asignar este objeto a `sopa_html`. El argumento `'html.parser'` indica que queremos realizar el análisis utilizando el analizador HTML integrado de Python.
+
 
 ```bash
 pip install beautifulsoup4
@@ -122,31 +206,38 @@ pip install beautifulsoup4
 
 ```python
 from bs4 import BeautifulSoup
-html_soup = BeautifulSoup(response.text, 'html.parser')
-type(html_soup)
+sopa_html = BeautifulSoup(respuesta.text, 'html.parser')
+type(sopa_html)
 ```
 
-Es un objeto de tipo
+Esto imprime que nuestra sopa es un objeto de tipo:
 
 ```bash
 <class 'bs4.BeautifulSoup'>
 ```
 
-El atributo clase tiene 2 valores:
-- lister-item
-- mode-advanced
+Antes de extraer los 50 contenedores `div`, debemos averiguar qué los distingue de otros elementos `div` en esa página. A menudo, la marca distintiva reside en el [atributo](https://www.w3schools.com/Tags/att_global_class.asp) de `class`. Si inspecciona las líneas HTML de los contenedores de interés, notará que el atributo de `class` tiene dos valores:
+
+- `lister-item`
+- `mode-advanced`.
+
+Esta combinación es exclusiva de estos contenedores `div`. Podemos ver que es cierto haciendo una búsqueda rápida con `(Ctrl + F)`. Tenemos 50 contenedores de este tipo, por lo que esperamos ver solo 50 coincidencias:
+
+*----- Imagen -------*
+
+Ahora usemos el método `find_all()` para extraer todos los contenedores `div` que tienen un atributo de clase de tipo `lister-item mode-advanced`:
 
 ```python
-ovie_containers = html_soup.find_all('div', class_ = 'lister-item mode-advanced')
-print(type(movie_containers))
-print(len(movie_containers))
+contenedores_pelicula = sopa_html.find_all('div', class_ = 'lister-item mode-advanced')
+print('Contenedores de la película:', type(contenedores_pelicula))
+print('Longitud:', len(contenedores_pelicula))
 ```
 
 Lo cual imprime
 
 ```bash
-<class 'bs4.element.ResultSet'>
-250
+Contenedores de la película: <class 'bs4.element.ResultSet'>
+Longitud: 250
 ```
 
 `find_all` devolvió un objeto tipo `ResultSet` que contiene una lista de los 250 divs que nos interesan.
@@ -158,22 +249,28 @@ Ahora solo seleccionaremos el primer contenedor y, por turno, extraeremos cada e
 - El Metascore
 - El número de votos
 
+*----- Imagen -------*
 
 ## Extraer los datos de una sola película
 
+Podemos acceder al primer contenedor, que contiene información sobre una sola película, usando la notación de lista en `contenedores_pelicula`.
 
 ```python
-first_movie = movie_containers[0]
+primera_pelicula = contenedores_pelicula[0]
+print(primera_pelicula)
 ```
 
+*----- HTML de respuesta -------*
+
 Esto nos regresa un HTML bastante largo, por lo que para hayar cada elemento, necesitaremos usar el inspector de elementos del navegador.
+
 
 ### El nombre de la pelicula
 
 
 ```python
 primer_nombre = first_movie.h3.a.text
-primer_nombre
+print(primer_nombre)
 ```
 
 ```bash
