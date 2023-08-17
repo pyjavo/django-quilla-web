@@ -1,0 +1,314 @@
+title: Tutorial: Web Scraping y BeautifulSoup
+---
+author: javier-daza
+---
+body:
+
+Siempre tuve en mis favoritos del navegador el tutorial de dataquest <span style="font-style: italic;font-size: 1.3rem;">www.dataquest.io/blog/web-scraping-beautifulsoup/</span>, pero desde hace un tiempo para acá, bajaron dicho artículo de su página web. El propósito de este artículo es rescatar ese contenido y, de paso, traducirlo al español.
+
+¡Empecemos!
+
+Para obtener datos para proyectos de ciencia de datos, a menudo confiará en bases de datos [SQL](https://es.wikipedia.org/wiki/SQL) y [NoSQL](https://es.wikipedia.org/wiki/NoSQL), [API](https://es.wikipedia.org/wiki/API) o conjuntos de datos en formato CSV listos para usar.
+
+El problema es que no siempre puede encontrar un conjunto de datos sobre un tema específico, las bases de datos no se mantienen actualizadas y las API son costosas o tienen límites de uso.
+
+Sin embargo, si los datos que está buscando están en una página web, entonces la solución a todos estos problemas es el **web scraping.**
+
+En este tutorial, aprenderemos a raspar varias páginas web con Python usando [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) y [requests](https://docs.python-requests.org/en/latest/). Luego realizaremos un análisis simple usando [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html) y [matplotlib](https://matplotlib.org/).
+
+Para seguir este artículo necesitas tener:
+- Una comprensión básica de HTML.
+- Una buena comprensión de los conceptos básicos de Python
+- Una idea aproximada de qué es el web scraping.
+
+
+## Scraping de datos para más de 2000 películas
+
+
+Queremos analizar las distribuciones de las clasificaciones de películas de [IMDB](https://www.imdb.com/) y [Metacritic](https://www.metacritic.com/) para ver si encontramos algo interesante. Para hacer esto, primero recopilaremos datos de más de 2000 películas.
+
+<span style="display: block;font-weight: 800;font-size: 1.7rem;font-style: italic;margin: 2rem 0;">
+    Es fundamental identificar el objetivo de nuestro scraping desde el principio.
+</span>
+
+Escribir un script de scraping puede llevar mucho tiempo, especialmente si queremos scrapear más de una página web. Queremos evitar pasar horas escribiendo un script que extrae datos que en realidad no necesitaremos.
+
+## Determinando qué páginas vamos a scrapear
+
+
+- metapuntuación
+- Búsqueda avanzada en la lupa. Nos lleva a:
+    - https://www.imdb.com/find/?q=&ref_=nv_sr_sm
+    - palabras clave https://www.imdb.com/search?ref_=fn_asr_to
+    - Year https://www.imdb.com/search/title/#releasedate?ref_=kw_brw_4
+    - Release date 2022-01-01  2022-12-31
+        - ¿Cómo selecciono solo el año 2022 para que la URL quede así? --> https://www.imdb.com/search/title/?release_date=2022&count=250
+    - Devuelve 50 de un solo
+        - https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31
+            40 peticiones para hacer las 2000
+        - 250 --> https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250
+            8 peticiones para hacer las 2000
+
+            ** No todas tienen metascore
+
+
+## Identificando la estructura de la URL
+- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250
+- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=251&ref_=adv_nxt
+- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=501&ref_=adv_nxt
+
+Posibilidad para avanzar a la página previa
+https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=251&ref_=adv_prv
+
+
+Código para leer 
+https://www.imdb.com/search/title/?release_date=2022&count=250
+
+Instalar requests
+```bash
+pip install requests
+```
+
+crear código
+
+```python
+from requests import get
+
+url = 'https://www.imdb.com/search/title/?release_date=2022&count=250'
+
+response = get(url)
+
+if response.status_code == 200:
+    print(response.text[:500])
+```
+
+Respuesta
+
+```html
+<!DOCTYPE html>
+<html
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+         
+
+        <meta charset="utf-8">
+
+
+
+
+        <script type="text/javascript">var IMDbTimer={starttime: new Date().getTime(),pt:'java'};</script>
+
+<script>
+    if (typeof uet == 'function') {
+      uet("bb", "LoadTitle", {wb: 1});
+    }
+</script>
+  <script>(function(t){ (t.events = t.events || {})["csm_head_pre_title"] = new Date().getTime(); })(IMDbTimer);</script>
+   
+```
+## Comprendiendo la estructura HTML de una sola página
+
+
+- Ver response.text y analizar HTML desde el inspector de elementos
+
+
+## Usando BeautifulSoup para analizar el contenido HTML
+asda
+
+```bash
+pip install beautifulsoup4
+```
+
+```python
+from bs4 import BeautifulSoup
+html_soup = BeautifulSoup(response.text, 'html.parser')
+type(html_soup)
+```
+
+Es un objeto de tipo
+
+```bash
+<class 'bs4.BeautifulSoup'>
+```
+
+El atributo clase tiene 2 valores:
+- lister-item
+- mode-advanced
+
+```python
+ovie_containers = html_soup.find_all('div', class_ = 'lister-item mode-advanced')
+print(type(movie_containers))
+print(len(movie_containers))
+```
+
+Lo cual imprime
+
+```bash
+<class 'bs4.element.ResultSet'>
+250
+```
+
+`find_all` devolvió un objeto tipo `ResultSet` que contiene una lista de los 250 divs que nos interesan.
+
+Ahora solo seleccionaremos el primer contenedor y, por turno, extraeremos cada elemento que nos interesa:
+- El nombre de la pelicula
+- El año del estreno de la película
+- La calificación de IMDB
+- El Metascore
+- El número de votos
+
+
+## Extraer los datos de una sola película
+
+
+```python
+first_movie = movie_containers[0]
+```
+
+Esto nos regresa un HTML bastante largo, por lo que para hayar cada elemento, necesitaremos usar el inspector de elementos del navegador.
+
+### El nombre de la pelicula
+
+
+```python
+primer_nombre = first_movie.h3.a.text
+primer_nombre
+```
+
+```bash
+'The Bear'
+```
+
+### El año del estreno de la película
+Este dato está en una etiqueta `<span>` que se encuentra debajo de la etiqueta `<a>` que contiene el nombre
+
+
+```python
+primer_año = primera_pelicula.h3.find('span', class_ = 'lister-item-year text-muted unbold')
+primer_año
+```
+
+```bash
+<span class="lister-item-year text-muted unbold">(2022– )</span>
+```
+
+
+La limpieza la haremos después
+
+### La calificación de IMDB
+dasda
+
+### El Metascore
+asdasd
+
+### El número de votos
+asdad
+
+## El script para una sola página.
+Antes de reconstruir lo que hemos hecho hasta ahora, debemos asegurarnos de extraer los datos solo de los contenedores que tienen Metascore.
+
+Necesitamos agregar una condición para omitir películas sin Metascore.
+
+
+```bash
+pip install pandas
+```
+
+```python
+import pandas as pd
+test_df = pd.DataFrame({'movie': names,
+    'year': years,
+    'imdb': imdb_ratings,
+    'metascore': metascores,
+    'votes': votes
+})
+print(test_df.info())
+```
+
+
+```bash
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 137 entries, 0 to 136
+Data columns (total 5 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   movie      137 non-null    object 
+ 1   year       137 non-null    object 
+ 2   imdb       137 non-null    float64
+ 3   metascore  137 non-null    int64  
+ 4   votes      137 non-null    int64  
+dtypes: float64(1), int64(2), object(2)
+memory usage: 5.5+ KB
+None
+```
+
+y ahora si reviso los primeros 5 elementos del DataFrame
+
+```python
+print(test_df.head(n=10))
+```
+
+```bash
+                                  movie         year  imdb  metascore   votes
+0                               Hablame   (I) (2022)   7.5         76   19721
+1                               Babylon   (I) (2022)   7.2         60  138118
+2                                     X  (II) (2022)   6.6         79  140214
+3                      Un Vecino Gruñón       (2022)   7.5         51  116471
+4            Avatar: El camino del agua       (2022)   7.6         67  448567
+5                         Corner Office       (2022)   6.0         47    1766
+6                               Top Gun       (2022)   8.3         78  621749
+7                                Batman       (2022)   7.8         72  721057
+8                            La ballena       (2022)   7.7         60  169943
+9  Todo en todas partes al mismo tiempo       (2022)   7.8         81  471630
+```
+
+
+
+
+
+## El script de varias páginas.
+Hacer el scraping para varias páginas es un poco más desafiante. Desarrollaremos nuestro script de una página haciendo tres cosas más:
+
+1. Haciendo todas las peticiones que queramos desde dentro del bucle.
+2. Controlar la velocidad del bucle para evitar bombardear el servidor con solicitudes.
+3. Supervisión del bucle mientras se ejecuta.
+
+
+
+
+### Cambiando los parámetros de las URLs
+asdad
+
+### Controlando la tasa de rastreo (crawl-rate)
+asdas
+
+### Monitoreando el bucle mientras continúa
+asdad
+
+### Juntando todo
+asda
+
+## Examinando los datos raspados
+asdasda
+
+## Limpiando los datos raspados
+asdadsa
+
+## Graficando y analizando las distribuciones
+asdad
+
+## Siguientes pasos
+Hemos recorrido un largo camino desde solicitar el contenido de una sola página web hasta analizar las calificaciones de más de 2000 películas. Ahora debería saber cómo raspar muchas páginas web con la misma estructura HTML y URL.
+
+Para aprovechar lo que hemos aprendido, estos son algunos de los siguientes pasos a considerar:
+
+- Extraiga datos para diferentes intervalos de tiempo y página.
+- Raspe datos adicionales sobre las películas.
+- Encuentre un sitio web diferente para raspar algo que le interese. 
+    - Por ejemplo, podría recopilar datos sobre [computadoras portátiles](https://listado.mercadolibre.com.co/port%C3%A1tiles#D[A:port%C3%A1tiles]) para ver cómo varían los precios con el tiempo.
+
+---
+excerpt: Un breve tutorial sobre web scraping usando beautiful soup. Es una traducción de un artículo de dataquest que ya no se encuentra disponible
+---
+pub_date: 2023-08-15
