@@ -4,12 +4,6 @@ on:
   schedule:
     - cron: "0 12 * * 2" # Todos los martes a las 12:00
   workflow_dispatch:
-    inputs:
-      branch:
-        description: 'Branch Name'
-        required: true
-        default: 'actualizar-eventos-meetup'
-        type: string
 
 jobs:
   build:
@@ -44,25 +38,29 @@ jobs:
         id: check_changes
         run: |
           if git diff --quiet --exit-code -- databags/meetup.json; then
-            echo "HAS_CHANGES=false" >> "$GITHUB_OUTPUT" 
+            echo "HAS_CHANGES=false" >> "$GITHUB_OUTPUT"
             echo "No hay cambios en meetup.json"
           else
             echo "HAS_CHANGES=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Obtener la fecha y hora
+        id: date
+        run: echo "date=$(date +'%Y%m%d-%H%M%S')" >> "$GITHUB_OUTPUT"
 
       - name: Git crear rama y commit
         if: steps.check_changes.outputs.HAS_CHANGES == 'true'
         run: |
           git config --global user.name "PyBaq Bot"
           git config --global user.email "contacto@pybaq.co"
-          git checkout -b actualizar-eventos-meetup
+          git checkout -b actualizar-eventos-${{ steps.date.outputs.date }}
           git add databags/meetup.json
           git commit -m "Actualizacion eventos meetup"
-          git push -u origin actualizar-eventos-meetup
+          git push -u origin actualizar-eventos-${{ steps.date.outputs.date }}
 
 
       - name: Crear pull request
         if: steps.check_changes.outputs.HAS_CHANGES == 'true'
-        run: gh pr create -B master -H actualizar-eventos-meetup --title 'Actualizar eventos meetup into master' --body 'Created by PyBaq Bot'
+        run: gh pr create -B master -H actualizar-eventos-${{ steps.date.outputs.date }} --title 'Actualizar eventos meetup into master' --body 'Created by PyBaq Bot'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
