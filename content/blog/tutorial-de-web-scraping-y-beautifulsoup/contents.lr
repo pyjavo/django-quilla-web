@@ -56,40 +56,28 @@ Si investigamos más a fondo el sitio de IMDB, podemos descubrir la página que 
 
 *----- Imagen -------*
 
-- metapuntuación
-- Búsqueda avanzada en la lupa. Nos lleva a:
-    - https://www.imdb.com/find/?q=&ref_=nv_sr_sm
-    - palabras clave https://www.imdb.com/search?ref_=fn_asr_to
-    - Year https://www.imdb.com/search/title/#releasedate?ref_=kw_brw_4
-    - Release date 2022-01-01  2022-12-31
-        - ¿Cómo selecciono solo el año 2022 para que la URL quede así? --> https://www.imdb.com/search/title/?release_date=2022&count=250
-    - Devuelve 50 de un solo
-        - https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31
-            40 peticiones para hacer las 2000
-        - 250 --> https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250
-            8 peticiones para hacer las 2000
-
-            ** No todas tienen metascore
-
 
 ## Identificando la estructura de la URL
 
 
 Nuestro desafío ahora es asegurarnos de que entendemos la lógica de la URL a medida que cambian las páginas que queremos scrapear. Si no podemos entender esta lógica lo suficiente como para poder implementarla en el código, llegaremos a un callejón sin salida.
 
-Si accede a la página de búsqueda avanzada de IMDB, puede buscar películas por año:
+Si accede a la página de [búsqueda avanzada](https://www.imdb.com/search/) de IMDB, puede buscar películas por [año](https://www.imdb.com/search/title/#releasedate):
 
 *----- Imagen -------*
 
-Busquemos por año 2017, clasifiquemos las películas en la primera página por número de votos y luego cambiemos a la página siguiente. Así, llegaremos a esta página web, que tiene esta URL:
+En el campo "Release Date", busquemos por fechas de 2022-01-01 a 2022-12-31. Luego, al final de la página le damos click al botón de buscar. En la siguiente página ordenamos las películas por número de votos y le damos click al botón de siguiente, al final de la página final. Así llegaremos a esta página web, que tiene esta URL:
+
+<span>https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&sort=num_votes,asc&start=51&ref_=adv_nxt</span>
+
 
 *----- Imagen -------*
 
 En la imagen de arriba, puedes ver que la URL tiene varios parámetros después del signo de interrogación:
 
 - `release_date`: muestra solo las películas estrenadas en un año específico.
-- `sort`: Ordena las películas en la página. sort=num_votes,desc se traduce en ordenar por número de votos en orden descendente.
-- `page`: especifica el número de página.
+- `sort`: Ordena las películas en la página. `sort=num_votes,desc se traduce en ordenar por número de votos en orden descendente.
+- `start`: especifica el número de inicio de las páginas a listar.
 - `ref_`: Nos lleva a la página siguiente o anterior. La referencia es la página en la que nos encontramos actualmente. `adv_nxt` y `adv_prv` son dos valores posibles. Se traducen para avanzar a la página siguiente y avanzar a la página anterior, respectivamente.
 
 
@@ -97,7 +85,9 @@ Si navega por esas páginas y observa la URL, notará que solo cambian los valor
 
 Comencemos a escribir el script solicitando el contenido de esta única página web:
 
-https://www.imdb.com/search/title?release_date=2017&sort=num_votes,desc&page=1
+<span>https://www.imdb.com/search/title/?release_date=2022&count=250</span>
+<span>https://www.imdb.com/search/title?release_date=2017&sort=num_votes,desc&page=1</span>
+
 
 En el primer bloque de código vamos a:
 
@@ -149,21 +139,6 @@ La respuesta que se obtiene:
    
 ```
 
-```bash
-# comentarios
-# TODO: Borrarlos o incorporarlos en el texto del artículo
-- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250
-- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=251&ref_=adv_nxt
-- https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=501&ref_=adv_nxt
-
-Posibilidad para avanzar a la página previa
-https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&count=250&start=251&ref_=adv_prv
-
-
-Código para leer
-https://www.imdb.com/search/title/?release_date=2022&count=250
-```
-
 ## Comprendiendo la estructura HTML de una sola página
 
 Como puede ver en la primera línea de `respuesta.text`, el servidor nos envió un documento HTML. Este documento describe la estructura general de esa página web, junto con su contenido específico (que es lo que hace que esa página en particular sea única).
@@ -197,7 +172,7 @@ En el siguiente bloque de código vamos a:
 
 - Instalar `BeautifulSoup`.
 - Importar el creador de la clase `BeautifulSoup` del paquete `bs4`.
-- *Parsear* `respuesta.text` al crear un objeto `BeautifulSoup` y asignar este objeto a `sopa_html`. El argumento `'html.parser'` indica que queremos realizar el análisis utilizando el analizador HTML integrado de Python.
+- *Parsear* `respuesta.text` al crear un objeto `BeautifulSoup` y asignar este objeto a `sopa_html`. El argumento `'html.parser'` indica que queremos realizar el análisis utilizando el [analizador HTML integrado de Python](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#specifying-the-parser-to-use).
 
 
 ```bash
@@ -267,9 +242,63 @@ Esto nos regresa un HTML bastante largo, por lo que para hayar cada elemento, ne
 
 ### El nombre de la pelicula
 
+Comenzamos con el nombre de la película y localizamos su línea HTML correspondiente usando el inspector de elementos. Puede ver que el nombre está contenido dentro de una etiqueta de anclaje (`<a>`). Esta etiqueta está anidada dentro de una etiqueta de encabezado (`<h3>`). La etiqueta `<h3>` está anidada dentro de una etiqueta `<div>`. Este `<div>` es el tercero de los divs anidados en el contenedor de la primera película. Nosotros ya almacenamos el contenido de este contenedor en la variable `primera_pelicula`.
+
+*----- Imagen -------*
+
+`primera_pelicula` es un objeto `Tag` y las diversas etiquetas HTML que contiene se almacenan como sus atributos. Podemos acceder a ellos tal como accederíamos a cualquier atributo de un objeto Python. Sin embargo, usar un nombre de etiqueta como atributo solo seleccionará la primera etiqueta con ese nombre. Si ejecutamos `primera_pelicula.div`, solo obtenemos el contenido de la primera etiqueta `div`:
+
+
+```bash
+print(primera_pelicula.div)
+```
+
+```html
+<div class="lister-top-right">
+<div class="ribbonize" data-caller="filmosearch" data-tconst="tt14452776"></div>
+</div>
+```
+Accediendo a la primera etiqueta de anclaje (`<a>`) no nos lleva al nombre de la película. El primer `<a>` está en algún lugar dentro del segundo div:
+
+```bash
+print(primera_pelicula.a)
+```
+
+```html
+<a href="/title/tt14452776/"> <img alt="The Bear" class="loadlate" data-tconst="tt14452776" height="98" loadlate="https://m.media-amazon.com/images/M/MV5BYmM4MjBkNGMtZjE5Zi00ZDMwLWE5MjYtN2M0MTM2YTQ2MmNlXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_UX67_CR0,0,67,98_AL_.jpg" src="https://m.media-amazon.com/images/S/sash/4FyxwxECzL-U1J8.png" width="67"/>
+</a>
+```
+
+Sin embargo, accediendo a la primera etiqueta `<h3>` nos acerca mucho:
+
+```bash
+print(primera_pelicula.h3)
+```
+
+```html
+<h3 class="lister-item-header">
+<span class="lister-item-index unbold text-primary">1.</span>
+<a href="/title/tt14452776/">The Bear</a>
+<span class="lister-item-year text-muted unbold">(2022– )</span>
+</h3>
+```
+
+Desde aquí, podemos usar la notación de atributos para acceder al primer `<a>` dentro de la etiqueta `<h3>`:
+
+
+```bash
+print(primera_pelicula.h3.a)
+```
+
+```html
+<a href="/title/tt14452776/">The Bear</a>
+```
+
+Ahora es sólo cuestión de acceder al texto desde esa etiqueta `<a>:
+
 
 ```python
-primer_nombre = first_movie.h3.a.text
+primer_nombre = primera_pelicula.h3.a.text
 print(primer_nombre)
 ```
 
@@ -278,34 +307,139 @@ print(primer_nombre)
 ```
 
 ### El año del estreno de la película
-Este dato está en una etiqueta `<span>` que se encuentra debajo de la etiqueta `<a>` que contiene el nombre
+Este dato está en una etiqueta `<span>` que se encuentra debajo de la etiqueta `<a>` que contiene el nombre.
+
+*----- Imagen -------*
+
+La notación de puntos solo accederá al primer elemento `span`. Buscaremos por la marca distintiva del segundo `<span>`. Usaremos el método `find()` que es casi igual que `find_all()`, excepto que solo devuelve la primera coincidencia. De hecho, `find()` es equivalente a `find_all(limit = 1)`. El argumento `limit` limita la salida a la primera coincidencia.
+
+La marca distintiva consiste en los valores `lister-item-year text-muted unbold` asignados al atributo `class`. Entonces buscamos el primer `<span>` con estos valores dentro de la etiqueta `<h3>`:
 
 
 ```python
 primer_año = primera_pelicula.h3.find('span', class_ = 'lister-item-year text-muted unbold')
-primer_año
+print(primer_año)
 ```
 
 ```bash
 <span class="lister-item-year text-muted unbold">(2022– )</span>
 ```
 
+Desde aquí, simplemente accedemos al texto usando notación de atributos:
 
-La limpieza la haremos después
+```python
+primer_año = primer_año.text
+print(primer_año)
+```
+
+```bash
+'(2022– )'
+```
+
+Podríamos limpiar fácilmente esa salida y convertirla a un número entero. Pero si exploras más páginas, notarás que para algunas películas el año toma valores impredecibles como (2017)(I) o (2015)(V). Es más eficiente hacer la limpieza después del scrapeado, cuando conoceremos todos los valores del año.
+
 
 ### La calificación de IMDB
-dasda
+Ahora nos centramos en extraer la calificación IMDB de la primera película.
+
+Hay un par de formas de hacerlo, pero primero probaremos la más sencilla. Si inspecciona la calificación de IMDB usando DevTools, notará que la calificación está contenida dentro de una etiqueta `<strong>`.
+
+*----- Imagen -------*
+
+Usemos notación de atributos y esperemos que el primer `<strong>` también sea el que contenga la calificación.
+
+```python
+print(primera_pelicula.strong)
+```
+
+```html
+<strong>8.5</strong>
+```
+
+¡Excelente! Accederemos al texto, lo convertiremos al tipo `float` y lo asignaremos a la variable `primer_imdb`:
+
+```python
+primer_imdb = float(primera_pelicula.strong.text)
+print(primer_imdb)
+```
+
+```bash
+8.5
+```
+
 
 ### El Metascore
-asdasd
+
+Si inspeccionamos el Metascore usando inspectod de elementos, notaremos que podemos encontrarlo dentro de una etiqueta `span`.
+
+*----- Imagen -------*
+
+La notación de atributos claramente no es una solución. Hay muchas etiquetas `<span>` antes de eso. Puedes ver una justo encima de la etiqueta `<strong>`. Será mejor que utilicemos los valores distintivos del atributo `class` (`metascore favorable`).
+
+*Tenga en cuenta que si copia y pega esos valores de la pestaña del inspector de elemebtos, habrá dos caracteres de espacio en blanco entre `metascore` y `favorable`. Asegúrese de que solo haya un carácter de espacio en blanco cuando pase los valores como argumentos al parámetro `class_`. De lo contrario, `find()` no encontrará nada.*
+
+
+```python
+primer_mscore = primera_pelicula.find('span', class_ = 'metascore favorable')
+primer_mscore = int(primer_mscore.text)
+print(primer_mscore)
+```
+
+```bash
+8.5
+```
+
+No todas las películas tienen puntuación. Más adelante abordaremos ese asunto.
+
+Por ahora veamos que el valor `favorable` indica un Metascore alto y establece el color de fondo de la calificación en verde. Los otros dos valores posibles son `unfavorable` y mixed`. Sin embargo, lo que es específico de todas las calificaciones de Metascore es solo el valor de `metascore`. Este es el que usaremos cuando escribamos el script para toda la página.
+
 
 ### El número de votos
-asdad
+El número de votos está contenido en una etiqueta `<span>`. Su signo distintivo es un atributo del `name` con el valor `nv`.
+
+*----- Imagen -------*
+
+El atributo de `name` es diferente del atributo de `class`. Usando BeautifulSoup podemos acceder a elementos por cualquier atributo. Las funciones `find()` y `find_all()` tienen un parámetro llamado `attrs`. A esto podemos pasarle los atributos y valores que estamos buscando como diccionario:
+
+
+```python
+primeros_votos = primera_pelicula.find('span', attrs = {'name':'nv'})
+print(primeros_votos)
+```
+
+```html
+<span data-value="23878" name="nv">23,878</span>
+```
+
+Podríamos usar la notación `.text` para acceder al contenido de la etiqueta `<span>`. Sin embargo, sería mejor si accediéramos al valor del atributo de `data-value`. De esta manera podemos convertir el dato extraído a un `int` sin tener que eliminar una coma.
+
+Puedes tratar un objeto `Tag` como un diccionario. Los atributos HTML son las claves del diccionario. Los valores de los atributos HTML son los valores de las claves del diccionario. Así es como podemos acceder al valor del atributo `data-value`:
+
+```python
+print(primeros_votos['data-value'])
+```
+
+```bash
+23878
+```
+
+Convirtamos ese valor a un número entero y asignémoslo a `primeros_votos`:
+
+```python
+primeros_votos = int(primeros_votos['data-value'])
+```
+
+¡Eso es todo! Ahora estamos en condiciones de escribir fácilmente un script para extraer una sola página.
 
 ## El script para una sola página.
 Antes de reconstruir lo que hemos hecho hasta ahora, debemos asegurarnos de extraer los datos solo de los contenedores que tienen Metascore.
 
+*----- Imagen -------*
+
 Necesitamos agregar una condición para omitir películas sin Metascore.
+
+
+Usando...
 
 
 ```bash
@@ -409,3 +543,5 @@ Para aprovechar lo que hemos aprendido, estos son algunos de los siguientes paso
 excerpt: Un breve tutorial sobre web scraping usando beautiful soup. Es una traducción de un artículo de dataquest que ya no se encuentra disponible
 ---
 pub_date: 2023-08-15
+---
+render_tdc: yes
