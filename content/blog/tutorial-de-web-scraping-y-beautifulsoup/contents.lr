@@ -438,21 +438,84 @@ Antes de reconstruir lo que hemos hecho hasta ahora, debemos asegurarnos de extr
 
 Necesitamos agregar una condición para omitir películas sin Metascore.
 
+Usando el inspector de elementos nuevamente, vemos que la sección Metascore está contenida dentro de una etiqueta `<div>`. El atributo `class` tiene dos valores:
 
-Usando...
+- `inline-block `
+- `ratings-metascore`. 
 
+El distintivo es claramente el `ratings-metascore`.
+
+
+*----- Imagen -------*
+
+
+Podemos usar `find()` para buscar en cada contenedor de película un div que tenga esa marca distintiva. Cuando `find()` no encuentra nada, devuelve un objeto `None`. Podemos usar este resultado en una declaración `if` para controlar si una película se scrapea.
+
+Busquemos en la página web un contenedor de películas que no tenga Metascore y veamos qué devuelve `find()`.
+
+*Importante: cuando ejecuté el siguiente código, el primer contenedor no tenía Metascore. Sin embargo, este es un objetivo cambiante, porque el número de votos cambia constantemente para cada película. Para obtener los mismos resultados que obtuve en la siguiente celda de código demostrativo, debe buscar un contenedor que no tenga un Metascore en el momento en que ejecuta el código.*
+
+
+```python
+puntaje_mscore_cero = contenedores_pelicula[0].find('div', class_ = 'ratings-metascore')
+print(type(puntaje_mscore_cero))
+```
+
+```bash
+<class 'NoneType'>
+```
+
+Ahora juntemos el código anterior y comprimámoslo tanto como sea posible, pero sólo en la medida en que sea fácilmente legible. En el siguiente bloque de código:
+
+- Declare algunas variables de `lista` para tener algo en qué almacenar los datos extraídos.
+- Recorra cada contenedor en `contenedores_pelicula` (la variable que contiene los 50 contenedores de películas).
+- Extraiga los  datos de interés solo si el contenedor tiene un Metascore.
+- Instalar el paquete de Python [Pandas](https://pandas.pydata.org/pandas-docs/stable/)
 
 ```bash
 pip install pandas
 ```
 
 ```python
+# Listas para guardar los datos scrapeados
+nombres = []
+años = []
+calificaciones_imdb = []
+metascores = []
+votos = []
+
+# Extraer dato de un contenedor de pelicula individual
+for contenedor in contenedores_pelicula:
+# Si la película tiene Metascore, entonces extrae:
+    if contenedor.find('div', class_ = 'ratings-metascore') is not None:
+        # El nombre
+        nombre = contenedor.h3.a.text
+        nombres.append(nombre)
+        # El año
+        año = contenedor.h3.find('span', class_ = 'lister-item-year').text
+        años.append(año)
+        # La calificación IMDB
+        imdb = float(contenedor.strong.text)
+        calificaciones_imdb.append(imdb)
+        # El Metascore
+        m_score = contenedor.find('span', class_ = 'metascore').text
+        metascores.append(int(m_score))
+        # El número de votos
+        voto = contenedor.find('span', attrs = {'name':'nv'})['data-value']
+        votos.append(int(voto))
+```
+
+Revisemos los datos recopilados hasta ahora. Pandas nos facilitará ver si hemos recopilado nuestros datos correctamente.
+
+
+
+```python
 import pandas as pd
-test_df = pd.DataFrame({'movie': names,
-    'year': years,
-    'imdb': imdb_ratings,
+test_df = pd.DataFrame({'película': nombres,
+    'año': año,
+    'imdb': calificaciones_imdb,
     'metascore': metascores,
-    'votes': votes
+    'votos': votos
 })
 print(test_df.info())
 ```
@@ -460,17 +523,17 @@ print(test_df.info())
 
 ```bash
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 137 entries, 0 to 136
+RangeIndex: 134 entries, 0 to 133
 Data columns (total 5 columns):
  #   Column     Non-Null Count  Dtype  
 ---  ------     --------------  -----  
- 0   movie      137 non-null    object 
- 1   year       137 non-null    object 
- 2   imdb       137 non-null    float64
- 3   metascore  137 non-null    int64  
- 4   votes      137 non-null    int64  
+ 0   película   134 non-null    object 
+ 1   año        134 non-null    object 
+ 2   imdb       134 non-null    float64
+ 3   metascore  134 non-null    int64  
+ 4   votos      134 non-null    int64  
 dtypes: float64(1), int64(2), object(2)
-memory usage: 5.5+ KB
+memory usage: 5.4+ KB
 None
 ```
 
@@ -481,21 +544,48 @@ print(test_df.head(n=10))
 ```
 
 ```bash
-                                  movie         year  imdb  metascore   votes
-0                               Hablame   (I) (2022)   7.5         76   19721
-1                               Babylon   (I) (2022)   7.2         60  138118
-2                                     X  (II) (2022)   6.6         79  140214
-3                      Un Vecino Gruñón       (2022)   7.5         51  116471
-4            Avatar: El camino del agua       (2022)   7.6         67  448567
-5                         Corner Office       (2022)   6.0         47    1766
-6                               Top Gun       (2022)   8.3         78  621749
-7                                Batman       (2022)   7.8         72  721057
-8                            La ballena       (2022)   7.7         60  169943
-9  Todo en todas partes al mismo tiempo       (2022)   7.8         81  471630
+                                película         año  imdb  metascore   votos
+0                                Hablame   (I) (2022)   7.5         76   24315
+1                                Babylon   (I) (2022)   7.1         60  140035
+2                                      X  (II) (2022)   6.6         79  141075
+3                       Un Vecino Gruñón       (2022)   7.5         51  119931
+4             Avatar: El camino del agua       (2022)   7.6         67  451221
+5                                 Batman       (2022)   7.8         72  723010
+6                                Top Gun       (2022)   8.3         78  623797
+7   Todo en todas partes al mismo tiempo       (2022)   7.8         81  473311
+8                             La ballena       (2022)   7.7         60  171725
+9                              Tren bala   (I) (2022)   7.3         49  380635
+10                               El Menú       (2022)   7.2         71  343596
+11                                 M3gan       (2022)   6.4         72  118519
+12    El gato con botas: El último deseo       (2022)   7.9         73  151006
+13                         Purple Hearts       (2022)   6.7         30   45567
+14               No te preocupes, cariño   (I) (2022)   6.3         48  125158
+15                                  Sisu       (2022)   6.9         70   52071
+16                      Hasta los Huesos       (2022)   6.8         74   47994
+17                     La ciudad perdida       (2022)   6.1         60  138711
+18                                 Pearl       (2022)   7.0         76   68405
+19           El Triángulo de la tristeza       (2022)   7.3         63  150714
 ```
 
+¡Todo salió como se esperaba!
 
+Como nota al margen, si ejecuta el código desde un país donde el inglés no es el idioma principal, es muy probable que obtenga algunos de los nombres de las películas traducidos al idioma principal de ese país.
 
+Lo más probable es que esto suceda porque el servidor deduce su ubicación a partir de su dirección IP. Incluso si se encuentra en un país donde el inglés es el idioma principal, es posible que aún reciba contenido traducido. Esto puede suceder si estás usando una VPN mientras realizas las solicitudes `GET`.
+
+Si lo tuyo es el inglés, pasa los siguientes valores al parámetro de `headers` de la función `get()`:
+
+```python
+headers = {"Accept-Language": "en-US, en;q=0.5"}
+```
+
+Esto comunicará al servidor algo como:
+
+*“Quiero el contenido lingüístico en inglés americano (en-US). Si en-US no está disponible, entonces otros tipos de inglés (en) también estarían bien (pero no tanto como en-US)”.*
+
+El parámetro `q` indica el grado en que preferimos un determinado idioma. Si no se especifica, el valor se establece en 1 de forma predeterminada, como en el caso de en-US. Puedes [leer más sobre esto aquí](https://www.rfc-editor.org/rfc/rfc9110.html#name-accept-language).
+
+Ahora comencemos a crear el script para todas las páginas que queremos eliminar.
 
 
 ## El script de varias páginas.
