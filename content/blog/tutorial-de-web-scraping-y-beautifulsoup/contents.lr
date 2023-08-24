@@ -592,29 +592,414 @@ Ahora comencemos a crear el script para todas las páginas que queremos eliminar
 Hacer el scraping para varias páginas es un poco más desafiante. Desarrollaremos nuestro script de una página haciendo tres cosas más:
 
 1. Haciendo todas las peticiones que queramos desde dentro del bucle.
-2. Controlar la velocidad del bucle para evitar bombardear el servidor con solicitudes.
-3. Supervisión del bucle mientras se ejecuta.
+2. Controlar la velocidad del bucle para evitar bombardear el servidor con peticiones.
+3. Supervisar el bucle mientras se ejecuta.
 
-
+Scrapearemos las primeras 2 páginas de cada año en el intervalo 2000-2022. 2 páginas para cada uno de los 23 años hacen un total de 46 páginas. Cada página tiene 250 películas, por lo que extraeremos datos de 11500 películas como máximo. Pero no todas las películas tienen un Metascore, por lo que el número será menor. Aun así, es muy probable que obtengamos datos de más de 2000 películas.
 
 
 ### Cambiando los parámetros de las URLs
-asdad
+
+Como se mostró anteriormente, las URL siguen una cierta lógica a medida que cambian las páginas web.
+
+*----- Imagen -------*
+
+Mientras vamos realizando las peticiones, solo tendremos que variar los valores de solo dos parámetros de la URL: `release_date` y `start`. Preparemos los valores que necesitaremos para bucle. En nuestro código haremos:
+
+- Una lista llamada `paginas` y la rellenaremos con los números correspondientes al inicio de cada página.
+- Una lista llamada `url_años` y se completará con las cadenas correspondientes a los años 2000-2022.
+
+```python
+paginas = (1, 251)
+url_años = [str(i) for i in range(2000, 2022)]
+```
 
 ### Controlando la tasa de rastreo (crawl-rate)
-asdas
+Controlar la velocidad de rastreo es beneficioso para nosotros y para el sitio web que estamos scrapeando. Si evitamos sobrecargar el servidor con decenas de peticiones por segundo, es mucho menos probable que prohíban nuestra dirección IP. También evitamos interrumpir la actividad del sitio web que scrapeamos al permitir que el servidor también responda a las solicitudes de otros usuarios.
+
+Controlaremos la velocidad del bucle usando la [función](https://docs.python.org/3/library/time.html?highlight=time%20module#time.sleep) `sleep()` del [módulo](https://docs.python.org/3/library/time.html?highlight=time%20module#module-time) de `time` de Python. `sleep()` pausará la ejecución del bucle durante una cantidad específica de segundos.
+
+Para imitar el comportamiento humano, variaremos la cantidad de tiempo de espera entre solicitudes usando la [función](https://docs.python.org/3/library/random.html?highlight=random%20module#random.randint) `randint()` del [módulo](https://docs.python.org/3/library/random.html?highlight=random%20module#module-random) `random` de Python. `randint()` genera aleatoriamente números enteros dentro de un intervalo específico.
+
+```python
+from time import sleep
+from random import randint
+
+for _ in range(0, 5):
+    print('Pin pra')
+    sleep(randint(1,4))
+```
+
+Por lo pronto, solo importemos estas dos funciones en nuestro código para evitar la saturación en el siguiente bloque de código que contiene nuestro bucle principal de sueño.
 
 ### Monitoreando el bucle mientras continúa
-asdad
+
+Dado que estamos scrapeando 46 páginas, sería bueno si pudiéramos encontrar una manera de monitorear el proceso de scrapeo mientras aún continúa. Esta característica es definitivamente opcional, pero puede resultar muy útil en el proceso de prueba y depuración. Además, cuanto mayor sea el número de páginas, más útil será el seguimiento. Si va a scrapear cientos o miles de páginas web en una sola ejecución de código, diría que esta característica se vuelve imprescindible.
+
+Para nuestro script, usaremos esta función y monitorearemos los siguientes parámetros:
+
+- La **frecuencia (velocidad) de las peticiones**, por lo que nos aseguramos de que nuestro programa no sobrecargue el servidor.
+- La **cantidad de peticiones**, para que podamos detener el ciclo en caso de que se exceda la cantidad de solicitudes esperadas.
+- El **[código de estado HTTP](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP)** de nuestras solicitudes, para asegurarnos de que el servidor envíe las respuestas adecuadas.
+
+Para obtener un valor de frecuencia, dividiremos la cantidad de solicitudes por el tiempo transcurrido desde la primera solicitud. Esto es similar a calcular la velocidad de un automóvil: dividimos la distancia por el tiempo necesario para recorrerla. Primero experimentemos con esta técnica de monitoreo a pequeña escala. Lo siguiente que haremos será:
+
+- Establecer una hora de inicio utilizando la función `time()` del módulo `time` y asignar el valor a `tiempo_inicio`.
+- Asignar 0 a la variable `peticiones` que usaremos para contar el número de solicitudes.
+- Iniciar un bucle y luego con cada iteración:
+    - Simular una solicitud.
+    - Incrementar el número de peticiones en 1.
+    - Pausae el bucle durante un intervalo de tiempo de entre 8 y 15 segundos.
+    - Calcule el tiempo transcurrido desde la primera solicitud y asignar el valor a `tiempo_transcurrido`.
+    - Imprimir el número de solicitudes y la frecuencia.
+
+Así lucirá nuestra prueba de concepto:
+
+```python
+from time import time
+from random import randint
+
+tiempo_inicio = time()
+peticiones = 0
+
+for _ in range(5):
+    peticiones += 1
+    sleep(randint(1,3))
+    tiempo_transcurrido = time() - tiempo_inicio
+    print(f'Petición: {peticiones}; Frecuencia: {peticiones/tiempo_transcurrido} peticiones/s')
+```
+
+```bash
+Petición: 1; Frecuencia: 0.49947650463238624 peticiones/s
+Petición: 2; Frecuencia: 0.4996998027377252 peticiones/s
+Petición: 3; Frecuencia: 0.5995400143227362 peticiones/s
+Petición: 4; Frecuencia: 0.4997272043465967 peticiones/s
+Petición: 5; Frecuencia: 0.4543451628627026 peticiones/s
+```
+
+Dado que vamos a realizar 44 solicitudes, nuestro trabajo se verá un poco desordenado a medida que se acumule el resultado. Para evitarlo, borraremos el resultado después de cada iteración y lo reemplazaremos con información sobre la solicitud más reciente. 
+
+Este paso solo sirve si estás probando desde un Jupyter notebook, sino, puedes ignorarlo.
+
+Para hacer eso usaremos la función `clear_output()` del [módulo](https://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html#IPython.display.clear_output) `display` de IPython. Estableceremos el parámetro de espera de `clear_output()` en True para esperar y reemplazar la salida actual hasta que aparezca alguna salida nueva.
+
+```python
+from time import time
+
+from IPython.display import clear_output
+
+tiempo_inicio = time()
+peticiones = 0
+
+for _ in range(5):
+    peticiones += 1
+    sleep(randint(1,3))
+    tiempo_transcurrido = time() - tiempo_inicio
+    print(f'Petición: {peticiones}; Frecuencia: {peticiones/tiempo_transcurrido} peticiones/s')
+clear_output(wait = True)
+```
+
+```
+Petición: 5; Frecuencia: 0.6240351700607663 peticiones/s
+```
+
+El resultado anterior es el que verá una vez que se haya ejecutado el ciclo. Así es como se ve mientras está funcionando
+
+*----- GIF -------*
+
+Para monitorear el código de estado, configuraremos el programa para que nos avise si hay algo mal. Una solicitud exitosa se indica mediante un código de estado de 200. Usaremos la función `warn()` del módulo de `warnings` para generar una advertencia si el código de estado no es 200.
+
+```python
+from warnings import warn
+warn("Simulación de una advertencia")
+```
+
+Y como resultado, veremos:
+
+```bash
+<stdin>:1: UserWarning: Simulación de una advertencia
+```
+
+Elegimos una advertencia en lugar de romper el ciclo porque existe una buena posibilidad de que extraigamos suficientes datos, incluso si algunas de las solicitudes fallan. Solo romperemos el ciclo si el número de solicitudes es mayor de lo esperado.
 
 ### Juntando todo
-asda
 
-## Examinando los datos raspados
-asdasda
+¡Ahora reconstruyamos todo lo que hemos hecho hasta ahora! Luego de los import que ya hicimos de los módulos `time`, `warn`y `random`, continuaremos con:
 
-## Limpiando los datos raspados
-asdadsa
+- Iterar sobre la lista `url_años` para variar el parámetro `release_date` de la URL.
+- Para cada elemento en `url_años`, recorra la lista de páginas para variar el parámetro de `start` de la URL.
+- Realice las solicitudes `GET` dentro del bucle de páginas.
+- Pause el bucle durante un intervalo de tiempo de entre 8 y 15 segundos.
+- Supervise cada solicitud como se analizó anteriormente.
+- Lanze una advertencia para códigos de estado distintos de 200.
+- Rompa el ciclo si el número de solicitudes es mayor de lo esperado.
+- Convierta el contenido HTML de la `respuesta` en un objeto `BeautifulSoup`.
+- Extraiga todos los contenedores de películas de este objeto `BeautifulSoup`.
+- Recorra todos estos contenedores.
+- Extraiga los datos si un contenedor tiene un Metascore.
+
+```python
+# Listas para guardar los datos scrapeados
+nombres = []
+años = []
+calificaciones_imdb = []
+metascores = []
+votos = []
+
+# Preparacion para monitorear las iteraciones
+tiempo_inicio = time()
+peticiones = 0
+
+
+for año in url_años:
+    for pagina in paginas:
+
+        url = f'https://www.imdb.com/search/title/?release_date={año}-01-01,{año}-12-31'
+        url += f'&sort=num_votes,desc&count=250&start={pagina}&ref_=adv_nxt'
+
+        # Hacer la peticion
+        respuesta = get(url)
+
+        # Pausar el ciclo
+        sleep(randint(8,15))
+
+        # Monitorear las peticiones
+        peticiones += 1
+        tiempo_transcurrido = time() - tiempo_inicio
+        print(f'Petición: {peticiones}; Frecuencia: {peticiones/tiempo_transcurrido} peticiones/s')
+        # clear_output(wait = True)
+
+        # Throw a warning for non-200 status codes
+        if respuesta.status_code != 200:
+            warn(f'Año: {año};   Petición: {peticiones}; Status code: {respuesta.status_code}')
+
+        # Rompe el ciclo si el número de peticiones es muy mayor que el esperado
+        if peticiones > 50:
+            warn('Número de peticiones fue mayor al esperado.')
+            break
+
+        # Parsea el contenido de la petición con BeautifulSoup
+        sopa_html = BeautifulSoup(respuesta.text, 'html.parser')
+
+        # Selecciona todos los 250 contenedores de películas de una sola página
+        contenedores_pelicula = sopa_html.find_all('div', class_ = 'lister-item mode-advanced')
+
+        # Por cada película de estas 250
+        for contenedor in contenedores_pelicula:
+            # Si la película tiene Metascore, entonces extrae:
+            if contenedor.find('div', class_ = 'ratings-metascore') is not None:
+                
+                # El nombre
+                nombre = contenedor.h3.a.text
+                nombres.append(nombre)
+
+                # El año
+                año = contenedor.h3.find('span', class_ = 'lister-item-year').text
+                años.append(año)
+
+                # La calificación IMDB
+                imdb = float(contenedor.strong.text)
+                calificaciones_imdb.append(imdb)
+
+                # El Metascore
+                m_score = contenedor.find('span', class_ = 'metascore').text
+                metascores.append(int(m_score))
+
+                # El número de votos
+                voto = contenedor.find('span', attrs = {'name':'nv'})['data-value']
+                votos.append(int(voto))
+```
+
+```bash
+Petición: 44; Frecuencia: 0.06678366415302274 peticiones/s
+```
+¡Que bien! El scrapeado parece haber funcionado perfectamente. El script duró unos 11 minutos.
+
+Ahora combinemos los datos en un `DataFrame de pandas para examinar lo que hemos logrado extraer. Si todo es como se esperaba, podemos continuar con la limpieza de los datos para dejarlos listos para el análisis.
+
+## Examinando los datos scrapeados
+Ahora lo siguiente será:
+
+- Fusionar los datos en un `DataFrame` de pandas.
+- Descargar los datos en un archivo con formato `.csv` (¡por si la moscas!)
+- Imprimir información sobre el `DataFrame` recién creado.
+- Mostrar las primeras entradas.
+
+```python
+df = pd.DataFrame({
+    'película': nombres,
+    'año': años,
+    'imdb': calificaciones_imdb,
+    'metascore': metascores,
+    'votos': votos
+})
+
+df.to_csv('calificaciones_peliculas_raw.csv')
+
+print(df.info())
+print(df.head(15))
+```
+
+```bash
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 3980 entries, 0 to 3979
+Data columns (total 6 columns):
+ #   Column      Non-Null Count  Dtype  
+---  ------      --------------  -----  
+ 0   Unnamed: 0  3980 non-null   int64  
+ 1   película    3980 non-null   object 
+ 2   año         3980 non-null   object 
+ 3   imdb        3980 non-null   float64
+ 4   metascore   3980 non-null   int64  
+ 5   votos       3980 non-null   int64  
+dtypes: float64(1), int64(3), object(2)
+memory usage: 186.7+ KB
+None
+```
+
+```bash
+    Unnamed: 0                    película     año  imdb  metascore    votos
+0            0                   Gladiator  (2000)   8.5         67  1555914
+1            1                     Memento  (2000)   8.4         83  1282227
+2            2          Cerdos y diamantes  (2000)   8.2         55   883470
+3            3         Requiem for a Dream  (2000)   8.3         71   871723
+4            4             American Psycho  (2000)   7.6         64   672128
+5            5                       X-Men  (2000)   7.3         64   632513
+6            6                   Cast Away  (2000)   7.8         73   617566
+7            7                 Unbreakable  (2000)   7.3         62   431171
+8            8      Mission: Impossible II  (2000)   6.1         59   365811
+9            9            Meet the Parents  (2000)   7.0         73   346377
+10          10  O Brother, Where Art Thou?  (2000)   7.7         69   322841
+11          11       Gone in Sixty Seconds  (2000)   6.5         35   288235
+12          12               Almost Famous  (2000)   7.9         90   286334
+13          13                 The Patriot  (2000)   7.2         63   286082
+14          14             Wo hu cang long  (2000)   7.9         94   277167
+```
+
+El resultado de `info()` muestra que recopilamos datos de más de 2000 películas. También podemos ver que no hay ningún valor `null` en nuestro conjunto de datos.
+
+He verificado las calificaciones de estas primeras 10 películas en el sitio web de IMDB. Todos estaban en lo cierto. Quizás quieras hacer tú lo mismo.
+
+Podemos proceder con seguridad a limpiar los datos.
+
+
+## Limpiando los datos scrapeados
+Limpiaremos los datos extraídos con dos objetivos en mente: 
+
+1. Dibujar la distribución de las calificaciones de IMDB y Metascore
+2. Compartir el conjunto de datos. 
+
+En consecuencia, nuestra limpieza de datos consistirá en:
+
+- Reordenar las columnas.
+- Limpiar la columna de año y convertir los valores a números enteros.
+- Verificar los valores de calificación extremos para determinar si todas las calificaciones están dentro de los intervalos esperados.
+- Normalizar uno de los tipos de calificaciones (o ambos) para generar un histograma comparativo.
+
+Ya que en este punto es necesario graficar y analizar los datos, te recomiendo instalar jupyter notebook en caso de que no lo hayas hecho.
+
+```bash
+pip install notebook
+```
+
+Comencemos reordenando las columnas:
+
+```python
+df = df[['película', 'año', 'imdb', 'metascore', 'votos']]
+df.head()
+```
+
+```bash
+    película    año imdb    metascore   votos
+0   Gladiator   (2000)  8.5 67  1555914
+1   Memento (2000)  8.4 83  1282227
+2   Cerdos y diamantes  (2000)  8.2 55  883470
+3   Requiem for a Dream (2000)  8.3 71  871723
+4   American Psycho (2000)  7.6 64  672128
+```
+
+Ahora convirtamos todos los valores de la columna de año a números enteros.
+
+En este momento todos los valores son del tipo de `object`. Para evitar `ValueErrors` durante la conversión, queremos que los valores estén compuestos únicamente por números del 0 al 9.
+
+Examinemos los valores únicos de la columna de año. Esto nos ayuda a hacernos una idea de lo que podríamos hacer para realizar las conversiones que queremos. Para ver todos los valores únicos, usaremos el método `unique()`:
+
+```python
+df['año'].unique()
+```
+
+```bash
+array(['(2000)', '(I) (2000)', '(2001)', '(I) (2001)', '(2002)',
+       '(I) (2002)', '(2002 Video)', '(2003)', '(I) (2003)', '(2004)',
+       '(I) (2004)', '(2005)', '(I) (2005)', '(2006)', '(I) (2006)',
+       '(III) (2006)', '(II) (2006)', '(2007)', '(I) (2007)',
+       '(II) (2007)', '(2008)', '(I) (2008)', '(2009)', '(I) (2009)',
+       '(II) (2009)', '(2010)', '(I) (2010)', '(II) (2010)', '(2011)',
+       '(I) (2011)', '(IV) (2011)', '(2012)', '(I) (2012)', '(II) (2012)',
+       '(2013)', '(I) (2013)', '(II) (2013)', '(2014)', '(I) (2014)',
+       '(II) (2014)', '(III) (2014)', '(2015)', '(I) (2015)',
+       '(II) (2015)', '(VI) (2015)', '(III) (2015)', '(I) (2016)',
+       '(2016)', '(II) (2016)', '(IX) (2016)', '(V) (2016)', '(2017)',
+       '(I) (2017)', '(II) (2017)', '(III) (2017)', '(2018)',
+       '(I) (2018)', '(III) (2018)', '(II) (2018)', '(I) (2019)',
+       '(2019)', '(II) (2019)', '(III) (2019)', '(2020)', '(I) (2020)',
+       '(II) (2020)', '(IV) (2020)', '(V) (2020)', '(2021)', '(I) (2021)',
+       '(II) (2021)'], dtype=object)
+```
+
+Contando desde el final hacia el principio, podemos ver que los años siempre se ubican del quinto carácter al segundo. Usaremos el método `.str()` para seleccionar solo ese intervalo. También convertiremos el resultado a un número entero usando el método `astype()`.
+
+```python
+df.loc[:, 'año'] = df['año'].str[-5:-1].astype(int)
+```
+
+Si hacemos esto tal cual, encontraremos un error en la conversión de los datos, ya que hay años con la palabra `Video` dentro de ellas. Para ello, lo primo que tenemos que hacer es quitar esa cadena de texto y luego si proceder con la conversión de los datos.
+
+```python
+years = df['año']
+years = years.str.strip(' Video)')
+years.unique()
+```
+
+Como vemos ahora, los datos ya no tienen el texto `Video` dentro de ellos
+
+```bash
+array(['(2000', '(I) (2000', '(2001', '(I) (2001', '(2002', '(I) (2002',
+       '(2003', '(I) (2003', '(2004', '(I) (2004', '(2005', '(I) (2005',
+       '(2006', '(I) (2006', '(III) (2006', '(II) (2006', '(2007',
+       '(I) (2007', '(II) (2007', '(2008', '(I) (2008', '(2009',
+       '(I) (2009', '(II) (2009', '(2010', '(I) (2010', '(II) (2010',
+       '(2011', '(I) (2011', '(IV) (2011', '(2012', '(I) (2012',
+       '(II) (2012', '(2013', '(I) (2013', '(II) (2013', '(2014',
+       '(I) (2014', '(II) (2014', '(III) (2014', '(2015', '(I) (2015',
+       '(II) (2015', '(VI) (2015', '(III) (2015', '(I) (2016', '(2016',
+       '(II) (2016', '(IX) (2016', '(V) (2016', '(2017', '(I) (2017',
+       '(II) (2017', '(III) (2017', '(2018', '(I) (2018', '(III) (2018',
+       '(II) (2018', '(I) (2019', '(2019', '(II) (2019', '(III) (2019',
+       '(2020', '(I) (2020', '(II) (2020', '(IV) (2020', '(V) (2020',
+       '(2021', '(I) (2021', '(II) (2021'], dtype=object)
+```
+
+Ahora si, convirtamos a números enteros:
+
+```python
+df.loc[:, 'año'] = years.str[-4:].astype(int)
+```
+
+Visualicemos los primeros 5 valores de la columna del año para una verificación rápida. También podemos ver el tipo de valores en la última línea de la salida:
+
+```python
+df['año'].head(5)
+```
+
+```bash
+0    2000
+1    2000
+2    2000
+3    2000
+4    2000
+Name: año, dtype: object-------> int
+```
 
 ## Graficando y analizando las distribuciones
 asdad
