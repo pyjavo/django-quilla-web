@@ -216,7 +216,7 @@ Ahora solo seleccionaremos el primer contenedor y, por turno, extraeremos cada e
 - El Metascore
 - El número de votos
 
-*----- Imagen -------*
+![Detalle película](/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/detalle_pelicula.png)
 
 ## Extraer los datos de una sola película
 
@@ -227,7 +227,86 @@ primera_pelicula = contenedores_pelicula[0]
 print(primera_pelicula)
 ```
 
-*----- HTML de respuesta -------*
+```html
+<div class="lister-item mode-advanced">
+<div class="lister-top-right">
+<div class="ribbonize" data-caller="filmosearch" data-tconst="tt15398776"></div>
+</div>
+<div class="lister-item-image float-left">
+<a href="/title/tt15398776/"> <img alt="Oppenheimer" class="loadlate" data-tconst="tt15398776" height="98" loadlate="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_UX67_CR0,0,67,98_AL_.jpg" src="https://m.media-amazon.com/images/S/sash/4FyxwxECzL-U1J8.png" width="67"/>
+</a> </div>
+<div class="lister-item-content">
+<h3 class="lister-item-header">
+<span class="lister-item-index unbold text-primary">1.</span>
+<a href="/title/tt15398776/">Oppenheimer</a>
+<span class="lister-item-year text-muted unbold">(2023)</span>
+</h3>
+<p class="text-muted">
+<span class="certificate">R</span>
+<span class="ghost">|</span>
+<span class="runtime">180 min</span>
+<span class="ghost">|</span>
+<span class="genre">
+Biography, Drama, History            </span>
+</p>
+<div class="ratings-bar">
+<div class="inline-block ratings-imdb-rating" data-value="8.6" name="ir">
+<span class="global-sprite rating-star imdb-rating"></span>
+<strong>8.6</strong>
+</div>
+<div class="inline-block ratings-user-rating">
+<span class="userRatingValue" data-tconst="tt15398776" id="urv_tt15398776">
+<span class="global-sprite rating-star no-rating"></span>
+<span class="rate" data-no-rating="Rate this" data-value="0" name="ur">Rate this</span>
+</span>
+<div class="starBarWidget" id="sb_tt15398776">
+<div class="rating rating-list" data-csrf-token="" data-ga-identifier="" data-starbar-class="rating-list" data-user="" id="tt15398776|imdb|8.6|8.6|adv_li_tt||advsearch|title" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" title="Users rated this 8.6/10 (380,436 votes) - click stars to rate">
+<meta content="8.6" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+<meta content="380436" itemprop="ratingCount"/>
+<span class="rating-bg"> </span>
+<span class="rating-imdb" style="width: 120.4px"> </span>
+<span class="rating-stars">
+<a href="/register/login?why=vote" rel="nofollow" title="Register or login to rate this title"><span>1</span></a>
+<a href="/register/login?why=vote" rel="nofollow" title="Register or login to rate this title"><span>2</span></a>
+<a href="/register/login?why=vote" rel="nofollow" title="Register or login to rate this title"><span>3</span></a>
+<a href="/register/login?why=vote" rel="nofollow" title="Register or login to rate this title"><span>4</span></a>
+<a href="/register/login?why=vote" rel="nofollow" title="Register or login to rate this title"><span>5</span></a>
+<a href="/register/login?why=vote" rel="nofollow" title="Register or login to rate this title"><span>6</span></a>
+<a href="/register/login?why=vote" rel="nofollow" title="Register or login to rate this title"><span>7</span></a>
+<a href="/register/login?why=vote" rel="nofollow" title="Register or login to rate this title"><span>8</span></a>
+<a href="/register/login?why=vote" rel="nofollow" title="Register or login to rate this title"><span>9</span></a>
+<a href="/register/login?why=vote" rel="nofollow" title="Register or login to rate this title"><span>10</span></a>
+</span>
+<span class="rating-rating"><span class="value">8.6</span><span class="grey">/</span><span class="grey">10</span></span>
+<span class="rating-cancel"><a href="/title/tt15398776/vote" rel="nofollow" title="Delete"><span>X</span></a></span>
+ </div>
+</div>
+</div>
+<div class="inline-block ratings-metascore">
+<span class="metascore favorable">88        </span>
+        Metascore
+            </div>
+</div>
+<p class="text-muted">
+The story of American scientist, <a href="/name/nm0649185">J. Robert Oppenheimer</a>, and his role in the development of the atomic bomb.</p>
+<p class="">
+    Director:
+<a href="/name/nm0634240/">Christopher Nolan</a>
+<span class="ghost">|</span> 
+    Stars:
+<a href="/name/nm0614165/">Cillian Murphy</a>, 
+<a href="/name/nm1289434/">Emily Blunt</a>, 
+<a href="/name/nm0000354/">Matt Damon</a>, 
+<a href="/name/nm0000375/">Robert Downey Jr.</a>
+</p>
+<p class="sort-num_votes-visible">
+<span class="text-muted">Votes:</span>
+<span data-value="380436" name="nv">380,436</span>
+</p>
+</div>
+</div>
+```
 
 Esto nos regresa un HTML bastante largo, por lo que para hayar cada elemento, necesitaremos usar el inspector de elementos del navegador.
 
@@ -236,7 +315,7 @@ Esto nos regresa un HTML bastante largo, por lo que para hayar cada elemento, ne
 
 Comenzamos con el nombre de la película y localizamos su línea HTML correspondiente usando el inspector de elementos. Puede ver que el nombre está contenido dentro de una etiqueta de anclaje (`<a>`). Esta etiqueta está anidada dentro de una etiqueta de encabezado (`<h3>`). La etiqueta `<h3>` está anidada dentro de una etiqueta `<div>`. Este `<div>` es el tercero de los divs anidados en el contenedor de la primera película. Nosotros ya almacenamos el contenido de este contenedor en la variable `primera_pelicula`.
 
-*----- Imagen -------*
+<img src="/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/html_div_pelicula.png" alt="inspeccion html titulo" title="inspeccion html titulo" style="width:70%;margin: auto;display: block;" /> 
 
 `primera_pelicula` es un objeto `Tag` y las diversas etiquetas HTML que contiene se almacenan como sus atributos. Podemos acceder a ellos tal como accederíamos a cualquier atributo de un objeto Python. Sin embargo, usar un nombre de etiqueta como atributo solo seleccionará la primera etiqueta con ese nombre. Si ejecutamos `primera_pelicula.div`, solo obtenemos el contenido de la primera etiqueta `div`:
 
@@ -247,7 +326,7 @@ print(primera_pelicula.div)
 
 ```html
 <div class="lister-top-right">
-<div class="ribbonize" data-caller="filmosearch" data-tconst="tt14452776"></div>
+<div class="ribbonize" data-caller="filmosearch" data-tconst="tt15398776"></div>
 </div>
 ```
 Accediendo a la primera etiqueta de anclaje (`<a>`) no nos lleva al nombre de la película. El primer `<a>` está en algún lugar dentro del segundo div:
@@ -257,7 +336,7 @@ print(primera_pelicula.a)
 ```
 
 ```html
-<a href="/title/tt14452776/"> <img alt="The Bear" class="loadlate" data-tconst="tt14452776" height="98" loadlate="https://m.media-amazon.com/images/M/MV5BYmM4MjBkNGMtZjE5Zi00ZDMwLWE5MjYtN2M0MTM2YTQ2MmNlXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_UX67_CR0,0,67,98_AL_.jpg" src="https://m.media-amazon.com/images/S/sash/4FyxwxECzL-U1J8.png" width="67"/>
+<a href="/title/tt15398776/"> <img alt="Oppenheimer" class="loadlate" data-tconst="tt15398776" height="98" loadlate="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_UX67_CR0,0,67,98_AL_.jpg" src="https://m.media-amazon.com/images/S/sash/4FyxwxECzL-U1J8.png" width="67"/>
 </a>
 ```
 
@@ -270,8 +349,8 @@ print(primera_pelicula.h3)
 ```html
 <h3 class="lister-item-header">
 <span class="lister-item-index unbold text-primary">1.</span>
-<a href="/title/tt14452776/">The Bear</a>
-<span class="lister-item-year text-muted unbold">(2022– )</span>
+<a href="/title/tt15398776/">Oppenheimer</a>
+<span class="lister-item-year text-muted unbold">(2023)</span>
 </h3>
 ```
 
@@ -283,7 +362,7 @@ print(primera_pelicula.h3.a)
 ```
 
 ```html
-<a href="/title/tt14452776/">The Bear</a>
+<a href="/title/tt15398776/">Oppenheimer</a>
 ```
 
 Ahora es sólo cuestión de acceder al texto desde esa etiqueta `<a>:
@@ -295,13 +374,13 @@ print(primer_nombre)
 ```
 
 ```bash
-'The Bear'
+Oppenheimer
 ```
 
 ### El año del estreno de la película
 Este dato está en una etiqueta `<span>` que se encuentra debajo de la etiqueta `<a>` que contiene el nombre.
 
-*----- Imagen -------*
+<img src="/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/h3_pelicula.png" alt="inspeccion h3 título" title="inspeccion h3 título" style="width:70%;margin: auto;display: block;" /> 
 
 La notación de puntos solo accederá al primer elemento `span`. Buscaremos por la marca distintiva del segundo `<span>`. Usaremos el método `find()` que es casi igual que `find_all()`, excepto que solo devuelve la primera coincidencia. De hecho, `find()` es equivalente a `find_all(limit = 1)`. El argumento `limit` limita la salida a la primera coincidencia.
 
@@ -313,8 +392,8 @@ primer_año = primera_pelicula.h3.find('span', class_ = 'lister-item-year text-m
 print(primer_año)
 ```
 
-```bash
-<span class="lister-item-year text-muted unbold">(2022– )</span>
+```html
+<span class="lister-item-year text-muted unbold">(2023)</span>
 ```
 
 Desde aquí, simplemente accedemos al texto usando notación de atributos:
@@ -325,7 +404,7 @@ print(primer_año)
 ```
 
 ```bash
-'(2022– )'
+(2023)
 ```
 
 Podríamos limpiar fácilmente esa salida y convertirla a un número entero. Pero si exploras más páginas, notarás que para algunas películas el año toma valores impredecibles como (2017)(I) o (2015)(V). Es más eficiente hacer la limpieza después del scrapeado, cuando conoceremos todos los valores del año.
@@ -336,7 +415,7 @@ Ahora nos centramos en extraer la calificación IMDB de la primera película.
 
 Hay un par de formas de hacerlo, pero primero probaremos la más sencilla. Si inspecciona la calificación de IMDB usando DevTools, notará que la calificación está contenida dentro de una etiqueta `<strong>`.
 
-*----- Imagen -------*
+<img src="/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/puntuacion_imdb.png" alt="puntuacion imdb" title="puntuacion imdb" style="width:70%;margin: auto;display: block;" /> 
 
 Usemos notación de atributos y esperemos que el primer `<strong>` también sea el que contenga la calificación.
 
@@ -345,7 +424,7 @@ print(primera_pelicula.strong)
 ```
 
 ```html
-<strong>8.5</strong>
+<strong>8.6</strong>
 ```
 
 ¡Excelente! Accederemos al texto, lo convertiremos al tipo `float` y lo asignaremos a la variable `primer_imdb`:
@@ -356,7 +435,7 @@ print(primer_imdb)
 ```
 
 ```bash
-8.5
+8.6
 ```
 
 
@@ -364,7 +443,7 @@ print(primer_imdb)
 
 Si inspeccionamos el Metascore usando inspectod de elementos, notaremos que podemos encontrarlo dentro de una etiqueta `span`.
 
-*----- Imagen -------*
+<img src="/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/span_metascore.png" alt="span metascore" title="span metascore" style="width:70%;margin: auto;display: block;" />
 
 La notación de atributos claramente no es una solución. Hay muchas etiquetas `<span>` antes de eso. Puedes ver una justo encima de la etiqueta `<strong>`. Será mejor que utilicemos los valores distintivos del atributo `class` (`metascore favorable`).
 
@@ -378,7 +457,7 @@ print(primer_mscore)
 ```
 
 ```bash
-8.5
+88
 ```
 
 No todas las películas tienen puntuación. Más adelante abordaremos ese asunto.
@@ -389,7 +468,8 @@ Por ahora veamos que el valor `favorable` indica un Metascore alto y establece e
 ### El número de votos
 El número de votos está contenido en una etiqueta `<span>`. Su signo distintivo es un atributo del `name` con el valor `nv`.
 
-*----- Imagen -------*
+
+<img src="/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/votos_peliculas.png" alt="número de votos peliculas" title="número de votos peliculas" style="width:70%;margin: auto;display: block;" />
 
 El atributo de `name` es diferente del atributo de `class`. Usando BeautifulSoup podemos acceder a elementos por cualquier atributo. Las funciones `find()` y `find_all()` tienen un parámetro llamado `attrs`. A esto podemos pasarle los atributos y valores que estamos buscando como diccionario:
 
@@ -400,7 +480,7 @@ print(primeros_votos)
 ```
 
 ```html
-<span data-value="23878" name="nv">23,878</span>
+<span data-value="380436" name="nv">38,0436</span>
 ```
 
 Podríamos usar la notación `.text` para acceder al contenido de la etiqueta `<span>`. Sin embargo, sería mejor si accediéramos al valor del atributo de `data-value`. De esta manera podemos convertir el dato extraído a un `int` sin tener que eliminar una coma.
@@ -412,7 +492,7 @@ print(primeros_votos['data-value'])
 ```
 
 ```bash
-23878
+380436
 ```
 
 Convirtamos ese valor a un número entero y asignémoslo a `primeros_votos`:
@@ -426,7 +506,7 @@ primeros_votos = int(primeros_votos['data-value'])
 ## El script para una sola página.
 Antes de reconstruir lo que hemos hecho hasta ahora, debemos asegurarnos de extraer los datos solo de los contenedores que tienen Metascore.
 
-*----- Imagen -------*
+<img src="/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/sin_metascore.png" alt="sin metascore" title="sin metascore" style="width:70%;margin: auto;display: block;" />
 
 Necesitamos agregar una condición para omitir películas sin Metascore.
 
@@ -437,20 +517,19 @@ Usando el inspector de elementos nuevamente, vemos que la sección Metascore est
 
 El distintivo es claramente el `ratings-metascore`.
 
-
-*----- Imagen -------*
+<img src="/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/rating_metascore.png" alt="rating metascore" title="rating metascore" style="width:70%;margin: auto;display: block;" />
 
 
 Podemos usar `find()` para buscar en cada contenedor de película un div que tenga esa marca distintiva. Cuando `find()` no encuentra nada, devuelve un objeto `None`. Podemos usar este resultado en una declaración `if` para controlar si una película se scrapea.
 
 Busquemos en la página web un contenedor de películas que no tenga Metascore y veamos qué devuelve `find()`.
 
-*Importante: cuando ejecuté el siguiente código, el primer contenedor no tenía Metascore. Sin embargo, este es un objetivo cambiante, porque el número de votos cambia constantemente para cada película. Para obtener los mismos resultados que obtuve en la siguiente celda de código demostrativo, debe buscar un contenedor que no tenga un Metascore en el momento en que ejecuta el código.*
+*Importante: cuando ejecuté el siguiente código, el séptimo contenedor no tenía Metascore. Sin embargo, este es un objetivo cambiante, porque el número de votos cambia constantemente para cada película. Para obtener los mismos resultados que obtuve en la siguiente celda de código demostrativo, debe buscar un contenedor que no tenga un Metascore en el momento en que ejecuta el código.*
 
 
 ```python
-puntaje_mscore_cero = contenedores_pelicula[0].find('div', class_ = 'ratings-metascore')
-print(type(puntaje_mscore_cero))
+puntaje_mscore_septimo = contenedores_pelicula[7].find('div', class_ = 'ratings-metascore')
+print(type(puntaje_mscore_septimo))
 ```
 
 ```bash
@@ -515,17 +594,17 @@ print(test_df.info())
 
 ```bash
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 134 entries, 0 to 133
+RangeIndex: 93 entries, 0 to 92
 Data columns (total 5 columns):
  #   Column     Non-Null Count  Dtype  
 ---  ------     --------------  -----  
- 0   película   134 non-null    object 
- 1   año        134 non-null    object 
- 2   imdb       134 non-null    float64
- 3   metascore  134 non-null    int64  
- 4   votos      134 non-null    int64  
+ 0   película   93 non-null     object 
+ 1   año        93 non-null     object 
+ 2   imdb       93 non-null     float64
+ 3   metascore  93 non-null     int64  
+ 4   votos      93 non-null     int64  
 dtypes: float64(1), int64(2), object(2)
-memory usage: 5.4+ KB
+memory usage: 3.8+ KB
 None
 ```
 
@@ -536,27 +615,27 @@ print(test_df.head(n=10))
 ```
 
 ```bash
-                                película         año  imdb  metascore   votos
-0                                Hablame   (I) (2022)   7.5         76   24315
-1                                Babylon   (I) (2022)   7.1         60  140035
-2                                      X  (II) (2022)   6.6         79  141075
-3                       Un Vecino Gruñón       (2022)   7.5         51  119931
-4             Avatar: El camino del agua       (2022)   7.6         67  451221
-5                                 Batman       (2022)   7.8         72  723010
-6                                Top Gun       (2022)   8.3         78  623797
-7   Todo en todas partes al mismo tiempo       (2022)   7.8         81  473311
-8                             La ballena       (2022)   7.7         60  171725
-9                              Tren bala   (I) (2022)   7.3         49  380635
-10                               El Menú       (2022)   7.2         71  343596
-11                                 M3gan       (2022)   6.4         72  118519
-12    El gato con botas: El último deseo       (2022)   7.9         73  151006
-13                         Purple Hearts       (2022)   6.7         30   45567
-14               No te preocupes, cariño   (I) (2022)   6.3         48  125158
-15                                  Sisu       (2022)   6.9         70   52071
-16                      Hasta los Huesos       (2022)   6.8         74   47994
-17                     La ciudad perdida       (2022)   6.1         60  138711
-18                                 Pearl       (2022)   7.0         76   68405
-19           El Triángulo de la tristeza       (2022)   7.3         63  150714
+                                        película         año  imdb  metascore   votos
+0                                    Oppenheimer      (2023)   8.6         88  380436
+1                                         Barbie  (I) (2023)   7.4         80  254911
+2                                 Heart of Stone  (I) (2023)   5.7         44   34073
+3                        Red, White & Royal Blue      (2023)   7.1         62   26037
+4                                    Blue Beetle      (2023)   6.8         61   17039
+5                                 Hazme el favor      (2023)   6.5         59   51102
+6                Guardianes de la Galaxia vol. 3      (2023)   8.0         64  294910
+7                         Dracula: Mar de Sangre      (2023)   6.4         52    6454
+8          Spider-Man: A través del spider-verso      (2023)   8.8         86  237098
+9                   Tortugas Ninja: Caos Mutante      (2023)   7.5         74   18899
+10                   Megalodón 2: el gran abismo      (2023)   5.5         40   20273
+11                                 Asteroid City      (2023)   6.7         74   64478
+12                Toc Toc Toc: El sonido del mal      (2023)   5.9         50    9029
+13  Misión: Imposible - Sentencia Mortal Parte 1      (2023)   8.0         81  130816
+14                                  Gran Turismo      (2023)   7.3         46   10179
+15                Super Mario Bros.: La película      (2023)   7.1         46  183453
+16                                     Elementos      (2023)   7.0         58   41212
+17                            Sonido de Libertad      (2023)   7.8         43   49273
+18                                        Strays      (2023)   6.4         54    3157
+19                             Mansión Encantada      (2023)   6.2         47   10812
 ```
 
 ¡Todo salió como se esperaba!
@@ -594,7 +673,8 @@ Scrapearemos las primeras 2 páginas de cada año en el intervalo 2000-2022. 2 p
 
 Como se mostró anteriormente, las URL siguen una cierta lógica a medida que cambian las páginas web.
 
-*----- Imagen -------*
+
+<img src="/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/variables_url.png" alt="variables url script" title="variables url script" style="width:100%;margin: auto;display: block;" />
 
 Mientras vamos realizando las peticiones, solo tendremos que variar los valores de solo dos parámetros de la URL: `release_date` y `start`. Preparemos los valores que necesitaremos para bucle. En nuestro código haremos:
 
