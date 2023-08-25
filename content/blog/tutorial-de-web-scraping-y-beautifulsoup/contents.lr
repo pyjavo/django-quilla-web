@@ -4,7 +4,7 @@ author: javier-daza
 ---
 body:
 
-Siempre tuve en mis favoritos del navegador el tutorial de dataquest <span style="font-style: italic;font-size: 1.3rem;">www.dataquest.io/blog/web-scraping-beautifulsoup/</span>, pero desde hace un tiempo para acá, bajaron dicho artículo de su página web. El propósito de este artículo es rescatar ese contenido y, de paso, traducirlo al español.
+Siempre tuve en mis favoritos del navegador el tutorial de dataquest sobre web scraping con beautifulsoup por Alex Olteanu, pero desde hace un tiempo para acá, bajaron dicho artículo de su página web. El propósito de este artículo es rescatar ese contenido y, de paso, traducirlo al español 💪.
 
 ¡Empecemos!
 
@@ -42,19 +42,20 @@ Queremos encontrar una combinación de páginas que requiera un número relativa
 Una forma de obtener todos los datos que necesitamos es compilar una lista de nombres de películas y usarla para acceder a la página web de cada película en los sitios web de IMDB y Metacritic.
 
 
-*----- GIF -------*
+![Busqueda pelicula](/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/busqueda_pelicula.gif)
+
 
 Como queremos obtener más de 2000 calificaciones tanto de IMDB como de Metacritic, tendremos que realizar al menos 4000 solicitudes. Si hacemos una solicitud por segundo, nuestro script necesitará un poco más de una hora para realizar 4000 solicitudes. Por ello, merece la pena intentar identificar formas más eficientes de obtener nuestros datos.
 
 Si exploramos el sitio web de IMDB, podemos descubrir una forma de reducir a la mitad el número de solicitudes. Las puntuaciones de Metacritic se muestran en la página de películas de IMDB, por lo que podemos eliminar ambas clasificaciones con una sola solicitud:
 
 
-*----- Imagen -------*
+![película Oppenheimer](/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/oppenheimer_puntuaciones.png)
 
-Si investigamos más a fondo el sitio de IMDB, podemos descubrir la página que se muestra a continuación. Contiene todos los datos que necesitamos para 50 películas. Dado nuestro objetivo, esto significa que solo tendremos que hacer unas 40 solicitudes, que es 100 veces menos que nuestra primera opción. Exploremos más esta última opción.
+Si investigamos más a fondo el sitio de IMDB, podemos descubrir la página que se muestra a continuación. Contiene todos los datos que necesitamos para cierto número de películas (Por defecto 50, pero podemos escoger 250). Dado nuestro objetivo, esto significa que solo tendremos que hacer un número limitado de solicitudes (alrededor de 46), lo que es 100 veces menos que nuestra primera opción. Exploremos más esta última opción.
 
 
-*----- Imagen -------*
+![Puntuaciones peliculas 2003](/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/2023_puntuaciones.png)
 
 
 ## Identificando la estructura de la URL
@@ -62,16 +63,14 @@ Si investigamos más a fondo el sitio de IMDB, podemos descubrir la página que 
 
 Nuestro desafío ahora es asegurarnos de que entendemos la lógica de la URL a medida que cambian las páginas que queremos scrapear. Si no podemos entender esta lógica lo suficiente como para poder implementarla en el código, llegaremos a un callejón sin salida.
 
-Si accede a la página de [búsqueda avanzada](https://www.imdb.com/search/) de IMDB, puede buscar películas por [año](https://www.imdb.com/search/title/#releasedate):
+Si accede a la página de [búsqueda avanzada](https://www.imdb.com/search/) de IMDB, y selecciona `advance title search` puede buscar películas por [año](https://www.imdb.com/search/title/#releasedate):
 
-*----- Imagen -------*
+![Búsqueda avanzada](/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/busqueda_avanzada.png)
 
 En el campo "Release Date", busquemos por fechas de 2022-01-01 a 2022-12-31. Luego, al final de la página le damos click al botón de buscar. En la siguiente página ordenamos las películas por número de votos y le damos click al botón de siguiente, al final de la página final. Así llegaremos a esta página web, que tiene esta URL:
 
-<span>https://www.imdb.com/search/title/?release_date=2022-01-01,2022-12-31&sort=num_votes,asc&start=51&ref_=adv_nxt</span>
 
-
-*----- Imagen -------*
+![Estructura URL](/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/estructura_url.png)
 
 En la imagen de arriba, puedes ver que la URL tiene varios parámetros después del signo de interrogación:
 
@@ -85,9 +84,9 @@ Si navega por esas páginas y observa la URL, notará que solo cambian los valor
 
 Comencemos a escribir el script solicitando el contenido de esta única página web:
 
-<span>https://www.imdb.com/search/title/?release_date=2022&count=250</span>
-<span>https://www.imdb.com/search/title?release_date=2017&sort=num_votes,desc&page=1</span>
-
+```python
+url = "https://www.imdb.com/search/title/?release_date=2023&count=250"
+```
 
 En el primer bloque de código vamos a:
 
@@ -105,7 +104,7 @@ pip install requests
 ```python
 from requests import get
 
-url = 'https://www.imdb.com/search/title/?release_date=2022&count=250'
+url = 'https://www.imdb.com/search/title/?release_date=2023&count=250'
 
 respuesta = get(url)
 
@@ -121,15 +120,8 @@ La respuesta que se obtiene:
     xmlns:og="http://ogp.me/ns#"
     xmlns:fb="http://www.facebook.com/2008/fbml">
     <head>
-         
-
         <meta charset="utf-8">
-
-
-
-
         <script type="text/javascript">var IMDbTimer={starttime: new Date().getTime(),pt:'java'};</script>
-
 <script>
     if (typeof uet == 'function') {
       uet("bb", "LoadTitle", {wb: 1});
@@ -145,22 +137,22 @@ Como puede ver en la primera línea de `respuesta.text`, el servidor nos envió 
 
 Todas las páginas que queremos escrapear tienen la misma estructura general. Esto implica que también tienen la misma estructura general de HTML. Entonces, para escribir nuestro script, bastará con comprender la estructura HTML de una sola página. Para hacer eso, usaremos **las herramientas de desarrollo del navegador** (Developer Tools en inglés).
 
-Si usa [Chrome](https://developer.chrome.com/devtools), haga clic con el botón derecho en un elemento de la página web que le interese y luego haga clic en *Inspeccionar*. Esto lo llevará directamente a la línea HTML que corresponde a ese elemento:
+Si usa [Chrome](https://developer.chrome.com/devtools) o Brave, haga clic con el botón derecho en un elemento de la página web que le interese y luego haga clic en *Inspeccionar*. Esto lo llevará directamente a la línea HTML que corresponde a ese elemento:
 
-*----- Imagen -------*
+![Inspeccionar elementos](/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/inspeccionar_elementos.png)
 
-También puede hacer esto con [Firefox](https://developer.mozilla.org/es/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) y [Safari](https://developer.apple.com/safari/tools/) DevTools.
+También puede hacer esto con [Firefox](https://developer.mozilla.org/es/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) o [Safari](https://developer.apple.com/safari/tools/) DevTools.
 
 Tenga en cuenta que toda la información de cada película, incluido el póster, está contenida en una etiqueta `div`.
 
 
-*----- Imagen -------*
+![Etiqueta div](/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/div.png)
 
 
 Hay muchas líneas HTML anidadas dentro de cada etiqueta `div`. Puede explorarlos haciendo clic en esas pequeñas flechas grises a la izquierda de las líneas HTML correspondientes a cada `div`. Dentro de estas etiquetas anidadas encontraremos la información que necesitamos, como la calificación de una película.
 
 
-*----- Imagen -------*
+![Puntuación](/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/puntuacion.png)
 
 Se muestran 50 películas por página, por lo que debe haber un contenedor `div` para cada una. Extraigamos todos estos 50 contenedores mediante el análisis gramatical (*parsing* en inglés)del documento HTML de nuestra solicitud anterior.
 
@@ -198,7 +190,7 @@ Antes de extraer los 50 contenedores `div`, debemos averiguar qué los distingue
 
 Esta combinación es exclusiva de estos contenedores `div`. Podemos ver que es cierto haciendo una búsqueda rápida con `(Ctrl + F)`. Tenemos 50 contenedores de este tipo, por lo que esperamos ver solo 50 coincidencias:
 
-*----- Imagen -------*
+<img src="/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/div_50.png" alt="50 coincidencias" title="50 coincidencias" style="width:60%;margin: auto;display: block;" /> 
 
 Ahora usemos el método `find_all()` para extraer todos los contenedores `div` que tienen un atributo de clase de tipo `lister-item mode-advanced`:
 
@@ -611,7 +603,7 @@ Mientras vamos realizando las peticiones, solo tendremos que variar los valores 
 
 ```python
 paginas = (1, 251)
-url_años = [str(i) for i in range(2000, 2022)]
+url_años = [str(i) for i in range(2000, 2023)]
 ```
 
 ### Controlando la tasa de rastreo (crawl-rate)
@@ -677,7 +669,7 @@ Petición: 4; Frecuencia: 0.4997272043465967 peticiones/s
 Petición: 5; Frecuencia: 0.4543451628627026 peticiones/s
 ```
 
-Dado que vamos a realizar 44 solicitudes, nuestro trabajo se verá un poco desordenado a medida que se acumule el resultado. Para evitarlo, borraremos el resultado después de cada iteración y lo reemplazaremos con información sobre la solicitud más reciente. 
+Dado que vamos a realizar 46 solicitudes, nuestro trabajo se verá un poco desordenado a medida que se acumule el resultado. Para evitarlo, borraremos el resultado después de cada iteración y lo reemplazaremos con información sobre la solicitud más reciente. 
 
 Este paso solo sirve si estás probando desde un Jupyter notebook, sino, puedes ignorarlo.
 
@@ -721,6 +713,14 @@ Y como resultado, veremos:
 ```
 
 Elegimos una advertencia en lugar de romper el ciclo porque existe una buena posibilidad de que extraigamos suficientes datos, incluso si algunas de las solicitudes fallan. Solo romperemos el ciclo si el número de solicitudes es mayor de lo esperado.
+
+*Nota:* Adicionalmente a lo que sugiere el tutorial original sobre el monitoreo, instalé [ipython-autotime](https://pypi.org/project/ipython-autotime/) para ver el tiempo de ejecución de cada celda en mi jupyter notebook.
+
+```bash
+pip install ipython-autotime
+```
+
+Luego de esto, solo es colocar `%load_ext autotime` en la primera celda del cuaderno y listo.
 
 ### Juntando todo
 
@@ -774,7 +774,7 @@ for año in url_años:
             warn(f'Año: {año};   Petición: {peticiones}; Status code: {respuesta.status_code}')
 
         # Rompe el ciclo si el número de peticiones es muy mayor que el esperado
-        if peticiones > 50:
+        if peticiones > 47:
             warn('Número de peticiones fue mayor al esperado.')
             break
 
@@ -813,9 +813,9 @@ for año in url_años:
 ```bash
 Petición: 44; Frecuencia: 0.06678366415302274 peticiones/s
 ```
-¡Que bien! El scrapeado parece haber funcionado perfectamente. El script duró unos 11 minutos.
+¡Que bien! El scrapeado parece haber funcionado perfectamente. El script duró 10min 35s.
 
-Ahora combinemos los datos en un `DataFrame de pandas para examinar lo que hemos logrado extraer. Si todo es como se esperaba, podemos continuar con la limpieza de los datos para dejarlos listos para el análisis.
+Ahora combinemos los datos en un `DataFrame` de pandas para examinar lo que hemos logrado extraer. Si todo es como se esperaba, podemos continuar con la limpieza de los datos para dejarlos listos para el análisis.
 
 ## Examinando los datos scrapeados
 Ahora lo siguiente será:
@@ -892,7 +892,7 @@ Limpiaremos los datos extraídos con dos objetivos en mente:
 En consecuencia, nuestra limpieza de datos consistirá en:
 
 - Reordenar las columnas.
-- Limpiar la columna de año y convertir los valores a números enteros.
+- Limpiar la columna de `año` y convertir los valores a números enteros.
 - Verificar los valores de calificación extremos para determinar si todas las calificaciones están dentro de los intervalos esperados.
 - Normalizar uno de los tipos de calificaciones (o ambos) para generar un histograma comparativo.
 
@@ -953,37 +953,24 @@ Contando desde el final hacia el principio, podemos ver que los años siempre se
 df.loc[:, 'año'] = df['año'].str[-5:-1].astype(int)
 ```
 
-Si hacemos esto tal cual, encontraremos un error en la conversión de los datos, ya que hay años con la palabra `Video` dentro de ellas. Para ello, lo primo que tenemos que hacer es quitar esa cadena de texto y luego si proceder con la conversión de los datos.
+Si hacemos esto tal cual, encontraremos un error en la conversión de los datos, ya que hay registros con la palabra `Video` dentro de ellas. Para ello, lo primero que tenemos que hacer es remover esa cadena de texto. Aprovecharé para quitar también el paréntesis, por lo que ahora mi rebanada llegará hasta el cuarto caracter de derecha a izquierda.
 
 ```python
-years = df['año']
-years = years.str.strip(' Video)')
-years.unique()
+df.loc[:, 'año'] = df['año'].str.strip(' Video)').str[-4:]
 ```
 
-Como vemos ahora, los datos ya no tienen el texto `Video` dentro de ellos
+Como vemos ahora, los datos ya no tienen el texto `Video)` dentro de ellos.
 
 ```bash
-array(['(2000', '(I) (2000', '(2001', '(I) (2001', '(2002', '(I) (2002',
-       '(2003', '(I) (2003', '(2004', '(I) (2004', '(2005', '(I) (2005',
-       '(2006', '(I) (2006', '(III) (2006', '(II) (2006', '(2007',
-       '(I) (2007', '(II) (2007', '(2008', '(I) (2008', '(2009',
-       '(I) (2009', '(II) (2009', '(2010', '(I) (2010', '(II) (2010',
-       '(2011', '(I) (2011', '(IV) (2011', '(2012', '(I) (2012',
-       '(II) (2012', '(2013', '(I) (2013', '(II) (2013', '(2014',
-       '(I) (2014', '(II) (2014', '(III) (2014', '(2015', '(I) (2015',
-       '(II) (2015', '(VI) (2015', '(III) (2015', '(I) (2016', '(2016',
-       '(II) (2016', '(IX) (2016', '(V) (2016', '(2017', '(I) (2017',
-       '(II) (2017', '(III) (2017', '(2018', '(I) (2018', '(III) (2018',
-       '(II) (2018', '(I) (2019', '(2019', '(II) (2019', '(III) (2019',
-       '(2020', '(I) (2020', '(II) (2020', '(IV) (2020', '(V) (2020',
-       '(2021', '(I) (2021', '(II) (2021'], dtype=object)
+array([2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
+       2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      dtype=object)
 ```
 
 Ahora si, convirtamos a números enteros:
 
 ```python
-df.loc[:, 'año'] = years.str[-4:].astype(int)
+df = df.astype({'año': int})
 ```
 
 Visualicemos los primeros 5 valores de la columna del año para una verificación rápida. También podemos ver el tipo de valores en la última línea de la salida:
@@ -998,11 +985,100 @@ df['año'].head(5)
 2    2000
 3    2000
 4    2000
-Name: año, dtype: object-------> int
+Name: año, dtype: int64
 ```
 
+Ahora comprobaremos los valores mínimos y máximos de cada tipo de calificación. Podemos hacer esto muy rápidamente usando el [método](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html) `describe()` de pandas. Cuando se aplica en un `DataFrame`, este método devuelve varias estadísticas descriptivas para cada columna numérica del `DataFrame. En la siguiente línea de código seleccionamos solo aquellas filas que describen los valores mínimo y máximo, y solo aquellas columnas que describen calificaciones de IMDB y Metascores.
+
+```python
+df.describe().loc[['min', 'max'], ['imdb', 'metascore']]
+```
+
+```bash
+    imdb    metascore
+min  1.5    7.0
+max  9.0    100.0
+```
+
+No hay valores atípicos inesperados.
+
+De los valores anteriores, puede ver que las dos calificaciones tienen escalas diferentes. Para poder trazar las dos distribuciones en un solo gráfico, tendremos que llevarlas a la misma escala. Normalicemos la columna `imdb` a una escala de 100 puntos.
+
+Multiplicaremos cada calificación de IMDB por 10 y luego haremos una verificación rápida mirando las primeras 3 filas:
+
+
+```python
+df['n_imdb'] = df['imdb'] * 10
+print(df.head(3))
+```
+
+```bash
+    Unnamed: 0  película    año imdb    metascore   votos   n_imdb
+0   0   Gladiator   2000    8.5 67  1555914 85.0
+1   1   Memento 2000    8.4 83  1282227 84.0
+2   2   Cerdos y diamantes  2000    8.2 55  883470  82.0
+```
+
+¡Genial! Ahora estamos en condiciones de guardar este conjunto de datos localmente, para poder compartirlo con otros más fácilmente. Ya lo compartí públicamente en este repositorio de GitHub de la comunidad. Hay otros lugares donde puedes compartir un conjunto de datos, como Kaggle o Dataworld.
+
+Así que guardémoslo:
+
+```python
+df.to_csv('calificaciones_peliculas.csv')
+```
+
+Finalmente, grafiquemos las distribuciones!
+
+
 ## Graficando y analizando las distribuciones
-asdad
+En la siguiente celda de código dentro de jupyter notebook vamos a:
+
+- Instalar `matplotlib`
+
+```bash
+pip install matplotlib
+```
+- Importar el submódulo `matplotlib.pyplot`.
+- Correr la magia de Jupyter `%matplotlib` para activar el modo matplotlib de Jupyter y luego agregar `inline` para que nuestros gráficos se muestren dentro del cuaderno.
+- Crea un objeto `figure` con 3 ejes.
+- Dibujar la distribución de cada calificación no normalizada en un eje individual `ax`.
+- Dibujar las distribuciones normalizadas de las dos calificaciones en el mismo eje `ax`.
+
+```python
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+fig, axes = plt.subplots(nrows = 1, ncols = 3, figsize = (16,4))
+ax1, ax2, ax3 = fig.axes
+ax1.hist(df['imdb'], bins = 10, range = (0,10)) # bin range = 1
+ax1.set_title('IMDB rating')
+
+ax2.hist(df['metascore'], bins = 10, range = (0,100)) # bin range = 10
+ax2.set_title('Metascore')
+
+ax3.hist(df['n_imdb'], bins = 10, range = (0,100), histtype = 'step', label='n_imdb')
+ax3.hist(df['metascore'], bins = 10, range = (0,100), histtype = 'step', label='metascore')
+ax3.legend(loc = 'upper left')
+ax3.set_title('The Two Normalized Distributions')
+
+for ax in fig.axes:
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+plt.show()
+```
+
+![Distribuciones películas](/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/distribuciones.png)
+
+Comenzando con el [histograma](https://datavizcatalogue.com/methods/histogram.html) de IMDB, podemos ver que la mayoría de calificaciones están entre 6 y 8. Hay pocas películas con una calificación mayor a 8, y menos aún con una calificación menor a 4. Esto indica que es raro observar tanto películas muy buenas como películas muy malas.
+
+La distribución de las calificaciones de Metascore se asemeja a una [distribución normal](https://www.mathsisfun.com/data/standard-normal-distribution.html): la mayoría de las calificaciones son promedio y alcanzan un máximo de aproximadamente 50. A partir de este pico, las frecuencias disminuyen gradualmente hacia valores de calificación extremos. Según esta distribución, efectivamente hay menos películas muy buenas y muy malas, pero no tan pocas como indican las valoraciones de IMDB.
+
+En el gráfico comparativo, queda más claro que la distribución de IMDB está muy sesgada hacia la parte más alta de las calificaciones promedio, mientras que las calificaciones de Metascore parecen tener una distribución mucho más equilibrada.
+
+*¿Cuál podría ser la razón de ese sesgo en la distribución de IMDB?* 
+
+Una hipótesis es que muchos usuarios tienden a utilizar un método binario para evaluar películas. Si les gusta la película, le dan un 10. Si no les gusta, le dan una calificación muy pequeña o no se molestan en calificarla. Este es un problema interesante que vale la pena explorar con más detalle.
+
 
 ## Siguientes pasos
 Hemos recorrido un largo camino desde solicitar el contenido de una sola página web hasta analizar las calificaciones de más de 2000 películas. Ahora debería saber cómo raspar muchas páginas web con la misma estructura HTML y URL.
