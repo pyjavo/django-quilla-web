@@ -756,7 +756,8 @@ Este paso solo sirve si estás probando desde un Jupyter notebook, sino, puedes 
 Para hacer eso usaremos la función `clear_output()` del [módulo](https://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html#IPython.display.clear_output) `display` de IPython. Estableceremos el parámetro de espera de `clear_output()` en True para esperar y reemplazar la salida actual hasta que aparezca alguna salida nueva.
 
 ```python
-from time import time
+from time import time, sleep
+from random import randint
 
 from IPython.display import clear_output
 
@@ -768,7 +769,7 @@ for _ in range(5):
     sleep(randint(1,3))
     tiempo_transcurrido = time() - tiempo_inicio
     print(f'Petición: {peticiones}; Frecuencia: {peticiones/tiempo_transcurrido} peticiones/s')
-clear_output(wait = True)
+    clear_output(wait = True)
 ```
 
 ```
@@ -777,7 +778,7 @@ Petición: 5; Frecuencia: 0.6240351700607663 peticiones/s
 
 El resultado anterior es el que verá una vez que se haya ejecutado el ciclo. Así es como se ve mientras está funcionando
 
-*----- GIF -------*
+![funcionalidad clear output](/img/posts/2023/tutorial-de-web-scraping-y-beautifulsoup/clear_output.gif)
 
 Para monitorear el código de estado, configuraremos el programa para que nos avise si hay algo mal. Una solicitud exitosa se indica mediante un código de estado de 200. Usaremos la función `warn()` del módulo de `warnings` para generar una advertencia si el código de estado no es 200.
 
@@ -1099,7 +1100,7 @@ print(df.head(3))
 2   2   Cerdos y diamantes  2000    8.2 55  883470  82.0
 ```
 
-¡Genial! Ahora estamos en condiciones de guardar este conjunto de datos localmente, para poder compartirlo con otros más fácilmente. Ya lo compartí públicamente en este repositorio de GitHub de la comunidad. Hay otros lugares donde puedes compartir un conjunto de datos, como Kaggle o Dataworld.
+¡Genial! Ahora estamos en condiciones de guardar este conjunto de datos localmente, para poder compartirlo con otros más fácilmente. Ya lo compartí públicamente en este repositorio de GitHub de [notebooks de Python Barranquilla](https://github.com/PyBAQ/Notebooks/tree/master/tutorial_web_scraping_beautifulsoup). Hay otros lugares donde puedes compartir un conjunto de datos, como Kaggle o Dataworld.
 
 Así que guardémoslo:
 
