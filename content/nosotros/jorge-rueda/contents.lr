@@ -2,7 +2,7 @@ name: Jorge Rueda
 ---
 photo: /img/team/jorge-rueda.jpg
 ---
-role: colaborador
+role: contribuidor
 ---
 work: Contribuidor sitio web
 ---
@@ -17,3 +17,5 @@ twitter_handle:
 contributions: Ha contribuido en la mejora de la página web de python Barranquilla
 ---
 start_activity: 2021-03-19
+---
+end_activity: 2023-08-19
