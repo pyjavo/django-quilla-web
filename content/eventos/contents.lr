@@ -426,7 +426,15 @@ attach: <a href="https://docs.google.com/presentation/d/15a3RMm9d_1h9BuQAJUxYHSb
 ###### event-attach ######
 title: Modelado de Data Warehouses con DBT
 ------
-attach: <a href="https://docs.google.com/presentation/d/15f8xRC-ArOWBwZzl_7crgqMF1V9c2lte/edit?usp=sharing&ouid=102956723374392876682&rtpof=true&sd=true">Diapositivas</a> / <a href="https://www.youtube.com/live/CPxE3aC9xdQ">Video Youtube</a>
+attach: <a href="https://docs.google.com/presentation/d/15f8xRC-ArOWBwZzl_7crgqMF1V9c2lte/edit?usp=sharing&ouid=102956723374392876682&rtpof=true&sd=true">Diapositivas</a> / <a href="https://www.youtube.com/live/CPxE3aC9xdQ">Video Youtube</a> / <a href="https://github.com/jdaguilar/data-warehouse-modeling-with-dbt-pybaq">Repositorio</a>
+###### event-attach ######
+title: Pentesting con Jupyter Notebook
+------
+attach: <a href="https://www.youtube.com/live/SuJOOqAL8yk">Video Youtube</a>
+###### event-attach ######
+title: Serverless + Devcontainers en localhost + automatizando tareas repetitivas
+------
+attach: <a href="https://docs.google.com/presentation/d/1sbATjk1bKXDp61DYvHrmiL6aXe3h5Fte/edit?usp=sharing&ouid=102956723374392876682&rtpof=true&sd=true">Diapositivas devcontainers</a> / <a href="https://www.youtube.com/live/jnZatfMc6rM">Video Devcontainers y automatización de tareas</a>
 ----
 class: default
 ----
