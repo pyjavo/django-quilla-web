@@ -2,7 +2,7 @@ name: Fernando Llinás
 ---
 photo: /img/team/fernando-llinas.jpeg
 ---
-role: colaborador
+role: contribuidor
 ---
 work: Soporte y logística
 ---
@@ -20,3 +20,5 @@ contributions:
 * Esta contribuyendo en el establecimiento de la marca Python Barranquilla
 ---
 start_activity: 2022-01-19
+---
+end_activity: 2023-05-27
