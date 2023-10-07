@@ -25,3 +25,5 @@ specific_objective:
 website_handle: https://temii.pybaq.co/
 ---
 excerpt: Temii es una aplicación en desarrollo enfocada en apoyar al equipo PyBAQ en la organización y promoción de las futuras charlas
+---
+maintainers: andres-perez, sergio-orozco, javier-daza
