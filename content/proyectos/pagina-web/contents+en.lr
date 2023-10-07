@@ -1,0 +1,32 @@
+name: Website
+---
+description:
+
+The Python Barranquilla website is the place where knowledge is shared with the community through articles, presentations from previous events are shared
+and it shows where we are located and who makes up the organizing team.
+
+It is also an excellent opportunity generating tool to familiarize yourself with Jinja templates and the general web development environment. This is a good project to learn how to use git, get familiar with the github workflow and with markdown. This is a project in which beginner, intermediate and advanced developers interact.
+
+---
+general_objective: Have a place where relevant information is shared for the community
+---
+github_handle: PyBAQ/website
+---
+motivation: Be an example in the python community showing the relevance and presence of python developers in Barranquilla and its surroundings
+---
+specific_objective:
+
+- Show the events we do monthly in PyBaq
+- We share what we have learned through articles for the community every quarter
+- It shows where we are located
+- A small portfolio of those of us who collaborate in PyBaq is shown
+- Use the page as a learning environment for web technologies around python (lektor)
+
+---
+website_handle: https://pybaq.co/
+---
+excerpt: The Python Barranquilla website is the place where knowledge is shared with the community through articles, presentations from previous events are shared
+---
+collaborators: sergio-molinares, andres-perez
+---
+maintainers: sergio-orozco, javier-daza

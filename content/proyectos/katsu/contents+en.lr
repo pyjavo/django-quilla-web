@@ -1,0 +1,18 @@
+name: Katsu
+---
+description: Program to raffle t-shirts, books or any item you wish to give away during an event.
+---
+general_objective: Raffle items among event attendees programmatically
+---
+motivation: Being able to use python to do something fun, for example raffling things off at events
+---
+specific_objective:
+
+- Allow mass entry of the record of attendees to a talk
+- Choose among the attendees of a talk who wins a particular prize
+---
+excerpt: Program to raffle t-shirts, books or any item you wish to give away during an event.
+---
+github_handle: PyBAQ/katsu
+---
+maintainers: javier-daza
