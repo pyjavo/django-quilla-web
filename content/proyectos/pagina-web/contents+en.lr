@@ -3,7 +3,6 @@ name: Website
 description:
 
 The Python Barranquilla website is the place where knowledge is shared with the community through articles and recorded presentations from previous events. Here you can find information on where we are located and who makes up the organizing team.
-and it shows where we are located and who makes up the organizing team.
 
 It is also an excellent opportunity-generating tool to familiarize yourself with Jinja templates and web development in general. This is also a good project to learn how to use git with, and gain familiarity with Github workflows and  markdown. This is a project in which beginner, intermediate and advanced developers interact.
 
