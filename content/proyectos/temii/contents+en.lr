@@ -2,7 +2,7 @@ name: Temii
 ---
 description:
 
-Temii is an application in development that began as part of a series of workshops, this group was still Django Barranquilla at that time. Due to the time invested in its development and the purpose it serves, it is an application for intermediate and high-level programmers.
+Temii is an application in development that began as part of a series of workshops, this group was still Django Barranquilla at that time. Due to the time invested in its development and the purpose it serves, it is an application for intermediate and senior programmers.
 
 ---
 general_objective:
@@ -16,10 +16,10 @@ motivation: Generate an opensource project in the community that allows us to co
 ---
 specific_objective:
 
-- Allow the registration of users who want to propose their talks
-- Allow the registration of new talks to replace the Google form where the information of the speaker is added who can have multiple talks
+- Allow registration of users who want to propose their talks
+- Allow registration of new talks, replacing the old Google form. It should allow entering the speaker's information who can have multiple talks
 - Integrate with social media APIs to allow publishing and promoting upcoming talks
-- Keep the history of the events that have been taught
+- Keep a record of the events that have been hosted
 
 ---
 website_handle: https://temii.pybaq.co/
