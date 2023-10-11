@@ -1,0 +1,29 @@
+name: Temii
+---
+description:
+
+Temii is an application in development that began as part of a series of workshops, this group was still Django Barranquilla at that time. Due to the time invested in its development and the purpose it serves, it is an application for intermediate and senior programmers.
+
+---
+general_objective:
+
+Support the PyBAQ team in the organization and promotion of future talks
+
+---
+github_handle: PyBAQ/temii
+---
+motivation: Generate an opensource project in the community that allows us to collaborate and facilitates the community's objectives
+---
+specific_objective:
+
+- Allow registration of users who want to propose their talks
+- Allow registration of new talks, replacing the old Google form. It should allow entering the speaker's information who can have multiple talks
+- Integrate with social media APIs to allow publishing and promoting upcoming talks
+- Keep a record of the events that have been hosted
+
+---
+website_handle: https://temii.pybaq.co/
+---
+excerpt: Temii is an application in development focused on supporting the PyBAQ team in the organization and promotion of future talks
+---
+maintainers: andres-perez, sergio-orozco, javier-daza

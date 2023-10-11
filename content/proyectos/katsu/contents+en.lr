@@ -1,0 +1,18 @@
+name: Katsu
+---
+description: A program to randomly draw winners of t-shirts, books or any other items you wish to give away during an event.
+---
+general_objective: Programmatically draw winners of gifts from among event attendees.
+---
+motivation: Being able to use python to do something fun. For example, hosting giveaways at events.
+---
+specific_objective:
+
+- Allow unrestricted registrations of attendees to a talk.
+- Pick a random winner from among the attendees of a talk.
+---
+excerpt: Program to draw random winners of items such as books or t-shirts that you wish to give away during an event.
+---
+github_handle: PyBAQ/katsu
+---
+maintainers: javier-daza

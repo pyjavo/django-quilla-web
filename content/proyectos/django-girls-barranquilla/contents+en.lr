@@ -1,0 +1,28 @@
+name: Django Girls Barranquilla
+---
+description:
+
+A workshop held every year to help promote the empowerment of women in technology and web programming. This project is all about female inclusion or positive discrimination. For more information see https://djangogirls.org/barranquilla/ or https://argentinaenpython.com/django-girls/2017/07/barranquilla/
+
+---
+general_objective:
+
+Promote the empowerment of women in technology and web programming.
+
+---
+motivation: Reduce the gender gap between programmers by motivating women to participate in technology
+---
+specific_objective:
+
+- Show what the daily life of a web programmer looks like
+- Find a place that is freely available to hold the event
+- The place must have tables and power outlets to connect portable equipment
+- The event lasts one business day
+- The social integration of community leaders with the attendees.
+
+---
+website_handle: https://djangogirls.org/es/barranquilla/
+---
+excerpt: A workshop held every year to help promote the empowerment of women in technology and web programming.
+---
+maintainers: yuliana-martinez, javier-daza
