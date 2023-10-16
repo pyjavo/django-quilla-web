@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% block main %}
+  <div class="row">
+    {% for post in this.children %}
+    <div class="col-md-3 blog_post-post">
+      <div class="card mb-5">
+        <a href="{{ post|url }}" class="text-decoration-none">
+          <img src="{{ post.image|url }}" class="card-img-top" alt="">
+      </a>
+        <div class="card-body">
+          <h3 class="card-title"><a href="{{ post|url }}" class="text-decoration-none">{{ post.name }}</a></h3>
+          <p>{{post.excerpt}}</p>
+          <a href="{{ post|url }}" class="btn btn-primary">{{bag('settings', this.alt, 'read_more')}}</a>
+          {% if post.github_handle %}
+            <a href="https://github.com/{{post.github_handle}}" class="btn btn-secondary">{{bag('settings', this.alt, 'github')}}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {{ this.body }}
+{% endblock %}
