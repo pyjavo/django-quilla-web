@@ -4,15 +4,15 @@ _model: aliados
 ---
 body:
 
-#### sponsors ####
+#### allies ####
 title: Patrocinadores
 ----
 role: 1-patrocinador
-#### sponsors ####
+#### allies ####
 title: Aliados
 ----
 role: 2-activo
-#### sponsors ####
+#### allies ####
 title: Inactivos
 ----
 role: 3-inactivo
