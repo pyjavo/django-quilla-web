@@ -1,11 +1,6 @@
 {% from "macros/allies.html" import render_allies %}
-<div class="sponsors">
+<div class="allies">
   <div class="container">
     {{render_allies(site.query('/aliados', alt).filter(F.role == this.role).order_by('start_activity'), this.title)}}
-    <div class="text-center">
-      <a class="btn btn-primary" href="{{ '/aliados' | url(alt=alt) }}">
-        {{ bag('settings', alt, 'see_allies') }}
-      </a>
-    </div>
   </div>
 </div>

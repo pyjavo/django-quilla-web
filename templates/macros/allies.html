@@ -1,0 +1,16 @@
+{% macro render_allies(allies, title) %}
+  {% if allies %}
+    <div class="row justify-content-center">
+      {% if title %}
+        <h3 class="section-title text-center">{{ title.upper() }}</h3>
+      {% endif %}
+      {% for element in allies %}
+        <div class="col-lg-3 col-md-3 col-sm-3 text-center p-3">
+          <a href='{{ element | url }}'>
+            <img class="img-fluid" src='{{ element.image }}' alt='{{ element.name }}'>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endmacro %}

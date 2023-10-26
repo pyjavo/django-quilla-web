@@ -1,0 +1,20 @@
+title: Aliados
+---
+_model: aliados
+---
+body:
+
+#### allies ####
+title: Patrocinadores
+----
+role: 1-patrocinador
+#### allies ####
+title: Aliados
+----
+role: 2-activo
+#### allies ####
+title: Inactivos
+----
+role: 3-inactivo
+---
+seo_description: Python Barranquilla es una comunidad de desarrolladores web, dev-ops, emprendedores y estudiantes. La mayoría de nosotros tenemos nuestros propios empresas mientras que los otros trabajamos en las empresas de estos compañeros.
