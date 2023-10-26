@@ -1,16 +1,19 @@
-<div class="sponsors">
-  <div class="container">
-    <div class="row justify-content-center">
-      {% if this.title %}
-        <h3 class="section-title text-center">{{this.title.upper() }}</h3>
-      {% endif %}
-      {% for element in site.query('/aliados', alt).filter(F.role == this.role).order_by('start_activity') %}
-        <div class="col-lg-3 col-md-3 col-sm-3 text-center p-3">
-          <a href='{{ element | url }}'>
-            <img class="img-fluid" src='{{ element.image }}' alt='{{ element.name }}'>
-          </a>
-        </div>
-      {% endfor %}
+{% set allies = site.query('/aliados', alt).filter(F.role == this.role).order_by('start_activity') %}
+{% if allies %}
+  <div class="sponsors">
+    <div class="container">
+      <div class="row justify-content-center">
+        {% if this.title %}
+          <h3 class="section-title text-center">{{this.title.upper() }}</h3>
+        {% endif %}
+        {% for element in allies %}
+          <div class="col-lg-3 col-md-3 col-sm-3 text-center p-3">
+            <a href='{{ element | url }}'>
+              <img class="img-fluid" src='{{ element.image }}' alt='{{ element.name }}'>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
-</div>
+{% endif %}

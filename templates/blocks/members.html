@@ -1,9 +1,9 @@
 {% from "macros/miembros.html" import render_miembro %}
 
 <section class="members">
-  <div class="container">
-    {% set members = site.query('/nosotros', alt).filter(F.role == this.role).order_by('start_activity') %}
-    {% if members %}
+  {% set members = site.query('/nosotros', alt).filter(F.role == this.role).order_by('start_activity') %}
+  {% if members %}
+    <div class="container">
       <h3 class="section-title text-center">{{this.title.upper() }}</h3>
       <div class="members row d-flex justify-content-center">
         {% for member in members %}
