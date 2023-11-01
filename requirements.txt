@@ -1,5 +1,5 @@
-Flask==2.1.2
-Lektor==3.3.4
+Flask==2.3.3
+Lektor==3.3.10
 requests==2.31.0
-Werkzeug==2.1.2
-pytz==2022.2.1
+Werkzeug==2.3.7
+pytz==2023.3.post1
