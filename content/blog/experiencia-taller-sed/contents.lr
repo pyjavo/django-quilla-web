@@ -1,0 +1,62 @@
+title: Experiencia taller SED
+---
+author: 
+---
+body:
+
+La programación se ha vuelto una de las habilidades más apetecidas por el mercado laboral, ya que esta habilidad le permite a las empresas lanzarse a proyectos de automatización dentro de sus empresas, con lo cual pueden reducir sus costos de operación así como ofrecer otros servicios a sus clientes.
+
+Las administraciones públicas se han dado cuenta que tienen la oportunidad de poder atraer inversiones relacionadas con la prestación de servicios de tecnología, por lo tanto han decidido incentivar el desarrollo de habilidades en programación a través de múltiples programas. Un ejemplo de ellos lo tenemos en Barranquilla, cuando la alcaldía lanzó el programa “Barranquilla Territorio STEM + IS (Innovación para la sostenibilidad)”, con el fin de promocionar habilidades en ciencia y tecnología en instituciones educativas de carácter oficial.
+
+Una de las actividades fue un taller de fundamentos de Python que realizamos, la cual estuvo apoyada por los voluntarios de la comunidad de Python Barranquilla.
+
+# Experiencia Charlas SED
+
+Cuando se abrió la convocatoria, se inscribieron alrededor de 424 estudiantes de colegios distritales de Barranquilla, entre los grados Octavo y Noveno. Los chicos previamente habían recibido una formación en Fundamentos de Lógica de Programación usando como herramienta FlowGorithm.
+
+Si bien hubiéramos querido abarcar a todos, no contábamos con la capacidad para poder abarcar esa gran cantidad de estudiantes. Por tal motivo, se decidió solamente seleccionar a 25 estudiantes.La secretaria de educación realizó una evaluación final para evaluar a los estudiantes del curso, y de ahí se escogió a los 25 mejores para participar en el taller de fundamentos de Python.
+
+Se les había hecho también dos preguntas, una era para averiguar si conocían el lenguaje Python y si conocían la comunidad de Python Barranquilla.
+
+- El 92,2% no conocía o nunca había explorado Python antes.
+- El 79,2% desconocia la existencia de la comunidad de Python.
+
+# Preparación
+
+Mientras se hacía la selección, la comunidad de Python Barranquilla empezó a trabajar en el desarrollo del contenido de las clases. Aquí el reto consistió en centrarse en los fundamentos del lenguaje Python, intentando enseñarles cómo lo aprendido usando Flow Gorithm se podían aplicar.
+Aquí la propia experiencia de los voluntarios fue importante, porque cada uno mencionó como aprendió a programar, como lo enseña, y sobre todo los recursos educativos que usó o que ha encontrado (tutoriales Youtube, Artículos, libros, etc.).
+
+Una vez revisamos los contenidos, tomamos las siguientes decisiones:
+
+- Resumir los conceptos fundamentales, es decir, se tenía una frase corta para definir el concepto (por ejemplo: condicionales).
+- Ilustrar con un ejemplo gráfico el concepto. 
+- Acompañar cada concepto con al menos un ejercicio.
+
+Aquí tuvimos el cuidado de contextualizar los ejercicios en el contexto de nuestra Región Caribe (Ej: El tendero, El vendedor de raspados, entre otros). El motivo de contextualizar de esta forma es para generar esa conciencia de que lo que están aprendiendo si lo pueden aplicar de manera práctica, en vez de ejercicios demasiado abstractos.
+
+# Capacitación
+
+Llegaba el momento de saber si nuestra propuesta había funcionado. En primer lugar, al recibir a los estudiantes en las instalaciones, lo primero que hicimos fue presentar a cada uno de los voluntarios y que rol desempeñan en sus trabajos, este primer apartado era importante para poder animar a los chicos a concentrarse en el taller.
+
+En el primer día pusimos a prueba tanto las habilidades de los chicos como los de los docentes voluntarios, era esperable que algunos chicos tuvieran dificultades a la hora de entender algunos conceptos, pero los tutores supieron no solo ayudarlos a resolver sino también a darle la confianza a varios chicos. La prueba de ello es que al día siguiente varios de los chicos no solo mejoraron sino que su desempeño mejoró tanto que se destacaron.
+
+Una evidencia qué nos sorprendió durante el taller fue qué varios muchachos lograron dominar los ciclos. Desde la comunidad sabiamos qué habia un riesgo qué los chicos no lograran entender el concepto a la primera. Pero afortunadamente algunos lograron entender el concepto por su propia cuenta y a otros les ayudamos a comprender el concepto como parte de nuestro acompañamiento.
+
+# Conclusiones
+
+Aparte de la satisfacción personal de haber aportado de nuestro tiempo y conocimiento al futuro de estos Jóvenes, tenemos las siguientes conclusiones:
+Hay talento local: Objetivamente hablando el desempeño de estos estudiantes es notable, teniendo en cuenta que están en bachillerato y diferentes niveles socioeconómicos.
+
+Hay recursos disponibles: El SENA TIC de Barranquilla es una instalación bien equipada para formar talento en programación, curiosamente desconocemos lo bien equipada qué estaba, y nos hizo darnos cuenta lo valioso qué puede ser este espacio para futuras iniciativas.
+Se requiere promoción: Iniciativas como estas se deben seguir promoviendo, de tal forma que esta oportunidad de formar talento joven no se pierda, si detectamos por ejemplo que muy pocos sabían que era Python.
+
+# Agradecimientos
+
+
+
+---
+pub_date: 2024-02-10
+---
+excerpt: Experiencia impartiendo el taller de fundamentos de python
+---
+render_tdc: yes
