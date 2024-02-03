@@ -1,0 +1,48 @@
+{% extends "page.html" %}
+
+{% block main %}
+  <div class="container">
+    {{this.body}}
+    <div class="meetup-events">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-3">
+            <img src='{{ this.featured_photo
+                          if this.featured_photo
+                          else "/img/event-placeholder.jpg" }}'
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <h3 class="card-title">
+                <a class="text-decoration-none" href='{{ this|url }}'>
+                  {{ this.title }}
+                </a>
+              </h3>
+              <div class=event-details>
+                {% if this.venue %}
+                  <div class="venue">
+                    <strong>{{ this.venue }}</strong>
+                    {% if this.address_1 %}
+                      <span>{{ this.address_1 }}</span>
+                    {% endif %}
+                  </div>
+                {% endif %}
+                <div class="date">
+                  {% if alt == 'en' %}
+                    {{ this.date_start | datetimeformat("EEEE, MMMM d, y, H:mm") }}
+                  {% else %}
+                    {{ this.date_start | datetimeformat("EEEE, d 'de' MMMM 'de' y, h:mm a") }}
+                  {% endif %}
+                </div>
+                <div class="attach">
+                  {{ this.attach }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
