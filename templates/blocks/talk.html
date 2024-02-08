@@ -1,0 +1,18 @@
+<h2 class="title">{{ this.title }}</h2>
+<div class="details">
+  {{this.details}}
+</div>
+<div class="attachments">
+  {{this.attach}}
+</div>
+<div class="speaker">
+  {% if this.speaker %}
+    {% set speaker = site.get('nosotros/' + this.speaker, alt) %}
+    <a href="{{ speaker|url }}">{{ speaker.name }}</a>
+  {% else %}
+    {{this.speaker_name}}
+  {% endif %}
+</div>
+<div class="speaker-bio">
+  {{this.speaker_bio}}
+</div>

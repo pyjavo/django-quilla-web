@@ -31,10 +31,12 @@
                     </div>
                   {% endif %}
                   <div class="date">
-                    {% if alt == 'en' %}
-                      {{ element.date_start | datetimeformat("EEEE, MMMM d, y, H:mm") }}
-                    {% else %}
-                      {{ element.date_start | datetimeformat("EEEE, d 'de' MMMM 'de' y, h:mm a") }}
+                    {% if element.date_start %}
+                      {% if alt == 'en' %}
+                        {{ element.date_start | datetimeformat("EEEE, MMMM d, y, H:mm") }}
+                      {% else %}
+                        {{ element.date_start | datetimeformat("EEEE, d 'de' MMMM 'de' y, h:mm a") }}
+                      {% endif %}
                     {% endif %}
                   </div>
                   <div class="attach">
