@@ -3,7 +3,7 @@
   margin: 0.75rem;
   width: 100%;
   
-  nav{
+  .toc {
     border: none;
     margin-bottom: 1em;
     padding: 10px;
@@ -18,7 +18,7 @@
       margin-top: 1rem;
       margin-bottom: 10px;
       font-size: 1.5rem;
-      color: $medium-gray;
+      color: $dark-gray;
     }
 
     li, ul, ul li{
