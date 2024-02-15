@@ -2,6 +2,39 @@
   max-width: 860px;
   margin: 0.75rem;
   width: 100%;
+  
+  .toc {
+    border: none;
+    margin-bottom: 1em;
+    padding: 10px;
+    background-color: $lighter-gray;
+    justify-content: center;
+    -webkit-justify-content:center;
+    width: auto;
+    margin: auto;
+    max-width: 800px;
+    
+    h2{
+      margin-top: 1rem;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: $dark-gray;
+    }
+
+    li, ul, ul li{
+      /*list-style: outside none none !important;*/
+      font-size: 1rem;
+    }
+
+    a {
+      color: $blue-light;
+      font-size: 1rem;
+      &:hover {
+        color: $yellow-hover;
+      }
+    }
+  } 
+  
   img, iframe {
     max-width: 100%;
   }
