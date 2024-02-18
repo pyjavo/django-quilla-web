@@ -10,7 +10,9 @@ Las administraciones públicas han identificado una valiosa oportunidad para atr
 
 Una de las actividades fue un taller de fundamentos de Python que realizamos,, la cual estuvo apoyada por los voluntarios de la comunidad de Python Barranquilla. Este taller fue una oportunidad invaluable para introducir a los participantes en los conceptos básicos de programación y familiarizarlos con el lenguaje Python.
 
-# Experiencia Taller
+![Taller](/img/posts/2023/taller-sed-barranquilla/sed1.jpg)
+
+# Previo al taller
 
 Cuando se abrió la convocatoria, aproximadamente 424 estudiantes de colegios distritales de Barranquilla se inscribieron para participar, provenientes de los grados Octavo y Noveno. Estos jóvenes habían recibido previamente una formación en Fundamentos de Lógica de Programación, utilizando como herramienta principal [Flowgorithm](http://flowgorithm.org/).
 
@@ -34,6 +36,8 @@ Una vez revisamos los contenidos, tomamos las siguientes decisiones:
 
 Aquí tuvimos el cuidado de contextualizar los ejercicios en el contexto de nuestra Región Caribe (Ej: El tendero, El vendedor de raspados, entre otros). El motivo de contextualizar de esta forma es para generar esa conciencia de que lo que están aprendiendo si lo pueden aplicar de manera práctica, en vez de ejercicios demasiado abstractos. Los ejercicios se pueden encontrar en el siguiente repositorio de [GitHub](https://github.com/PyBAQ/material-taller-sed).
 
+![Taller](/img/posts/2023/taller-sed-barranquilla/sed3.jpg)
+
 # Capacitación
 
 Después de haber elaborado y revisado los temas y contenidos de los talleres para asegurarnos de su adecuación, llegó el momento de evaluar si nuestra propuesta había sido efectiva. En primer lugar, al recibir a los estudiantes en las instalaciones, lo primero que hicimos fue presentar a cada uno de los voluntarios y que rol desempeñan en sus respectivos trabajos, Este primer paso resultaba fundamental para motivar a los jóvenes a concentrarse y participar activamente en el taller.
@@ -42,7 +46,10 @@ Durante la primera sesión, pusimos a prueba tanto las habilidades de los estudi
 
 Una evidencia qué nos sorprendió durante el taller fue qué varios muchachos lograron dominar los ciclos. Desde la comunidad sabiamos qué habia un riesgo qué los chicos no lograran entender el concepto a la primera. Pero afortunadamente algunos lograron entender el concepto por su propia cuenta y a otros les ayudamos a comprender el concepto como parte de nuestro acompañamiento.
 
+![Taller](/img/posts/2023/taller-sed-barranquilla/sed2.jpg)
+
 # Conclusiones
+
 
 Además de la gratificación personal derivada de haber contribuido con nuestro tiempo y conocimiento al desarrollo futuro de estos jóvenes, hemos extraído las siguientes conclusiones:
 
@@ -54,23 +61,27 @@ Se requiere promoción: Iniciativas como esta necesitan ser promovidas continuam
 
 # Agradecimientos
 
-Queremos agradecer por el compromiso y la dedicación de nuestros voluntarios de la comunidad Python Barranquilla:
+Queremos agradecer por el compromiso y la dedicación a nuestros voluntarios de la comunidad Python Barranquilla que participaron como mentores:
 
-- Javier Daza
-- Sergio Molinares
-- Andres Perez
-- Camila Zuluaga
-- Jorge Aguilar
+- Andrés Pérez
 - Daniela Charris
+- Javier Daza
+- Jorge Aguilar
+- María Camila Arciniegas
 - Nicolle Antequera
+- Sergio Molinares
+- Valeria Ramos
 
-A los docentes:
+Tambien aprovechamos para agradecerle a los siguientes profesionales su asesoramiento en la elaboración de los contenidos del taller:
 
-- Silfri Medina
-- Yasmin Valderrama
+- Sergio Orozco (Ingeniero de Sistemas)
+- Silfri Medina (Docente en informática)
+- Yasmin Valderrama (Psicóloga)
 
-Y a los miembros de la Secretaría de Educación:
-- Jose Medina
+Y por ultimo, agradecerles a los miembros de la secretaría de educación por darnos la oportunidad de impartir este taller:
+
+- José Castillo
+- Jonathan Quintero
 ---
 pub_date: 2024-02-17
 ---
