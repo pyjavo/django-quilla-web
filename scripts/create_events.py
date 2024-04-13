@@ -56,7 +56,9 @@ def load_events(events):
     for event in events:
         write_content(event["date_start"][:10] + "-" + slugify(event["title"]), event)
 
-events = extract_meetup_json("databags/meetup.json")
-attachment_index = attachments()
-transformed_events = [transform_event(event) for event in events["past_events"]]
-load_events(transformed_events)
+if __name__ == '__main__':
+    events = extract_meetup_json("databags/meetup.json")
+    attachment_index = attachments()
+    transformed_events = [transform_event(event) for event in events["past_events"]]
+    load_events(transformed_events)
+
