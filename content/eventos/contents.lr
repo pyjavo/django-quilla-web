@@ -427,14 +427,37 @@ attach: <a href="https://docs.google.com/presentation/d/15a3RMm9d_1h9BuQAJUxYHSb
 title: Modelado de Data Warehouses con DBT
 ------
 attach: <a href="https://docs.google.com/presentation/d/15f8xRC-ArOWBwZzl_7crgqMF1V9c2lte/edit?usp=sharing&ouid=102956723374392876682&rtpof=true&sd=true">Diapositivas</a> / <a href="https://www.youtube.com/live/CPxE3aC9xdQ">Video Youtube</a> / <a href="https://github.com/jdaguilar/data-warehouse-modeling-with-dbt-pybaq">Repositorio</a>
+
 ###### event-attach ######
 title: Pentesting con Jupyter Notebook
 ------
 attach: <a href="https://www.youtube.com/live/SuJOOqAL8yk">Video Youtube</a>
+
 ###### event-attach ######
 title: Serverless + Devcontainers en localhost + automatizando tareas repetitivas
 ------
 attach: <a href="https://docs.google.com/presentation/d/1sbATjk1bKXDp61DYvHrmiL6aXe3h5Fte/edit?usp=sharing&ouid=102956723374392876682&rtpof=true&sd=true">Diapositivas devcontainers</a> / <a href="https://www.youtube.com/live/jnZatfMc6rM">Video Devcontainers y automatización de tareas</a>
+
+###### event-attach ######
+title: Análisis y estadística de FIFA 24
+------
+attach: <a href="https://www.youtube.com/live/9YOtG3K9tYo?si=Kke-fhvmQmdKpFBj">Video Youtube</a> / <a href="https://github.com/PyBAQ/Notebooks/blob/master/Analisis%20y%20estadisticas%20del%20EA24/Analisis_y_estadisticas_Fifa_24.ipynb">Jupyter Notebook</a>
+
+###### event-attach ######
+title: Primera reunión de 2024
+------
+attach: <a href="https://www.meetup.com/pythonbaq/photos/34442381/">Fotos</a>
+
+###### event-attach ######
+title: Análisis Geoespacial con Python y QGIS
+------
+attach: <a href="https://www.youtube.com/live/3bwIca0m6_U?si=-XvIF0pfXcFc0E_N">Video Youtube</a> / <a href="https://www.meetup.com/pythonbaq/photos/34442375/">Fotos</a>
+
+###### event-attach ######
+title: Crea tu propio GPT local basado en LLAMA2 usando Python y Langchain
+------
+attach: <a href="https://drive.google.com/file/d/1IKvGyen_alghGD0XhXIUPwyER7BzTZcj/view?usp=sharing">Diapositivas</a> / <a href="https://www.youtube.com/live/UKJv1qPBElk?si=piTnCfbHVn8l3oz9">Video Youtube</a> / <a href="https://github.com/aliexerleo/llm-pybaq-demo">Repositorio</a>
+
 ----
 class: default
 ----
