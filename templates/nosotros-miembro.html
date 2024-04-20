@@ -68,12 +68,17 @@
       )}}
     </div>
 
-    <h3>Eventos</h3>
-    {% for event in site.query('/eventos', alt) | speakerevents(this._id) %}
-      <div>
-        <a href="{{event|url}}">{{event.title}}</a>
+    {% set eventos = site.query('/eventos', alt) | speakerevents(this._id) %}
+    {% if eventos %}
+      <h3>Eventos</h3>
+      <div class="events-user row"></div>
+        {% for event in eventos %}
+          <div>
+            <a href="{{event|url}}">{{event.title}}</a>
+          </div>
+        {% endfor %}
       </div>
-    {% endfor %}
+    {% endif %}
   </div>
 </div>
 {% endblock %}
