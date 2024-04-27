@@ -19,13 +19,19 @@ talks:
 #### talk ####
 title: Una mirada al desarrollo de proyectos con Serverless con Python y AWS
 ----
-details: Esta charla se dio por zoom, por lo que no se encuentra grabada
+details:
+
+<div class="row">
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/cPZryEGUdFs?rel=0" allowfullscreen></iframe>
+  </div>
+</div>
 ----
 speaker: 
 ----
 speaker_name: Juan de la Cruz
 ----
-speaker_bio: Trabaja en koombea
+speaker_bio: Desarrollador python
 ----
 attach: 
 #### talk ####

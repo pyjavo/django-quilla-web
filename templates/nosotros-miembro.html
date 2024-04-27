@@ -70,7 +70,7 @@
 
     {% set eventos = site.query('/eventos', alt) | speakerevents(this._id) %}
     {% if eventos %}
-      <h3>Eventos</h3>
+      <h3>Charlas</h3>
       <div class="events-user row"></div>
         {% for event in eventos %}
           <div>
