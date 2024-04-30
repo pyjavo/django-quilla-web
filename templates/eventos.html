@@ -1,11 +1,12 @@
 {% extends "page.html" %}
+{% from "macros/pagination.html" import render_pagination %}
 
 {% block main %}
   <div class="container">
     {{this.body}}
 
     <div class="meetup-events">
-      {% for element in this.children %}
+      {% for element in this.pagination.items %}
         <div class="card mb-3">
           <div class="row g-0">
             <div class="col-md-3">
@@ -55,5 +56,6 @@
         </div>
       {% endfor %}
     </div>
+    {{ render_pagination(this.pagination) }}
   </div>
 {% endblock %}
