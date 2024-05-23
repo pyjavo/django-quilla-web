@@ -12,14 +12,6 @@ def extract_meetup_json(file):
         events = json.loads(meetup_data.read())
         return events
 
-# TODO: Remove after migration is done
-def attachments():
-    project = Project.discover()
-    env = project.make_env()
-    pad = env.new_pad()
-    eventos = pad.get('/eventos1/')
-    return {evento["title"]: evento["attach"] for evento in eventos["body"].blocks[1]["body"].blocks[0]["anexos"].blocks}
-
 def transform_event(event: dict):
     content = OrderedDict()
     content["title"] = event["name"]
@@ -35,8 +27,6 @@ def transform_event(event: dict):
         content["address_1"] = event["venue"]["address_1"]
     except KeyError:
         print("Key error: venue on", event["name"])
-    # TODO: remove when migration is complete
-    content["talks"] = '\n\n#### talk ####\ntitle: {}\n----\nattach: {}'.format(event["name"], attachment_index.get(event["name"], ""))
     return content
 
 def write_content(slug, fields):
