@@ -4,13 +4,61 @@ date_start: 2021-12-04 10:30
 ---
 link: https://www.meetup.com/pythonbaq/events/282255251/
 ---
-information: <p>Luego de unas arduas competencias, el enfrentamiento final de la Liga Python nos traerá las siguientes presentaciones extendidas:</p> <p>- Breves historias de política y datos.<br/>- Bitácora de Trading.<br/>- La Entrevista: Una oportunidad para la vida.<br/>- Sacando datos en mares de textos con Python.</p> <p>Puedes encontrar los resultados de las semifinales en: <a href="https://pybaq.co/blog/resultados-semifinales-liga-python/" class="linkified">https://pybaq.co/blog/resultados-semifinales-liga-python/</a></p> 
+information:
+
+<p>Luego de unas arduas competencias, el enfrentamiento final de la Liga Python nos traerá las siguientes presentaciones extendidas:</p> <p>- Breves historias de política y datos.<br/>- Bitácora de Trading.<br/>- La Entrevista: Una oportunidad para la vida.<br/>- Sacando datos en mares de textos con Python.</p> <p>Puedes encontrar los resultados de las semifinales en: <a href="https://pybaq.co/blog/resultados-semifinales-liga-python/" class="linkified">https://pybaq.co/blog/resultados-semifinales-liga-python/</a></p> 
 ---
 featured_photo: https://secure.meetupstatic.com/photos/event/1/2/9/9/600_500404761.jpeg
 ---
-talks: 
+talks:
 
 #### talk ####
-title: Liga Python: Final
+title: Breves historias de politica y datos.
 ----
-attach: <a href="https://www.youtube.com/watch?v=YibzuncI8AI">Video Youtube</a>
+details: 
+----
+speaker: 
+----
+speaker_name: Rodrigo Tesone
+----
+speaker_bio: 
+----
+attach: 
+#### talk ####
+title: Bitácora de Trading.
+----
+details: 
+----
+speaker: 
+----
+speaker_name: Aliexer Mayor
+----
+speaker_bio: 
+----
+attach: 
+#### talk ####
+title: La Entrevista: Una oportunidad para la vida.
+----
+details: 
+----
+speaker: 
+----
+speaker_name: Fernando Llinás
+----
+speaker_bio: 
+----
+attach: 
+#### talk ####
+title: Sacando datos en mares de textos con Python.
+----
+details: 
+----
+speaker: 
+----
+speaker_name: Gabriel Martínez
+----
+speaker_bio: 
+----
+attach: 
+---
+youtube: YibzuncI8AI
