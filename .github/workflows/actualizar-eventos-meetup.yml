@@ -33,9 +33,6 @@ jobs:
       - name: Rama actual
         run: git branch
 
-      - name: Git pull
-        run: git pull origin master
-
       - name: Verificar cambios en archivo json
         id: check_changes
         run: |
