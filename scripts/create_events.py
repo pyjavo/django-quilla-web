@@ -48,7 +48,6 @@ def load_events(events):
 
 if __name__ == '__main__':
     events = extract_meetup_json("databags/meetup.json")
-    attachment_index = attachments()
     transformed_events = [transform_event(event) for event in events["past_events"]]
     load_events(transformed_events)
 
