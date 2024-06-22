@@ -16,7 +16,8 @@
   },
   "forwardPorts": [4444, 5000, 7900],
   "remoteEnv": {
-    "TEST_COMMAND_EXECUTOR": "http://localhost:4444/wd/hub"
+    "TEST_COMMAND_EXECUTOR": "http://localhost:4444/wd/hub",
+    "PYTEST_BASE_URL": "http://localhost:5000"
   },
   "customizations": {
     "codespaces": {
