@@ -336,3 +336,5 @@ Traducido de https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-
 excerpt: Traducción del articulo https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html
 ---
 pub_date: 2017-12-15
+---
+render_tdc: yes
