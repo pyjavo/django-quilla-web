@@ -1,4 +1,4 @@
-.blog-post {
+.blog-post, .event-post {
   max-width: 860px;
   margin: 0.75rem;
   width: 100%;
@@ -40,8 +40,8 @@
   }
 
   h2, h3, h4{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   blockquote p{
@@ -85,4 +85,8 @@
 
 .post-excerpt {
   font-size: 1.2rem;
+}
+
+.ctitle {
+  margin: 1.5rem 0 1rem;
 }
