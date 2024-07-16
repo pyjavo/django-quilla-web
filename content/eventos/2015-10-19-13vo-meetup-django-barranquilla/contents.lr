@@ -4,15 +4,27 @@ date_start: 2015-10-19 19:00
 ---
 link: https://www.meetup.com/pythonbaq/events/226034078/
 ---
-information: <p><img src="http://photos4.meetupstatic.com/photos/event/2/3/e/0/600_443169184.jpeg" /></p> <p>En esta ocasión Leonardo Orozco nos explicará <b>buenas practicas en Python</b> y el uso de <b>métodos mágicos</b> en la creación de proyectos web.</p> 
+information: 
 ---
 venue: Área Dos
 ---
 address_1: Carrera 53 No 76-239 Local 405 CC. Habitat ( Areados, Barranquilla
 ---
-talks: 
+talks:
 
 #### talk ####
-title: 13vo Meetup Django Barranquilla
+title: Buenas practicas en Python y el uso de métodos mágicos
 ----
-attach: Buenas practicas en Python y el uso de métodos mágicos <a href="http://slides.com/leonardofabioorozcopadilla/buenas-practicas#/">Presentación</a>
+details: En esta ocasión Leonardo Orozco nos explicará <b>buenas practicas en Python</b> y el uso de <b>métodos mágicos</b> en la creación de proyectos web.
+----
+speaker: leonardo-orozco
+----
+speaker_name: 
+----
+speaker_bio: 
+----
+attach:
+
+ - <a href="http://slides.com/leonardofabioorozcopadilla/buenas-practicas#/">Presentación</a>
+---
+featured_photo: http://photos4.meetupstatic.com/photos/event/2/3/e/0/600_443169184.jpeg
