@@ -31,7 +31,7 @@ speaker: javier-daza
 ----
 speaker_name: 
 ----
-speaker_bio: 
+speaker_bio: Emprendedor, desarrollador web y visionario de [Kizuna Club](https://kizunaclub.com/)
 ----
 attach: - [Diapositivas](https://slides.com/pyjavo/bienvenidos-a-django-barranquilla-1)
 #### talk ####
@@ -43,7 +43,7 @@ speaker: leonardo-orozco
 ----
 speaker_name: 
 ----
-speaker_bio: 
+speaker_bio: CTO de [Kaumer Dealer](http://www.kaumerapp.com/)
 ----
 attach: 
 #### talk ####
@@ -55,6 +55,6 @@ speaker: jose-caro
 ----
 speaker_name: 
 ----
-speaker_bio: 
+speaker_bio: CEO de [IT Research and Consulting](http://itrnc.com/)
 ----
 attach: 

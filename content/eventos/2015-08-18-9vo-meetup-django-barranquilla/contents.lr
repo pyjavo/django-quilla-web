@@ -15,9 +15,7 @@ talks:
 #### talk ####
 title: Despliegue en OpenShift
 ----
-details:
-
-Cesar Herdenez, uno de nuestros djangonautas activos de la comunidad nos explicara como subir el proyecto Paul Walker que hemos creado a OpenShift.
+details: Cesar Herdenez, uno de nuestros djangonautas activos de la comunidad nos explicara como subir el proyecto Paul Walker que hemos creado a OpenShift.
 ----
 speaker: cesar-herdenez
 ----
@@ -31,9 +29,9 @@ title: Integración de Django con Backbone
 ----
 details:
 
-Carlos Muñoz, otro de nuestros djangonautas nos explicará como hacer un proyecto de <b>Django con Backbone.</b>
+Carlos Muñoz, otro de nuestros djangonautas nos explicará como hacer un proyecto de **Django con Backbone.**
 
-<p>¿Estas interesado en exponer un tema? <b><i>Contáctanos!!!!</i></b></p> 
+¿Estas interesado en exponer un tema? **¡¡¡¡Contáctanos!!!!**
 ----
 speaker: 
 ----

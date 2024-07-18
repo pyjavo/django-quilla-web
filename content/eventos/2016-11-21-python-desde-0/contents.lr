@@ -17,10 +17,10 @@ title: Python desde 0
 ----
 details:
 
-<p>¡Hola a Todos !</p> 
-<p>Si estas interesado en saber sobre python esta es tu oportunidad, en esta charla se realizará una breve introducción a este bello lenguaje.</p> 
+¡Hola a Todos !
+Si estas interesado en saber sobre python esta es tu oportunidad, en esta charla se realizará una breve introducción a este bello lenguaje.
 
-<p>Lugar: Bloque 11 Salón 607</p> 
+Lugar: Bloque 11 Salón 607
 ----
 speaker: cesar-herdenez
 ----
@@ -30,5 +30,5 @@ speaker_bio:
 ----
 attach:
 
-- <a href="https://1drv.ms/f/s!AkrCjEwFpMNbarRjm4ADSBm9pEE">Recursos</a>
-- <a href="https://pybaq.co/blog/primeros-pasos-en-python/">Artículo primeros pasos en Python</a>
+- [Recursos](https://1drv.ms/f/s!AkrCjEwFpMNbarRjm4ADSBm9pEE)
+- [Artículo primeros pasos en Python](https://pybaq.co/blog/primeros-pasos-en-python/)

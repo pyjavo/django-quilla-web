@@ -21,7 +21,7 @@ speaker:
 ----
 speaker_name: Oswal Rodriguez
 ----
-speaker_bio: 
+speaker_bio: Estudiante de ingenieria de sistemas, emprendedor y uno de nuestros djangonautas más frecuentes en las charlas de la comunidad.
 ----
 attach: 
 #### talk ####
@@ -31,7 +31,8 @@ details:
 
 Introduccion de Flask, un microframework.
 
-<p>¡¡Les esperamos !!</p> <p><a href="http://panchicore.d.pr/6Wf4" class="linkified">Esta será la ubicación del evento.</a></p> 
+¡Les esperamos !!
+[Esta será la ubicación del evento](http://panchicore.d.pr/6Wf4).
 
 <p>P.D: Como siempre pediremos pizza para comer</p> 
 ----

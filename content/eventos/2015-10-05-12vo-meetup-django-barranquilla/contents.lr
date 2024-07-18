@@ -17,16 +17,17 @@ title: Tutorial de GeoDjango
 ----
 details:
 
-<p>Volvemos nuevamente con más Python y Django!! Para esta ocasión Ariel Nuñez nos hablará sobre GeoDjango, donde nos hará un pequeño tutorial con datos geográficos de sectores conocidos del departamento.</p> 
-<p>Los esperamos!!</p> 
+Volvemos nuevamente con más Python y Django!! Para esta ocasión Ariel Nuñez nos hablará sobre GeoDjango, donde nos hará un pequeño tutorial con datos geográficos de sectores conocidos del departamento.
+
+Los esperamos!!
 ----
 speaker: 
 ----
 speaker_name: Ariel Nuñez
 ----
-speaker_bio: Ariel Núñez, COO de <a href="https://piensa.co/">Piensa Labs</a>
+speaker_bio: COO de [Piensa Labs](https://piensa.co/)
 ----
 attach:
 
-- Repositorio en <a href="https://github.com/ingenieroariel/loco">GitHub</a> sobre GeoDjango 
-- <a href="https://secure.meetupstatic.com/photos/event/5/e/4/e/highres_442764142.jpeg">Foto</a>
+- Repositorio en [GitHub](https://github.com/ingenieroariel/loco) sobre GeoDjango 
+- [Foto](https://secure.meetupstatic.com/photos/event/5/e/4/e/highres_442764142.jpeg) del evento
