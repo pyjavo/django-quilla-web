@@ -4,15 +4,41 @@ date_start: 2015-08-18 19:00
 ---
 link: https://www.meetup.com/pythonbaq/events/224550302/
 ---
-information: <p><img src="http://photos3.meetupstatic.com/photos/event/d/f/c/a/600_440277290.jpeg" /></p> <p>Tendremos 2 charlas!!!</p> <p>1. Cesar Herdenez, uno de nuestros djangonautas activos de la comunidad nos explicara como subir el proyecto Paul Walker que hemos creado a OpenShift. </p> <p>2. Carlos Muñoz, otro de nuestros djangonautas nos explicará como hacer un proyecto de <b>Django con Backbone.</b></p> <p>¿Estas interesado en exponer un tema? <b><i>Contáctanos!!!!</i></b></p> 
+information: 
 ---
 venue: Área Dos
 ---
 address_1: Carrera 53 No 76-239 Local 405 CC. Habitat ( Areados, Barranquilla
 ---
-talks: 
+talks:
 
 #### talk ####
-title: 9vo Meetup Django Barranquilla
+title: Despliegue en OpenShift
+----
+details: Cesar Herdenez, uno de nuestros djangonautas activos de la comunidad nos explicara como subir el proyecto Paul Walker que hemos creado a OpenShift.
+----
+speaker: cesar-herdenez
+----
+speaker_name: 
+----
+speaker_bio: 
+----
+attach: - [GitHub](https://github.com/PyBAQ/proyectopaulwalker)
+#### talk ####
+title: Integración de Django con Backbone
+----
+details:
+
+Carlos Muñoz, otro de nuestros djangonautas nos explicará como hacer un proyecto de **Django con Backbone.**
+
+¿Estas interesado en exponer un tema? **¡¡¡¡Contáctanos!!!!**
+----
+speaker: 
+----
+speaker_name: Carlos Muñoz
+----
+speaker_bio: 
 ----
 attach: 
+---
+featured_photo: http://photos3.meetupstatic.com/photos/event/d/f/c/a/600_440277290.jpeg
