@@ -32,7 +32,7 @@ Soy ingeniero electrónico y magíster en IA de la Universidad Internacional de 
 
 También soy mentor de programación en Python, dando clases semi personalizadas en línea a grupos pequeños. Más información en [https://javierdaza.co/cursos/](https://javierdaza.co/cursos/)
 ----
-attach: 
+attach: - [Diapositivas de "intro a prompt engineering"](https://docs.google.com/presentation/d/1u2IXyn_yUwA-3HqvcDLptxZOaZFx3Jgxqwm_uyzisc0/edit?usp=sharing)
 #### talk ####
 title: Desarrollo de una app de transcripción médica en una hackathon de IA
 ----
@@ -49,9 +49,6 @@ speaker_name:
 ----
 speaker_bio: Ingeniero Electrónico egresado de la universidad del Norte, con +3 años de experiencia en el sector del software, actualmente ejerciendo como Ingeniero de Datos
 ----
-attach:
-
-- [Presentación desarrollo app médica](https://docs.google.com/presentation/d/1QKtONSuBGEkEpBXnd7Y6u1NgXRZHm7wi/edit?usp=sharing&ouid=102875902266955155312&rtpof=true&sd=true)
-- [Presentación intro a prompt engineering](https://docs.google.com/presentation/d/1u2IXyn_yUwA-3HqvcDLptxZOaZFx3Jgxqwm_uyzisc0/edit?usp=sharing)
+attach: - [Diapositivas de "desarrollo de una app de transcripción médica"](https://docs.google.com/presentation/d/1QKtONSuBGEkEpBXnd7Y6u1NgXRZHm7wi/edit?usp=sharing&ouid=102875902266955155312&rtpof=true&sd=true)
 ---
 youtube: l6WnM0oRw90
