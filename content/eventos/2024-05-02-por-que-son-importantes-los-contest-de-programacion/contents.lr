@@ -25,6 +25,9 @@ speaker_name: Carlos Sierra
 ----
 speaker_bio: Ingeniero de Sistemas, Magister en Ingeniería de Sistemas. Docente universitario por mas de 10 años. Ingeniero de ML y MLOps con más de 5 años de experiencia en industria. Co-organizador de PyCon Colombia y de Python Bogotá.
 ----
-attach: 
+attach:
+
+- [Notebook](https://github.com/PyBAQ/Notebooks/blob/master/contests_de_programacion/ProgrammingContest.ipynb)
+- [Presentación](https://drive.google.com/file/d/16BgXoC-6ayOWz6Ldh6u4z95hFVUZaFBx/view?usp=sharing)
 ---
 youtube: fwAWU_bfoVI
