@@ -2,7 +2,7 @@ name: Rashel Carey
 ---
 photo: /img/team/rashel-carey.jpeg
 ---
-role: colaborador
+role: contribuidor
 ---
 work: Redes sociales
 ---
@@ -10,12 +10,12 @@ website_handle:
 ---
 email: rashelccarey@gmail.com
 ---
-github_handle:
+github_handle: 
 ---
 twitter_handle: 
 ---
 start_activity: 2023-06-27
 ---
-contributions:
-
-- El manejo de las redes sociales de la comunidad. Propone estrategias de contenido semana a semana
+contributions: - El manejo de las redes sociales de la comunidad. Propone estrategias de contenido semana a semana
+---
+end_activity: 2024-05-01
