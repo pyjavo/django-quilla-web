@@ -12,7 +12,7 @@ Agenda:
 * 6:30-7:00pm - Llegada, networking
 * 7:00-7:40pm - Charla 1
 * 7:40-8:00pm - Receso, pizza
-* 8:00-8:40pm - Talk 2
+* 8:00-8:40pm - Charla 2
 * 8:40-9:00pm - Cierre
 ---
 featured_photo: https://secure.meetupstatic.com/photos/event/4/4/d/c/600_489137628.jpeg
@@ -34,7 +34,7 @@ speaker_name:
 ----
 speaker_bio: Ingeniero electrónico de la Universidad del Norte, fundador de Python Barranquilla y desarrollador de Python con más de 4 años de experiencia.
 ----
-attach: Systems and computer engineer from Universidad de los Andes, also physicist from the same university with an emphasis in computational astronomy. She is very passionate learner and I enjoy spreading the knowledge to create a stronger community interested in science (both astronomical and computational)
+attach: 
 #### talk ####
 title: Breaking the enigma: what if Turing had python?
 ----
@@ -44,6 +44,6 @@ speaker:
 ----
 speaker_name: Maria Camila Remoliana Gutiérrez
 ----
-speaker_bio: 
+speaker_bio: Systems and computer engineer from Universidad de los Andes, also physicist from the same university with an emphasis in computational astronomy. She is very passionate learner and I enjoy spreading the knowledge to create a stronger community interested in science (both astronomical and computational)
 ----
 attach: 
