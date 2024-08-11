@@ -15,17 +15,13 @@ talks:
 #### talk ####
 title: Despliegue en Heroku
 ----
-details:
-
-Leonardo nos explicara como subir el proyecto Paul Walker que llevamos a un servidor Heroku. 
-
-¿Estas interesado en exponer un tema, un proyecto o buscas desarrolladores? **¡¡¡¡Contáctanos!!!!**
+details: Leonardo nos explicara como subir el proyecto Paul Walker que llevamos a un servidor Heroku.
 ----
 speaker: leonardo-orozco
 ----
 speaker_name: 
 ----
-speaker_bio: CTO de [Kaumer Dealer](http://www.kaumerapp.com/)
+speaker_bio: CTO de Kaumer Dealer
 ----
 attach: - [GitHub](https://github.com/PyBAQ/proyectopaulwalker)
 ---
