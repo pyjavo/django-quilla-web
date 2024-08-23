@@ -43,7 +43,7 @@ speaker: leonardo-orozco
 ----
 speaker_name: 
 ----
-speaker_bio: CTO de [Kaumer Dealer](http://www.kaumerapp.com/)
+speaker_bio: CTO de Kaumer Dealer
 ----
 attach: 
 #### talk ####
@@ -55,6 +55,6 @@ speaker: jose-caro
 ----
 speaker_name: 
 ----
-speaker_bio: CEO de [IT Research and Consulting](http://itrnc.com/)
+speaker_bio: CEO de IT Research and Consulting
 ----
-attach: 
+attach: - [Diapositivas](https://drive.google.com/file/d/1YRisxGSCxe0cTq3Fv4k3CRZLMqPnrsl6/view?usp=sharing)
