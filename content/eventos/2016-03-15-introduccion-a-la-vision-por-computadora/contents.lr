@@ -27,7 +27,4 @@ speaker_name:
 ----
 speaker_bio: Pasante de la Universidad de Stanford en California, y próximo master en ingeniería electrónica.
 ----
-attach:
-
-- Repositorio en [GitHub](https://github.com/JorgeMartinezG/django_meetup)
-- [Diapositivas](https://docs.google.com/presentation/d/1ZWt1ILTvOl-pH-CWfLsnurZR8LFXhGvd/edit?usp=sharing&ouid=102956723374392876682&rtpof=true&sd=true)
+attach: - [Diapositivas](https://docs.google.com/presentation/d/1ZWt1ILTvOl-pH-CWfLsnurZR8LFXhGvd/edit?usp=sharing&ouid=102956723374392876682&rtpof=true&sd=true)
