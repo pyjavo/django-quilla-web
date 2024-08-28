@@ -1,0 +1,23 @@
+_model: page
+---
+title: Health and safety policy
+---
+body:
+
+#### wrapper ####
+body:
+
+##### text-block #####
+text:
+
+Our attendees’ health and safety remain our top priority as we continue to monitor the state of the pandemic and look to venue, local, and CDC guidelines to make the best and most informed decisions around onsite safety and requirements. Python Barranquilla has worked hard to be a community that is welcoming to all so we will be erring on the side of safety for all participants.
+
+Python Barranquilla will continue to provide social distancing where possible in the venue. The guidelines implemented for Python Barranquilla are subject to change based on health and safety recommendations at the time of the event. We are committing, however, to only make changes in the direction of greater protections.
+-----
+class: text-block
+----
+wrapper_class: d-flex justify-content-center
+----
+body_class: blog-post
+---
+seo_description: Code of conduct enforcement procedure of the Python barranquilla community
