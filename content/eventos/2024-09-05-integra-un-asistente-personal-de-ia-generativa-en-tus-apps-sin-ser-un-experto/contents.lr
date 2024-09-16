@@ -4,6 +4,48 @@ date_start: 2024-09-05 18:30
 ---
 link: https://www.meetup.com/pythonbaq/events/302874565/
 ---
-information: <p>En esta sesión aprenderás a crear e integrar asistentes personales generados por IA de forma fácil en tus aplicaciones en Python, sin necesidad de experiencia previa, y como integrarlo a cualquier aplicación a través de APIs.</p> <p>**Ponente:** Elizabeth Fuentes</p> <p>En mi rol de Especialista en Análisis de Datos y Aprendizaje Automático/Inteligencia Artificial (ML/AI), mi misión es simplificar conceptos complejos, traduciéndolos a un lenguaje accesible para todos. Me dedico a crear soluciones innovadoras que enfrentan de forma eficaz los retos que surgen en el mundo real. A través de mi participación en conferencias y la creación de recursos educativos, busco compartir mis conocimientos y experiencias con el fin de empoderar a los desarrolladores, ayudándoles a expandir sus habilidades y alcanzar sus objetivos profesionales.</p> <p>**Nivel de la charla:** Intermedio</p> <p>***</p> <p>Adicionales:</p> <p>1. El evento será 100% online por el canal de **YouTube** de Python Colombia</p> 
+information: 
 ---
 featured_photo: https://secure.meetupstatic.com/photos/event/d/5/d/6/600_522954742.jpeg
+---
+attach: 
+---
+talks:
+
+#### talk ####
+title: Integra un asistente personal de IA generativa en tus apps sin ser un experto
+----
+details:
+
+Esta es la sesión #1 de la charla. Aquí aprenderás a crear e integrar asistentes personales generados por IA de forma fácil en tus aplicaciones en Python, sin necesidad de experiencia previa, y como integrarlo a cualquier aplicación a través de APIs.
+
+- **Nivel de la charla:** Intermedio
+
+#### Resumen de los enlaces compartidos
+
+- Repositorio: https://github.com/elizabethfuentes12/aws-aiml-demo
+     - El repositorio de Elizabeth esta basado en este otro repositorio, que está en inglés, https://github.com/aws-samples/amazon-bedrock-workshop pero con algunas modificaciones.
+     - También tiene indicaciones para acceder a servicios de IA que no es generativa.
+     - Dentro del repositorio, el notebook que se usará es el de amazon bedrock https://github.com/elizabethfuentes12/aws-aiml-demo/tree/main/notebooks/amazon-bedrock-demo
+     - Revisa el README y luego veo avanzando carpeta por carpeta. La primera luego de las instrucciones se llama `00_Prerequisites`
+
+
+- Cursos recomendados: https://learn.deeplearning.ai/
+
+- Amazon Bedrock: https://aws.amazon.com/es/bedrock/
+     - Servicio para poder invocar una gama amplia de modelos fundacionales de IA generativa a través de una única API
+
+- Casos de uso de SQL en LangChain
+     - https://python.langchain.com/v0.1/docs/use_cases/sql/
+
+- Asistente de IA generativa: https://aws.amazon.com/es/q/ 
+----
+speaker: 
+----
+speaker_name: Elizabeth Fuentes
+----
+speaker_bio: En mi rol de Especialista en Análisis de Datos y Aprendizaje Automático/Inteligencia Artificial (ML/AI), mi misión es simplificar conceptos complejos, traduciéndolos a un lenguaje accesible para todos. Me dedico a crear soluciones innovadoras que enfrentan de forma eficaz los retos que surgen en el mundo real. A través de mi participación en conferencias y la creación de recursos educativos, busco compartir mis conocimientos y experiencias con el fin de empoderar a los desarrolladores, ayudándoles a expandir sus habilidades y alcanzar sus objetivos profesionales
+----
+attach: - [Diapositivas](https://drive.google.com/file/d/1aRI_9ZviB_zVCC79sALlau2hsiRMCbgU/view?usp=sharing)
+---
+youtube: v0priLi3Fpc
