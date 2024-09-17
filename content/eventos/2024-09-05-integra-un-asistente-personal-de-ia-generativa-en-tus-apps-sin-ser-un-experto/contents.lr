@@ -27,7 +27,7 @@ Esta es la sesión #1 de la charla. Aquí aprenderás a crear e integrar asisten
      - El repositorio de Elizabeth esta basado en este otro repositorio, que está en inglés, https://github.com/aws-samples/amazon-bedrock-workshop pero con algunas modificaciones.
      - También tiene indicaciones para acceder a servicios de IA que no es generativa.
      - Dentro del repositorio, el notebook que se usará es el de amazon bedrock https://github.com/elizabethfuentes12/aws-aiml-demo/tree/main/notebooks/amazon-bedrock-demo
-     - Revisa el README y luego veo avanzando carpeta por carpeta. La primera luego de las instrucciones se llama `00_Prerequisites`
+     - Revisa el README y luego ve avanzando carpeta por carpeta. La primera que te recomiendo ver luego del README se llama `00_Prerequisites`
 
 
 - Cursos recomendados: https://learn.deeplearning.ai/
@@ -38,13 +38,35 @@ Esta es la sesión #1 de la charla. Aquí aprenderás a crear e integrar asisten
 - Casos de uso de SQL en LangChain
      - https://python.langchain.com/v0.1/docs/use_cases/sql/
 
-- Asistente de IA generativa: https://aws.amazon.com/es/q/ 
+- Bases de conocimiento de Langchain y ejemplos de RAG
+     - https://github.com/elizabethfuentes12/aws-aiml-demo/tree/main/notebooks/amazon-bedrock-demo/06_OpenSource_examples/01_Langchain_KnowledgeBases_and_RAG_examples
+
+- Generative AI con Amazon Bedrock y Javascript
+     - https://github.com/build-on-aws/building-reactjs-gen-ai-apps-with-amazon-bedrock-javascript-sdk
+
+- Langchain embeddings
+     - https://github.com/build-on-aws/langchain-embeddings
+
+- Cómo crear un asistente con whatsapp
+     - https://github.com/build-on-aws/building-gen-ai-whatsapp-assistant-with-amazon-bedrock-and-python
+
+- Agente de asistencia en viajes RAG con tecnología de WhatsApp: mejora de la experiencia del cliente con la recuperación de conocimientos de PostgreSQL
+     - https://github.com/build-on-aws/rag-postgresql-agent-bedrock
+
+- Asistente de IA generativa: https://aws.amazon.com/es/q/
+
+- Visualización de datos en tiempo real con OpenSearch y Amazon DynamoDB: un pipeline Zero-ETL
+     - https://github.com/build-on-aws/realtime-dynamodb-zero-etl-opensearch-visualization
 ----
 speaker: 
 ----
 speaker_name: Elizabeth Fuentes
 ----
-speaker_bio: En mi rol de Especialista en Análisis de Datos y Aprendizaje Automático/Inteligencia Artificial (ML/AI), mi misión es simplificar conceptos complejos, traduciéndolos a un lenguaje accesible para todos. Me dedico a crear soluciones innovadoras que enfrentan de forma eficaz los retos que surgen en el mundo real. A través de mi participación en conferencias y la creación de recursos educativos, busco compartir mis conocimientos y experiencias con el fin de empoderar a los desarrolladores, ayudándoles a expandir sus habilidades y alcanzar sus objetivos profesionales
+speaker_bio:
+
+En mi rol de Especialista en Análisis de Datos y Aprendizaje Automático/Inteligencia Artificial (ML/AI), mi misión es simplificar conceptos complejos, traduciéndolos a un lenguaje accesible para todos. Me dedico a crear soluciones innovadoras que enfrentan de forma eficaz los retos que surgen en el mundo real. A través de mi participación en conferencias y la creación de recursos educativos, busco compartir mis conocimientos y experiencias con el fin de empoderar a los desarrolladores, ayudándoles a expandir sus habilidades y alcanzar sus objetivos profesionales.
+
+https://linktr.ee/elizabethfuentesleone
 ----
 attach: - [Diapositivas](https://drive.google.com/file/d/1aRI_9ZviB_zVCC79sALlau2hsiRMCbgU/view?usp=sharing)
 ---
