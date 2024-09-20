@@ -1,0 +1,40 @@
+title: 📣 [ONLINE] 👨‍💻👩‍💻¿Por qué Kubernetes? & Implementa Scrum en organizaciones
+---
+date_start: 2020-04-30 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/270177332/
+---
+information: En este evento tuvimos 2 charlas las cuales puedes ver a continuación
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/e/0/c/2/600_490197538.jpeg
+---
+talks:
+
+#### talk ####
+title: Por qué todo el mundo quiere usar kubernetes
+----
+details: Un pequeño resumen de qué es kubernetes y para qué sirve, si aun no lo conoces. Asimismo, veremos por qué se convierte en la plataforma favorita de muchos equipos de trabajo para la gestión de contenedores. Además, hablaremos de los problemas que he podido solucionar con esta herramienta y cómo puedes comenzar a utilizarla desde ya en tus ambientes productivos.
+----
+speaker: 
+----
+speaker_name: Jesús David Diaz
+----
+speaker_bio: Soy estudiante de ingeniería de sistemas con 3 años de experiencia en el desarrolla de software. Apasionado por la tecnología y la ingeniería de software. Actualmente trabajo para Maestrik, como software developer. Con gran énfasis devops.
+----
+attach: [Diapositivas]("https://slides.com/jesusdaviddiaz/por-que-todo-el-mundo-quiere-usar-kubernetes/fullscreen)
+#### talk ####
+title: Implementando Scrum en las organizaciones: Aciertos y errores
+----
+details: Implementar Scrum en organizaciones donde se usan metodologías tradicionales es un desafío importante. Está charla busca introducir los conceptos básicos de Scrum y recopila una serie de aciertos y errores que puedes tener en cuenta a la hora de adoptar Scrum en tu organización o incluso en tu trabajo diario.
+----
+speaker: brayan-garcia
+----
+speaker_name: 
+----
+speaker_bio: Soy ingeniero de sistemas graduado de la Universidad de la Costa, Scrum Master y product Owner certificado, y pertenezco al equipo de organizadores de Python Barranquilla. Tengo más de 6 años de experiencia liderando proyectos de Tecnología y un par de años diseñando soluciones de TI en diferentes sectores como servicios públicos, logística, ventas, entre otros.
+----
+attach: [Diapositivas](https://drive.google.com/file/d/1Srd91Y-nAwU_RV3IY0ZWnN4SAa4Sn7ed/view?usp=sharing)
+---
+attach: Este evento fue transmitido por [Facebook](https://www.facebook.com/watch/?v=2919451251483961)
+---
+youtube: hrSC3Hs-ZkI

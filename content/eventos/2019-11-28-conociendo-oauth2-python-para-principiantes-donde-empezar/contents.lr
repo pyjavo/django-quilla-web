@@ -1,0 +1,58 @@
+title: Conociendo Oauth2 + Python para principiantes: Dónde empezar
+---
+date_start: 2019-11-28 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/266654185/
+---
+information:
+
+Agenda:
+* 6:30-7:00pm - Llegada
+* 7:00-7:40pm - Charla 1
+* 7:40-8:00pm - Receso, pizza
+* 8:00-8:40pm - Charla 2
+* 8:40-9:00pm - Cierre
+
+> La pizza es GRATIS gracias a PYTHON SOFTWARE FOUNDATION.
+
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/b/4/5/600_486842885.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Conociendo Oauth2
+----
+details: Oauth2 está recibiendo bastante interés gracias a su popularidad en diversos tipos de aplicaciones web. Por ejemplo, ahora podemos enviar CVs a otras páginas utilizando la información de LinkedIn. Sin embargo, la fuente de la metodología y sus limitaciones no son bien comprendidas. Con esta charla, se busca reducir la brecha a través de ejemplos sencillos y explicar términos Oauth con palabras comunes. Finalmente, se hará una comparación entre Oauth y OpenID dandoles tips a los asistentes para usar en sus futuras aplicaciones.
+----
+speaker: jorge-martinez
+----
+speaker_name: 
+----
+speaker_bio: Magister en ingeniería electrónica. Actualmente trabaja como desarrollador en el equipo Humanitario de OpenStreetMap. Maps and pixels :)
+----
+attach:
+
+[Diapositivas](https://drive.google.com/file/d/1_UQB0yA2ndhcxW-1hu1JPyBElNESuOLV/view?usp=sharing)
+#### talk ####
+title: Python para principiantes: Dónde empezar
+----
+details:
+
+En un mundo tan lleno de recursos para aprender a programar, ¿Hay algunos que se diferencien de los demás? ¿Dónde comienzo a aprender Python?
+
+Conoce algunos de los sitios más adecuados para aprender Python desde cero, incluso si tienes muy poca o ninguna base de programación.
+----
+speaker: 
+----
+speaker_name: Gabriel Martínez
+----
+speaker_bio: Ingeniero mecatrónico graduado de la Universidad Autónoma del Caribe. Enfocado en proyectos relacionados con electrónica, especialmente desarrollos relacionados con el internet de las cosas (IoT). Ahora, en búsqueda de aprender más sobre programación, retoma sus lecciones de sobre Python para llevarlas al siguiente nivel.
+----
+attach: [Diapositivas](https://drive.google.com/file/d/1VmlqnFNISuCRsboedaep5RBs02_yZNBV/view?usp=sharing)
+---
+youtube: 

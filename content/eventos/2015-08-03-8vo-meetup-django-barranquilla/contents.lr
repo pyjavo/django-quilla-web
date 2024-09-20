@@ -1,0 +1,28 @@
+title: 8vo Meetup Django Barranquilla
+---
+date_start: 2015-08-03 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/223989293/
+---
+information: 
+---
+venue: Área Dos
+---
+address_1: Carrera 53 No 76-239 Local 405 CC. Habitat ( Areados, Barranquilla
+---
+talks:
+
+#### talk ####
+title: Despliegue en Heroku
+----
+details: Leonardo nos explicara como subir el proyecto Paul Walker que llevamos a un servidor Heroku.
+----
+speaker: leonardo-orozco
+----
+speaker_name: 
+----
+speaker_bio: CTO de Kaumer Dealer
+----
+attach: - [GitHub](https://github.com/PyBAQ/proyectopaulwalker)
+---
+featured_photo: http://photos3.meetupstatic.com/photos/event/d/f/c/a/600_440277290.jpeg

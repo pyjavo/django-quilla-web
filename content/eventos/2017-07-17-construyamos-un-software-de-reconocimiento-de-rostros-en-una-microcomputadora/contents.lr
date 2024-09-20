@@ -1,0 +1,36 @@
+title: Construyamos un software de reconocimiento de rostros en una Microcomputadora
+---
+date_start: 2017-07-17 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/241143119/
+---
+information: 
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Construyamos un software de reconocimiento de rostros en una Microcomputadora
+----
+details:
+
+En esta charla, junto con el ingeniero Edgar Flórez, aprenderemos como crear un software para reconocimiento de rostros mientras jugamos con una microcomputadora ( ODROID o Raspberry Pi) y una cámara web. *Llevemos nuestro ingenio al máximo!*
+
+¡¡¡Te esperamos!!! 
+----
+speaker: 
+----
+speaker_name: Edgar Flórez
+----
+speaker_bio: 
+----
+attach:
+
+- [GitHub](https://github.com/efflorez/facerecognition)
+- [Presentación](https://docs.google.com/presentation/d/1MR92AgvipBkpqThc8PE30TGKpJQNZj22c1-A-9iYr-E/edit#slide=id.g23336596a2_0_55)
+- [Artículo](https://pybaq.co/blog/reconocimiento-de-rostros-en-una-microcomputadora/)
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/e/4/6/3/600_462358467.jpeg

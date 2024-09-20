@@ -14,11 +14,11 @@ Somos una comunidad de desarrolladores web, dev-ops, emprendedores y estudiantes
 
 Entusiastas en Python y Django ¡Están invitados!	
 ----
-link: /blog/tutorial-de-web-scraping-y-beautifulsoup/
+link: /blog/primera-pycon-colombia/
 ----
-image: /blog/tutorial-de-web-scraping-y-beautifulsoup/tutorial-web-scraping-beautifulsoup.png
+image: /blog/primera-pycon-colombia/main-img_en.png
 ----
-alt: Tutorial de web scraping y beautifulsoup
+alt: Experiencia del taller con la secretaría de educación de Barranquilla
 #### section-block ####
 title: Próximos Eventos
 ----
@@ -72,7 +72,7 @@ source: testimonies
 #### sponsors ####
 title: NUESTROS PATROCINADORES
 ----
-source: sponsors
+role: 1-patrocinador
 ---
 show_title: no
 ---

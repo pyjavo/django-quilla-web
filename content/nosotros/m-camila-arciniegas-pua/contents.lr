@@ -4,7 +4,7 @@ photo: /img/team/m-camila-arciniegas-pua.jpg
 ---
 role: colaborador
 ---
-work: Grupos de estudio
+work: Grupo de estudio de Django 2023/24
 ---
 website_handle: 
 ---
@@ -18,4 +18,5 @@ start_activity: 2023-07-11
 ---
 contributions:
 
-- Lider del grupo de estudio de Django
+- Líder del grupo de estudio de Django con el libro "Tango with Django 4" durante el período de 07/19/2023 - 06/26/2024.
+- Ayuda en la organización y ejecución del taller de python para jóvenes con la secretaría de educación de Barranquilla.

@@ -1,0 +1,47 @@
+title: Herramientas para hacer ciencia con Python
+---
+date_start: 2017-11-23 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/245167895/
+---
+information:
+
+Requisitos:
+- Inscripción previa
+- Laptop (opcional)
+
+Observaciones
+-  Como siempre pediremos pizza para comer, así que por favor traigan algo de dinero para hacer "la vaca" jeje.
+- El lugar tiene una capacidad limitada, por lo que le pedimos a los que no puedan asistir que se den de baja de la lista de confirmados, para que otras personas tengan la oportunidad de participar.</p> 
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Herramientas para hacer ciencia con Python
+----
+details:
+
+Python es un lenguaje de programación interpretado, pero de muy buen rendimiento, lo cual permite su uso no solo para scripts de administración, sino también para el diseño de programas de uso general.
+
+Su diseño esta orientado a ser "fácil de usar", lo cual quiere decir que su sintaxis intenta ser lo mas intuitiva posible. Esto permite una traducción eficiente desde la lógica de los algoritmos hasta el código propiamente dicho.
+
+Adicionalmente, el Python se integra fácilmente con lenguajes de alto rendimiento como C /C++ y Fortran, con lo cual, promete ser una muy buena herramienta para el desarrollo científico.
+
+En esta charla se presentaran algunas de las bibliotecas mas populares para uso en ciencia computacional y cálculos científicos.
+
+¡¡¡Te esperamos!!! 
+----
+speaker: 
+----
+speaker_name: Juan Carlos Cardona
+----
+speaker_bio: Dr en Física, Profesor Universidad del Atlántico
+----
+attach:
+
+- [Fotos](https://www.meetup.com/pythonbaq/photos/28345278/466396879/)
+- [Notebook](https://github.com/PyBAQ/Notebooks/blob/master/HerramientasCiencia/HerramientasCiencia.ipynb)

@@ -1,0 +1,50 @@
+title: Piloteando Docker usando Python + Saca provecho a eventos internacionales
+---
+date_start: 2019-12-19 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/267163403/
+---
+information:
+
+Agenda:
+* 6:30-7:00pm - Llegada
+* 7:00-7:40pm - Charla 1
+* 7:40-8:00pm - Receso, pizza
+* 8:00-8:40pm - Talk 2
+* 8:40-9:00pm - Cierre
+
+> La pizza es GRATIS gracias a PYTHON SOFTWARE FOUNDATION.
+
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/a/2/a/8/600_487361640.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Piloteando Docker usando Python + Saca provecho a eventos internacionales
+----
+details: Alguna vez te has preguntado qué es un contenedor y porque son tan populares? En esta charla se explicará cómo es su funcionamiento, sus casos de uso y se darán ejemplos prácticos orientados a Python y sus frameworks.
+----
+speaker: 
+----
+speaker_name: Tatiana Barrios
+----
+speaker_bio: Ingeniera Electrónica de la Universidad del Norte. Ha trabajado en desarrollo de Software desde el 2017, sobretodo en Backend y en DevOps. Actualmente es Backend Developer en Ideaware. :)
+----
+attach: [Diapositivas](https://drive.google.com/open?id=11X_jPQiwZizm0CwhtmjhAuk3DzDF0DKc)
+#### talk ####
+title: Saca provecho a eventos internacionales
+----
+details: En esta presentación daré varios consejos sobre cómo sacarle el máximo provecho a los eventos internacionales, donde buscarlos y como plantear una estrategia de acuerdo a tus prioridades.
+----
+speaker: javier-daza
+----
+speaker_name: Tatiana Barrios
+----
+speaker_bio: Ingeniero electrónico de la Universidad del Norte, fundador de Python Barranquilla y desarrollador de Python con más de 4 años de experiencia.
+----
+attach: [Diapositivas](https://slides.com/pyjavo/saca-maximo-provecho-eventos)

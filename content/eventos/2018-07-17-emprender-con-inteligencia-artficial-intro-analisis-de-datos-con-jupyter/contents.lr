@@ -1,0 +1,42 @@
+title: Emprender con Inteligencia Artficial + Intro Análisis de Datos con Jupyter
+---
+date_start: 2018-07-17 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/252404468/
+---
+information: 
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/d/a/d/f/600_472616031.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Cómo emprender con Inteligencia Artificial
+----
+details: 
+----
+speaker: wayner-barrios
+----
+speaker_name: 
+----
+speaker_bio: Ingeniero electrónico y desarrollador de software de Inteligencia Artificial
+----
+attach:
+
+
+#### talk ####
+title: Intro Análisis de Datos con Jupyter
+----
+details: Una breve introducción al análisis de datos con Jupyter
+----
+speaker: sara-galvan
+----
+speaker_name: 
+----
+speaker_bio: Estudiante de ingeniería química, PyLadie y co-organizadora de Python Barranquilla y Django Girls Barranquilla 2018
+----
+attach: - [Jupyter Notebook](https://github.com/Xaraxx/meetup-python-Quilla)

@@ -10,6 +10,10 @@
         "location_value": "Barranquilla, Atlántico, Colombia.",
         "code_of_conduct": "Código de conducta",
         "code_of_conduct_intro": "En nuestra comunidad seguimos este",
+        "code_of_conduct_procedure_text": "y usamos este",
+        "code_of_conduct_procedure_link_text": "Procedimiento de Aplicación.",
+        "health_safety_policy_intro": "Además, seguimos esta",
+        "health_safety_policy": "Política de salud y seguridad.",
         "channels": "Canales",
         "guidelines": "Nuestros lineamientos"
     },
@@ -24,6 +28,10 @@
         "location_value": "Barranquilla, Atlántico, Colombia.",
         "code_of_conduct": "Code of conduct",
         "code_of_conduct_intro": "This is our",
+        "code_of_conduct_procedure_text": "and we use this",
+        "code_of_conduct_procedure_link_text": "Enforcement Procedure.",
+        "health_safety_policy_intro": "In addition, we follow this",
+        "health_safety_policy": "Health and safety policy.",
         "channels": "Channels",
         "guidelines": "Our guidelines"
     }

@@ -1,0 +1,25 @@
+_model: page
+---
+title: Política de salud y seguridad
+---
+body:
+
+#### wrapper ####
+body:
+
+##### text-block #####
+text:
+
+La salud y la seguridad de nuestros asistentes siguen siendo nuestra principal prioridad a medida que continuamos monitoreando el estado de la pandemia y observamos las pautas del lugar, locales y de los CDC para tomar las mejores decisiones y las más informadas sobre la seguridad y los requisitos en el lugar. Python Colombia ha trabajado arduamente para ser una comunidad que les dé la bienvenida a todos, por lo que nos inclinaremos por la seguridad de todos los participantes.
+
+Python Barranquilla seguirá manteniendo el distanciamiento social en la medida de lo posible en el recinto. Las pautas implementadas para Python Barranquilla están sujetas a cambios según las recomendaciones de salud y seguridad vigentes en el momento del evento. Sin embargo, nos comprometemos a realizar cambios únicamente en la dirección de mayores protecciones.
+-----
+class: text-block
+----
+wrapper_class: d-flex justify-content-center
+----
+body_class: blog-post
+---
+seo_description: Política de salud y seguridad de la comunidad de Python Barranquilla.
+---
+show_title: yes

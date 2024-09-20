@@ -1,0 +1,43 @@
+title: Taller de Co-creación #3
+---
+date_start: 2015-12-14 19:15
+---
+link: https://www.meetup.com/pythonbaq/events/227284202/
+---
+information: 
+---
+venue: Área Dos
+---
+address_1: Carrera 53 No 76-239 Local 405 CC. Habitat ( Areados, Barranquilla
+---
+talks:
+
+#### talk ####
+title: Taller de Co-creación #3
+----
+details:
+
+En este taller de 1 hora y media trabajaremos en la aplicación [Temii](https://github.com/PyBAQ/temii).
+
+Estas son las [tareas del proyecto](http://bit.ly/votosDjango).
+
+Objetivos:
+- Realizar los Tests
+- Crear las vistas
+
+Requisitos:
+- Haber realizado el [tutorial básico de Django 1.8](https://docs.djangoproject.com/en/1.8/intro/tutorial01/)
+- Traer portatíl (opcional)
+
+¡¡¡Manos a la obra!!!
+----
+speaker: javier-daza
+----
+speaker_name: 
+----
+speaker_bio: Emprendedor, desarrollador web y visionario de [Kizuna Club](https://kizunaclub.com/)
+----
+attach:
+
+- Repositorio en [GitHub](https://github.com/PyBAQ/temii)
+- [Trello](https://trello.com/b/pKAeEDBT/temii)

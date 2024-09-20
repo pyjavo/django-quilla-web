@@ -1,0 +1,54 @@
+title: WebRTC, ¿y si hacemos un Skype? + Primeros pasos en Numpy
+---
+date_start: 2019-07-30 18:30
+---
+link: https://www.meetup.com/pythonbaq/events/263229640/
+---
+information:
+
+Agenda:
+* 6:30-7:00pm - Llegada
+* 7:00-7:40pm - Charla 1
+* 7:40-8:00pm - Receso, pizza
+* 8:00-8:40pm - Charla 2
+* 8:40-9:00pm - Cierre
+
+> La pizza es GRATIS gracias a PYTHON SOFTWARE FOUNDATION.
+
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/b/8/1/c/600_483227132.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: WebRTC, ¿y si hacemos un Skype?
+----
+details: WebRTC es una tecnología web que cada vez más cobra protagonismo. Aprendamos un poco sobre esta y veamos en qué podemos usarla.
+----
+speaker: 
+----
+speaker_name: Wilson Tovar
+----
+speaker_bio: Estudiante de Ingeniería de Sistemas en Uninorte. 19 años. Apasionado por la tecnología y la poesía. Actualmente trabajo para para como full stack developer en Fontumi, desarrollando herramientas de telecomunicación basadas en WebRTC, SIP, bots y chatbots. Entre mis herramientas y tecnologías favoritas están VueJS, NodeJS, GCP y Crystal.
+----
+attach: 
+#### talk ####
+title: Primeros pasos en Numpy
+----
+details:
+
+En el núcleo de todos los paquetes científicos de python (pandas, sk-learn, keras, entre otros) está Numpy, este paquete ofrece características relevantes para trabajar con datos numéricos
+
+En esta charla conoceremos algunos principios básicos de Numpy y veremos cómo elaborar algunas operaciones de manipulación numérica con este paquete
+----
+speaker: 
+----
+speaker_name: Juan Alvarez
+----
+speaker_bio: Ingeniero Electrónico, con más de 10 años de experiencia en desarrollo de software, en proceso de terminar maestría en ingeniería con énfasis en ingeniería de sistemas. Ahora dedicado a aprender y enseñar sobre nuevas tecnologías, especialmente IoT, microservicios, devops y computación numérica
+----
+attach: 

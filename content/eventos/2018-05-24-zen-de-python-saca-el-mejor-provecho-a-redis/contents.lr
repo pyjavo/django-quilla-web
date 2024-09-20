@@ -1,0 +1,42 @@
+title: Zen de Python + Saca el mejor provecho a Redis
+---
+date_start: 2018-05-24 18:30
+---
+link: https://www.meetup.com/pythonbaq/events/250637616/
+---
+information: 
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/7/f/f/7/600_470972759.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Zen de Python
+----
+details:
+
+Zen de Python - De vuelta a las bases: Conocer la filosofía de Python te ayudará a tomar decisiones al momento de crear aplicaciones.
+----
+speaker: javier-daza
+----
+speaker_name: 
+----
+speaker_bio: 
+----
+attach: - [Slides Charla Zen](https://slides.com/pyjavo/zen-de-python/fullscreen)
+#### talk ####
+title: Saca el mejor provecho a Redis
+----
+details: Saca el mejor provecho a Redis: ¿Usas Redis solo para el cache? Ven y descubre que más se puede hacer con esta herramienta.
+----
+speaker: cesar-herdenez
+----
+speaker_name: 
+----
+speaker_bio: 
+----
+attach: - [Slides Charla Redis](https://drive.google.com/file/d/1TATNvBekIoPe8dCsW3O9cyWcj22Rmb_r/view?usp=sharing)

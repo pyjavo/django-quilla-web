@@ -1,0 +1,60 @@
+title: 1er meetup Django Barranquilla
+---
+date_start: 2015-03-31 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/221175441/
+---
+information:
+
+**Agenda**
+1. "Bienvenida. Creando expectativas" por Javier Daza
+Compartiremos objetivos y expectativas para definir entre todos temas que orienten los futuros talleres de la comunidad. 
+
+2. "Pruebas unitarios con Django" por Leonardo Orozco
+
+3. "Ship with confidence" por Jose Luis Caro
+
+4. Networking
+---
+venue: Área Dos
+---
+address_1: Carrera 53 No 76-239 Local 405 CC. Habitat ( Areados, Barranquilla
+---
+talks:
+
+#### talk ####
+title: Bienvenida. Creando expectativas
+----
+details: 
+----
+speaker: javier-daza
+----
+speaker_name: 
+----
+speaker_bio: Emprendedor, desarrollador web y visionario de [Kizuna Club](https://kizunaclub.com/)
+----
+attach: - [Diapositivas](https://slides.com/pyjavo/bienvenidos-a-django-barranquilla-1)
+#### talk ####
+title: Pruebas unitarios con Django
+----
+details: 
+----
+speaker: leonardo-orozco
+----
+speaker_name: 
+----
+speaker_bio: CTO de Kaumer Dealer
+----
+attach: 
+#### talk ####
+title: Ship with confidence
+----
+details: 
+----
+speaker: jose-caro
+----
+speaker_name: 
+----
+speaker_bio: CEO de IT Research and Consulting
+----
+attach: - [Diapositivas](https://drive.google.com/file/d/1YRisxGSCxe0cTq3Fv4k3CRZLMqPnrsl6/view?usp=sharing)

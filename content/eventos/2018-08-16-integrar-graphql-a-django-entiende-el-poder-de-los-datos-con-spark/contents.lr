@@ -1,0 +1,50 @@
+title: Integrar GraphQL a Django + Entiende el poder de los datos con Spark
+---
+date_start: 2018-08-16 18:30
+---
+link: https://www.meetup.com/pythonbaq/events/253244234/
+---
+information: 
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/c/9/9/5/600_473271605.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Integrar GraphQL a Django
+----
+details:
+
+Aprende como integrar GraphQL a tu proyecto de Django.
+
+GraphQL es un lenguaje de consulta de datos desarrollado internamente por Facebook.
+
+Proporciona una alternativa a REST y arquitecturas ad-hoc de servicios web.
+----
+speaker: 
+----
+speaker_name: José Guzman
+----
+speaker_bio: 
+----
+attach: 
+#### talk ####
+title: Entiende el poder de los datos con Spark
+----
+details:
+
+Entiende el poder de los datos con una de las herramientas científicas mas avanzadas, Spark.
+
+Apache Spark ™ es un motor de análisis unificado para el procesamiento de datos a gran escala.
+----
+speaker: 
+----
+speaker_name: Julio Torres
+----
+speaker_bio: 
+----
+attach: - [Fotos](https://www.meetup.com/pythonbaq/photos/29170444/473804369/)

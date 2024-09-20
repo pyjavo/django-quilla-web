@@ -1,0 +1,54 @@
+title: App de transcripción médica en una hackathon de IA & Intro a prompt engineering
+---
+date_start: 2024-07-06 09:30
+---
+link: https://www.meetup.com/pythonbaq/events/301862336/
+---
+information: 
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/9/f/f/d/600_522160957.jpeg
+---
+venue: Universidad Del Norte
+---
+address_1: Política de privacidad de datos personales Buzón de sugerenciasKm.5 Vía Puerto Colombia
+---
+talks:
+
+#### talk ####
+title: Introducción a Prompt Engineering
+----
+details:
+
+- Nivel: Principiante
+- En esta charla introductoria, planteo describir conceptos básicos para interactuar con los LLM más populares que encontramos en el mercado, así como técnicas sencillas para interactuar con las aplicaciones de chat y obtener las respuestamos que deseamos obtener.
+----
+speaker: javier-daza
+----
+speaker_name: 
+----
+speaker_bio:
+
+Soy ingeniero electrónico y magíster en IA de la Universidad Internacional de La Rioja. Con más de 5 años de experiencia como programador backend en Python. Fundador de Python Barranquilla y colaborador en el evento PyCon Colombia.
+
+También soy mentor de programación en Python, dando clases semi personalizadas en línea a grupos pequeños. Más información en [https://javierdaza.co/cursos/](https://javierdaza.co/cursos/)
+----
+attach: - [Diapositivas de "intro a prompt engineering"](https://docs.google.com/presentation/d/1u2IXyn_yUwA-3HqvcDLptxZOaZFx3Jgxqwm_uyzisc0/edit?usp=sharing)
+#### talk ####
+title: Desarrollo de una app de transcripción médica en una hackathon de IA
+----
+details:
+
+- Nivel: Intermedio
+- En esta charla, te llevaremos a través del proceso de desarrollo de una aplicación de transcripción médica utilizando IA, en menos de 24h, dentro del marco de la hackaton de Inteligencia Artificial Barranqui-IA. Compartiremos los desafíos que enfrentamos al crear la solución y las oportunidades que brinda esta tecnología para mejorar la eficiencia y la precisión en la documentación médica.
+
+Asiste a esta charla para aprender más sobre el potencial de la IA para transformar y dar forma al futuro de la salud!
+----
+speaker: jorge-aguilar
+----
+speaker_name: 
+----
+speaker_bio: Ingeniero Electrónico egresado de la universidad del Norte, con +3 años de experiencia en el sector del software, actualmente ejerciendo como Ingeniero de Datos
+----
+attach: - [Diapositivas de "desarrollo de una app de transcripción médica"](https://docs.google.com/presentation/d/1QKtONSuBGEkEpBXnd7Y6u1NgXRZHm7wi/edit?usp=sharing&ouid=102875902266955155312&rtpof=true&sd=true)
+---
+youtube: l6WnM0oRw90

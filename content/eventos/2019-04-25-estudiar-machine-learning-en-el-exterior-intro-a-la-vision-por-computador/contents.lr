@@ -1,0 +1,54 @@
+title: Estudiar Machine Learning en el Exterior+ Intro a la Visión por Computador
+---
+date_start: 2019-04-25 18:30
+---
+link: https://www.meetup.com/pythonbaq/events/260558177/
+---
+information:
+
+Python Barranquilla y Colombia AI Unidos por primera vez.
+
+Agenda:
+* 6:30-7:00pm - Llegada
+* 7:00-7:40pm - Charla 1
+* 7:40-8:00pm - Receso, pizza
+* 8:00-8:40pm - Charla 2
+* 8:40-9:00pm - Cierre
+
+> La pizza es GRATIS gracias a PYTHON SOFTWARE FOUNDATION.
+
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/7/9/a/2/600_480571138.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Estudiar Machine Learning en el Exterior
+----
+details: En muchas oportunidades pensamos que ingresar a estudiar Machine Learning en Universidades internacionales con alto nivel académico solo es posible si se vive fuera de Colombia. Sin embargo son muchas las opciones que se presentan a ciudadanos latinoamericanos en diferentes partes del mundo y lo mejor de todo con todos los gastos pagos. Europa, Estados Unidos y Centro América abre cada semestre convocatorias donde lo único que debes aportar son tus ganas de incrementar tu nivel de conocimiento. ¡Te invito a conocerlas!
+----
+speaker: 
+----
+speaker_name: Roberto Morales
+----
+speaker_bio: Candidato a PhD, Ingeniero de Sistemas, Magister en Gobierno de Tecnología Informática y Estudiante de Doctorado en Inteligencia Artificial de la Universidad de Granada, España. Miembro de la Comunidad Nacional de Inteligencia Artificial: Colombia AI, Organizador del Meetup Machine Learning &amp; Data Science Barranquilla. Esposo y padre de Nicolás. Ponente en eventos de emprendimiento e investigación en países como México, España, USA, Cuba entre otros.
+----
+attach: [Diapositivas](https://drive.google.com/file/d/1cXumlUM4gmbVbSYEG3z1PUgowVVzt5_5/view?usp=sharing)
+#### talk ####
+title: Intro a la Visión por Computador
+----
+details: En 2017, el 80% del tráfico en Internet fueron vídeos e imágenes. Sin embargo, se ha vuelto crítico desarrollar algoritmos capaces de entender estos datos. Por tanto, se busca brindar conceptos básicos de procesamiento de imágenes digitales como fundamentos requeridos en el área de visión por computador. Se pretende dar a conocer métodos de representación de imágenes digitales utilizando Python como lenguaje de programación y librerías de OpenCV. Además, se busca comprender técnicas de procesamiento que permitan no solo realizar operaciones básicas entre ellas sino analizar las diferentes características que pueden extraerse de las mismas. Esto, con el fin de representar formas y descriptores básicos con los que se puede realizar reconocimiento de objetos en una escena.
+----
+speaker: daniela-charris
+----
+speaker_name: 
+----
+speaker_bio: Candidata a Magíster, Ingeniera Electrónica y estudiante de Maestría en Ingeniería Electrónica. Trabajo como Asistente de Docencia y Asistente de Investigación en la Universidad del Norte. Participé en el Django Girls 2017 y como ponente de esta misma charla en la PyCon Colombia 2019.
+----
+attach: [Diapositivas](https://drive.google.com/file/d/1XmMDzjxphOHgZUDM348Cyl0xTmfXplka/view?usp=sharing)
+---
+youtube: gZDpvRoEONY

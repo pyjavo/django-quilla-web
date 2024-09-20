@@ -4,7 +4,7 @@ photo: /img/team/m-camila-arciniegas-pua.jpg
 ---
 role: colaborador
 ---
-work: Study groups
+work: Django study group 2023/24
 ---
 website_handle: 
 ---
@@ -18,4 +18,5 @@ start_activity: 2023-07-11
 ---
 contributions:
 
-- Leader of the Django study group.
+- Django study group leader using the book "Tango with Django 4" from July 19, 2023, to June 26, 2024.
+- Help in the organization and execution of the python workshop for young people with the Secretary of Education of Barranquilla

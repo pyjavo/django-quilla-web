@@ -1,0 +1,61 @@
+{% extends "page.html" %}
+{% from "macros/pagination.html" import render_pagination %}
+
+{% block main %}
+  <div class="container">
+    {{this.body}}
+
+    <div class="meetup-events">
+      {% for element in this.pagination.items %}
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <img src='{{ element.featured_photo
+                            if element.featured_photo
+                            else "/img/event-placeholder.jpg" }}'
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a class="text-decoration-none" href='{{ element|url }}'>
+                    {{ element.title }}
+                  </a>
+                </h3>
+                <div class=event-details>
+                  {% if element.venue %}
+                    <div class="venue">
+                      <strong>{{ element.venue }}</strong>
+                      {% if element.address_1 %}
+                        <span>{{ element.address_1 }}</span>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                  <div class="date">
+                    {% if element.date_start %}
+                      {% if alt == 'en' %}
+                        {{ element.date_start | datetimeformat("EEEE, MMMM d, y, H:mm") }}
+                      {% else %}
+                        {{ element.date_start | datetimeformat("EEEE, d 'de' MMMM 'de' y, h:mm a") }}
+                      {% endif %}
+                    {% endif %}
+                  </div>
+                  <div class="details">
+                    <a href="{{ element|url }}" class="btn btn-primary">{{bag('settings', this.alt, 'read_more')}}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% else %}
+        <div class="panel panel-default">
+          <div class="panel-body">
+            {{ this.empty_message }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {{ render_pagination(this.pagination) }}
+  </div>
+{% endblock %}

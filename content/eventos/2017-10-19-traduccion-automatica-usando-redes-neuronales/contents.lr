@@ -1,0 +1,38 @@
+title: Traducción automática usando redes neuronales
+---
+date_start: 2017-10-19 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/243867203/
+---
+information:
+
+Observaciones
+- Como siempre pediremos pizza para comer, así que por favor traigan algo de dinero para hacer "la vaca" jeje.
+- El lugar tiene una capacidad limitada, por lo que le pedimos a los que no puedan asistir que se den de baja de la lista de confirmados, para que otras personas tengan la oportunidad de participar.
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Traducción automática usando redes neuronales
+----
+details:
+
+En este proyecto, vas a echar un vistazo al mundo de la traducción automática usando redes neuronales. Estarás entrenando una red neuronal capaz de traducir nuevas frases del inglés al francés.  Nuestra red neuronal utiliza la arquitectura de LSTM (Long-short term memory).
+
+A partir de 2016, las principales empresas de tecnología, como Google, Apple y Microsoft estaban utilizando LSTM como componentes fundamentales en nuevos productos.  Por ejemplo, Google utilizó LSTM para el reconocimiento de voz en el teléfono inteligente, para el asistente inteligente Allo y para Google Translate.  Apple utiliza LSTM para la función “Quicktype” en el iPhone  y para Siri. Amazon utiliza LSTM para Amazon Alexa.
+
+¡¡¡Te esperamos!!!
+----
+speaker: wayner-barrios
+----
+speaker_name: 
+----
+speaker_bio: Wayner Barrios. Ingeniero electrónico, desarrollador de software en [Piensa Labs](http://piensa.co/)
+----
+attach: - [GitHub](https://github.com/waybarrios/meetup_translation)
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/7/d/9/e/600_465032158.jpeg

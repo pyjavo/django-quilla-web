@@ -1,0 +1,30 @@
+title: Análisis Geoespacial con Python y QGIS
+---
+date_start: 2024-03-21 19:30
+---
+link: https://www.meetup.com/pythonbaq/events/299736886/
+---
+information: 
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/6/0/4/e/600_519684654.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 #53-14
+---
+talks:
+
+#### talk ####
+title: Análisis Geoespacial con Python y QGIS
+----
+details: Esta charla busca aprovechar el runtime de Python dentro de QGIS para desarrollar algoritmos que automaticen procesos utilizados generalmente en el contexto de emergencias y desastres. Mediante cortos scripts, se mostrarán como manejar los datos geoespaciales para obtener un resultado y la integración de estos dentro de procesos más complejos.
+----
+speaker: jorge-martinez
+----
+speaker_name: 
+----
+speaker_bio: Ingeniero electronico de la universidad del norte. Actualmente laboro en la division de emergencias del Programa Mundial de Alimentos (WFP).
+----
+attach: <a href="https://www.meetup.com/pythonbaq/photos/34442375/">Fotos</a>
+---
+youtube: 3bwIca0m6_U

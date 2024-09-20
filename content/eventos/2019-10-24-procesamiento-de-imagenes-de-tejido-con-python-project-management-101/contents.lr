@@ -1,0 +1,53 @@
+title: Procesamiento de imágenes de tejido con Python + Project Management 101
+---
+date_start: 2019-10-24 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/265770066/
+---
+information:
+
+Agenda:
+* 6:30-7:00pm - Llegada
+* 7:00-7:40pm - Charla 1
+* 7:40-8:00pm - Receso, pizza
+* 8:00-8:40pm - Talk 2
+* 8:40-9:00pm - Cierre
+
+> La pizza es GRATIS gracias a PYTHON SOFTWARE FOUNDATION.
+
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/7/5/6/5/600_485850053.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Procesamiento de imágenes de tejido con Python
+----
+details:
+
+Un método de evaluación de borrosidad y superposición integral de imágenes para optimizar el escaneo de tejidos desde microscopio con Python propone un algoritmo optimizado para la detección de borrosidad mientras se realiza un escaneo de muestra de tejido patológico en tiempo real, asegurando que cada imagen escaneada
+esta enfocada, utilizando la comparación de zonas superpuestas de dos imágenes consecutivas, y la regresión lineal multivariada de una serie de funciones para detectar enfoque.
+----
+speaker: 
+----
+speaker_name: Jaisir Bayuelo
+----
+speaker_bio: Desarrollador con 2 años de experiencia en la construcción de aplicaciones web y móviles con amplio interés en la investigación y la ciencia de datos
+----
+attach: 
+#### talk ####
+title: Project Management 101
+----
+details: Una de las opciones de carrera más valorada por las industrias digitales es la figura del Project Manager. En esta charla nos enfocaremos a descargar las características y habilidades de esta carrera y los tipos de roles que puede abarcar como el de Scrum Master.
+----
+speaker: 
+----
+speaker_name: Juan Sebastián Quintero
+----
+speaker_bio: Project Manager con 5 años de experiencia, trabajando actualmente en Zemoga liderando equipos de desarrollo para clientes como Play Station y Morningstar
+----
+attach: 

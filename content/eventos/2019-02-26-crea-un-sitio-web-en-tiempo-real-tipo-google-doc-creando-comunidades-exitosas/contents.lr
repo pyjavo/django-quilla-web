@@ -1,0 +1,62 @@
+title: Crea un sitio web en tiempo real tipo Google doc  + Creando comunidades exitosas
+---
+date_start: 2019-02-26 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/259061739/
+---
+information:
+
+¡¡Esta es tu oportunidad de ver charlas nivel PyCon Colombia 2019!!
+
+Agenda:
+* 6:30-7:00pm - Llegada
+* 7:00-7:40pm - Charla 1
+* 7:40-8:00pm - Receso, pizza
+* 8:00-8:40pm - Charla 2
+* 8:40-9:00pm - Cierre
+
+> La pizza es GRATIS gracias a PYTHON SOFTWARE FOUNDATION.
+
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/d/0/6/6/600_478793350.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Crea un sitio web de dibujo colaborativo en tiempo real con Django Channels
+----
+details: ¿Tienes algún interés en conocer cómo es posible crear herramientas de colaboración en línea como Google docs? Hoy podrás Aprender cómo crear un sitio web de dibujo colaborativo con la capacidad de escalar según la demanda de tus usuarios.
+----
+speaker: dario-guzman
+----
+speaker_name: 
+----
+speaker_bio: 
+----
+attach:
+
+* [PyCon](https://2019.pycon.co/ponencias/crea-un-sitio-web-de-dibujo-colaborativo-en-tiempo-real-con-django-channels/)
+* [GitHub Backend](https://github.com/GudarJs/paint_backend)
+* [GitHub Frontend](https://github.com/GudarJs/paint_frontend)
+* [Diapositivas](https://drive.google.com/file/d/1KTpy7l9CZSsa-uUACkXA-fr1l5ayNuEF/view?usp=sharing)
+#### talk ####
+title: Creando comunidades de tecnología exitosas
+----
+details: A través de su historia personal, Javier nos contará como Python Barranquilla empezó a crearse hace mas de 15 años.
+----
+speaker: javier-daza
+----
+speaker_name: 
+----
+speaker_bio: 
+----
+attach:
+
+* [PyCon](https://2019.pycon.co/ponencias/creando-comunidades-de-tecnologia-exitosas/)
+* [Diapositivas](https://docs.google.com/presentation/d/1Nk4lRdtKiGHHSQYnAJSeOso_vN0T1hP3Qg1BwtWM544/edit?usp=sharing)
+---
+youtube: M9ER27Do7Gw

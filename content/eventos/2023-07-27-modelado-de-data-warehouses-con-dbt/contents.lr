@@ -1,0 +1,30 @@
+title: Modelado de Data Warehouses con DBT
+---
+date_start: 2023-07-27 19:30
+---
+link: https://www.meetup.com/pythonbaq/events/294769421/
+---
+information: 
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/9/e/d/9/600_514360665.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 #53-14
+---
+talks:
+
+#### talk ####
+title: Modelado de Data Warehouses con DBT
+----
+details: Esta charla tiene como objetivo presentarles el framework DBT, ampliamente utilizado para modelado de datos, específicamente de un data warehouse. A través de un caso práctico, mostrar cuales son los principales usos de la herramienta asi como tambien repasar conceptos de modelado de datos.
+----
+speaker: jorge-aguilar
+----
+speaker_name: 
+----
+speaker_bio: Ingeniero electrónico, egresado de la universidad del Norte. Con mas de 3 años de experiencia en el sector TI. Actualmente desempeñando el rol de Ingeniero de datos. Mis habilidades se centran sobre todo en el desarrollo Backend en Python, Modelado de datos en SQL, y uso de tecnologias de Big Data como Apache Spark.
+----
+attach: <a href="https://docs.google.com/presentation/d/15f8xRC-ArOWBwZzl_7crgqMF1V9c2lte/edit?usp=sharing&ouid=102956723374392876682&rtpof=true&sd=true">Diapositivas</a> / <a href="https://github.com/jdaguilar/data-warehouse-modeling-with-dbt-pybaq">Repositorio</a>
+---
+youtube: CPxE3aC9xdQ

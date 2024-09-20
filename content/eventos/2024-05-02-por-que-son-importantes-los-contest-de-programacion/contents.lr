@@ -1,0 +1,33 @@
+title: ¿Por qué son importantes los contest de programación?
+---
+date_start: 2024-05-02 19:30
+---
+link: https://www.meetup.com/pythonbaq/events/300537716/
+---
+information: 
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/5/5/3/3/600_520761811.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 #53-14
+---
+talks:
+
+#### talk ####
+title: ¿Por qué son importantes los contest de programación?
+----
+details: Este charla tiene como finalidad explicar los contest de programación, cómo las empresas los han usado para las pruebas técnicas. Adicionalmente, se hará práctico de un solo problema donde se evidencian aprendizajes del azúcar sintáctico de python, uso de pytest, y conceptos de consumo de recursos de problemas
+----
+speaker: 
+----
+speaker_name: Carlos Sierra
+----
+speaker_bio: Ingeniero de Sistemas, Magister en Ingeniería de Sistemas. Docente universitario por mas de 10 años. Ingeniero de ML y MLOps con más de 5 años de experiencia en industria. Co-organizador de PyCon Colombia y de Python Bogotá.
+----
+attach:
+
+- [Notebook](https://github.com/PyBAQ/Notebooks/blob/master/contests_de_programacion/ProgrammingContest.ipynb)
+- [Presentación](https://drive.google.com/file/d/16BgXoC-6ayOWz6Ldh6u4z95hFVUZaFBx/view?usp=sharing)
+---
+youtube: fwAWU_bfoVI

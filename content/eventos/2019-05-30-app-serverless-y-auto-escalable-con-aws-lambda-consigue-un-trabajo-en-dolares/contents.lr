@@ -1,0 +1,59 @@
+title: App serverless y auto escalable con AWS Lambda + Consigue un trabajo en dólares
+---
+date_start: 2019-05-30 18:30
+---
+link: https://www.meetup.com/pythonbaq/events/261321836/
+---
+information:
+
+Agenda:
+* 6:30-7:00pm - Llegada
+* 7:00-7:40pm - Charla 1
+* 7:40-8:00pm - Receso, pizza
+* 8:00-8:40pm - Charla 2
+* 8:40-9:00pm - Cierre
+
+> La pizza es GRATIS gracias a PYTHON SOFTWARE FOUNDATION.
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/7/e/6/7/600_481172359.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: App serverless y auto escalable con AWS Lambda
+----
+details:
+
+Arquitecturas de aplicaciones serverless permiten implementar sistemas altamente escalables sin la carga de mantener infraestructura. Ya sea para implementar aplicaciones “Cloud Native”, orquestración de eventos, o ejecutar modelos de Machine Learning, conocer los beneficios y conceptos detrás de una aplicación serverless es indispensable para diseñar e implementar arquitecturas modernas.
+
+En esta charla hablaremos brevemente de las características de los conceptos detrás de aplicaciones serverless y desplegaremos una aplicación web serverless con backend en Python haciendo uso de AWS Lambda.
+
+Bonus para los aficionados devops: lo desplegaremos todo de manera automatizada con terraform.
+----
+speaker: 
+----
+speaker_name: Jonathan Araujo
+----
+speaker_bio: Es un Ingeniero de Software trabajando como consultor independiente de implementaciones de infraestructura en la nube y la construcción de plataformas de Big Data. Es graduado de la Universidad del Norte con una Maestría en Ingeniería de Software de la U. Politécnica de Madrid, y es un arquitecto certificado de AWS y Azure.
+----
+attach: [Diapositivas](https://drive.google.com/file/d/1paeQ69ycefeRzdFJrPBqZiFN5MJgP6Ar/view?usp=sharing)
+#### talk ####
+title: Consigue un trabajo que pague en dólares desde Barranquilla
+----
+details:
+
+Te enseñare todo lo que necesitas saber para lograrlo en mínimo 3 meses o menos.
+
+No es mierda, menos una pirámide ni multinivel, esto si es real. Hay un mercado billonario en moneda extranjera esperando emplear a desarrolladores, diseñadores y marketers.
+----
+speaker: 
+----
+speaker_name: John Bernal
+----
+speaker_bio: Es growth marketer especializado en el sector de aplicaciones de citas y turismo digital. Es psicólogo de la Universidad del Norte, especializado en ventas, marketing digital y desarrollo web. Certificado en Campaign Management y Google Ads por Google.
+----
+attach: [Diapositivas](https://drive.google.com/file/d/1vEDU9LV8XD_dWcEN8GopGVEKfssfhPHS/view?usp=sharing)

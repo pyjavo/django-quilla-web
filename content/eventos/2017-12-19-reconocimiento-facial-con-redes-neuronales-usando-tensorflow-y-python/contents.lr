@@ -1,0 +1,39 @@
+title: Reconocimiento facial con redes neuronales usando TensorFlow y Python
+---
+date_start: 2017-12-19 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/245684388/
+---
+information:
+
+Observaciones:
+- Como siempre pediremos pizza para comer, así que por favor traigan algo de dinero para hacer "la vaca".
+- El lugar tiene una capacidad limitada, por lo que le pedimos el favor **a los que no puedan asistir que se den de baja de la lista de confirmados**, para que otras personas tengan la oportunidad de participar.
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Reconocimiento facial con redes neuronales usando TensorFlow y Python
+----
+details:
+
+Te has preguntado ¿como hace Facebook para etiquetar el rostro de tus amigos y el tuyo en tus fotos? Sí la respuesta es un si y te gustaría aprender a hacerlo, estaré encantado de darte una introducción al reconocimiento de rostros con redes neuronales usando Tensorflow y Python. El evento es gratuito y los cupos son limitados.
+
+¡¡¡Te esperamos!!!
+----
+speaker: dario-guzman
+----
+speaker_name: 
+----
+speaker_bio: 
+----
+attach:
+
+- [Presentación](https://drive.google.com/open?id=1tC4elGmYVWl5gb0HoG0Wlw3AFgD6Iy00f-PAvHrEXEw)
+- [GitHub](https://github.com/GudarJs/Facial-Recognition-Tensorflow)
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/f/3/1/600_466863889.jpeg

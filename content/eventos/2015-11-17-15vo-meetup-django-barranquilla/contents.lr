@@ -1,0 +1,33 @@
+title: 15vo Meetup Django Barranquilla
+---
+date_start: 2015-11-17 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/226656300/
+---
+information: 
+---
+venue: Área Dos
+---
+address_1: Carrera 53 No 76-239 Local 405 CC. Habitat ( Areados, Barranquilla
+---
+talks:
+
+#### talk ####
+title:
+
+Como hacer API Rest en Django y como integrarlo con AngularJS 
+----
+details: En esta ocasión Cristian nos explicara con un breve proyecto como hacer API Rest en Django y como integrarlo con Angular js.
+----
+speaker: 
+----
+speaker_name: Cristian Rojas
+----
+speaker_bio: Frontend Developer y fotógrafo. Vive en Bogota y trabaja con django desde hace 5 años en proyectos dentro y fuera de Colombia.
+----
+attach:
+
+- Repositorio en [GitHub](https://github.com/cristiangrojas/meetup-barranquilla)
+- [Guía de estilos de Angular](https://github.com/johnpapa/angular-styleguide)
+---
+featured_photo: http://photos1.meetupstatic.com/photos/event/5/7/2/c/600_444082316.jpeg

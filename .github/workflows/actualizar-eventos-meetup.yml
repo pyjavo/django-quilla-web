@@ -11,13 +11,11 @@ jobs:
     name: Actualizar eventos meetup
     runs-on: ubuntu-latest
     steps:
-      - name: checkout@v3
-        uses: actions/checkout@v3
-        with:
-          ref: master
+      - name: checkout@v4
+        uses: actions/checkout@v4
 
-      - name: setup-python@v4
-        uses: actions/setup-python@v4
+      - name: setup-python@v5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
@@ -29,11 +27,11 @@ jobs:
       - name: Ejecutar events.py
         run: python scripts/events.py
 
+      - name: Ejecutar create_events.py
+        run: python scripts/create_events.py  
+
       - name: Rama actual
         run: git branch
-
-      - name: Git pull
-        run: git pull origin master
 
       - name: Verificar cambios en archivo json
         id: check_changes
@@ -56,6 +54,7 @@ jobs:
           git config --global user.email "contacto@pybaq.co"
           git checkout -b actualizar-eventos-${{ steps.date.outputs.date }}
           git add databags/meetup.json
+          git add content/eventos
           git commit -m "Actualizacion eventos meetup"
           git push -u origin actualizar-eventos-${{ steps.date.outputs.date }}
 

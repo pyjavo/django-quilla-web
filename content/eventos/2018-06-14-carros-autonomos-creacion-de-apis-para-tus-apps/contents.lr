@@ -1,0 +1,46 @@
+title: Carros autónomos + Creación de APIs para tus apps
+---
+date_start: 2018-06-14 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/251266421/
+---
+information:
+
+1. El evento es gratuito.
+2. La charla será en español
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/d/3/2/4/600_471594052.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Cómo crear APIs para tus apps
+----
+details: Como crear APIs con Django REST para tu app móvil o front-end
+----
+speaker: oswaldo-rodriguez
+----
+speaker_name: 
+----
+speaker_bio: Backend, frontend and mobile developer, 23 years old, engineering student , musical producer and ux / ui designer
+----
+attach: 
+#### talk ####
+title: Sistema de conducción autónoma
+----
+details: Sistema de conducción autónoma para un vehículo en un entorno virtual simulado.
+----
+speaker: 
+----
+speaker_name: Juan Camilo Gómez
+----
+speaker_bio: Ingeniero electrónico y estudiante de ingeniería de sistemas. 22 años. Machine learning y procesamiento digital de imágenes.
+----
+attach:
+
+- [Video Corto 1- Carros Autónomos](https://www.instagram.com/p/BlGG5-egLdp/?taken-by=pybaq)
+- [Video Corto 2- Carros Autónomos](https://www.instagram.com/p/BlGHPi_hzEW/?taken-by=pybaq)

@@ -1,0 +1,43 @@
+title: Diseña tu proyecto de Machine Learning + Patrones de automatización de pruebas
+---
+date_start: 2018-09-17 19:00
+---
+link: https://www.meetup.com/pythonbaq/events/254570423/
+---
+information: 
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/5/2/0/f/600_474501007.jpeg
+---
+venue: Koombea
+---
+address_1: Calle 85 # 53-14
+---
+talks:
+
+#### talk ####
+title: Diseña tu proyecto de Machine Learning
+----
+details: Pasos a tener en cuenta al momento de diseñar o desarrollar un proyecto de Machine Learning o AI
+----
+speaker: wayner-barrios
+----
+speaker_name: 
+----
+speaker_bio: Científico investigador en Robotics Institute - School of Computer Science Carnegie Mellon University
+----
+attach: - [Slides ML](https://docs.google.com/presentation/d/164I72Av88ykPjs_01fyYGVgRMlnaaluZL77NNehdVVc/edit?usp=sharing)
+#### talk ####
+title: Patrones de automatización de pruebas
+----
+details: Por medio del uso de la herramienta Selenium veremos patrones comunes en testing.
+----
+speaker: sergio-orozco
+----
+speaker_name: 
+----
+speaker_bio: Especialista en seguridad informática corporación universitaria americana y QA automator en PSL.
+----
+attach:
+
+- [Slides Selenium](https://docs.google.com/presentation/d/1Fv17gRP2rrDid1qa-19uGCLcMqUmdLrGcmJ4OyV9tGo/edit?usp=sharing)
+- [Fotos](https://www.meetup.com/pythonbaq/photos/29267016/474690179/)

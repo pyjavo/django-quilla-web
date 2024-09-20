@@ -1,0 +1,53 @@
+{% extends "page.html" %}
+
+{% block body %}
+  <div class="d-flex justify-content-center">
+    <div class="event-post">
+      {% if this.youtube %}
+      <div class="row">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/{{this.youtube}}?rel=0" allowfullscreen></iframe>
+        </div>
+      </div>
+    {% else %}
+      <div class="d-flex justify-content-center">
+        <img src='{{ this.featured_photo
+          if this.featured_photo
+          else "/img/event-placeholder.jpg" }}'
+        class="img-fluid rounded-start" alt="...">
+      </div>
+    {% endif %}
+      <h1 class="ctitle">{{ this.title }}</h1>
+      <div id="body-content" class="blog-post-body">
+        <div class=event-details>
+          <div class="date">
+            {% if alt == 'en' %}
+              {{ this.date_start | datetimeformat("EEEE, MMMM d, y, H:mm") }}
+            {% else %}
+              {{ this.date_start | datetimeformat("EEEE, d 'de' MMMM 'de' y, h:mm a") }}
+            {% endif %}
+          </div>
+          {% if this.venue %}
+            <div class="venue">
+              <strong>{{ this.venue }}</strong>
+              {% if this.address_1 %}
+                <span>{{ this.address_1 }}</span>
+              {% endif %}
+            </div>
+          {% endif %}
+          <a href="{{this.link}}">Meetup</a>
+          <div class="details">
+            {{ this.information }}
+          </div>
+          <div class="attach">
+            {{ this.attach }}
+          </div>
+          <div class="talks">
+            {{ this.talks }}
+          </div>
+        </div>
+        <div class="comments">{{ render_disqus_comments() }}</div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
