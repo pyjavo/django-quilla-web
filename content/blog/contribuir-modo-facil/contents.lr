@@ -9,29 +9,13 @@ excerpt: Contribuir puede requerir aprender muchas cosas a la vez si eres princi
 body:
 
 
-## Flujo de Contribuir
-El flujo de trabajo para contribuir a PyBAQ es el mismo de casi todos los proyectos de software: [pull request](https://docs.github.com/en/get-started/quickstart/github-flow). 
 
-1. Pull/Fork: [Crea una copia](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) del repositorio en tu cuenta de GitHub.
-2. Branch: Crea una rama con un nombre relacionado a la contribución que harás.
-![Branch](/img/posts/2023/contribuir-modo-facil/flow-branch.png)
-3. Commit: Realiza los cambios en el código. Por ejemplo: redacta un nuevo articulo. Guarda los cambios en esa rama (branch) y guardalos haciendo un commit.
-4. Push: Envía los cambios que has vinculado a la rama a tu repositorio.
-![Commit & Push](/img/posts/2023/contribuir-modo-facil/flow-commits.png)
-5. Pull Request: Has una solicitud de inclusión de tu código en la pagina.
-![Pull Request](/img/posts/2023/contribuir-modo-facil/flow-pullreq.png)
-6. Discuss: Discute los cambios que has introducido con los dueños del repositorio original. Si hay cambios solo debes realizarlos repitiendo los pasos 3 y 4; el pull request abarcará los commits que hagas a esa rama hasta que sea aceptado.
-![Discuss](/img/posts/2023/contribuir-modo-facil/flow-discuss.png)
-7. Rebase + Merge: Ver en [articulo original](https://docs.github.com/en/get-started/quickstart/github-flow).
-![Rebase & Merge](/img/posts/2023/contribuir-modo-facil/flow-merge.png)
+Ya existe un articulo llamado [Cómo contribuir en el blog de Python Barranquilla](/blog/contribuir-blog-python-barranquilla/). En este articulo se resalta como se pueden facilitar la contribución usando un entorno de trabajo virtual que se configura solo – no tendrás que instlar nada, todo es en linea. 
 
+[Codespaces](https://docs.github.com/es/codespaces/overview) es un entorno de trabajo virtual configurable de manera automática provisto por Github. Una cuenta gratis cuenta con 60 horas-nucleo de ejecución. Eso es tiempo mas que suficiente para trabajar en contribuir a nuestra pagina u otros proyectos. El repositorio de la página de Python Barranquilla de una carpeta .devcontainer con las configuraciones necesarias para empezar a trabajar de inmediato en la contribución que quieras hacer.
 
-## Modo Fácil
-
-La facilidad de este artículo consiste en el uso de Codespaces. Codespaces es un entorno de trabajo virtual provisto por Github. Una cuenta gratis cuenta con 60 horas-nucleo de ejecución. Allí puedes realizar los pasos 3 y 4 sin necesidad de descargar el repositorio y configurar Lektor.
-
-### Editar
-Tras crear una rama, podemos abrir un codespace, gracias al archivo .devcontainer.json se creará un codespace con todo lo necesario.
+## Editar
+Tras crear una rama, podemos abrir un codespace, gracias al archivo .devcontainer.json se creará un codespace con todo lo necesario. Si tu primera pregunta es ¿que es una rama y por que es necesario crearla? Te recomiendo ir al [Anexo 2](/blog/contribuir-blog-python-barranquilla/#anexo-2-ciclo-de-trabajo-de-contribucion-en-github) del articulo mencionado al inicio.
 
 ![Open Codespace](/img/posts/2023/contribuir-modo-facil/csflow-opencodespace.png)
 
@@ -54,5 +38,7 @@ Es importante cerrar el codespace para evitar que consuma mas tiempo de ejecuci�
 
 ![Create Codespace](/img/posts/2023/contribuir-modo-facil/csflow-push-closecodespace.png)
 
-Ante las dudas, no dudes en preguntar.
+## ¿Como creo un post?
+Para poder crear un blog post, siga las instrucciones del artículo "Cómo contribuir en el blog de Python Barranquilla" a partir del título [Creación de una entrada en Lektor](/blog/contribuir-blog-python-barranquilla/#creacion-de-una-entrada-en-lektor).
 
+Ante las dudas, no dudes en preguntar en [nuestro discord](https://discord.gg/46N5dPm9Zk).

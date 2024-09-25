@@ -13,7 +13,11 @@ pub_date: 2017-11-06
 ---
 body:
 
-En el siguiente artículo hablaré sobre como contribuir en el blog de Python Barranquilla. Para colaborar en el blog de la comunidad es necesario que tengas conocimientos previos en [Git](https://www.codeschool.com/courses/try-git), GitHub, [Markdown](https://guides.github.com/features/mastering-markdown/) y virtualenvs( esto ya es opcional).
+En el siguiente artículo hablaré sobre como contribuir en el blog de Python Barranquilla. Para colaborar en el blog de la comunidad es necesario que tengas conocimientos previos en:
+- [Lektor](#anexo-1-como-instalar-lektor)
+- [Git y Github](#anexo-2-ciclo-de-trabajo-de-contribucion-en-github)
+- [Markdown](https://guides.github.com/features/mastering-markdown/)
+- virtualenvs (esto es opcional).
 
 El contenido de este artículo se encuentra dividido en 2 secciones importantes:
 
@@ -34,33 +38,38 @@ git clone https://github.com/PyBAQ/django-quilla-web.git
 
 Una vez hayas clonado el repositorio e [instalado lektor en tu computador](https://www.getlektor.com/docs/installation/), debes correr el servidor local usando `lektor server -f webpack`.
 
-![Clonar repositorio consola](/img/contribuir-pybaq/ejecutar.png)
+![Clonar repositorio consola](/img/posts/2017/contribuir-pybaq/ejecutar.png)
 
-### Creación de entrada en lektor
+Ahora que contamos con el repositorio, iniciamos el proyecto de manera local con Lektor:
+```bash
+lektor server
+```
+
+### Creación de una entrada en lektor
 
 Ahora, ingresamos a la URL [http://localhost:5000](http://localhost:5000) y verás el sitio web en tu navegador.
 
-![Página de inicio](/img/contribuir-pybaq/home.png)
+![Página de inicio](/img/posts/2017/contribuir-pybaq/home.png)
 
 Se navega hacia la página que se quiere editar, para nuestro caso se navega hacia blog y se presiona el botón editar.
 
-![Página del blog](/img/contribuir-pybaq/pagina_blog.png)
+![Página del blog](/img/posts/2017/contribuir-pybaq/pagina_blog.png)
 
 Luego nos dirigimos hacia la parte superior derecha y presionamos un botón con forma de lápiz.
 
-![Botón editar](/img/contribuir-pybaq/boton_editar.png)
+![Botón editar](/img/posts/2017/contribuir-pybaq/boton_editar.png)
 
 Al presionar el botón, se cargara el panel administrativo para editar la página del blog.
 
-![Editar blog](/img/contribuir-pybaq/editar_blog.png)
+![Editar blog](/img/posts/2017/contribuir-pybaq/editar_blog.png)
 
 Para proceder con la creación de la entrada se ingresa el título y el [slug](https://yoast.com/slug/)
 
-![Crear entrada](/img/contribuir-pybaq/crear_entrada.png)
+![Crear entrada](/img/posts/2017/contribuir-pybaq/crear_entrada.png)
 
 Luego se completa el resto de la información
 
-![Editar entrada](/img/contribuir-pybaq/editar_entrada.png)
+![Editar entrada](/img/posts/2017/contribuir-pybaq/editar_entrada.png)
 
 **Title:** Se refiere al título de la entrada.
 
@@ -74,42 +83,55 @@ Luego se completa el resto de la información
 
 **Body:** Contenido central del artículo.
 
-### Anexos
+>>_El articulo original tenía estas isntrucciones, ahora (2024) se maneja de manera diferente _ vea [Imágenes](#imagenes)
+>
+>### Anexos
+>
+>Para Cargar las imágenes se presiona el botón **Añadir Adjunto** Ubicado en la barra lateral.
+>
+>![Cargar adjuntos](/img/posts/2017/contribuir-pybaq/cargar_adjuntos.png)
+>
+>Como paso final si se suben multiples imágenes, para que solo muestre una de las imágenes cargadas como anexos, se debe seleccionar la imagen y marcarla como oculta seleccionando la opción *¿Debería estar oculta esta página?* y desactivar *Si esto está habilitado la página puede ser detectada, en caso contrario la URL ha de ser conocida.*
+>![Ocultar imagenes](/img/posts/2017/contribuir-pybaq/ocultas.png)
+>
+>Una vez terminada la redacción se puede visualizar el artículo en el administrador.
+>
+>![Previsualizar](/img/posts/2017/contribuir-pybaq/contribuir_django_quilla_web.png)
+>
+>También podrás verlo finalizado en el blog.
+>
+>![Resultado final](/img/posts/2017/contribuir-pybaq/resultado_final.png)
+>
 
-Para Cargar los anexos(imágenes) se presiona el botón **Añadir Adjunto** Ubicado en la barra lateral.
+### Imágenes
+Para añadir la imagen principal del artículo, simplemente adjuntala usando el boton **Add Attachment** o **Añadir Adjunto**. El programa mostrará la imagen en ese directorio como imagen principal del articulo.
 
-![Cargar adjuntos](/img/contribuir-pybaq/cargar_adjuntos.png)
-
-Como paso final si se suben multiples imágenes, para que solo muestre una de las imágenes cargadas como anexos, se debe seleccionar la imagen y marcarla como oculta seleccionando la opción *¿Debería estar oculta esta página?* y desactivar *Si esto está habilitado la página puede ser detectada, en caso contrario la URL ha de ser conocida.*
-![Ocultar imagenes](/img/contribuir-pybaq/ocultas.png)
-
-Una vez terminada la redacción se puede visualizar el artículo en el administrador.
-
-![Previsualizar](/img/contribuir-pybaq/contribuir_django_quilla_web.png)
-
-También podrás verlo finalizado en el blog.
-
-![Resultado final](/img/contribuir-pybaq/resultado_final.png)
-
+Todas las demás imagenes las deberas incluir en la siguiente carpeta:
+```
+/assets/img/posts/[año]/[slug-del-articulo]/
+```
+las deberás agregar como links a la carpeta img directamente, abajo un ejemplo de esta misma página:
+```markdown
+![Clonar repositorio consola](/img/posts/2017/contribuir-blog-python-barranquilla/ejecutar.png)
+```
 
 ## Como hacer el Pull Request al repositorio de PyBAQ.
 
 ### Pull request
 
-![Crear Branch](/img/contribuir-pybaq/crear_branch.png)
+![Crear Branch](/img/posts/2017/contribuir-pybaq/crear_branch.png)
 
-Para aceptar los cambios que los miembros de la comunidad realizan, se efectuá un control de los diferentes commits.
-Para poder realizar un commit es necesario que la persona este acostumbrada a las diferentes operaciones de git como lo son add y commit.
+Para aceptar los cambios que los miembros de la comunidad realizan, se efectuá un control de los diferentes commits. Para poder realizar un commit es necesario que la persona este acostumbrada a las diferentes operaciones de git como lo son add y commit ([ver Anexo 2](#anexo-2-ciclo-de-trabajo-de-contribucion-en-github)).
 
-![Commit](/img/contribuir-pybaq/commit.png)
+![Commit](/img/posts/2017/contribuir-pybaq/commit.png)
 
 Como ultimo paso en el terminal, hacemos un envió de los elementos a subir, verificando la rama en la que se encuentra git en el momento, ademas de corroborar la rama remota en la que se subirá
 
-![Push](/img/contribuir-pybaq/push.png)
+![Push](/img/posts/2017/contribuir-pybaq/push.png)
 
 Y en la interfaz de git se procede a hacer el Pull Request final, para pasar los cambios a aprobación
 
-![Pull Request](/img/contribuir-pybaq/pull_request.png)
+![Pull Request](/img/posts/2017/contribuir-pybaq/pull_request.png)
 
 Espero que haya sido de ayuda mi artículo. Si ven que hay secciones de esta entrada que se pueden mejorar, por favor escríbanme un comentario o un [issue en Github etiquetando mi usuario @Scot3004](https://github.com/PyBAQ/django-quilla-web/issues).
 
@@ -118,3 +140,39 @@ _Para las personas que está empezando, les dejamos en el artículo enlaces haci
 
 _Atte, Javier_
 
+---------------------------
+
+## _Anexo 1: Como instalar Lektor_
+Como instalarlo y algo de contexto.
+
+### _¿Qué es Lektor?_
+Un sistema de gestión de contenido estático potente y flexible para crear sitios web complejos y atractivos a partir de archivos planos – para personas que no desean hacer concesiones entre un CMS y un motor de páginas estáticas.
+
+### _¿Como instalarlo?_
+En la [página web de Lektor](https://www.getlektor.com/downloads/) se explica como instalarlo. Si tiene algún problema acceda al [discord de la comunidad](https://discord.gg/46N5dPm9Zk) y pida ayuda.
+
+### _¿Como se usa?_
+Para entender un poco como se usa Lektor, le recomendamos crear su propio proyecto siguiendo la [guia de inicio rapido de Lektor](https://www.getlektor.com/docs/quickstart/).  Nos gustaría brindar mas ayuda, pero en este caso la documentación ya  está escrita. Si el inglés no es lo suyo, puede traducir la página con google.
+
+---------------------------------
+
+## _Anexo 2: Ciclo de trabajo de Contribución en Github_
+Para poder contribuir a proyectos de código (abierto o cerrado) debemos entender lo básico de Git, Github y la importancia del control de versionamiento en proyectos de codigo. Contribuir a nuestro blog es una manera de ganar esa experiencia.
+
+### _Entendiendo el flujo de trabajo_
+El flujo de trabajo para contribuir a PyBAQ es el mismo de casi todos los proyectos de software: [pull request](https://docs.github.com/en/get-started/quickstart/github-flow). En la lista abajo verá con ilustraciones como trabajar con Github (la plataforma web). Esa interacción se hace usualmente con Git (la herramienta que hace el control de version). Freecodecamp tiene una [buena guia para principiantes](https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/)
+
+1. Pull/Fork: [Crea una copia](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) del repositorio en tu cuenta de GitHub.
+2. Branch: Crea una rama con un nombre relacionado a la contribución que harás.
+![Branch](/img/posts/2023/contribuir-modo-facil/flow-branch.png)
+3. Commit: Realiza los cambios en el código. Por ejemplo: redacta un nuevo articulo. Guarda los cambios en esa rama (branch) y guardalos haciendo un commit.
+4. Push: Envía los cambios que has vinculado a la rama a tu repositorio.
+![Commit & Push](/img/posts/2023/contribuir-modo-facil/flow-commits.png)
+5. Pull Request: Has una solicitud de inclusión de tu código en la pagina.
+![Pull Request](/img/posts/2023/contribuir-modo-facil/flow-pullreq.png)
+6. Discuss: Discute los cambios que has introducido con los dueños del repositorio original. Si hay cambios solo debes realizarlos repitiendo los pasos 3 y 4; el pull request abarcará los commits que hagas a esa rama hasta que sea aceptado.
+![Discuss](/img/posts/2023/contribuir-modo-facil/flow-discuss.png)
+7. Rebase + Merge: Ver en [articulo original](https://docs.github.com/en/get-started/quickstart/github-flow).
+![Rebase & Merge](/img/posts/2023/contribuir-modo-facil/flow-merge.png)
+
+Si tienes bases de Git, pero no te gusta mucho la linea de comandos o no te sientes cómodo(a) aún, existe también [Github Desktop](https://github.com/apps/desktop).
