@@ -40,10 +40,6 @@ Una vez hayas clonado el repositorio e [instalado lektor en tu computador](https
 
 ![Clonar repositorio consola](/img/posts/2017/contribuir-pybaq/ejecutar.png)
 
-Ahora que contamos con el repositorio, iniciamos el proyecto de manera local con Lektor:
-```bash
-lektor server
-```
 
 ### Creación de una entrada en lektor
 
