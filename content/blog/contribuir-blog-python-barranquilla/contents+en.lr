@@ -1,1 +1,170 @@
 _discoverable: no
+---
+body:
+
+
+In the following article, I will talk about how to contribute to the Python Barranquilla blog. To collaborate on the community blog, you need to have prior knowledge in:
+- [Lektor](#annex-1-how-to-install-lektor)
+- [Git and Github](#annex-2-contribution-workflow-on-github)
+- [Markdown](https://guides.github.com/features/mastering-markdown/)
+- virtualenvs (this is optional).
+
+The content of this article is divided into 2 important sections:
+
+1. How to use the Lektor admin panel
+2. How to make a Pull Request (or PR, as it's commonly known) to the PyBAQ repository.
+
+With this clear, let's start detailing the step-by-step of each section.
+
+## How to use the Lektor admin panel
+
+### Clone repository
+
+Editing the Python Barranquilla website can be done in a graphical panel. To run it, you need to clone [the project of our website](https://github.com/PyBAQ/django-quilla-web/blob/master/README.md) and install it locally using:
+
+```bash
+git clone https://github.com/PyBAQ/django-quilla-web.git
+```
+
+Once you have cloned the repository and [installed Lektor on your computer](https://www.getlektor.com/docs/installation/), you should run the local server using `lektor server -f webpack`.
+
+![Clone repository console](/img/posts/2017/contribuir-pybaq/ejecutar.png)
+
+
+### Creating an entry in Lektor
+
+Now, go to the URL [http://localhost:5000](http://localhost:5000), and you will see the website in your browser.
+
+![Home page](/img/posts/2017/contribuir-pybaq/home.png)
+
+Navigate to the page you want to edit; in our case, navigate to the blog and press the edit button.
+
+![Blog page](/img/posts/2017/contribuir-pybaq/pagina_blog.png)
+
+Then go to the upper right corner and press a pencil-shaped button.
+
+![Edit button](/img/posts/2017/contribuir-pybaq/boton_editar.png)
+
+By pressing the button, the admin panel will load to edit the blog page.
+
+![Edit blog](/img/posts/2017/contribuir-pybaq/editar_blog.png)
+
+To proceed with creating the entry, enter the title and the [slug](https://yoast.com/slug/)
+
+![Create entry](/img/posts/2017/contribuir-pybaq/crear_entrada.png)
+
+Then complete the rest of the information
+
+![Edit entry](/img/posts/2017/contribuir-pybaq/editar_entrada.png)
+
+**Title:** Refers to the entry's title.
+
+**Author:** The readable name of the person writing the article.
+
+**Twitter_Handle:** Your nickname on [Twitter](http://twitter.com/).
+
+**Publication_date:** Date in YYYY-MM-DD format with the current date.
+
+**Excerpt:** Short summary displayed in the blog listing.
+
+**Body:** Main content of the article.
+
+>> _The original article had these instructions, now (2024) it is handled differently_ see [Images](#images)
+>
+> ### Annexes
+>
+> To upload images, press the **Add Attachment** button located in the sidebar.
+>
+> ![Upload attachments](/img/posts/2017/contribuir-pybaq/cargar_adjuntos.png)
+>
+> As a final step, if you upload multiple images, to only show one of the images uploaded as attachments, select the image and mark it as hidden by selecting the option *Should this page be hidden?* and disabling *If this is enabled, the page can be detected; otherwise, the URL must be known.*
+> ![Hide images](/img/posts/2017/contribuir-pybaq/ocultas.png)
+>
+> Once the writing is finished, you can preview the article in the admin panel.
+>
+> ![Preview](/img/posts/2017/contribuir-pybaq/contribuir_django_quilla_web.png)
+>
+> You can also see it finalized in the blog.
+>
+> ![Final result](/img/posts/2017/contribuir-pybaq/resultado_final.png)
+>
+
+### Images
+To add the main image of the article, simply attach it using the **Add Attachment** button. The program will show the image in that directory as the main image of the article.
+
+All other images should be included in the following folder:
+```
+/assets/img/posts/[year]/[article-slug]/
+```
+You should add them as links to the img folder directly. Below is an example from this same page:
+```markdown
+![Clone repository console](/img/posts/2017/contribuir-blog-python-barranquilla/ejecutar.png)
+```
+
+## How to make a Pull Request to the PyBAQ repository
+
+### Pull request
+
+![Create Branch](/img/posts/2017/contribuir-pybaq/crear_branch.png)
+
+To accept changes made by community members, a control of the different commits is carried out. To be able to make a commit, the person must be familiar with various Git operations such as add and commit ([see Annex 2](#annex-2-contribution-workflow-on-github)).
+
+![Commit](/img/posts/2017/contribuir-pybaq/commit.png)
+
+As the final step in the terminal, we push the elements to be uploaded, verifying the branch Git is currently on, as well as confirming the remote branch to which it will be uploaded.
+
+![Push](/img/posts/2017/contribuir-pybaq/push.png)
+
+And in the Git interface, proceed to make the final Pull Request to submit the changes for approval.
+
+![Pull Request](/img/posts/2017/contribuir-pybaq/pull_request.png)
+
+I hope my article was helpful. If you see that there are sections of this entry that can be improved, please leave me a comment or an [issue on Github tagging my user @Scot3004](https://github.com/PyBAQ/django-quilla-web/issues).
+
+#### _Editor's Note:_
+_For those who are just starting, we've included links to the tools you need to learn to make your contributions. Teaching and explaining to others is a great way to learn even more. Keep going!_
+
+_Best regards, Javier_
+
+---------------------------
+
+## _Annex 1: How to install Lektor_
+How to install it and some context.
+
+### _What is Lektor?_
+A powerful and flexible static content management system for creating complex and attractive websites from flat files—for people who don't want to compromise between a CMS and a static page generator.
+
+### _How to install it?_
+On the [Lektor website](https://www.getlektor.com/downloads/), it explains how to install it. If you have any issues, access the [community discord](https://discord.gg/46N5dPm9Zk) and ask for help.
+
+### _How to use it?_
+To understand a bit about how to use Lektor, we recommend creating your own project following the [Lektor quickstart guide](https://www.getlektor.com/docs/quickstart/). We would like to provide more help, but in this case, the documentation is already written. If English is not your thing, you can translate the page with Google.
+
+---------------------------------
+
+## _Annex 2: Contribution Workflow on Github_
+To contribute to code projects (open or closed), we must understand the basics of Git, Github, and the importance of version control in code projects. Contributing to our blog is a way to gain that experience.
+
+### _Understanding the workflow_
+The workflow to contribute to PyBAQ is the same as almost all software projects: [pull request](https://docs.github.com/en/get-started/quickstart/github-flow). In the list below, you'll see illustrations on how to work with Github (the web platform). This interaction is usually done with Git (the tool that handles version control). Freecodecamp has a [good beginner's guide](https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/).
+
+1. Pull/Fork: [Create a copy](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) of the repository in your GitHub account.
+2. Branch: Create a branch with a name related to the contribution you will make.
+![Branch](/img/posts/2023/contribuir-modo-facil/flow-branch.png)
+3. Commit: Make changes to the code. For example: write a new article. Save the changes in that branch (branch) and commit them.
+4. Push: Send the changes you have linked to the branch to your repository.
+![Commit & Push](/img/posts/2023/contribuir-modo-facil/flow-commits.png)
+5. Pull Request: Submit a request to include your code on the page.
+![Pull Request](/img/posts/2023/contribuir-modo-facil/flow-pullreq.png)
+6. Discuss: Discuss the changes you have introduced with the owners of the original repository. If there are changes, just repeat steps 3 and 4; the pull request will cover the commits you make to that branch until it is accepted.
+![Discuss](/img/posts/2023/contribuir-modo-facil/flow-discuss.png)
+7. Rebase + Merge: See in [original article](https://docs.github.com/en/get-started/quick
+
+start/github-flow).
+![Rebase & Merge](/img/posts/2023/contribuir-modo-facil/flow-merge.png)
+
+If you have a basic understanding of Git but don't like the command line or don't feel comfortable with it yet, there is also [Github Desktop](https://github.com/apps/desktop).
+---
+title:
+
+ How to contribute to the Python Barranquilla Blog
