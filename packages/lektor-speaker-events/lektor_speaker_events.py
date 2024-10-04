@@ -6,8 +6,13 @@ class SpeakerEventsPlugin(Plugin):
     name = 'Speaker Events'
     description = u'Lektor plugin that adds a function to filter events by speaker.'
 
-    def on_setup_env(self):
+    def on_setup_env(self, **extra):
         def speaker_events(eventos, speaker):
-            return [evento for evento in eventos if evento["talks"] and speaker in [talk["speaker"] for talk in evento["talks"].blocks]]
-
+            filtered = []
+            for evento in eventos:
+                if evento["talks"]:
+                    for talk in evento["talks"].blocks:
+                        if speaker in talk["speaker"]:
+                            filtered.append({"event": evento, "talk": talk})
+            return filtered
         self.env.jinja_env.filters["speakerevents"] = speaker_events

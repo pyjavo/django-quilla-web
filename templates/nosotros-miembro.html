@@ -74,7 +74,13 @@
       <div class="events-user row"></div>
         {% for event in eventos %}
           <div>
-            <a href="{{event|url}}">{{event.title}}</a>
+            <a href="{{event.event|url}}">
+              {% if event.talk.title %}
+                {{event.talk.title}}
+              {% else %}
+                {{event.event.title}}
+              {% endif %}  
+            </a>
           </div>
         {% endfor %}
       </div>
