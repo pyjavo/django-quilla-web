@@ -2,11 +2,11 @@
 {% extends "layout.html" %}
 {% block body %}
   {% for image in this.attachments %}
-    <div class="d-flex justify-content-center">
-      <p><img class="center-block img-fluid" src="{{ image|url }}" alt=""></p>
+    <div class="d-flex justify-content-center mt-4 mb-2">
+      <p><img class="center-block img-fluid" src="{{ image|url }}" alt="" style="max-height: 400px;"></p>
     </div>
   {% endfor %}
-  <div class="container">
+  <div class="container mb-4">
     <h1>{{this.name}}</h1>
     <p>{{this.description}}</p>
     <p><a href="{{this.website_handle}}">{{this.website_handle}}</a></p>
