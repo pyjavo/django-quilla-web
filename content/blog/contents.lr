@@ -2,8 +2,8 @@ _model: blog
 ---
 show_title: yes
 ---
-seo_description: 
+seo_description: Blog de la comunidad Python Barranquilla, listado de entradas
 ---
-title: 
+title: Blog
 ---
 _discoverable: yes
