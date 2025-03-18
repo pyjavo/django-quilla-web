@@ -2,7 +2,7 @@ name: Andres Pérez
 ---
 photo: /img/team/andres-perez.jpg
 ---
-role: colaborador
+role: contribuidor
 ---
 work: Contribuidor y traductor
 ---
@@ -21,3 +21,6 @@ contributions:
 - El copywriter oficial de la comunidad. Nos ha ayudado a redactar el código de conducta y la sección de proyectos
 - Desde el 2023 co-organiza el grupo de estudio de Django que usa "Tango with Django 4" como libro guía
 - Ayuda en la organización y ejecución del taller de python para jóvenes con la secretaría de educación de Barranquilla
+- Colaborador y mentor en Django Girls 2024
+---
+end_activity: 2024-03-01
