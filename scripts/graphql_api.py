@@ -1,8 +1,11 @@
+import json
 import jwt
 import requests
 import os
 from lektor.utils import slugify
+from dotenv import load_dotenv
 
+load_dotenv()
 
 # Load environment variables
 CLIENT_ID = os.getenv("MEETUP_CLIENT_ID")
@@ -11,6 +14,11 @@ SIGNING_KEY_ID = os.getenv("MEETUP_SIGNING_KEY_ID")
 MEETUP_API_URL = "https://api.meetup.com/gql-ext"
 GROUP_URLNAME = os.getenv("MEETUP_GROUP_URLNAME")
 PRIVATE_KEY = os.getenv("MEETUP_PRIVATE_KEY")
+
+# Load from .pem if ENV variable MEETUP_PRIVATE_KEY does not exists
+if(PRIVATE_KEY == None):
+    with(open('private_key.pem', "r")) as file:
+        PRIVATE_KEY = file.read()
 
 # Generate JWT Token
 payload = {
@@ -27,39 +35,17 @@ jwt_token = jwt.encode(
     headers={"kid": SIGNING_KEY_ID}
 )
 
-# GraphQL Query to Fetch Events
-query = """
-    query {
-        groupByUrlname(urlname: "%s") {
-            events(status: PAST, sort: DESC) {
-            edges {
-                node {
-                    id
-                    title
-                    dateTime
-                    eventUrl
-                    description
-                    featuredEventPhoto {
-                        standardUrl
-                    }
-                    venues {
-                        name
-                        address
-                    }
-                }
-                }
-            }
-        }
-    }
-""" % GROUP_URLNAME
+with(open('scripts/get_events.graphql', "r")) as file:
+    query = file.read()
 
 # Send Request to Meetup API
 headers = {"Authorization": f"Bearer {jwt_token}"}
-response = requests.post(MEETUP_API_URL, json={"query": query}, headers=headers)
+payload = {"query": query, "variables": {"group": "pythonbaq"}}
+response = requests.post(MEETUP_API_URL, json=payload, headers=headers)
 data = response.json()
-
+print(data)
 # Print Fetched Event Data (Instead of Writing to Files)
-for event in data["data"]["groupByUrlname"]["events"]["edges"]:
+for event in data["data"]["groupByUrlname"]["past_events"]["edges"]:
     event_data = event["node"]
     slug = f"{event_data['dateTime'][:10]}-{slugify(event_data['title'])}"
     print(f"https://pybaq.co/eventos/{slug}")
@@ -73,4 +59,5 @@ for event in data["data"]["groupByUrlname"]["events"]["edges"]:
     print(f"Lugar: {event_data['venues']}")
     print("-" * 40)  # Separator for readability
 
-print("Test run completed! ✅")
+with open("databags/meetup_gql.json", "w", encoding="utf-8") as outfile:
+    outfile.write(json.dumps(data))

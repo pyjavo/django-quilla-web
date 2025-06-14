@@ -1,0 +1,52 @@
+
+query ($group: String!) {
+    groupByUrlname(urlname: $group) {
+        name
+        description
+        future_events: events(status: ACTIVE, sort: DESC) {
+            edges {
+                node {
+                    id
+                    title
+                    dateTime
+                    eventUrl
+                    description
+                    featuredEventPhoto {
+                        standardUrl
+                    }
+                    venues {
+                        name
+                        address
+                    }
+                }
+            }
+            totalCount
+            pageInfo {
+                hasNextPage
+            }
+        }
+        past_events: events(status: PAST, sort: DESC) {
+            edges {
+                node {
+                    id
+                    title
+                    dateTime
+                    eventUrl
+                    description
+                    featuredEventPhoto {
+                        standardUrl
+                    }
+                    venues {
+                        name
+                        address
+                    }
+                }
+            }
+            totalCount
+            pageInfo {
+                hasNextPage
+            }
+        }
+    }
+}
+
