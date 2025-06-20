@@ -9,3 +9,5 @@ Pipfile.lock
 geckodriver.log
 .env
 screenshots
+private_key.pem
+public_key.pem

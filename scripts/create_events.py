@@ -28,7 +28,7 @@ def extract_meetup_json(file):
         return events
 
 
-def transform_event(event: dict):
+def transform_event(event_node: dict):
     """
     Transforma un evento de Meetup en un diccionario ordenado con los campos necesarios.
 
@@ -38,20 +38,17 @@ def transform_event(event: dict):
     Returns:
         OrderedDict: Diccionario ordenado con los campos transformados.
     """
+    event = event_node['node']
     content = OrderedDict()
-    content["title"] = event["name"]
-    content["date_start"] = f"{event['local_date']} {event['local_time']}"
-    content["link"] = event["link"]
+    content["title"] = event["title"]
+    content["date_start"] = event['dateTime']
+    content["link"] = event["eventUrl"]
     content["information"] = event["description"]
-    try:
-        content["featured_photo"] = event["featured_photo"]["photo_link"]
-    except KeyError:
-        print("Key error: featured_photo on", event["name"])
-    try:
-        content["venue"] = event["venue"]["name"]
-        content["address_1"] = event["venue"]["address_1"]
-    except KeyError:
-        print("Key error: venue on", event["name"])
+    if event["featuredEventPhoto"]:
+        content["featured_photo"] = event["featuredEventPhoto"]["standardUrl"]
+    if event["venues"] and len(event["venues"])>0:
+        content["venue"] = event["venues"][0]["name"]
+        content["address_1"] = event["venues"][0]["address"]
     return content
 
 
@@ -89,6 +86,9 @@ def load_events(event_list):
 
 
 if __name__ == "__main__":
-    event_data = extract_meetup_json("databags/meetup.json")
-    transformed_events = [transform_event(event) for event in event_data["past_events"]]
+    event_data = extract_meetup_json("databags/meetup_gql.json")
+    transformed_events = [
+        transform_event(event)
+        for event in event_data["data"]["groupByUrlname"]["past_events"]["edges"]
+    ]
     load_events(transformed_events)
