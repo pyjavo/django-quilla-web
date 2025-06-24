@@ -27,7 +27,7 @@ jobs:
 
       - name: Ejecutar graphql_api.py
         env:
-          MEETUP_GROUP_URLNAME: ${{env.MEETUP_GROUP_URLNAME}}
+          MEETUP_GROUP_URLNAME: ${{vars.MEETUP_GROUP_URLNAME}}
           MEETUP_CLIENT_ID: ${{secrets.MEETUP_CLIENT_ID}}
           MEETUP_MEMBER_ID: ${{secrets.MEETUP_MEMBER_ID}}
           MEETUP_PRIVATE_KEY: ${{secrets.MEETUP_PRIVATE_KEY}}
