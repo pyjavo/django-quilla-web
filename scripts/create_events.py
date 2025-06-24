@@ -69,6 +69,7 @@ def write_content(slug, fields):
     if os.path.isfile(filepath):
         print(f"File for slug {slug} already exists, skipping")
     else:
+        print(f"Creating file for slug {slug}")
         with open(filepath, "w", encoding="utf-8") as fh:
             fh.write("---\n".join(items))
 

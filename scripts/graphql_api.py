@@ -17,8 +17,11 @@ MEETUP_API_URL = "https://api.meetup.com/gql-ext"
 GROUP_URLNAME = os.getenv("MEETUP_GROUP_URLNAME")
 PRIVATE_KEY = os.getenv("MEETUP_PRIVATE_KEY")
 
+print(f"Downloading events for {GROUP_URLNAME}")
+
 # Load from .pem if ENV variable MEETUP_PRIVATE_KEY does not exists
 if PRIVATE_KEY is None:
+    print("Environment variable PRIVATE_KEY not found, using pem file")
     with(open('private_key.pem', "r", encoding='UTF-8')) as file:
         PRIVATE_KEY = file.read()
 
@@ -51,14 +54,10 @@ for event in data["data"]["groupByUrlname"]["past_events"]["edges"]:
     event_data = event["node"]
     slug = f"{event_data['dateTime'][:10]}-{slugify(event_data['title'])}"
     print(f"https://pybaq.co/eventos/{slug}")
-    print(f"Slug: {slug}")
-    print(f"Event ID: {event_data['id']}")
     print(f"Titulo: {event_data['title']}")
     print(f"Fecha: {event_data['dateTime']}")
     print(f"URL: {event_data['eventUrl']}")
     print(f"Imagen: {event_data['featuredEventPhoto']}")
-    print(f"Descripción: {event_data['description']}")
-    print(f"Lugar: {event_data['venues']}")
     print("-" * 40)  # Separator for readability
 
 with open("databags/meetup_gql.json", "w", encoding="utf-8") as outfile:
