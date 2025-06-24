@@ -43,9 +43,9 @@ jobs:
       - name: Verificar cambios en archivo json
         id: check_changes
         run: |
-          if git diff --quiet --exit-code -- databags/meetup-gql.json; then
+          if git diff --quiet --exit-code -- databags/meetup_gql.json; then
             echo "HAS_CHANGES=false" >> "$GITHUB_OUTPUT"
-            echo "No hay cambios en meetup-gql.json"
+            echo "No hay cambios en meetup_gql.json"
           else
             echo "HAS_CHANGES=true" >> "$GITHUB_OUTPUT"
           fi

@@ -54,14 +54,10 @@ for event in data["data"]["groupByUrlname"]["past_events"]["edges"]:
     event_data = event["node"]
     slug = f"{event_data['dateTime'][:10]}-{slugify(event_data['title'])}"
     print(f"https://pybaq.co/eventos/{slug}")
-    print(f"Slug: {slug}")
-    print(f"Event ID: {event_data['id']}")
     print(f"Titulo: {event_data['title']}")
     print(f"Fecha: {event_data['dateTime']}")
     print(f"URL: {event_data['eventUrl']}")
     print(f"Imagen: {event_data['featuredEventPhoto']}")
-    print(f"Descripción: {event_data['description']}")
-    print(f"Lugar: {event_data['venues']}")
     print("-" * 40)  # Separator for readability
 
 with open("databags/meetup_gql.json", "w", encoding="utf-8") as outfile:
