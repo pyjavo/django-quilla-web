@@ -17,8 +17,11 @@ MEETUP_API_URL = "https://api.meetup.com/gql-ext"
 GROUP_URLNAME = os.getenv("MEETUP_GROUP_URLNAME")
 PRIVATE_KEY = os.getenv("MEETUP_PRIVATE_KEY")
 
+print(f"Downloading events for {GROUP_URLNAME}")
+
 # Load from .pem if ENV variable MEETUP_PRIVATE_KEY does not exists
 if PRIVATE_KEY is None:
+    print("Environment variable PRIVATE_KEY not found, using pem file")
     with(open('private_key.pem', "r", encoding='UTF-8')) as file:
         PRIVATE_KEY = file.read()
 
