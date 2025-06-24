@@ -26,6 +26,12 @@ jobs:
           pip install -r requirements.txt
 
       - name: Ejecutar graphql_api.py
+        env:
+          MEETUP_GROUP_URLNAME: ${{env.MEETUP_GROUP_URLNAME}}
+          MEETUP_CLIENT_ID: ${{secrets.MEETUP_CLIENT_ID}}
+          MEETUP_MEMBER_ID: ${{secrets.MEETUP_MEMBER_ID}}
+          MEETUP_PRIVATE_KEY: ${{secrets.MEETUP_PRIVATE_KEY}}
+          MEETUP_SIGNING_KEY_ID: ${{secrets.MEETUP_SIGNING_KEY_ID}}
         run: python scripts/graphql_api.py
 
       - name: Ejecutar create_events.py
