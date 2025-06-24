@@ -10,6 +10,7 @@ jobs:
     if: github.repository_owner == 'PyBAQ'
     name: Actualizar eventos meetup
     runs-on: ubuntu-latest
+    environment: meetup-events
     steps:
       - name: checkout@v4
         uses: actions/checkout@v4
