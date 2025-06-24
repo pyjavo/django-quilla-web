@@ -60,11 +60,10 @@ jobs:
           git config --global user.name "PyBaq Bot"
           git config --global user.email "contacto@pybaq.co"
           git checkout -b actualizar-eventos-${{ steps.date.outputs.date }}
-          git add databags/meetup.json
+          git add databags/meetup_gql.json
           git add content/eventos
           git commit -m "Actualizacion eventos meetup"
           git push -u origin actualizar-eventos-${{ steps.date.outputs.date }}
-
 
       - name: Crear pull request
         if: steps.check_changes.outputs.HAS_CHANGES == 'true'
