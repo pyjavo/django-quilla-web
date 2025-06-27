@@ -1,0 +1,45 @@
+title: Desarrollo basado en pruebas: codificando con calidad superior & De cero a GPT
+---
+date_start: 2024-10-17 18:30
+---
+link: https://www.meetup.com/pythonbaq/events/303816975/
+---
+information: Ambas charlas son para nivel "principiante".
+---
+featured_photo: https://secure.meetupstatic.com/photos/event/9/8/9/600_523862441.jpeg
+---
+venue: Lyd House 98
+---
+address_1: Calle 98 # 57 esquina. Ubicado en el 2do piso de Mall 98
+---
+talks:
+
+#### talk ####
+title: Desarrollo basado en pruebas: codificando con calidad superior
+----
+details: La charla tiene como objetivo mostrar las ventajas del Test Driven Development al momento de desarrollar software, despertar la curiosidad para que las personas después de la charla investiguen el tema y hagan sus primeros tests y como puede a largo plazo brindar un software más seguro y confiable después de hacer cambios en el software. Evitaré hacer código en vivo para no aburrir a la gente, sino explicar las ventajas, posibles desventajas y algunos mitos.
+----
+speaker: jorge-rueda
+----
+speaker_name: 
+----
+speaker_bio: Soy Ingeniero Electrónico de la Universidad Javeriana, desde 2019 hice un cambio en mi carrera hacia el mundo del software. Actualmente soy Ingeniero de backend en Genial.io orientado a Python, Linux, MongoDB, Docker y Django.
+----
+attach: - [Diapositiva](https://drive.google.com/file/d/1k1GPsuXkMc-2pkjjAzB4oC8RpcezI6bZ/view?usp=sharing)
+#### talk ####
+title: De cero a GPT
+----
+details: La finalidad es que cada asistente entienda cómo funcionan las estrategias/algoritmos de IA mas usados en el mundo real desde el punto de vista matemático; desde una regresión lineal hasta como funciona un LLM. La charla se haría con terminos sencillos y faciles de entender por cualquier persona sin conocimientos tecnicos. Dependiendo al tiempo disponible algunos algoritmos podrian incluir implementación en Python sin usar librerías.
+----
+speaker: 
+----
+speaker_name: Jeffrey Saavedra
+----
+speaker_bio: Autodidacta con 15 años de experiencia en tecnología (back, front, IA, seguridad, cloud, mas). Actualmente me dedico a escalar startups.
+----
+attach:
+
+- [Diapositiva](https://drive.google.com/file/d/1cPpGpK9XJcEhlYW31GRBwR8E2GfonrQk/view?usp=sharing)
+- [Cuadernos de Jupyter](https://github.com/PyBAQ/Notebooks/tree/master/de_cero_a_gpt)
+---
+youtube: 9oja__AVJVM

@@ -2,7 +2,7 @@ name: Javier Fonseca
 ---
 photo: /img/team/javier-fonseca.jpg
 ---
-role: colaborador
+role: contribuidor
 ---
 work: Lugar del evento
 ---
@@ -16,4 +16,9 @@ twitter_handle:
 ---
 start_activity: 2018-03-06
 ---
-contributions: - Ayuda a agendar el teatrino en Koombea (lugar donde usualmente nos reunimos)
+contributions:
+
+- Ayuda a agendar el teatrino en Koombea (lugar donde usualmente nos reunimos)
+- Ayuda a agendar las primeras reunión virtuales via Zoom durante el 2019
+---
+end_activity: 2025-01-27

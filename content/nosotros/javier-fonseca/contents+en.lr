@@ -2,7 +2,7 @@ name: Javier Fonseca
 ---
 photo: /img/team/javier-fonseca.jpg
 ---
-role: colaborador
+role: contribuidor
 ---
 work: Event venue
 ---
@@ -14,4 +14,7 @@ github_handle: fonsecajavier
 ---
 twitter_handle: 
 ---
-contributions: - Help to schedule the theater in Koombea (place where we usually meet)
+contributions:
+
+- Help to schedule the theater in Koombea (place where we usually meet).
+- Help schedule the theater at Koombea (where we usually meet)

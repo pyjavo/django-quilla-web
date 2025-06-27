@@ -29,6 +29,9 @@ speaker_name: John Bernal
 ----
 speaker_bio: Gestor comercial y organizacional de Ebenezer Technologies, una empresa con alto componente innovador en la ciudad de Barranquilla
 ----
-attach: - [Artículo](https://pybaq.co/blog/beneficios-tributarios-para-el-sector-tic/)
+attach:
+
+- [Artículo](https://pybaq.co/blog/beneficios-tributarios-para-el-sector-tic/)
+- [Diapositivas](https://docs.google.com/presentation/d/1dgN1RklmS8y_TJsgjpOCfBan5ts8G7t96tIK_Lyb-ok/edit?usp=sharing)
 ---
 featured_photo: https://secure.meetupstatic.com/photos/event/e/1/0/4/600_464337604.jpeg

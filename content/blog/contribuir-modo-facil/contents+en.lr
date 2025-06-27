@@ -1,1 +1,38 @@
 _discoverable: no
+---
+body:
+
+There is already an article called [How to contribute to the Python Barranquilla blog](/en/blog/contribuir-blog-python-barranquilla/). This article highlights how you can facilitate contributions using a self-configuring virtual workspace – you won't need to install anything; everything is online.
+
+[Codespaces](https://docs.github.com/en/codespaces/overview) is a virtual workspace that can be automatically configured, provided by GitHub. A free account comes with 60 core-hours of runtime. That's more than enough time to work on contributing to our site or other projects. The Python Barranquilla page repository has a .devcontainer folder with the necessary configurations to start working immediately on any contribution you want to make.
+
+## Edit
+After creating a branch, we can open a codespace. Thanks to the .devcontainer.json file, a codespace will be created with everything you need. If your first question is, what is a branch and why is it necessary to create one? I recommend you go to [Annex 2](/blog/contribuir-blog-python-barranquilla/#anexo-2-ciclo-de-trabajo-de-contribucion-en-github) of the article mentioned at the beginning.
+
+![Open Codespace](/img/posts/2023/contribuir-modo-facil/csflow-opencodespace.png)
+
+The creation process may take a while the first time you open it.
+
+![Create Codespace](/img/posts/2023/contribuir-modo-facil/csflow-createcodespace.png)
+
+Once the editor opens, you'll see 3 parts:
+1. The file browser
+2. A console with the lektor server running
+3. A simple browser window showing the generated page.  
+The page can be opened in a separate tab using the button in the top-right corner (see arrow).
+
+![Editor Codespace](/img/posts/2023/contribuir-modo-facil/csflow-editorcodespace.png)
+
+Finally, you can use the editor to perform both commits and pushes, but it's easiest to do this after closing the codespace window:
+1. Export changes to the branch.
+2. Close the codespace  
+It’s important to close the codespace to prevent it from consuming more runtime.
+
+![Close Codespace](/img/posts/2023/contribuir-modo-facil/csflow-push-closecodespace.png)
+
+## How do I create a post?
+To create a blog post, follow the instructions in the article "How to contribute to the Python Barranquilla blog" starting from the title [Creating an entry in Lektor](/en/blog/contribuir-blog-python-barranquilla/#creating-an-entry-in-lektor).
+
+If you have any questions, don't hesitate to ask in [our Discord](https://discord.gg/46N5dPm9Zk).
+---
+title: Contribute in Easy-Mode
