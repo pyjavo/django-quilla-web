@@ -8,3 +8,15 @@
   margin: 0.75rem;
   width: 100%;
 }
+
+.plog-posts-user .post p,
+.user-projects .post p {
+  margin-bottom: 5px;
+}
+
+.plog-posts-user .post p a::before,
+.user-projects .post p a::before {
+  content: "•";
+  padding-right: 10px;
+  padding-left: 14px;
+}
